@@ -1,0 +1,15 @@
+table {
+    @extend %box-sizing-border-box;
+    border: 0.1rem solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+}
+thead,
+tbody,
+tfoot {}
+th,
+td {
+    padding: 0.5rem;
+    border: 0.1rem solid #ccc;
+    text-align: left;
+}

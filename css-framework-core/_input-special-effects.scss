@@ -1,0 +1,132 @@
+.radio,
+.check,
+.switch {
+    > input:focus {
+        outline: none;
+    }
+}
+//radiobutton
+//... just an example... define your own style!
+.radio {
+    position: relative;
+    &,
+    & > input[type="radio"],
+    & > input[type="radio"] + span[aria-hidden="true"] {
+        @extend %box-sizing-border-box;
+        display: block;
+    }
+    &,
+    & > input[type="radio"] + span[aria-hidden="true"] {
+        height: 1rem;
+        width: 1rem;
+    }
+    & > input[type="radio"],
+    & > input[type="radio"] + span[aria-hidden="true"] {
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+    > input[type="radio"] {
+        height: 0.8rem;
+        margin: 0.1rem;
+        width: 0.8rem;
+        & + span[aria-hidden="true"] {
+            background-color: #fdfbfb;
+            border: 0.1rem solid #ebebeb;
+            border-radius: 0.5rem;
+            pointer-events: none;
+        }
+        &:focus + span[aria-hidden="true"] {
+            border: 0.2rem solid #98b5e5;
+        }
+        &:checked + span[aria-hidden="true"] {
+            border: 0.3rem solid #5084d8;
+            //use before & after pseudo elemetns to design a center dot, square or whatever you want to display for checked status of button
+        }
+    }
+}
+//checkbox
+//... just another example... define your own style!
+.check {
+    position: relative;
+    &,
+    & > input[type="checkbox"],
+    & > input[type="checkbox"] + span[aria-hidden="true"] {
+        @extend %box-sizing-border-box;
+        display: block;
+        height: 1rem;
+        width: 1rem;
+    }
+    & > input[type="checkbox"],
+    & > input[type="checkbox"] + span[aria-hidden="true"] {
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+    > input[type="checkbox"] {
+        & + span[aria-hidden="true"] {
+            background-color: #fdfbfb;
+            border: 0.1rem solid #ebebeb;
+            border-radius: 0.1rem;
+            pointer-events: none;
+        }
+        &:focus + span[aria-hidden="true"] {
+            border: 0.2rem solid #98b5e5;
+        }
+        &:checked + span[aria-hidden="true"] {
+            border: 0.3rem solid #5084d8;
+            //use before & after pseudo elemetns to design a center dot, square or whatever you want to display for checked status of button
+        }
+    }
+}
+//flipswitch
+.switch {
+    position: relative;
+    &,
+    & > input[type="checkbox"],
+    & > input[type="checkbox"] + span[aria-hidden="true"] {
+        @extend %box-sizing-border-box;
+        display: block;
+        height: 1.4rem;
+        width: 2.2rem;
+    }
+    & > input[type="checkbox"],
+    & > input[type="checkbox"] + span[aria-hidden="true"] {
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+    > input[type="checkbox"] {
+        margin-top: -0.1rem;
+        & + span[aria-hidden="true"] {
+            background-color: #fdfbfb;
+            border: 0.1rem solid #dddddd;
+            border-radius: 0.7rem;
+            margin-left: -0.1rem;
+            margin-top: -0.1rem;
+            pointer-events: none;
+            @include transition (background-color, 0.2s, ease-in-out);
+            &:after {
+                background-color: #dddddd;
+                border-radius: 100%;
+                content: "";
+                display: block;
+                height: 1rem;
+                margin: 0.1rem;
+                @include transition (margin-left, 0.2s, ease-in-out);
+                width: 1rem;
+            }
+        }
+        &:focus + span[aria-hidden="true"] {
+            &:after {
+                background-color: #b2b2b2;
+            }
+        }
+        &:checked + span[aria-hidden="true"] {
+            background-color: #5084d8;
+            &:after {
+                margin-left: 0.9rem;
+            }
+        }
+    }
+}

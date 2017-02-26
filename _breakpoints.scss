@@ -1,0 +1,19 @@
+//RESPONSIVE DESIGN @MEDIA BREAK-POINTS WIDTHS
+$w0: 300px;
+$w1: 400px;
+$w2: 500px;
+$w3: 768px;
+$w4: 992px; //tablet
+$w5: 1024px; //desktop begin
+$w6: 1280px;
+$w7: 1440px;
+$w8: 1680px;
+$w9: 1920px;
+
+
+//PLACEHOLDER FRAMEWORK @MEDIA BREAK-POINTS
+$bigdesktop: $w6;
+$desktop: $w4;
+$tablet: $w3;
+$smart: $w2;
+$smallsmart: $w1;

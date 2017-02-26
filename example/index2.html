@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Framework example</title>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="flex-cont">
+    <div class="row auto-height">
+      <div class="g g50-1 g33-5">
+        <h1>Automatic height</h1>
+        <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+      </div>
+      <div class="g g50-1 g33-5">
+        <h1>Automatic height</h1>
+        <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="g g50-1 g33-5">
+        <h1>Automatic height </h1>
+        <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
+      </div>
+      <div class="g g100-1 g50-5 s25-5">
+        <h1>Automatic height and shift</h1>
+        <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
+      </div>
+    </div>
+  </div>
+  <div class="cont">
+    <div class="row">
+      <div class="g g100-1 g50-5">
+        <h2>H2 heading</h2>
+        <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="row gm4">
+          <div class="g g100-1 g50-5">
+            <p>TEST TEST</p>
+          </div>
+          <div class="g g100-1 g50-5">
+            <p>TEST TEST</p>
+          </div>
+        </div>
+      </div>
+      <div class="g g100-1 g50-5">
+        <h2>H2 heading</h2>
+        <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+    </div>
+  </div>
+  <div class="cont">
+    <div class="row ">
+      <div class="g g100-1 g33-5">
+        <h3>Unordered list</h3>
+        <p>This is a paragraph</p>
+        <ul>
+          <li>This is a list</li>
+          <li>An unordered list</li>
+          <li>With 3 points</li>
+        </ul>
+      </div>
+      <div class="g g100-1 g33-5 ">
+        <h3>Ordered list</h3>
+        <p>This is a paragraph</p>
+        <ol>
+          <li>This is a list</li>
+          <li>An ordered list</li>
+          <li>With 3 points</li>
+        </ol>
+      </div>
+      <div class="g g100-1 g33-5 ">
+        <h3>Description list</h3>
+        <p>This is a paragraph</p>
+        <dl>
+          <dt>This is a list</dt>
+          <dd>This is the description</dd>
+          <dt>A description list</dt>
+          <dd>This is the description</dd>
+          <dt>With 3 points</dt>
+          <dd>This is the description</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="cont">
+    <div class="row ">
+      <div class="g g100-1 g100-5">
+        <h2>Forms</h2>
+      </div>
+      <form class="g g100-1 g100-5 mt6">
+        <div class="row">
+          <fieldset class="g g100-1 g100-5">
+            <legend>Chek and radio with "special effects"</legend>
+            <div class="row">
+              <div class="g g100-1 g33-5 form-group">
+                <label for="radio" class="pl7">Radio</label>
+                <div class="radio">
+                  <input type="radio" id="radio" />
+                  <span aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="g g100-1 g33-5 form-group">
+                <label for="check" class="pl7">Checkbox </label>
+                <div class="check">
+                  <input type="checkbox" id="check" />
+                  <span aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="g g100-1 g33-5 form-group">
+                <label for="switch" class="pl10">Flipswitch with checkbox </label>
+                <div class="switch">
+                  <input type="checkbox" id="switch" />
+                  <span aria-hidden="true"></span>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="g g100-1 g100-5">
+            <legend>Input fields with addon</legend>
+            <div class="row">
+              <div class="g g100-1 g50-3 g50-5 form-group">
+                <div class="form-group">
+                  <label>Simple addon</label>
+                  <input type="text" class=" ipr1" />
+                  <button type="button" class="addon r w1">H</button>
+                </div>
+              </div>
+              <div class="g g100-1 g50-3 g50-5 form-group">
+                <div class="form-group">
+                  <label>Double addon</label>
+                  <button type="button" class="addon l w1">H</button>
+                  <input type="text" class="ipl1 ipr1" />
+                  <button type="button" class="addon r w1">H</button>
+                </div>
+              </div>
+              <div class="g g100-1 g50-3 g50-5 form-group">
+                <div class="form-group">
+                  <label>Double addon same side</label>
+                  <button type="button" class="addon l w1">1</button>
+                  <button type="button" class="addon l w2 iml1">2</button>
+                  <input type="text" class="ipl5" />
+                </div>
+              </div>
+              <div class="g g100-1 g50-3 g50-5 form-group">
+                <div class="form-group">
+                  <label>Addon with decoration</label>
+                  <input type="text" class="ipl2" />
+                  <span class="addon l w2">Go!</span>
+                </div>
+              </div>
+              <div class="g g100-1 g50-3 g50-5 form-group">
+                <div class="form-group">
+                  <label>Select list</label>
+                  <select>
+                    <option val="1">option 1</option>
+                    <option val="2">option 2</option>
+                    <option val="3">option 3</option>
+                  </select>
+                  <span class="addon r w1 transparent">&darr;</span>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="g g100-1 g50-3 g20-5 form-group">
+            <input type="submit" class="w1" value="submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="cont ptb7">
+    <div class="row">
+      <div class="g g100-1 g50-2 g50-5">
+        <div class="responsive">
+          <table>
+            <caption>Caption</caption>
+            <thead>
+              <tr>
+                <th>thead 1</th>
+                <th>thead 2</th>
+                <th>thead 3</th>
+                <th>thead 4</th>
+                <th>thead 5</th>
+                <th>thead 5</th>
+
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td>tfoot 1</td>
+                <td>tfoot 2</td>
+                <td>tfoot 3</td>
+                <td>tfoot 4</td>
+                <td>tfoot 5</td>
+                <td>tfoot 6</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+              <tr>
+                <td>tbody 1</td>
+                <td>tbody 2</td>
+                <td>tbody 3</td>
+                <td>tbody 4</td>
+                <td>tbody 5</td>
+                <td>tbody 6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="set-gridelements-height.js "></script>
+</body>
+
+</html>

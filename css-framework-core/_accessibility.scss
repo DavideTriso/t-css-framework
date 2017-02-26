@@ -1,0 +1,49 @@
+//Accessibility classes.
+//.access: Position elements outside of viewport.
+//.access-focus:  Position element outside of viewport and show in viewport when focussed
+//.access1 + .access5 + .access5up: Access classes based on viewport width
+//.access-focus1 + .access5 + .access5up: access-focus classes based on viewport width
+//.hide1 + .hide5 + .hide5up: hide elements based on viewport width
+.access {
+  @include access;
+}
+.access-focus {
+  @include access-focus;
+}
+.hide {
+  display: none;
+}
+//access and access-focus based on viewport width
+@media screen and (max-width: $w2 -1px) {
+  .access1 {
+    @include access;
+  }
+  .access-focus1 {
+    @include access-focus;
+  }
+  .hide1 {
+    display: none;
+  }
+}
+@media screen and (max-width: $w5 -1px) {
+  .access5 {
+    @include access;
+  }
+  .access-focus5 {
+    @include access-focus;
+  }
+  .hide5 {
+    display: none;
+  }
+}
+@media screen and (min-width: $w5) {
+  .access5up {
+    @include access;
+  }
+  .access-focus5up {
+    @include access-focus;
+  }
+  .hide5up {
+    display: none;
+  }
+}

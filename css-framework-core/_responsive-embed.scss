@@ -1,0 +1,29 @@
+// Embeds responsive
+// Credit: Nicolas Gallagher and SUIT CSS.
+.responsive-embed {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  > iframe,
+  > embed,
+  > object,
+  > video {
+    border: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+// Modifier class for 16:9 aspect ratio
+.resp16by9 {
+  padding-bottom: 56.25%;
+}
+// Modifier class for 4:3 aspect ratio
+.resp4by3 {
+  padding-bottom: 75%;
+}
