@@ -1,22 +1,22 @@
 // Embeds responsive
 // Credit: Nicolas Gallagher and SUIT CSS.
 .responsive-embed {
-  display: block;
-  height: 0;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
+  @extend %display-block;
+  @extend %height-0;
+  @extend %overflow-hidden;
+  @extend %padding-0;
+  @extend %position-relative;
   > iframe,
   > embed,
   > object,
   > video {
-    border: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    @extend %border-0;
+    @extend %bottom-0;
+    @extend %left-0;
+    @extend %height-100;
+    @extend %position-absolute;
+    @extend %top-0;
+    @extend %width-100;
   }
 }
 // Modifier class for 16:9 aspect ratio

@@ -47,7 +47,8 @@ h4,
 h5,
 h6 {
   font-family: $fontFamilyHeadings;
-  @extend %reset-margins-paddings;
+  @extend %margin-0;
+  @extend %padding-0;
 }
 //heading responsive
 h1,
@@ -294,7 +295,8 @@ u,
 var {
   font-size: $defaultTextFontSize;
   line-height: $defaultTextFontSize * $lineHeightFactor;
-  @extend %reset-margins-paddings;
+  @extend %margin-0;
+  @extend %padding-0;
 }
 //text elements
 a,
@@ -308,8 +310,9 @@ pre,
 samp,
 table,
 ul {
-  @extend %reset-margins-paddings;
+  @extend %margin-0;
   margin-top: $textElementsMarginTop;
+  @extend %padding-0;
 }
 //
 //LISTS
@@ -319,9 +322,9 @@ ul {
 }
 dt,
 dd {
-  display: inline;
+  @extend %display-inline;
 }
 dt:before {
-  content: "";
-  display: block;
+  @extend %content;
+  @extend %display-block;
 }

@@ -27,12 +27,7 @@
   -ms-backdrop-filter: $filter; //maybe will be supported in the future...
   backdrop-filter: $filter;
 }
-//The box-sizing property is used to tell the browser what the sizing properties (width and height) should include.
-%box-sizing-border-box {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+
 //The box-shadow property attaches one or more shadows to an element.
 @mixin box-shadow($x-offset, $y-offset, $blur, $spread, $color, $inset) {
   -webkit-box-shadow: $inset $x-offset $y-offset $blur $spread $color;
@@ -50,13 +45,16 @@
     clear: both;
   }
 }
+
+//
+//multi column layout
+//The column-count property specifies the number of columns an element should be divided into.
 @mixin column-count ($column-count) {
   -webkit-column-count: $column-count;
   -moz-column-count: $column-count;
   column-count: $column-count;
 }
 //
-//The column-count property specifies the number of columns an element should be divided into.
 @mixin column-design ($colum-gap, $column-width, $column-rule-type, $column-rule-width, $column-rule-color) {
   -webkit-column-gap: $colum-gap;
   -moz-column-gap: $colum-gap;
@@ -222,81 +220,4 @@
 @mixin truncate-text($lineHeight, $visibleLinesNumber) {
   overflow: hidden;
   max-height: $lineHeight * $lineNumber;
-}
-//
-//
-//TYPE PLACEHOLDERS
-// Alignment
-%left {
-  text-align: left;
-}
-%right {
-  text-align: right;
-}
-%center {
-  text-align: center;
-}
-%justify {
-  text-align: justify;
-}
-%nowrap {
-  white-space: nowrap;
-}
-// Transformation
-%lowercase {
-  text-transform: lowercase;
-}
-%uppercase {
-  text-transform: uppercase;
-}
-%capitalize {
-  text-transform: capitalize;
-}
-//decorations
-%underline {
-  text-decoration: underline;
-}
-%overline {
-  text-decoration: overline;
-}
-%line-through {
-  text-decoration: line-through;
-}
-//borders
-%border-underline {
-  border-bottom: 1px solid inherit;
-}
-%border-overline {
-  border-top: 1px solid inherit;
-}
-//ellipsis
-%ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-//placeholders for margins and paddings
-%margin-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-%reset-margins-paddings {
-  margin: 0;
-  padding: 0;
-}
-%reset-margin-left-right {
-  margin-left: 0;
-  margin-right: 0;
-}
-%reset-padding-left-right {
-  padding-left: 0;
-  padding-right: 0;
-}
-%reset-margin-top-bottom {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-%reset-padding-top-bottom {
-  padding-bottom: 0;
-  padding-top: 0;
 }

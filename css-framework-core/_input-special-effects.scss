@@ -2,18 +2,18 @@
 .check,
 .switch {
     > input:focus {
-        outline: none;
+        @extend %outline-none;
     }
 }
 //radiobutton
 //... just an example... define your own style!
 .radio {
-    position: relative;
+    @extend %position-relative;
     &,
     & > input[type="radio"],
     & > input[type="radio"] + span[aria-hidden="true"] {
         @extend %box-sizing-border-box;
-        display: block;
+        @extend %display-block;
     }
     &,
     & > input[type="radio"] + span[aria-hidden="true"] {
@@ -22,9 +22,9 @@
     }
     & > input[type="radio"],
     & > input[type="radio"] + span[aria-hidden="true"] {
-        left: 0;
-        position: absolute;
-        top: 0;
+        @extend %left-0;
+        @extend %position-absolute;
+        @extend %top-0;
     }
     > input[type="radio"] {
         height: 0.8rem;
@@ -53,15 +53,15 @@
     & > input[type="checkbox"],
     & > input[type="checkbox"] + span[aria-hidden="true"] {
         @extend %box-sizing-border-box;
-        display: block;
+        @extend %display-block;
         height: 1rem;
         width: 1rem;
     }
     & > input[type="checkbox"],
     & > input[type="checkbox"] + span[aria-hidden="true"] {
-        left: 0;
-        position: absolute;
-        top: 0;
+        @extend %left-0;
+        @extend %position-absolute;
+        @extend %top-0;
     }
     > input[type="checkbox"] {
         & + span[aria-hidden="true"] {
@@ -86,15 +86,15 @@
     & > input[type="checkbox"],
     & > input[type="checkbox"] + span[aria-hidden="true"] {
         @extend %box-sizing-border-box;
-        display: block;
+        @extend %display-block;
         height: 1.4rem;
         width: 2.2rem;
     }
     & > input[type="checkbox"],
     & > input[type="checkbox"] + span[aria-hidden="true"] {
-        left: 0;
-        position: absolute;
-        top: 0;
+        @extend %left-0;
+        @extend %position-absolute;
+        @extend %top-0;
     }
     > input[type="checkbox"] {
         margin-top: -0.1rem;
@@ -110,7 +110,7 @@
                 background-color: #dddddd;
                 border-radius: 100%;
                 content: "";
-                display: block;
+                @extend %display-block;
                 height: 1rem;
                 margin: 0.1rem;
                 @include transition (margin-left, 0.2s, ease-in-out);

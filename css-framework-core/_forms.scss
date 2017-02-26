@@ -26,7 +26,7 @@ select,
 textarea {
   @extend %reset-appearance;
   border: 0.05rem solid; //for demonstration only. positioning of addon. see class .addon
-  border-radius: 0;
+  @extend %border-radius-0;
 }
 button,
 input,
@@ -37,7 +37,7 @@ option,
 optgroup,
 textarea {
   @extend %box-sizing-border-box;
-  display: block;
+  @extend %display-block;
   font-size: $defaultTextFontSize;
   line-height: $defaultTextFontSize * $lineHeightFactor;
   padding: $inputElementsPaddingTopBottom $inputElementsPaddingLeftRight;
@@ -45,13 +45,13 @@ textarea {
 //button and input height fix for firefox
 input::-moz-focus-inner,
 button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+  @extend %border-0;
+  @extend %padding-0;
 }
 //reset fieldset appearance
 fieldset {
-  border: 0;
-  margin: 0;
+  @extend %border-0;
+  @extend %margin-0;
   padding: 1rem 0;
 }
 .form-group {
@@ -77,7 +77,7 @@ fieldset {
   output,
   select,
   textarea {
-    float: left;
+    @extend %float-left;
   }
   button,
   input[type="button"],
@@ -99,23 +99,23 @@ fieldset {
   output,
   select,
   textarea {
-    width: 100%;
+    @extend %width-100;
   }
   > .form-group {
     @extend %clearfix;
-    position: relative;
+    @extend %position-relative;
     .addon {
       @extend %box-sizing-border-box;
       border: 0.05rem solid; //for demonstration only
-      display: block;
+      @extend %display-block;
       padding: $inputElementsPaddingTopBottom 0.25rem;
-      position: absolute;
-      text-align: center;
+      @extend %position-absolute;
+      @extend %text-align-center;
       &.r {
-        right: 0;
+        @extend %right-0;
       }
       &.l {
-        left: 0;
+        @extend %left-0;
       }
       &.transparent {
         pointer-events: none;
@@ -123,7 +123,7 @@ fieldset {
     }
     label,
     .label {
-      float: none;
+      @extend %float-none;
     }
     //Width classes for form elements
     @for $i from 1 through $stepsAddonWidth {

@@ -1,523 +1,6 @@
-html,
-body,
-.cont,
-.flex-cont,
-.row, .g5-10,
-.g10-10,
-.g15-10,
-.g16-10,
-.g20-10,
-.g25-10,
-.g30-10,
-.g33-10,
-.g35-10,
-.g40-10,
-.g45-10,
-.g50-10,
-.g55-10,
-.g60-10,
-.g65-10,
-.g66-10,
-.g70-10,
-.g75-10,
-.g80-10,
-.g83-10,
-.g85-10,
-.g90-10,
-.g95-10,
-.g100-10,
-.g5-9,
-.g10-9,
-.g15-9,
-.g16-9,
-.g20-9,
-.g25-9,
-.g30-9,
-.g33-9,
-.g35-9,
-.g40-9,
-.g45-9,
-.g50-9,
-.g55-9,
-.g60-9,
-.g65-9,
-.g66-9,
-.g70-9,
-.g75-9,
-.g80-9,
-.g83-9,
-.g85-9,
-.g90-9,
-.g95-9,
-.g100-9,
-.g5-8,
-.g10-8,
-.g15-8,
-.g16-8,
-.g20-8,
-.g25-8,
-.g30-8,
-.g33-8,
-.g35-8,
-.g40-8,
-.g45-8,
-.g50-8,
-.g55-8,
-.g60-8,
-.g65-8,
-.g66-8,
-.g70-8,
-.g75-8,
-.g80-8,
-.g83-8,
-.g85-8,
-.g90-8,
-.g95-8,
-.g100-8,
-.g5-7,
-.g10-7,
-.g15-7,
-.g16-7,
-.g20-7,
-.g25-7,
-.g30-7,
-.g33-7,
-.g35-7,
-.g40-7,
-.g45-7,
-.g50-7,
-.g55-7,
-.g60-7,
-.g65-7,
-.g66-7,
-.g70-7,
-.g75-7,
-.g80-7,
-.g83-7,
-.g85-7,
-.g90-7,
-.g95-7,
-.g100-7,
-.g5-6,
-.g10-6,
-.g15-6,
-.g16-6,
-.g20-6,
-.g25-6,
-.g30-6,
-.g33-6,
-.g35-6,
-.g40-6,
-.g45-6,
-.g50-6,
-.g55-6,
-.g60-6,
-.g65-6,
-.g66-6,
-.g70-6,
-.g75-6,
-.g80-6,
-.g83-6,
-.g85-6,
-.g90-6,
-.g95-6,
-.g100-6,
-.g5-5,
-.g10-5,
-.g15-5,
-.g16-5,
-.g20-5,
-.g25-5,
-.g30-5,
-.g33-5,
-.g35-5,
-.g40-5,
-.g45-5,
-.g50-5,
-.g55-5,
-.g60-5,
-.g65-5,
-.g66-5,
-.g70-5,
-.g75-5,
-.g80-5,
-.g83-5,
-.g85-5,
-.g90-5,
-.g95-5,
-.g100-5,
-.g5-4,
-.g10-4,
-.g15-4,
-.g16-4,
-.g20-4,
-.g25-4,
-.g30-4,
-.g33-4,
-.g35-4,
-.g40-4,
-.g45-4,
-.g50-4,
-.g55-4,
-.g60-4,
-.g65-4,
-.g66-4,
-.g70-4,
-.g75-4,
-.g80-4,
-.g83-4,
-.g85-4,
-.g90-4,
-.g95-4,
-.g100-4,
-.g5-3,
-.g10-3,
-.g15-3,
-.g16-3,
-.g20-3,
-.g25-3,
-.g30-3,
-.g33-3,
-.g35-3,
-.g40-3,
-.g45-3,
-.g50-3,
-.g55-3,
-.g60-3,
-.g65-3,
-.g66-3,
-.g70-3,
-.g75-3,
-.g80-3,
-.g83-3,
-.g85-3,
-.g90-3,
-.g95-3,
-.g100-3,
-.g5-2,
-.g10-2,
-.g15-2,
-.g16-2,
-.g20-2,
-.g25-2,
-.g30-2,
-.g33-2,
-.g35-2,
-.g40-2,
-.g45-2,
-.g50-2,
-.g55-2,
-.g60-2,
-.g65-2,
-.g66-2,
-.g70-2,
-.g75-2,
-.g80-2,
-.g83-2,
-.g85-2,
-.g90-2,
-.g95-2,
-.g100-2,
-.g5-1,
-.g10-1,
-.g15-1,
-.g16-1,
-.g20-1,
-.g25-1,
-.g30-1,
-.g33-1,
-.g35-1,
-.g40-1,
-.g45-1,
-.g50-1,
-.g55-1,
-.g60-1,
-.g65-1,
-.g66-1,
-.g70-1,
-.g75-1,
-.g80-1,
-.g83-1,
-.g85-1,
-.g90-1,
-.g95-1,
-.g100-1, button,
-input,
-keygen,
-output,
-select,
-option,
-optgroup,
-textarea, .form-group > .form-group .addon, .radio, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check, .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch, .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"], table {
-  box-sizing: border-box; }
-
-.cont {
-  margin: auto; }
-
-html,
-body,
-.cont,
-.flex-cont,
-.row, .g5-10,
-.g10-10,
-.g15-10,
-.g16-10,
-.g20-10,
-.g25-10,
-.g30-10,
-.g33-10,
-.g35-10,
-.g40-10,
-.g45-10,
-.g50-10,
-.g55-10,
-.g60-10,
-.g65-10,
-.g66-10,
-.g70-10,
-.g75-10,
-.g80-10,
-.g83-10,
-.g85-10,
-.g90-10,
-.g95-10,
-.g100-10,
-.g5-9,
-.g10-9,
-.g15-9,
-.g16-9,
-.g20-9,
-.g25-9,
-.g30-9,
-.g33-9,
-.g35-9,
-.g40-9,
-.g45-9,
-.g50-9,
-.g55-9,
-.g60-9,
-.g65-9,
-.g66-9,
-.g70-9,
-.g75-9,
-.g80-9,
-.g83-9,
-.g85-9,
-.g90-9,
-.g95-9,
-.g100-9,
-.g5-8,
-.g10-8,
-.g15-8,
-.g16-8,
-.g20-8,
-.g25-8,
-.g30-8,
-.g33-8,
-.g35-8,
-.g40-8,
-.g45-8,
-.g50-8,
-.g55-8,
-.g60-8,
-.g65-8,
-.g66-8,
-.g70-8,
-.g75-8,
-.g80-8,
-.g83-8,
-.g85-8,
-.g90-8,
-.g95-8,
-.g100-8,
-.g5-7,
-.g10-7,
-.g15-7,
-.g16-7,
-.g20-7,
-.g25-7,
-.g30-7,
-.g33-7,
-.g35-7,
-.g40-7,
-.g45-7,
-.g50-7,
-.g55-7,
-.g60-7,
-.g65-7,
-.g66-7,
-.g70-7,
-.g75-7,
-.g80-7,
-.g83-7,
-.g85-7,
-.g90-7,
-.g95-7,
-.g100-7,
-.g5-6,
-.g10-6,
-.g15-6,
-.g16-6,
-.g20-6,
-.g25-6,
-.g30-6,
-.g33-6,
-.g35-6,
-.g40-6,
-.g45-6,
-.g50-6,
-.g55-6,
-.g60-6,
-.g65-6,
-.g66-6,
-.g70-6,
-.g75-6,
-.g80-6,
-.g83-6,
-.g85-6,
-.g90-6,
-.g95-6,
-.g100-6,
-.g5-5,
-.g10-5,
-.g15-5,
-.g16-5,
-.g20-5,
-.g25-5,
-.g30-5,
-.g33-5,
-.g35-5,
-.g40-5,
-.g45-5,
-.g50-5,
-.g55-5,
-.g60-5,
-.g65-5,
-.g66-5,
-.g70-5,
-.g75-5,
-.g80-5,
-.g83-5,
-.g85-5,
-.g90-5,
-.g95-5,
-.g100-5,
-.g5-4,
-.g10-4,
-.g15-4,
-.g16-4,
-.g20-4,
-.g25-4,
-.g30-4,
-.g33-4,
-.g35-4,
-.g40-4,
-.g45-4,
-.g50-4,
-.g55-4,
-.g60-4,
-.g65-4,
-.g66-4,
-.g70-4,
-.g75-4,
-.g80-4,
-.g83-4,
-.g85-4,
-.g90-4,
-.g95-4,
-.g100-4,
-.g5-3,
-.g10-3,
-.g15-3,
-.g16-3,
-.g20-3,
-.g25-3,
-.g30-3,
-.g33-3,
-.g35-3,
-.g40-3,
-.g45-3,
-.g50-3,
-.g55-3,
-.g60-3,
-.g65-3,
-.g66-3,
-.g70-3,
-.g75-3,
-.g80-3,
-.g83-3,
-.g85-3,
-.g90-3,
-.g95-3,
-.g100-3,
-.g5-2,
-.g10-2,
-.g15-2,
-.g16-2,
-.g20-2,
-.g25-2,
-.g30-2,
-.g33-2,
-.g35-2,
-.g40-2,
-.g45-2,
-.g50-2,
-.g55-2,
-.g60-2,
-.g65-2,
-.g66-2,
-.g70-2,
-.g75-2,
-.g80-2,
-.g83-2,
-.g85-2,
-.g90-2,
-.g95-2,
-.g100-2,
-.g5-1,
-.g10-1,
-.g15-1,
-.g16-1,
-.g20-1,
-.g25-1,
-.g30-1,
-.g33-1,
-.g35-1,
-.g40-1,
-.g45-1,
-.g50-1,
-.g55-1,
-.g60-1,
-.g65-1,
-.g66-1,
-.g70-1,
-.g75-1,
-.g80-1,
-.g83-1,
-.g85-1,
-.g90-1,
-.g95-1,
-.g100-1, button,
-input,
-keygen,
-output,
-select,
-option,
-optgroup,
-textarea, .form-group > .form-group .addon, .radio, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check, .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch, .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"], table {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.clearfix:before,
-.row:before, .form-group > .form-group:before, .clearfix:after,
-.row:after, .form-group > .form-group:after {
-  display: table;
-  content: "";
-  line-height: 0; }
-.clearfix:after,
-.row:after, .form-group > .form-group:after {
-  clear: both; }
+input::-moz-focus-inner,
+button::-moz-focus-inner, fieldset {
+  border: 0; }
 
 button,
 input[type="button"],
@@ -539,13 +22,550 @@ keygen,
 output,
 select,
 textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
+  border-radius: 0; }
+
+html,
+body,
+.cont,
+.flex-cont,
+.row, .g5-10,
+.g10-10,
+.g15-10,
+.g16-10,
+.g20-10,
+.g25-10,
+.g30-10,
+.g33-10,
+.g35-10,
+.g40-10,
+.g45-10,
+.g50-10,
+.g55-10,
+.g60-10,
+.g65-10,
+.g66-10,
+.g70-10,
+.g75-10,
+.g80-10,
+.g83-10,
+.g85-10,
+.g90-10,
+.g95-10,
+.g100-10,
+.g5-9,
+.g10-9,
+.g15-9,
+.g16-9,
+.g20-9,
+.g25-9,
+.g30-9,
+.g33-9,
+.g35-9,
+.g40-9,
+.g45-9,
+.g50-9,
+.g55-9,
+.g60-9,
+.g65-9,
+.g66-9,
+.g70-9,
+.g75-9,
+.g80-9,
+.g83-9,
+.g85-9,
+.g90-9,
+.g95-9,
+.g100-9,
+.g5-8,
+.g10-8,
+.g15-8,
+.g16-8,
+.g20-8,
+.g25-8,
+.g30-8,
+.g33-8,
+.g35-8,
+.g40-8,
+.g45-8,
+.g50-8,
+.g55-8,
+.g60-8,
+.g65-8,
+.g66-8,
+.g70-8,
+.g75-8,
+.g80-8,
+.g83-8,
+.g85-8,
+.g90-8,
+.g95-8,
+.g100-8,
+.g5-7,
+.g10-7,
+.g15-7,
+.g16-7,
+.g20-7,
+.g25-7,
+.g30-7,
+.g33-7,
+.g35-7,
+.g40-7,
+.g45-7,
+.g50-7,
+.g55-7,
+.g60-7,
+.g65-7,
+.g66-7,
+.g70-7,
+.g75-7,
+.g80-7,
+.g83-7,
+.g85-7,
+.g90-7,
+.g95-7,
+.g100-7,
+.g5-6,
+.g10-6,
+.g15-6,
+.g16-6,
+.g20-6,
+.g25-6,
+.g30-6,
+.g33-6,
+.g35-6,
+.g40-6,
+.g45-6,
+.g50-6,
+.g55-6,
+.g60-6,
+.g65-6,
+.g66-6,
+.g70-6,
+.g75-6,
+.g80-6,
+.g83-6,
+.g85-6,
+.g90-6,
+.g95-6,
+.g100-6,
+.g5-5,
+.g10-5,
+.g15-5,
+.g16-5,
+.g20-5,
+.g25-5,
+.g30-5,
+.g33-5,
+.g35-5,
+.g40-5,
+.g45-5,
+.g50-5,
+.g55-5,
+.g60-5,
+.g65-5,
+.g66-5,
+.g70-5,
+.g75-5,
+.g80-5,
+.g83-5,
+.g85-5,
+.g90-5,
+.g95-5,
+.g100-5,
+.g5-4,
+.g10-4,
+.g15-4,
+.g16-4,
+.g20-4,
+.g25-4,
+.g30-4,
+.g33-4,
+.g35-4,
+.g40-4,
+.g45-4,
+.g50-4,
+.g55-4,
+.g60-4,
+.g65-4,
+.g66-4,
+.g70-4,
+.g75-4,
+.g80-4,
+.g83-4,
+.g85-4,
+.g90-4,
+.g95-4,
+.g100-4,
+.g5-3,
+.g10-3,
+.g15-3,
+.g16-3,
+.g20-3,
+.g25-3,
+.g30-3,
+.g33-3,
+.g35-3,
+.g40-3,
+.g45-3,
+.g50-3,
+.g55-3,
+.g60-3,
+.g65-3,
+.g66-3,
+.g70-3,
+.g75-3,
+.g80-3,
+.g83-3,
+.g85-3,
+.g90-3,
+.g95-3,
+.g100-3,
+.g5-2,
+.g10-2,
+.g15-2,
+.g16-2,
+.g20-2,
+.g25-2,
+.g30-2,
+.g33-2,
+.g35-2,
+.g40-2,
+.g45-2,
+.g50-2,
+.g55-2,
+.g60-2,
+.g65-2,
+.g66-2,
+.g70-2,
+.g75-2,
+.g80-2,
+.g83-2,
+.g85-2,
+.g90-2,
+.g95-2,
+.g100-2,
+.g5-1,
+.g10-1,
+.g15-1,
+.g16-1,
+.g20-1,
+.g25-1,
+.g30-1,
+.g33-1,
+.g35-1,
+.g40-1,
+.g45-1,
+.g50-1,
+.g55-1,
+.g60-1,
+.g65-1,
+.g66-1,
+.g70-1,
+.g75-1,
+.g80-1,
+.g83-1,
+.g85-1,
+.g90-1,
+.g95-1,
+.g100-1, button,
+input,
+keygen,
+output,
+select,
+option,
+optgroup,
+textarea, .form-group > .form-group .addon, .radio, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check, .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch, .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"], table {
+  box-sizing: border-box; }
+
+dt:before {
+  content: ""; }
+
+dt,
+dd {
+  display: inline; }
+
+dt:before, button,
+input,
+keygen,
+output,
+select,
+option,
+optgroup,
+textarea, .form-group > .form-group .addon, .radio, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check, .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch, .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"], .switch > input[type="checkbox"] + span[aria-hidden="true"]:after {
+  display: block; }
+
+.form-group > .form-group label,
+.form-group > .form-group .label {
+  float: none; }
+
+.g5-10,
+.g10-10,
+.g15-10,
+.g16-10,
+.g20-10,
+.g25-10,
+.g30-10,
+.g33-10,
+.g35-10,
+.g40-10,
+.g45-10,
+.g50-10,
+.g55-10,
+.g60-10,
+.g65-10,
+.g66-10,
+.g70-10,
+.g75-10,
+.g80-10,
+.g83-10,
+.g85-10,
+.g90-10,
+.g95-10,
+.g100-10,
+.g5-9,
+.g10-9,
+.g15-9,
+.g16-9,
+.g20-9,
+.g25-9,
+.g30-9,
+.g33-9,
+.g35-9,
+.g40-9,
+.g45-9,
+.g50-9,
+.g55-9,
+.g60-9,
+.g65-9,
+.g66-9,
+.g70-9,
+.g75-9,
+.g80-9,
+.g83-9,
+.g85-9,
+.g90-9,
+.g95-9,
+.g100-9,
+.g5-8,
+.g10-8,
+.g15-8,
+.g16-8,
+.g20-8,
+.g25-8,
+.g30-8,
+.g33-8,
+.g35-8,
+.g40-8,
+.g45-8,
+.g50-8,
+.g55-8,
+.g60-8,
+.g65-8,
+.g66-8,
+.g70-8,
+.g75-8,
+.g80-8,
+.g83-8,
+.g85-8,
+.g90-8,
+.g95-8,
+.g100-8,
+.g5-7,
+.g10-7,
+.g15-7,
+.g16-7,
+.g20-7,
+.g25-7,
+.g30-7,
+.g33-7,
+.g35-7,
+.g40-7,
+.g45-7,
+.g50-7,
+.g55-7,
+.g60-7,
+.g65-7,
+.g66-7,
+.g70-7,
+.g75-7,
+.g80-7,
+.g83-7,
+.g85-7,
+.g90-7,
+.g95-7,
+.g100-7,
+.g5-6,
+.g10-6,
+.g15-6,
+.g16-6,
+.g20-6,
+.g25-6,
+.g30-6,
+.g33-6,
+.g35-6,
+.g40-6,
+.g45-6,
+.g50-6,
+.g55-6,
+.g60-6,
+.g65-6,
+.g66-6,
+.g70-6,
+.g75-6,
+.g80-6,
+.g83-6,
+.g85-6,
+.g90-6,
+.g95-6,
+.g100-6,
+.g5-5,
+.g10-5,
+.g15-5,
+.g16-5,
+.g20-5,
+.g25-5,
+.g30-5,
+.g33-5,
+.g35-5,
+.g40-5,
+.g45-5,
+.g50-5,
+.g55-5,
+.g60-5,
+.g65-5,
+.g66-5,
+.g70-5,
+.g75-5,
+.g80-5,
+.g83-5,
+.g85-5,
+.g90-5,
+.g95-5,
+.g100-5,
+.g5-4,
+.g10-4,
+.g15-4,
+.g16-4,
+.g20-4,
+.g25-4,
+.g30-4,
+.g33-4,
+.g35-4,
+.g40-4,
+.g45-4,
+.g50-4,
+.g55-4,
+.g60-4,
+.g65-4,
+.g66-4,
+.g70-4,
+.g75-4,
+.g80-4,
+.g83-4,
+.g85-4,
+.g90-4,
+.g95-4,
+.g100-4,
+.g5-3,
+.g10-3,
+.g15-3,
+.g16-3,
+.g20-3,
+.g25-3,
+.g30-3,
+.g33-3,
+.g35-3,
+.g40-3,
+.g45-3,
+.g50-3,
+.g55-3,
+.g60-3,
+.g65-3,
+.g66-3,
+.g70-3,
+.g75-3,
+.g80-3,
+.g83-3,
+.g85-3,
+.g90-3,
+.g95-3,
+.g100-3,
+.g5-2,
+.g10-2,
+.g15-2,
+.g16-2,
+.g20-2,
+.g25-2,
+.g30-2,
+.g33-2,
+.g35-2,
+.g40-2,
+.g45-2,
+.g50-2,
+.g55-2,
+.g60-2,
+.g65-2,
+.g66-2,
+.g70-2,
+.g75-2,
+.g80-2,
+.g83-2,
+.g85-2,
+.g90-2,
+.g95-2,
+.g100-2,
+.g5-1,
+.g10-1,
+.g15-1,
+.g16-1,
+.g20-1,
+.g25-1,
+.g30-1,
+.g33-1,
+.g35-1,
+.g40-1,
+.g45-1,
+.g50-1,
+.g55-1,
+.g60-1,
+.g65-1,
+.g66-1,
+.g70-1,
+.g75-1,
+.g80-1,
+.g83-1,
+.g85-1,
+.g90-1,
+.g95-1,
+.g100-1, .form-group button,
+.form-group input[type="button"],
+.form-group input[type="date"],
+.form-group input[type="datetime-local"],
+.form-group input[type="email"],
+.form-group input[type="file"],
+.form-group input[type="month"],
+.form-group input[type="number"],
+.form-group input[type="password"],
+.form-group input[type="reset"],
+.form-group input[type="search"],
+.form-group input[type="submit"],
+.form-group input[type="tel"],
+.form-group input[type="text"],
+.form-group input[type="url"],
+.form-group input[type="week"],
+.form-group keygen,
+.form-group label,
+.form-group .label,
+.form-group output,
+.form-group select,
+.form-group textarea {
+  float: left; }
+
+.form-group > .form-group .addon.l, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"] {
+  left: 0; }
 
 .cont {
-  margin-left: auto;
-  margin-right: auto; }
+  margin: auto; }
 
 html,
 body, h1,
@@ -602,9 +622,148 @@ details,
 dl,
 ol,
 table,
-ul {
-  margin: 0;
+ul, fieldset {
+  margin: 0; }
+
+.radio > input:focus,
+.check > input:focus,
+.switch > input:focus {
+  outline: none; }
+
+.responsive {
+  overflow: scroll; }
+
+html,
+body, h1,
+h2,
+h3,
+h4,
+h5,
+h6, a,
+abbr,
+address,
+blockquote,
+button,
+caption,
+cite,
+code,
+col,
+datalist,
+dd,
+del,
+dfn,
+dialog,
+dt,
+em,
+figcaption,
+i,
+input,
+ins,
+label,
+legend,
+li,
+keygen,
+mark,
+menu,
+menuitem,
+noscript,
+output,
+p,
+pre,
+q,
+rp,
+s,
+select,
+samp,
+span,
+strong,
+summary,
+td,
+textarea,
+th,
+time,
+u,
+var,
+details,
+dl,
+ol,
+table,
+ul, input::-moz-focus-inner,
+button::-moz-focus-inner {
   padding: 0; }
+
+.form-group > .form-group .addon, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"] {
+  position: absolute; }
+
+.responsive, .form-group > .form-group, .radio {
+  position: relative; }
+
+.form-group > .form-group .addon.r {
+  right: 0; }
+
+.form-group > .form-group .addon {
+  text-align: center; }
+
+.radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"] {
+  top: 0; }
+
+html,
+body,
+.flex-cont, .form-group button,
+.form-group input[type="button"],
+.form-group input[type="date"],
+.form-group input[type="datetime-local"],
+.form-group input[type="email"],
+.form-group input[type="file"],
+.form-group input[type="month"],
+.form-group input[type="number"],
+.form-group input[type="password"],
+.form-group input[type="reset"],
+.form-group input[type="search"],
+.form-group input[type="submit"],
+.form-group input[type="tel"],
+.form-group input[type="text"],
+.form-group input[type="url"],
+.form-group input[type="week"],
+.form-group keygen,
+.form-group output,
+.form-group select,
+.form-group textarea {
+  width: 100%; }
+
+.clearfix:before,
+.row:before, .form-group > .form-group:before, .clearfix:after,
+.row:after, .form-group > .form-group:after {
+  display: table;
+  content: "";
+  line-height: 0; }
+.clearfix:after,
+.row:after, .form-group > .form-group:after {
+  clear: both; }
+
+button,
+input[type="button"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="reset"],
+input[type="search"],
+input[type="submit"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="week"],
+keygen,
+output,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 .m1 {
   margin: 0.25rem; }
@@ -1368,43 +1527,11 @@ ul {
     padding-right: 0.625rem; } }
 /*
 
-!!NOTE: Include the polyfill script rem.js to ensure support for ie10 and ie8
+!!NOTE: Use polyfill script rem.js to ensure support for ie10 and ie8
 
 */
-.c1 {
-  background-color: #855bc3; }
-
-.c2 {
-  background-color: #629fe6; }
-
-.c3 {
-  background-color: #5fe093; }
-
-.c1-2 {
-  background-color: #936eca; }
-
-.c2-2 {
-  background-color: #78acea; }
-
-.c3-2 {
-  background-color: #74e4a1; }
-
-.c1-3 {
-  background-color: #7748bc; }
-
-.c2-3 {
-  background-color: #4c92e2; }
-
-.c3-3 {
-  background-color: #4adc85; }
-
 html {
   font-size: 1rem; }
-
-html,
-body,
-.flex-cont {
-  width: 100%; }
 
 body {
   min-width: 300px; }
@@ -1472,248 +1599,6 @@ body {
 @media screen and (min-width: 1920px) {
   .cont {
     width: 1820px; } }
-.g5-10,
-.g10-10,
-.g15-10,
-.g16-10,
-.g20-10,
-.g25-10,
-.g30-10,
-.g33-10,
-.g35-10,
-.g40-10,
-.g45-10,
-.g50-10,
-.g55-10,
-.g60-10,
-.g65-10,
-.g66-10,
-.g70-10,
-.g75-10,
-.g80-10,
-.g83-10,
-.g85-10,
-.g90-10,
-.g95-10,
-.g100-10,
-.g5-9,
-.g10-9,
-.g15-9,
-.g16-9,
-.g20-9,
-.g25-9,
-.g30-9,
-.g33-9,
-.g35-9,
-.g40-9,
-.g45-9,
-.g50-9,
-.g55-9,
-.g60-9,
-.g65-9,
-.g66-9,
-.g70-9,
-.g75-9,
-.g80-9,
-.g83-9,
-.g85-9,
-.g90-9,
-.g95-9,
-.g100-9,
-.g5-8,
-.g10-8,
-.g15-8,
-.g16-8,
-.g20-8,
-.g25-8,
-.g30-8,
-.g33-8,
-.g35-8,
-.g40-8,
-.g45-8,
-.g50-8,
-.g55-8,
-.g60-8,
-.g65-8,
-.g66-8,
-.g70-8,
-.g75-8,
-.g80-8,
-.g83-8,
-.g85-8,
-.g90-8,
-.g95-8,
-.g100-8,
-.g5-7,
-.g10-7,
-.g15-7,
-.g16-7,
-.g20-7,
-.g25-7,
-.g30-7,
-.g33-7,
-.g35-7,
-.g40-7,
-.g45-7,
-.g50-7,
-.g55-7,
-.g60-7,
-.g65-7,
-.g66-7,
-.g70-7,
-.g75-7,
-.g80-7,
-.g83-7,
-.g85-7,
-.g90-7,
-.g95-7,
-.g100-7,
-.g5-6,
-.g10-6,
-.g15-6,
-.g16-6,
-.g20-6,
-.g25-6,
-.g30-6,
-.g33-6,
-.g35-6,
-.g40-6,
-.g45-6,
-.g50-6,
-.g55-6,
-.g60-6,
-.g65-6,
-.g66-6,
-.g70-6,
-.g75-6,
-.g80-6,
-.g83-6,
-.g85-6,
-.g90-6,
-.g95-6,
-.g100-6,
-.g5-5,
-.g10-5,
-.g15-5,
-.g16-5,
-.g20-5,
-.g25-5,
-.g30-5,
-.g33-5,
-.g35-5,
-.g40-5,
-.g45-5,
-.g50-5,
-.g55-5,
-.g60-5,
-.g65-5,
-.g66-5,
-.g70-5,
-.g75-5,
-.g80-5,
-.g83-5,
-.g85-5,
-.g90-5,
-.g95-5,
-.g100-5,
-.g5-4,
-.g10-4,
-.g15-4,
-.g16-4,
-.g20-4,
-.g25-4,
-.g30-4,
-.g33-4,
-.g35-4,
-.g40-4,
-.g45-4,
-.g50-4,
-.g55-4,
-.g60-4,
-.g65-4,
-.g66-4,
-.g70-4,
-.g75-4,
-.g80-4,
-.g83-4,
-.g85-4,
-.g90-4,
-.g95-4,
-.g100-4,
-.g5-3,
-.g10-3,
-.g15-3,
-.g16-3,
-.g20-3,
-.g25-3,
-.g30-3,
-.g33-3,
-.g35-3,
-.g40-3,
-.g45-3,
-.g50-3,
-.g55-3,
-.g60-3,
-.g65-3,
-.g66-3,
-.g70-3,
-.g75-3,
-.g80-3,
-.g83-3,
-.g85-3,
-.g90-3,
-.g95-3,
-.g100-3,
-.g5-2,
-.g10-2,
-.g15-2,
-.g16-2,
-.g20-2,
-.g25-2,
-.g30-2,
-.g33-2,
-.g35-2,
-.g40-2,
-.g45-2,
-.g50-2,
-.g55-2,
-.g60-2,
-.g65-2,
-.g66-2,
-.g70-2,
-.g75-2,
-.g80-2,
-.g83-2,
-.g85-2,
-.g90-2,
-.g95-2,
-.g100-2,
-.g5-1,
-.g10-1,
-.g15-1,
-.g16-1,
-.g20-1,
-.g25-1,
-.g30-1,
-.g33-1,
-.g35-1,
-.g40-1,
-.g45-1,
-.g50-1,
-.g55-1,
-.g60-1,
-.g65-1,
-.g66-1,
-.g70-1,
-.g75-1,
-.g80-1,
-.g83-1,
-.g85-1,
-.g90-1,
-.g95-1,
-.g100-1 {
-  float: left; }
-
 @media screen and (max-width: 991px) {
   .g5-1 {
     width: 5%; }
@@ -3158,11 +3043,7 @@ body {
   .s95-10 {
     margin-left: 95%; } }
 .responsive {
-  border: 0.1rem solid #ccc;
-  max-width: 100%;
-  overflow: scroll;
-  -ms-overflow-style: none;
-  position: relative; }
+  max-width: 100%; }
 
 body {
   font-family: "serif"; }
@@ -3348,14 +3229,6 @@ ol,
 ul {
   padding-left: 1.1em; }
 
-dt,
-dd {
-  display: inline; }
-
-dt:before {
-  content: "";
-  display: block; }
-
 .col2,
 .col3,
 .col4,
@@ -3502,8 +3375,7 @@ keygen,
 output,
 select,
 textarea {
-  border: 0.05rem solid;
-  border-radius: 0; }
+  border: 0.05rem solid; }
 
 button,
 input,
@@ -3513,223 +3385,141 @@ select,
 option,
 optgroup,
 textarea {
-  display: block;
   font-size: 1em;
   line-height: 1.2em;
   padding: 0.5rem 0.5rem; }
 
-input::-moz-focus-inner,
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
 fieldset {
-  border: 0;
-  margin: 0;
   padding: 1rem 0; }
 
-.form-group button,
-.form-group input[type="button"],
-.form-group input[type="date"],
-.form-group input[type="datetime-local"],
-.form-group input[type="email"],
-.form-group input[type="file"],
-.form-group input[type="month"],
-.form-group input[type="number"],
-.form-group input[type="password"],
-.form-group input[type="reset"],
-.form-group input[type="search"],
-.form-group input[type="submit"],
-.form-group input[type="tel"],
-.form-group input[type="text"],
-.form-group input[type="url"],
-.form-group input[type="week"],
-.form-group keygen,
-.form-group label,
-.form-group .label,
-.form-group output,
-.form-group select,
-.form-group textarea {
-  float: left; }
-.form-group button,
-.form-group input[type="button"],
-.form-group input[type="date"],
-.form-group input[type="datetime-local"],
-.form-group input[type="email"],
-.form-group input[type="file"],
-.form-group input[type="month"],
-.form-group input[type="number"],
-.form-group input[type="password"],
-.form-group input[type="reset"],
-.form-group input[type="search"],
-.form-group input[type="submit"],
-.form-group input[type="tel"],
-.form-group input[type="text"],
-.form-group input[type="url"],
-.form-group input[type="week"],
-.form-group keygen,
-.form-group output,
-.form-group select,
-.form-group textarea {
-  width: 100%; }
-.form-group > .form-group {
-  position: relative; }
-  .form-group > .form-group .addon {
-    border: 0.05rem solid;
-    display: block;
-    padding: 0.5rem 0.25rem;
-    position: absolute;
-    text-align: center; }
-    .form-group > .form-group .addon.r {
-      right: 0; }
-    .form-group > .form-group .addon.l {
-      left: 0; }
-    .form-group > .form-group .addon.transparent {
-      pointer-events: none; }
-  .form-group > .form-group label,
-  .form-group > .form-group .label {
-    float: none; }
-  .form-group > .form-group .w1 {
-    width: 2rem; }
-  .form-group > .form-group .ipl1 {
-    padding-left: 2.1875rem; }
-  .form-group > .form-group .ipr1 {
-    padding-right: 2.1875rem; }
-  .form-group > .form-group .iml1 {
-    margin-left: 2rem; }
-  .form-group > .form-group .imr1 {
-    margin-right: 2rem; }
-  .form-group > .form-group .w2 {
-    width: 2.75rem; }
-  .form-group > .form-group .ipl2 {
-    padding-left: 2.9375rem; }
-  .form-group > .form-group .ipr2 {
-    padding-right: 2.9375rem; }
-  .form-group > .form-group .iml2 {
-    margin-left: 2.75rem; }
-  .form-group > .form-group .imr2 {
-    margin-right: 2.75rem; }
-  .form-group > .form-group .w3 {
-    width: 3.5rem; }
-  .form-group > .form-group .ipl3 {
-    padding-left: 3.6875rem; }
-  .form-group > .form-group .ipr3 {
-    padding-right: 3.6875rem; }
-  .form-group > .form-group .iml3 {
-    margin-left: 3.5rem; }
-  .form-group > .form-group .imr3 {
-    margin-right: 3.5rem; }
-  .form-group > .form-group .w4 {
-    width: 4.25rem; }
-  .form-group > .form-group .ipl4 {
-    padding-left: 4.4375rem; }
-  .form-group > .form-group .ipr4 {
-    padding-right: 4.4375rem; }
-  .form-group > .form-group .iml4 {
-    margin-left: 4.25rem; }
-  .form-group > .form-group .imr4 {
-    margin-right: 4.25rem; }
-  .form-group > .form-group .w5 {
-    width: 5rem; }
-  .form-group > .form-group .ipl5 {
-    padding-left: 5.1875rem; }
-  .form-group > .form-group .ipr5 {
-    padding-right: 5.1875rem; }
-  .form-group > .form-group .iml5 {
-    margin-left: 5rem; }
-  .form-group > .form-group .imr5 {
-    margin-right: 5rem; }
-  .form-group > .form-group .w6 {
-    width: 5.75rem; }
-  .form-group > .form-group .ipl6 {
-    padding-left: 5.9375rem; }
-  .form-group > .form-group .ipr6 {
-    padding-right: 5.9375rem; }
-  .form-group > .form-group .iml6 {
-    margin-left: 5.75rem; }
-  .form-group > .form-group .imr6 {
-    margin-right: 5.75rem; }
-  .form-group > .form-group .w7 {
-    width: 6.5rem; }
-  .form-group > .form-group .ipl7 {
-    padding-left: 6.6875rem; }
-  .form-group > .form-group .ipr7 {
-    padding-right: 6.6875rem; }
-  .form-group > .form-group .iml7 {
-    margin-left: 6.5rem; }
-  .form-group > .form-group .imr7 {
-    margin-right: 6.5rem; }
-  .form-group > .form-group .w8 {
-    width: 7.25rem; }
-  .form-group > .form-group .ipl8 {
-    padding-left: 7.4375rem; }
-  .form-group > .form-group .ipr8 {
-    padding-right: 7.4375rem; }
-  .form-group > .form-group .iml8 {
-    margin-left: 7.25rem; }
-  .form-group > .form-group .imr8 {
-    margin-right: 7.25rem; }
-  .form-group > .form-group .w9 {
-    width: 8rem; }
-  .form-group > .form-group .ipl9 {
-    padding-left: 8.1875rem; }
-  .form-group > .form-group .ipr9 {
-    padding-right: 8.1875rem; }
-  .form-group > .form-group .iml9 {
-    margin-left: 8rem; }
-  .form-group > .form-group .imr9 {
-    margin-right: 8rem; }
-  .form-group > .form-group .w10 {
-    width: 8.75rem; }
-  .form-group > .form-group .ipl10 {
-    padding-left: 8.9375rem; }
-  .form-group > .form-group .ipr10 {
-    padding-right: 8.9375rem; }
-  .form-group > .form-group .iml10 {
-    margin-left: 8.75rem; }
-  .form-group > .form-group .imr10 {
-    margin-right: 8.75rem; }
+.form-group > .form-group .addon {
+  border: 0.05rem solid;
+  padding: 0.5rem 0.25rem; }
+  .form-group > .form-group .addon.transparent {
+    pointer-events: none; }
+.form-group > .form-group .w1 {
+  width: 2rem; }
+.form-group > .form-group .ipl1 {
+  padding-left: 2.1875rem; }
+.form-group > .form-group .ipr1 {
+  padding-right: 2.1875rem; }
+.form-group > .form-group .iml1 {
+  margin-left: 2rem; }
+.form-group > .form-group .imr1 {
+  margin-right: 2rem; }
+.form-group > .form-group .w2 {
+  width: 2.75rem; }
+.form-group > .form-group .ipl2 {
+  padding-left: 2.9375rem; }
+.form-group > .form-group .ipr2 {
+  padding-right: 2.9375rem; }
+.form-group > .form-group .iml2 {
+  margin-left: 2.75rem; }
+.form-group > .form-group .imr2 {
+  margin-right: 2.75rem; }
+.form-group > .form-group .w3 {
+  width: 3.5rem; }
+.form-group > .form-group .ipl3 {
+  padding-left: 3.6875rem; }
+.form-group > .form-group .ipr3 {
+  padding-right: 3.6875rem; }
+.form-group > .form-group .iml3 {
+  margin-left: 3.5rem; }
+.form-group > .form-group .imr3 {
+  margin-right: 3.5rem; }
+.form-group > .form-group .w4 {
+  width: 4.25rem; }
+.form-group > .form-group .ipl4 {
+  padding-left: 4.4375rem; }
+.form-group > .form-group .ipr4 {
+  padding-right: 4.4375rem; }
+.form-group > .form-group .iml4 {
+  margin-left: 4.25rem; }
+.form-group > .form-group .imr4 {
+  margin-right: 4.25rem; }
+.form-group > .form-group .w5 {
+  width: 5rem; }
+.form-group > .form-group .ipl5 {
+  padding-left: 5.1875rem; }
+.form-group > .form-group .ipr5 {
+  padding-right: 5.1875rem; }
+.form-group > .form-group .iml5 {
+  margin-left: 5rem; }
+.form-group > .form-group .imr5 {
+  margin-right: 5rem; }
+.form-group > .form-group .w6 {
+  width: 5.75rem; }
+.form-group > .form-group .ipl6 {
+  padding-left: 5.9375rem; }
+.form-group > .form-group .ipr6 {
+  padding-right: 5.9375rem; }
+.form-group > .form-group .iml6 {
+  margin-left: 5.75rem; }
+.form-group > .form-group .imr6 {
+  margin-right: 5.75rem; }
+.form-group > .form-group .w7 {
+  width: 6.5rem; }
+.form-group > .form-group .ipl7 {
+  padding-left: 6.6875rem; }
+.form-group > .form-group .ipr7 {
+  padding-right: 6.6875rem; }
+.form-group > .form-group .iml7 {
+  margin-left: 6.5rem; }
+.form-group > .form-group .imr7 {
+  margin-right: 6.5rem; }
+.form-group > .form-group .w8 {
+  width: 7.25rem; }
+.form-group > .form-group .ipl8 {
+  padding-left: 7.4375rem; }
+.form-group > .form-group .ipr8 {
+  padding-right: 7.4375rem; }
+.form-group > .form-group .iml8 {
+  margin-left: 7.25rem; }
+.form-group > .form-group .imr8 {
+  margin-right: 7.25rem; }
+.form-group > .form-group .w9 {
+  width: 8rem; }
+.form-group > .form-group .ipl9 {
+  padding-left: 8.1875rem; }
+.form-group > .form-group .ipr9 {
+  padding-right: 8.1875rem; }
+.form-group > .form-group .iml9 {
+  margin-left: 8rem; }
+.form-group > .form-group .imr9 {
+  margin-right: 8rem; }
+.form-group > .form-group .w10 {
+  width: 8.75rem; }
+.form-group > .form-group .ipl10 {
+  padding-left: 8.9375rem; }
+.form-group > .form-group .ipr10 {
+  padding-right: 8.9375rem; }
+.form-group > .form-group .iml10 {
+  margin-left: 8.75rem; }
+.form-group > .form-group .imr10 {
+  margin-right: 8.75rem; }
 
-.radio > input:focus,
-.check > input:focus,
-.switch > input:focus {
-  outline: none; }
-
-.radio {
-  position: relative; }
-  .radio, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"] {
-    display: block; }
-  .radio, .radio > input[type="radio"] + span[aria-hidden="true"] {
-    height: 1rem;
-    width: 1rem; }
-  .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"] {
-    left: 0;
-    position: absolute;
-    top: 0; }
-  .radio > input[type="radio"] {
-    height: 0.8rem;
-    margin: 0.1rem;
-    width: 0.8rem; }
-    .radio > input[type="radio"] + span[aria-hidden="true"] {
-      background-color: #fdfbfb;
-      border: 0.1rem solid #ebebeb;
-      border-radius: 0.5rem;
-      pointer-events: none; }
-    .radio > input[type="radio"]:focus + span[aria-hidden="true"] {
-      border: 0.2rem solid #98b5e5; }
-    .radio > input[type="radio"]:checked + span[aria-hidden="true"] {
-      border: 0.3rem solid #5084d8; }
+.radio, .radio > input[type="radio"] + span[aria-hidden="true"] {
+  height: 1rem;
+  width: 1rem; }
+.radio > input[type="radio"] {
+  height: 0.8rem;
+  margin: 0.1rem;
+  width: 0.8rem; }
+  .radio > input[type="radio"] + span[aria-hidden="true"] {
+    background-color: #fdfbfb;
+    border: 0.1rem solid #ebebeb;
+    border-radius: 0.5rem;
+    pointer-events: none; }
+  .radio > input[type="radio"]:focus + span[aria-hidden="true"] {
+    border: 0.2rem solid #98b5e5; }
+  .radio > input[type="radio"]:checked + span[aria-hidden="true"] {
+    border: 0.3rem solid #5084d8; }
 
 .check {
   position: relative; }
   .check, .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"] {
-    display: block;
     height: 1rem;
     width: 1rem; }
-  .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"] {
-    left: 0;
-    position: absolute;
-    top: 0; }
   .check > input[type="checkbox"] + span[aria-hidden="true"] {
     background-color: #fdfbfb;
     border: 0.1rem solid #ebebeb;
@@ -3743,13 +3533,8 @@ fieldset {
 .switch {
   position: relative; }
   .switch, .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"] {
-    display: block;
     height: 1.4rem;
     width: 2.2rem; }
-  .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"] {
-    left: 0;
-    position: absolute;
-    top: 0; }
   .switch > input[type="checkbox"] {
     margin-top: -0.1rem; }
     .switch > input[type="checkbox"] + span[aria-hidden="true"] {
@@ -3767,7 +3552,6 @@ fieldset {
         background-color: #dddddd;
         border-radius: 100%;
         content: "";
-        display: block;
         height: 1rem;
         margin: 0.1rem;
         -webkit-transition: margin-left 0.2s ease-in-out;
