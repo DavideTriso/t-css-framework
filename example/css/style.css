@@ -277,14 +277,14 @@ optgroup,
 textarea, .form-group > .form-group .addon, .radio, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check, .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch, .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"], table {
   box-sizing: border-box; }
 
-dt:before {
+.txt dt:before {
   content: ""; }
 
-dt,
-dd {
+.txt dt,
+.txt dd {
   display: inline; }
 
-dt:before, button,
+.txt dt:before, button,
 input,
 keygen,
 output,
@@ -568,61 +568,61 @@ textarea, .form-group > .form-group .addon, .radio, .radio > input[type="radio"]
   margin: auto; }
 
 html,
-body, h1,
-h2,
-h3,
-h4,
-h5,
-h6, a,
-abbr,
-address,
-blockquote,
-button,
-caption,
-cite,
-code,
-col,
-datalist,
-dd,
-del,
-dfn,
-dialog,
-dt,
-em,
-figcaption,
-i,
-input,
-ins,
-label,
-legend,
-li,
-keygen,
-mark,
-menu,
-menuitem,
-noscript,
-output,
-p,
-pre,
-q,
-rp,
-s,
-select,
-samp,
-span,
-strong,
-summary,
-td,
-textarea,
-th,
-time,
-u,
-var,
-details,
-dl,
-ol,
-table,
-ul, fieldset {
+body, .txt h1,
+.txt h2,
+.txt h3,
+.txt h4,
+.txt h5,
+.txt h6, .txt a,
+.txt abbr,
+.txt address,
+.txt blockquote,
+.txt button,
+.txt caption,
+.txt cite,
+.txt code,
+.txt col,
+.txt datalist,
+.txt dd,
+.txt del,
+.txt dfn,
+.txt dialog,
+.txt dt,
+.txt em,
+.txt figcaption,
+.txt i,
+.txt input,
+.txt ins,
+.txt label,
+.txt legend,
+.txt li,
+.txt keygen,
+.txt mark,
+.txt menu,
+.txt menuitem,
+.txt noscript,
+.txt output,
+.txt p,
+.txt pre,
+.txt q,
+.txt rp,
+.txt s,
+.txt select,
+.txt samp,
+.txt span,
+.txt strong,
+.txt summary,
+.txt td,
+.txt textarea,
+.txt th,
+.txt time,
+.txt u,
+.txt var,
+.txt details,
+.txt dl,
+.txt ol,
+.txt table,
+.txt ul, fieldset {
   margin: 0; }
 
 .radio > input:focus,
@@ -634,61 +634,61 @@ ul, fieldset {
   overflow: scroll; }
 
 html,
-body, h1,
-h2,
-h3,
-h4,
-h5,
-h6, a,
-abbr,
-address,
-blockquote,
-button,
-caption,
-cite,
-code,
-col,
-datalist,
-dd,
-del,
-dfn,
-dialog,
-dt,
-em,
-figcaption,
-i,
-input,
-ins,
-label,
-legend,
-li,
-keygen,
-mark,
-menu,
-menuitem,
-noscript,
-output,
-p,
-pre,
-q,
-rp,
-s,
-select,
-samp,
-span,
-strong,
-summary,
-td,
-textarea,
-th,
-time,
-u,
-var,
-details,
-dl,
-ol,
-table,
-ul, input::-moz-focus-inner,
+body, .txt h1,
+.txt h2,
+.txt h3,
+.txt h4,
+.txt h5,
+.txt h6, .txt a,
+.txt abbr,
+.txt address,
+.txt blockquote,
+.txt button,
+.txt caption,
+.txt cite,
+.txt code,
+.txt col,
+.txt datalist,
+.txt dd,
+.txt del,
+.txt dfn,
+.txt dialog,
+.txt dt,
+.txt em,
+.txt figcaption,
+.txt i,
+.txt input,
+.txt ins,
+.txt label,
+.txt legend,
+.txt li,
+.txt keygen,
+.txt mark,
+.txt menu,
+.txt menuitem,
+.txt noscript,
+.txt output,
+.txt p,
+.txt pre,
+.txt q,
+.txt rp,
+.txt s,
+.txt select,
+.txt samp,
+.txt span,
+.txt strong,
+.txt summary,
+.txt td,
+.txt textarea,
+.txt th,
+.txt time,
+.txt u,
+.txt var,
+.txt details,
+.txt dl,
+.txt ol,
+.txt table,
+.txt ul, input::-moz-focus-inner,
 button::-moz-focus-inner {
   padding: 0; }
 
@@ -780,6 +780,21 @@ textarea {
 .m5 {
   margin: 1.25rem; }
 
+.m6 {
+  margin: 1.5rem; }
+
+.m7 {
+  margin: 1.75rem; }
+
+.m8 {
+  margin: 2rem; }
+
+.m9 {
+  margin: 2.25rem; }
+
+.m10 {
+  margin: 2.5rem; }
+
 .mlr1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem; }
@@ -799,6 +814,26 @@ textarea {
 .mlr5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem; }
+
+.mlr6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem; }
+
+.mlr7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem; }
+
+.mlr8 {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.mlr9 {
+  margin-left: 2.25rem;
+  margin-right: 2.25rem; }
+
+.mlr10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem; }
 
 .mtb1 {
   margin-bottom: 0.25rem;
@@ -820,6 +855,26 @@ textarea {
   margin-bottom: 1.25rem;
   margin-top: 1.25rem; }
 
+.mtb6 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem; }
+
+.mtb7 {
+  margin-bottom: 1.75rem;
+  margin-top: 1.75rem; }
+
+.mtb8 {
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+
+.mtb9 {
+  margin-bottom: 2.25rem;
+  margin-top: 2.25rem; }
+
+.mtb10 {
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem; }
+
 .mt1 {
   margin-top: 0.25rem; }
 
@@ -834,6 +889,21 @@ textarea {
 
 .mt5 {
   margin-top: 1.25rem; }
+
+.mt6 {
+  margin-top: 1.5rem; }
+
+.mt7 {
+  margin-top: 1.75rem; }
+
+.mt8 {
+  margin-top: 2rem; }
+
+.mt9 {
+  margin-top: 2.25rem; }
+
+.mt10 {
+  margin-top: 2.5rem; }
 
 .mb1 {
   margin-bottom: 0.25rem; }
@@ -850,6 +920,21 @@ textarea {
 .mb5 {
   margin-bottom: 1.25rem; }
 
+.mb6 {
+  margin-bottom: 1.5rem; }
+
+.mb7 {
+  margin-bottom: 1.75rem; }
+
+.mb8 {
+  margin-bottom: 2rem; }
+
+.mb9 {
+  margin-bottom: 2.25rem; }
+
+.mb10 {
+  margin-bottom: 2.5rem; }
+
 .ml1 {
   margin-left: 0.25rem; }
 
@@ -864,6 +949,21 @@ textarea {
 
 .ml5 {
   margin-left: 1.25rem; }
+
+.ml6 {
+  margin-left: 1.5rem; }
+
+.ml7 {
+  margin-left: 1.75rem; }
+
+.ml8 {
+  margin-left: 2rem; }
+
+.ml9 {
+  margin-left: 2.25rem; }
+
+.ml10 {
+  margin-left: 2.5rem; }
 
 .mr1 {
   margin-right: 0.25rem; }
@@ -880,6 +980,21 @@ textarea {
 .mr5 {
   margin-right: 1.25rem; }
 
+.mr6 {
+  margin-right: 1.5rem; }
+
+.mr7 {
+  margin-right: 1.75rem; }
+
+.mr8 {
+  margin-right: 2rem; }
+
+.mr9 {
+  margin-right: 2.25rem; }
+
+.mr10 {
+  margin-right: 2.5rem; }
+
 .p1 {
   padding: 0.25rem; }
 
@@ -894,6 +1009,21 @@ textarea {
 
 .p5 {
   padding: 1.25rem; }
+
+.p6 {
+  padding: 1.5rem; }
+
+.p7 {
+  padding: 1.75rem; }
+
+.p8 {
+  padding: 2rem; }
+
+.p9 {
+  padding: 2.25rem; }
+
+.p10 {
+  padding: 2.5rem; }
 
 .plr1 {
   padding-left: 0.25rem;
@@ -915,6 +1045,26 @@ textarea {
   padding-left: 1.25rem;
   padding-right: 1.25rem; }
 
+.plr6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
+.plr7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem; }
+
+.plr8 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.plr9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem; }
+
+.plr10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem; }
+
 .ptb1 {
   padding-bottom: 0.25rem;
   padding-top: 0.25rem; }
@@ -935,6 +1085,26 @@ textarea {
   padding-bottom: 1.25rem;
   padding-top: 1.25rem; }
 
+.ptb6 {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem; }
+
+.ptb7 {
+  padding-bottom: 1.75rem;
+  padding-top: 1.75rem; }
+
+.ptb8 {
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
+
+.ptb9 {
+  padding-bottom: 2.25rem;
+  padding-top: 2.25rem; }
+
+.ptb10 {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem; }
+
 .pt1 {
   padding-top: 0.25rem; }
 
@@ -949,6 +1119,21 @@ textarea {
 
 .pt5 {
   padding-top: 1.25rem; }
+
+.pt6 {
+  padding-top: 1.5rem; }
+
+.pt7 {
+  padding-top: 1.75rem; }
+
+.pt8 {
+  padding-top: 2rem; }
+
+.pt9 {
+  padding-top: 2.25rem; }
+
+.pt10 {
+  padding-top: 2.5rem; }
 
 .pb1 {
   padding-bottom: 0.25rem; }
@@ -965,6 +1150,21 @@ textarea {
 .pb5 {
   padding-bottom: 1.25rem; }
 
+.pb6 {
+  padding-bottom: 1.5rem; }
+
+.pb7 {
+  padding-bottom: 1.75rem; }
+
+.pb8 {
+  padding-bottom: 2rem; }
+
+.pb9 {
+  padding-bottom: 2.25rem; }
+
+.pb10 {
+  padding-bottom: 2.5rem; }
+
 .pl1 {
   padding-left: 0.25rem; }
 
@@ -979,6 +1179,21 @@ textarea {
 
 .pl5 {
   padding-left: 1.25rem; }
+
+.pl6 {
+  padding-left: 1.5rem; }
+
+.pl7 {
+  padding-left: 1.75rem; }
+
+.pl8 {
+  padding-left: 2rem; }
+
+.pl9 {
+  padding-left: 2.25rem; }
+
+.pl10 {
+  padding-left: 2.5rem; }
 
 .pr1 {
   padding-right: 0.25rem; }
@@ -995,6 +1210,21 @@ textarea {
 .pr5 {
   padding-right: 1.25rem; }
 
+.pr6 {
+  padding-right: 1.5rem; }
+
+.pr7 {
+  padding-right: 1.75rem; }
+
+.pr8 {
+  padding-right: 2rem; }
+
+.pr9 {
+  padding-right: 2.25rem; }
+
+.pr10 {
+  padding-right: 2.5rem; }
+
 @media screen and (max-width: 1023px) {
   .m1 {
     margin: 0.16667rem; }
@@ -1010,6 +1240,21 @@ textarea {
 
   .m5 {
     margin: 0.83333rem; }
+
+  .m6 {
+    margin: 1rem; }
+
+  .m7 {
+    margin: 1.16667rem; }
+
+  .m8 {
+    margin: 1.33333rem; }
+
+  .m9 {
+    margin: 1.5rem; }
+
+  .m10 {
+    margin: 1.66667rem; }
 
   .mlr1 {
     margin-left: 0.16667rem;
@@ -1031,6 +1276,26 @@ textarea {
     margin-left: 0.83333rem;
     margin-right: 0.83333rem; }
 
+  .mlr6 {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+
+  .mlr7 {
+    margin-left: 1.16667rem;
+    margin-right: 1.16667rem; }
+
+  .mlr8 {
+    margin-left: 1.33333rem;
+    margin-right: 1.33333rem; }
+
+  .mlr9 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; }
+
+  .mlr10 {
+    margin-left: 1.66667rem;
+    margin-right: 1.66667rem; }
+
   .mtb1 {
     margin-bottom: 0.16667rem;
     margin-top: 0.16667rem; }
@@ -1051,6 +1316,26 @@ textarea {
     margin-bottom: 0.83333rem;
     margin-top: 0.83333rem; }
 
+  .mtb6 {
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+
+  .mtb7 {
+    margin-bottom: 1.16667rem;
+    margin-top: 1.16667rem; }
+
+  .mtb8 {
+    margin-bottom: 1.33333rem;
+    margin-top: 1.33333rem; }
+
+  .mtb9 {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem; }
+
+  .mtb10 {
+    margin-bottom: 1.66667rem;
+    margin-top: 1.66667rem; }
+
   .mt1 {
     margin-top: 0.16667rem; }
 
@@ -1065,6 +1350,21 @@ textarea {
 
   .mt5 {
     margin-top: 0.83333rem; }
+
+  .mt6 {
+    margin-top: 1rem; }
+
+  .mt7 {
+    margin-top: 1.16667rem; }
+
+  .mt8 {
+    margin-top: 1.33333rem; }
+
+  .mt9 {
+    margin-top: 1.5rem; }
+
+  .mt10 {
+    margin-top: 1.66667rem; }
 
   .mb1 {
     margin-bottom: 0.16667rem; }
@@ -1081,6 +1381,21 @@ textarea {
   .mb5 {
     margin-bottom: 0.83333rem; }
 
+  .mb6 {
+    margin-bottom: 1rem; }
+
+  .mb7 {
+    margin-bottom: 1.16667rem; }
+
+  .mb8 {
+    margin-bottom: 1.33333rem; }
+
+  .mb9 {
+    margin-bottom: 1.5rem; }
+
+  .mb10 {
+    margin-bottom: 1.66667rem; }
+
   .ml1 {
     margin-left: 0.16667rem; }
 
@@ -1096,6 +1411,21 @@ textarea {
   .ml5 {
     margin-left: 0.83333rem; }
 
+  .ml6 {
+    margin-left: 1rem; }
+
+  .ml7 {
+    margin-left: 1.16667rem; }
+
+  .ml8 {
+    margin-left: 1.33333rem; }
+
+  .ml9 {
+    margin-left: 1.5rem; }
+
+  .ml10 {
+    margin-left: 1.66667rem; }
+
   .mr1 {
     margin-right: 0.16667rem; }
 
@@ -1110,6 +1440,21 @@ textarea {
 
   .mr5 {
     margin-right: 0.83333rem; }
+
+  .mr6 {
+    margin-right: 1rem; }
+
+  .mr7 {
+    margin-right: 1.16667rem; }
+
+  .mr8 {
+    margin-right: 1.33333rem; }
+
+  .mr9 {
+    margin-right: 1.5rem; }
+
+  .mr10 {
+    margin-right: 1.66667rem; }
 
   .p1.tabletP,
   .tablet {
@@ -1130,6 +1475,26 @@ textarea {
   .p5.tabletP,
   .tablet {
     padding: 0.83333rem; }
+
+  .p6.tabletP,
+  .tablet {
+    padding: 1rem; }
+
+  .p7.tabletP,
+  .tablet {
+    padding: 1.16667rem; }
+
+  .p8.tabletP,
+  .tablet {
+    padding: 1.33333rem; }
+
+  .p9.tabletP,
+  .tablet {
+    padding: 1.5rem; }
+
+  .p10.tabletP,
+  .tablet {
+    padding: 1.66667rem; }
 
   .plr1.tabletP,
   .tablet {
@@ -1156,6 +1521,31 @@ textarea {
     padding-left: 0.83333rem;
     padding-right: 0.83333rem; }
 
+  .plr6.tabletP,
+  .tablet {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .plr7.tabletP,
+  .tablet {
+    padding-left: 1.16667rem;
+    padding-right: 1.16667rem; }
+
+  .plr8.tabletP,
+  .tablet {
+    padding-left: 1.33333rem;
+    padding-right: 1.33333rem; }
+
+  .plr9.tabletP,
+  .tablet {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+
+  .plr10.tabletP,
+  .tablet {
+    padding-left: 1.66667rem;
+    padding-right: 1.66667rem; }
+
   .ptb1.tabletP,
   .tablet {
     padding-bottom: 0.16667rem;
@@ -1181,6 +1571,31 @@ textarea {
     padding-bottom: 0.83333rem;
     padding-top: 0.83333rem; }
 
+  .ptb6.tabletP,
+  .tablet {
+    padding-bottom: 1rem;
+    padding-top: 1rem; }
+
+  .ptb7.tabletP,
+  .tablet {
+    padding-bottom: 1.16667rem;
+    padding-top: 1.16667rem; }
+
+  .ptb8.tabletP,
+  .tablet {
+    padding-bottom: 1.33333rem;
+    padding-top: 1.33333rem; }
+
+  .ptb9.tabletP,
+  .tablet {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem; }
+
+  .ptb10.tabletP,
+  .tablet {
+    padding-bottom: 1.66667rem;
+    padding-top: 1.66667rem; }
+
   .pt1.tabletP,
   .tablet {
     padding-top: 0.16667rem; }
@@ -1200,6 +1615,26 @@ textarea {
   .pt5.tabletP,
   .tablet {
     padding-top: 0.83333rem; }
+
+  .pt6.tabletP,
+  .tablet {
+    padding-top: 1rem; }
+
+  .pt7.tabletP,
+  .tablet {
+    padding-top: 1.16667rem; }
+
+  .pt8.tabletP,
+  .tablet {
+    padding-top: 1.33333rem; }
+
+  .pt9.tabletP,
+  .tablet {
+    padding-top: 1.5rem; }
+
+  .pt10.tabletP,
+  .tablet {
+    padding-top: 1.66667rem; }
 
   .pb1.tabletP,
   .tablet {
@@ -1221,6 +1656,26 @@ textarea {
   .tablet {
     padding-bottom: 0.83333rem; }
 
+  .pb6.tabletP,
+  .tablet {
+    padding-bottom: 1rem; }
+
+  .pb7.tabletP,
+  .tablet {
+    padding-bottom: 1.16667rem; }
+
+  .pb8.tabletP,
+  .tablet {
+    padding-bottom: 1.33333rem; }
+
+  .pb9.tabletP,
+  .tablet {
+    padding-bottom: 1.5rem; }
+
+  .pb10.tabletP,
+  .tablet {
+    padding-bottom: 1.66667rem; }
+
   .pl1.tabletP,
   .tablet {
     padding-left: 0.16667rem; }
@@ -1241,6 +1696,26 @@ textarea {
   .tablet {
     padding-left: 0.83333rem; }
 
+  .pl6.tabletP,
+  .tablet {
+    padding-left: 1rem; }
+
+  .pl7.tabletP,
+  .tablet {
+    padding-left: 1.16667rem; }
+
+  .pl8.tabletP,
+  .tablet {
+    padding-left: 1.33333rem; }
+
+  .pl9.tabletP,
+  .tablet {
+    padding-left: 1.5rem; }
+
+  .pl10.tabletP,
+  .tablet {
+    padding-left: 1.66667rem; }
+
   .pr1.tabletP,
   .tablet {
     padding-right: 0.16667rem; }
@@ -1259,7 +1734,27 @@ textarea {
 
   .pr5.tabletP,
   .tablet {
-    padding-right: 0.83333rem; } }
+    padding-right: 0.83333rem; }
+
+  .pr6.tabletP,
+  .tablet {
+    padding-right: 1rem; }
+
+  .pr7.tabletP,
+  .tablet {
+    padding-right: 1.16667rem; }
+
+  .pr8.tabletP,
+  .tablet {
+    padding-right: 1.33333rem; }
+
+  .pr9.tabletP,
+  .tablet {
+    padding-right: 1.5rem; }
+
+  .pr10.tabletP,
+  .tablet {
+    padding-right: 1.66667rem; } }
 @media screen and (max-width: 499px) {
   .m1 {
     margin: 0.125rem; }
@@ -1275,6 +1770,21 @@ textarea {
 
   .m5 {
     margin: 0.625rem; }
+
+  .m6 {
+    margin: 0.75rem; }
+
+  .m7 {
+    margin: 0.875rem; }
+
+  .m8 {
+    margin: 1rem; }
+
+  .m9 {
+    margin: 1.125rem; }
+
+  .m10 {
+    margin: 1.25rem; }
 
   .mlr1 {
     margin-left: 0.125rem;
@@ -1296,6 +1806,26 @@ textarea {
     margin-left: 0.625rem;
     margin-right: 0.625rem; }
 
+  .mlr6 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem; }
+
+  .mlr7 {
+    margin-left: 0.875rem;
+    margin-right: 0.875rem; }
+
+  .mlr8 {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+
+  .mlr9 {
+    margin-left: 1.125rem;
+    margin-right: 1.125rem; }
+
+  .mlr10 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem; }
+
   .mtb1 {
     margin-bottom: 0.125rem;
     margin-top: 0.125rem; }
@@ -1316,6 +1846,26 @@ textarea {
     margin-bottom: 0.625rem;
     margin-top: 0.625rem; }
 
+  .mtb6 {
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem; }
+
+  .mtb7 {
+    margin-bottom: 0.875rem;
+    margin-top: 0.875rem; }
+
+  .mtb8 {
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+
+  .mtb9 {
+    margin-bottom: 1.125rem;
+    margin-top: 1.125rem; }
+
+  .mtb10 {
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem; }
+
   .mt1 {
     margin-top: 0.125rem; }
 
@@ -1330,6 +1880,21 @@ textarea {
 
   .mt5 {
     margin-top: 0.625rem; }
+
+  .mt6 {
+    margin-top: 0.75rem; }
+
+  .mt7 {
+    margin-top: 0.875rem; }
+
+  .mt8 {
+    margin-top: 1rem; }
+
+  .mt9 {
+    margin-top: 1.125rem; }
+
+  .mt10 {
+    margin-top: 1.25rem; }
 
   .mb1 {
     margin-bottom: 0.125rem; }
@@ -1346,6 +1911,21 @@ textarea {
   .mb5 {
     margin-bottom: 0.625rem; }
 
+  .mb6 {
+    margin-bottom: 0.75rem; }
+
+  .mb7 {
+    margin-bottom: 0.875rem; }
+
+  .mb8 {
+    margin-bottom: 1rem; }
+
+  .mb9 {
+    margin-bottom: 1.125rem; }
+
+  .mb10 {
+    margin-bottom: 1.25rem; }
+
   .ml1 {
     margin-left: 0.125rem; }
 
@@ -1361,6 +1941,21 @@ textarea {
   .ml5 {
     margin-left: 0.625rem; }
 
+  .ml6 {
+    margin-left: 0.75rem; }
+
+  .ml7 {
+    margin-left: 0.875rem; }
+
+  .ml8 {
+    margin-left: 1rem; }
+
+  .ml9 {
+    margin-left: 1.125rem; }
+
+  .ml10 {
+    margin-left: 1.25rem; }
+
   .mr1 {
     margin-right: 0.125rem; }
 
@@ -1375,6 +1970,21 @@ textarea {
 
   .mr5 {
     margin-right: 0.625rem; }
+
+  .mr6 {
+    margin-right: 0.75rem; }
+
+  .mr7 {
+    margin-right: 0.875rem; }
+
+  .mr8 {
+    margin-right: 1rem; }
+
+  .mr9 {
+    margin-right: 1.125rem; }
+
+  .mr10 {
+    margin-right: 1.25rem; }
 
   .p1.smartP,
   .smart {
@@ -1395,6 +2005,26 @@ textarea {
   .p5.smartP,
   .smart {
     padding: 0.625rem; }
+
+  .p6.smartP,
+  .smart {
+    padding: 0.75rem; }
+
+  .p7.smartP,
+  .smart {
+    padding: 0.875rem; }
+
+  .p8.smartP,
+  .smart {
+    padding: 1rem; }
+
+  .p9.smartP,
+  .smart {
+    padding: 1.125rem; }
+
+  .p10.smartP,
+  .smart {
+    padding: 1.25rem; }
 
   .plr1.smartP,
   .smart {
@@ -1421,6 +2051,31 @@ textarea {
     padding-left: 0.625rem;
     padding-right: 0.625rem; }
 
+  .plr6.smartP,
+  .smart {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem; }
+
+  .plr7.smartP,
+  .smart {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem; }
+
+  .plr8.smartP,
+  .smart {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .plr9.smartP,
+  .smart {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem; }
+
+  .plr10.smartP,
+  .smart {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; }
+
   .ptb1.smartP,
   .smart {
     padding-bottom: 0.125rem;
@@ -1446,6 +2101,31 @@ textarea {
     padding-bottom: 0.625rem;
     padding-top: 0.625rem; }
 
+  .ptb6.smartP,
+  .smart {
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem; }
+
+  .ptb7.smartP,
+  .smart {
+    padding-bottom: 0.875rem;
+    padding-top: 0.875rem; }
+
+  .ptb8.smartP,
+  .smart {
+    padding-bottom: 1rem;
+    padding-top: 1rem; }
+
+  .ptb9.smartP,
+  .smart {
+    padding-bottom: 1.125rem;
+    padding-top: 1.125rem; }
+
+  .ptb10.smartP,
+  .smart {
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem; }
+
   .pt1.smartP,
   .smart {
     padding-top: 0.125rem; }
@@ -1465,6 +2145,26 @@ textarea {
   .pt5.smartP,
   .smart {
     padding-top: 0.625rem; }
+
+  .pt6.smartP,
+  .smart {
+    padding-top: 0.75rem; }
+
+  .pt7.smartP,
+  .smart {
+    padding-top: 0.875rem; }
+
+  .pt8.smartP,
+  .smart {
+    padding-top: 1rem; }
+
+  .pt9.smartP,
+  .smart {
+    padding-top: 1.125rem; }
+
+  .pt10.smartP,
+  .smart {
+    padding-top: 1.25rem; }
 
   .pb1.smartP,
   .smart {
@@ -1486,6 +2186,26 @@ textarea {
   .smart {
     padding-bottom: 0.625rem; }
 
+  .pb6.smartP,
+  .smart {
+    padding-bottom: 0.75rem; }
+
+  .pb7.smartP,
+  .smart {
+    padding-bottom: 0.875rem; }
+
+  .pb8.smartP,
+  .smart {
+    padding-bottom: 1rem; }
+
+  .pb9.smartP,
+  .smart {
+    padding-bottom: 1.125rem; }
+
+  .pb10.smartP,
+  .smart {
+    padding-bottom: 1.25rem; }
+
   .pl1.smartP,
   .smart {
     padding-left: 0.125rem; }
@@ -1506,6 +2226,26 @@ textarea {
   .smart {
     padding-left: 0.625rem; }
 
+  .pl6.smartP,
+  .smart {
+    padding-left: 0.75rem; }
+
+  .pl7.smartP,
+  .smart {
+    padding-left: 0.875rem; }
+
+  .pl8.smartP,
+  .smart {
+    padding-left: 1rem; }
+
+  .pl9.smartP,
+  .smart {
+    padding-left: 1.125rem; }
+
+  .pl10.smartP,
+  .smart {
+    padding-left: 1.25rem; }
+
   .pr1.smartP,
   .smart {
     padding-right: 0.125rem; }
@@ -1524,7 +2264,27 @@ textarea {
 
   .pr5.smartP,
   .smart {
-    padding-right: 0.625rem; } }
+    padding-right: 0.625rem; }
+
+  .pr6.smartP,
+  .smart {
+    padding-right: 0.75rem; }
+
+  .pr7.smartP,
+  .smart {
+    padding-right: 0.875rem; }
+
+  .pr8.smartP,
+  .smart {
+    padding-right: 1rem; }
+
+  .pr9.smartP,
+  .smart {
+    padding-right: 1.125rem; }
+
+  .pr10.smartP,
+  .smart {
+    padding-right: 1.25rem; } }
 /*
 
 !!NOTE: Use polyfill script rem.js to ensure support for ie10 and ie8
@@ -3048,185 +3808,166 @@ body {
 body {
   font-family: "serif"; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.txt h1,
+.txt h2,
+.txt h3,
+.txt h4,
+.txt h5,
+.txt h6 {
   font-family: "sans-serif"; }
-
-h1,
-.h1 {
+.txt h1,
+.txt .h1 {
   font-size: 2rem;
   line-height: 2.4rem;
   margin: 3rem 0 0 0; }
-
-h2,
-.h2 {
+.txt h2,
+.txt .h2 {
   font-size: 1.7rem;
   line-height: 2.04rem;
   margin: 2.55rem 0 0 0; }
-
-h3,
-.h3 {
+.txt h3,
+.txt .h3 {
   font-size: 1.5rem;
   line-height: 1.8rem;
   margin: 2.25rem 0 0 0; }
-
-h4,
-.h4 {
+.txt h4,
+.txt .h4 {
   font-size: 1.3rem;
   line-height: 1.56rem;
   margin: 1.95rem 0 0 0; }
-
-h5,
-.h5 {
+.txt h5,
+.txt .h5 {
   font-size: 1.1rem;
   line-height: 1.32rem;
   margin: 1.65rem 0 0 0; }
-
-h6,
-.h6 {
+.txt h6,
+.txt .h6 {
   font-size: 1.1rem;
   line-height: 1.32rem;
   margin: 1.65rem 0 0 0; }
-
 @media screen and (max-width: 991px) {
-  h1,
-  .h1 {
+  .txt h1,
+  .txt .h1 {
     font-size: 1.73913rem;
     line-height: 2.08696rem;
     margin: 2.6087rem 0 0 0; }
-
-  h2,
-  .h2 {
+  .txt h2,
+  .txt .h2 {
     font-size: 1.47826rem;
     line-height: 1.77391rem;
     margin: 2.21739rem 0 0 0; }
-
-  h3,
-  .h3 {
+  .txt h3,
+  .txt .h3 {
     font-size: 1.30435rem;
     line-height: 1.56522rem;
     margin: 1.95652rem 0 0 0; }
-
-  h4,
-  .h4 {
+  .txt h4,
+  .txt .h4 {
     font-size: 1.13043rem;
     line-height: 1.35652rem;
     margin: 1.69565rem 0 0 0; }
-
-  h5,
-  .h5 {
+  .txt h5,
+  .txt .h5 {
     font-size: 0.95652rem;
     line-height: 1.14783rem;
     margin: 1.43478rem 0 0 0; }
-
-  h6,
-  .h6 {
+  .txt h6,
+  .txt .h6 {
     font-size: 0.95652rem;
     line-height: 1.14783rem;
     margin: 1.43478rem 0 0 0; } }
 @media screen and (max-width: 499px) {
-  h1,
-  .h1 {
+  .txt h1,
+  .txt .h1 {
     font-size: 1.6rem;
     line-height: 1.92rem;
     margin: 2.4rem 0 0 0; }
-
-  h2,
-  .h2 {
+  .txt h2,
+  .txt .h2 {
     font-size: 1.36rem;
     line-height: 1.632rem;
     margin: 2.04rem 0 0 0; }
-
-  h3,
-  .h3 {
+  .txt h3,
+  .txt .h3 {
     font-size: 1.2rem;
     line-height: 1.44rem;
     margin: 1.8rem 0 0 0; }
-
-  h4,
-  .h4 {
+  .txt h4,
+  .txt .h4 {
     font-size: 1.04rem;
     line-height: 1.248rem;
     margin: 1.56rem 0 0 0; }
-
-  h5,
-  .h5 {
+  .txt h5,
+  .txt .h5 {
     font-size: 0.88rem;
     line-height: 1.056rem;
     margin: 1.32rem 0 0 0; }
-
-  h6,
-  .h6 {
+  .txt h6,
+  .txt .h6 {
     font-size: 0.88rem;
     line-height: 1.056rem;
     margin: 1.32rem 0 0 0; } }
-a,
-abbr,
-address,
-blockquote,
-button,
-caption,
-cite,
-code,
-col,
-datalist,
-dd,
-del,
-dfn,
-dialog,
-dt,
-em,
-figcaption,
-i,
-input,
-ins,
-label,
-legend,
-li,
-keygen,
-mark,
-menu,
-menuitem,
-noscript,
-output,
-p,
-pre,
-q,
-rp,
-s,
-select,
-samp,
-span,
-strong,
-summary,
-td,
-textarea,
-th,
-time,
-u,
-var {
+.txt a,
+.txt abbr,
+.txt address,
+.txt blockquote,
+.txt button,
+.txt caption,
+.txt cite,
+.txt code,
+.txt col,
+.txt datalist,
+.txt dd,
+.txt del,
+.txt dfn,
+.txt dialog,
+.txt dt,
+.txt em,
+.txt figcaption,
+.txt i,
+.txt input,
+.txt ins,
+.txt label,
+.txt legend,
+.txt li,
+.txt keygen,
+.txt mark,
+.txt menu,
+.txt menuitem,
+.txt noscript,
+.txt output,
+.txt p,
+.txt pre,
+.txt q,
+.txt rp,
+.txt s,
+.txt select,
+.txt samp,
+.txt span,
+.txt strong,
+.txt summary,
+.txt td,
+.txt textarea,
+.txt th,
+.txt time,
+.txt u,
+.txt var {
   font-size: 1em;
   line-height: 1.2em; }
-
-a,
-address,
-code,
-details,
-dl,
-ol,
-p,
-pre,
-samp,
-table,
-ul {
+.txt a,
+.txt address,
+.txt code,
+.txt details,
+.txt dl,
+.txt ol,
+.txt p,
+.txt pre,
+.txt samp,
+.txt table,
+.txt ul {
   margin-top: 1rem; }
-
-ol,
-ul {
+.txt ol,
+.txt ul {
   padding-left: 1.1em; }
 
 .col2,
@@ -3356,28 +4097,6 @@ ul {
     -moz-column-count: 6;
     column-count: 6; } }
 button,
-input[type="button"],
-input[type="date"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="file"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="reset"],
-input[type="search"],
-input[type="submit"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-input[type="week"],
-keygen,
-output,
-select,
-textarea {
-  border: 0.05rem solid; }
-
-button,
 input,
 keygen,
 output,
@@ -3393,7 +4112,6 @@ fieldset {
   padding: 1rem 0; }
 
 .form-group > .form-group .addon {
-  border: 0.05rem solid;
   padding: 0.5rem 0.25rem; }
   .form-group > .form-group .addon.transparent {
     pointer-events: none; }

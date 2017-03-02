@@ -11,14 +11,14 @@ $activateAutoResponsiveMargins: "true"; //if true margins will be resized with n
 $activateAutoResponsivePaddings: "true"; //if true paddings will be resized with no need to add class tablet and/or smart. Classes for resize will be not included in css
 //
 //MARGIN CLASSES
-$stepsMargin: 5;
+$stepsMargin: 10;
 $intervalMargin: 0.25rem;
 $beginMargin: 0;
 $marginsTabletResizeFactor: 1.5; //divide margins for viewport smaller than $w4
 $marginsSmartResizeFactor: 2; //divide margins for viewport smaller than $w2
 //
 //PADDING CLASSES
-$stepsPadding: 5;
+$stepsPadding: 10;
 $intervalPadding: 0.25rem;
 $beginPadding: 0;
 $paddingsTabletResizeFactor: 1.5; //divide padding for viewport smaller than $w4

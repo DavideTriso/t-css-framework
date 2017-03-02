@@ -25,7 +25,6 @@ output,
 select,
 textarea {
   @extend %reset-appearance;
-  border: 0.05rem solid; //for demonstration only. positioning of addon. see class .addon
   @extend %border-radius-0;
 }
 button,
@@ -106,14 +105,13 @@ fieldset {
     @extend %position-relative;
     .addon {
       @extend %box-sizing-border-box;
-      border: 0.05rem solid; //for demonstration only
       @extend %display-block;
       padding: $inputElementsPaddingTopBottom 0.25rem;
       @extend %position-absolute;
       @extend %text-align-center;
       &.r {
         @extend %right-0;
-      }
+      } 
       &.l {
         @extend %left-0;
       }

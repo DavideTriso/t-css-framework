@@ -1,0 +1,23 @@
+// Buttons builder mixins
+@mixin build-button-design($color, $background, $border, $border-radius, $hover-color, $hover-background, $hover-border, $focus-color, $focus-background, $focus-border) {
+  color: $color;
+  background-color: $background;
+  border: $border;
+  border-radius: $border-radius;
+  &:focus,
+  &:active {
+    color: $focus-color;
+    background-color: $focus-background;
+    border: $focus-border;
+  }
+  &:hover {
+    color: $hover-color;
+    background-color: $hover-background;
+    border: $hover-border;
+  }
+}
+// Button sizes
+@mixin build-button-size($padding-vertical, $padding-horizontal, $font-size) {
+  font-size: $font-size;
+  padding: $padding-vertical $padding-horizontal;
+}
