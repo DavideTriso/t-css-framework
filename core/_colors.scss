@@ -1,20 +1,32 @@
-//colors
-//white
+//COLORS
 $white: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 1);
+$mid-gray: rgba(128, 128, 128, 1);
+$color-1: rgba(200, 50, 20, 1);
+$color-2: rgba(100, 250, 20, 1);
+$color-3: rgba(50, 200, 150, 1);
+$color-4: rgba(50, 200, 150, 1);
+$color-5: rgba(50, 200, 150, 1);
+$color-6: rgba(50, 200, 150, 1);
+$color-7: rgba(50, 200, 150, 1);
+$color-8: rgba(50, 200, 150, 1);
+$color-9: rgba(50, 200, 150, 1);
+$color-10: rgba(50, 200, 150, 1);
+//
+//COLORS VARIATIONS
+//white
 $white-90: rgba($white, .9);
 $white-80: rgba($white, .8);
 $white-70: rgba($white, .7);
 $white-60: rgba($white, .6);
 $white-50: rgba($white, .5);
 //black
-$black: rgba(0, 0, 0, 1);
 $black-90: rgba($black, .9); 
 $black-80: rgba($black, .8);
 $black-70: rgba($black, .7);
 $black-60: rgba($black, .6);
 $black-50: rgba($black, .5);
 //gray
-$mid-gray: rgba(128, 128, 128, 1);
 $mid-gray-light: lighten($mid-gray, 5%);
 $mid-gray-lighter: lighten($mid-gray, 15%);
 $mid-gray-lighter-plus: lighten($mid-gray, 30%);
@@ -22,7 +34,6 @@ $mid-gray-dark: darken($mid-gray, 5%);
 $mid-gray-darker: darken($mid-gray, 15%);
 $mid-gray-darker-plus: darken($mid-gray, 30%);
 //color 1
-$color-1: rgba(200, 50, 20, 1);
 $color-1-light: lighten($color-1, 5%);
 $color-1-lighter: lighten($color-1, 15%);
 $color-1-lighter-plus: lighten($color-1, 30%);
@@ -30,7 +41,6 @@ $color-1-dark: darken($color-1, 5%);
 $color-1-darker: darken($color-1, 15%);
 $color-1-darker-plus: darken($color-1, 30%);
 //color 2
-$color-2: rgba(100, 250, 20, 1);
 $color-2-light: lighten($color-2, 5%);
 $color-2-lighter: lighten($color-2, 15%);
 $color-2-lighter-plus: lighten($color-2, 30%);
@@ -38,7 +48,6 @@ $color-2-dark: darken($color-2, 5%);
 $color-2-darker: darken($color-2, 15%);
 $color-2-darker-plus: darken($color-2, 30%);
 //color 3
-$color-3: rgba(50, 200, 150, 1);
 $color-3-light: lighten($color-3, 5%);
 $color-3-lighter: lighten($color-3, 15%);
 $color-3-lighter-plus: lighten($color-3, 30%);
@@ -46,7 +55,6 @@ $color-3-dark: darken($color-3, 5%);
 $color-3-darker: darken($color-3, 15%);
 $color-3-darker-plus: darken($color-3, 30%);
 //color 4
-$color-4: rgba(50, 200, 150, 1);
 $color-4-light: lighten($color-4, 5%);
 $color-4-lighter: lighten($color-4, 15%);
 $color-4-lighter-plus: lighten($color-4, 30%);
@@ -54,7 +62,6 @@ $color-4-dark: darken($color-4, 5%);
 $color-4-darker: darken($color-4, 15%);
 $color-4-darker-plus: darken($color-4, 30%);
 //color 5
-$color-5: rgba(50, 200, 150, 1);
 $color-5-light: lighten($color-5, 5%);
 $color-5-lighter: lighten($color-5, 15%);
 $color-5-lighter-plus: lighten($color-5, 30%);
@@ -62,7 +69,6 @@ $color-5-dark: darken($color-5, 5%);
 $color-5-darker: darken($color-5, 15%);
 $color-5-darker-plus: darken($color-5, 30%);
 //color 6
-$color-6: rgba(50, 200, 150, 1);
 $color-6-light: lighten($color-6, 5%);
 $color-6-lighter: lighten($color-6, 15%);
 $color-6-lighter-plus: lighten($color-6, 30%);
@@ -70,7 +76,6 @@ $color-6-dark: darken($color-6, 5%);
 $color-6-darker: darken($color-6, 15%);
 $color-6-darker-plus: darken($color-6, 30%);
 //color 7
-$color-7: rgba(50, 200, 150, 1);
 $color-7-light: lighten($color-7, 5%);
 $color-7-lighter: lighten($color-7, 15%);
 $color-7-lighter-plus: lighten($color-7, 30%);

@@ -1,19 +1,14 @@
 //RESPONSIVE DESIGN @MEDIA BREAK-POINTS WIDTHS
-$w0: 300px;
-$w1: 400px;
-$w2: 500px;
-$w3: 768px;
-$w4: 992px; //tablet
-$w5: 1024px; //desktop begin
-$w6: 1280px;
-$w7: 1440px;
-$w8: 1680px;
-$w9: 1920px;
-
-
-//PLACEHOLDER FRAMEWORK @MEDIA BREAK-POINTS
-$bigdesktop: $w6;
-$desktop: $w4;
-$tablet: $w3;
-$smart: $w2;
-$smallsmart: $w1;
+$w0: 280px;
+$w1: 320px; //iPhone SE
+$w2: 414px; //iPhone 6 plus
+$w3: 768px; // iPad 
+$w4: 992px; //
+$w5: 1200px; //Desktop
+$w6: 1440px; //Desktop
+//MIN
+$w2min: $w2 - 1px;
+$w3min: $w3 - 1px;
+$w4min: $w4 - 1px;
+$w5min: $w5 - 1px;
+$w6min: $w6 - 1px;

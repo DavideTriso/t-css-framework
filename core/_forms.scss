@@ -24,7 +24,7 @@ keygen,
 output,
 select,
 textarea {
-  @extend %reset-appearance;
+  @extend %appearance-none;
   @extend %border-radius-0;
 }
 button,

@@ -1,0 +1,282 @@
+//Generate CSS for typography.
+//Automatic resize for headeings: Font-size and margins adapts to wievport width. Size and margins increase with bigger viewport width 
+//User defined resize for headeings: Font-size and margins adapts to wievport width if user adds classes .smart and/or .desktop.
+//
+//VARIABLES FOR HEADINGS
+$activateResponsiveHeadings: "true"; //activate responsive headings classes
+$activateAutoResponsiveHeadings: "true"; //if true headings will be resized with no need to add class tablet and/or smart. Classes for resize will be not included in css
+$h1FontSize: 2rem;
+$h2FontSize: 1.8rem;
+$h3FontSize: 1.6rem;
+$h4FontSize: 1.4rem;
+$h5FontSize: 1.2rem;
+$h6FontSize: 1.2rem;
+//
+$headingsTabletMultiplyFactor: 1.25;
+$headingsDesktopMultiplyFactor: 1.5;
+//
+//
+//HEADINGS MARGIN TOP FACTORS
+$headingsMarginTopFactor: 1.5;
+//
+//HEADINGS MARGINS LEFT AND RIGHT
+$headingsMarginLeft: 0; //use rem
+$headingsMarginRight: 0; //use rem
+//
+//LINE HEIGHT MULTIPLY FACTOR
+$lineHeightFactor: 1.2;
+//VARIABLES FOR P AND OTHRE TEXT ELEMENTS
+$defaultTextFontSize: 1em;
+$textElementsMarginTop: 1rem;
+//
+//
+//Define standard font families
+$defaultFontFamily: 'serif';
+$fontFamilyHeadings: 'sans-serif';
+html,
+body {
+  font-family: $defaultFontFamily;
+}
+.txt {
+  font-size: $defaultTextFontSize;
+  line-height: $defaultTextFontSize * $lineHeightFactor;
+  //HEADINGS
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $fontFamilyHeadings;
+    @extend %margin-0;
+    @extend %padding-0;
+  }
+  //heading responsive
+  h1,
+  .h1 {
+    font-size: $h1FontSize;
+    line-height: $h1FontSize * $lineHeightFactor;
+    margin: $h1FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  h2,
+  .h2 {
+    font-size: $h2FontSize;
+    line-height: $h2FontSize * $lineHeightFactor;
+    margin: $h2FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  h3,
+  .h3 {
+    font-size: $h3FontSize;
+    line-height: $h3FontSize * $lineHeightFactor;
+    margin: $h3FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  h4,
+  .h4 {
+    font-size: $h4FontSize;
+    line-height: $h4FontSize * $lineHeightFactor;
+    margin: $h4FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  h5,
+  .h5 {
+    font-size: $h5FontSize;
+    line-height: $h5FontSize * $lineHeightFactor;
+    margin: $h5FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  h6,
+  .h6 {
+    font-size: $h6FontSize;
+    line-height: $h6FontSize * $lineHeightFactor;
+    margin: $h6FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  @media screen and (min-width: $w3) {
+    @if $activateResponsiveHeadings=="true" {
+      @if $activateAutoResponsiveHeadings=="true" {
+        h1,
+        .h1 {
+          font-size: $h1FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h1FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h1FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h2,
+        .h2 {
+          font-size: $h2FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h2FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h2FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h3,
+        .h3 {
+          font-size: $h3FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h3FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h3FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h4,
+        .h4 {
+          font-size: $h4FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h4FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h4FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h5,
+        .h5 {
+          font-size: $h5FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h5FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h5FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h6,
+        .h6 {
+          font-size: $h6FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h6FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h6FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+      }
+      @else {
+        h1.tablet,
+        .h1.tablet {
+          font-size: $h1FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h1FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h1FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h2.tablet,
+        .h2.tablet {
+          font-size: $h2FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h2FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h2FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h3.tablet,
+        .h3.tablet {
+          font-size: $h3FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h3FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h3FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h4.tablet,
+        .h4.tablet {
+          font-size: $h4FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h4FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h4FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h5.tablet,
+        .h5.tablet {
+          font-size: $h5FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h5FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h5FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h6.tablet,
+        .h6.tablet {
+          font-size: $h6FontSize * $headingsTabletMultiplyFactor;
+          line-height: $h6FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+          margin: $h6FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: $w5) {
+    @if $activateResponsiveHeadings=="true" {
+      @if $activateAutoResponsiveHeadings=="true" {
+        h1,
+        .h1 {
+          font-size: $h1FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h1FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+          margin: $h1FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h2,
+        .h2 {
+          font-size: $h2FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h2FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+          margin: $h2FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h3,
+        .h3 {
+          font-size: $h3FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h3FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+          margin: $h3FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h4,
+        .h4 {
+          font-size: $h4FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h4FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+          margin: $h4FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h5,
+        .h5 {
+          font-size: $h5FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h5FontSize * $headingsDesktopMultiplyFactor* $lineHeightFactor;
+          margin: $h5FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h6,
+        .h6 {
+          font-size: $h6FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h6FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+          margin: $h6FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+      }
+      @else {
+        h1.smart,
+        .h1.smart {
+          font-size: $h1FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h1FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+          margin: $h1FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h2.smart,
+        .h2.smart {
+          font-size: $h2FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h2FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+          margin: $h2FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h3.smart,
+        .h3.smart {
+          font-size: $h3FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h3FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+          margin: $h3FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h4.smart,
+        .h4.smart {
+          font-size: $h4FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h4FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+          margin: $h4FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h5.smart,
+        .h5.smart {
+          font-size: $h5FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h5FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+          margin: $h5FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+        h6.smart,
+        .h6.smart {
+          font-size: $h6FontSize * $headingsDesktopMultiplyFactor;
+          line-height: $h6FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+          margin: $h6FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+        }
+      }
+    }
+  }
+  //paragraphs and other text elements
+  //text elements
+  a,
+  address,
+  code,
+  details,
+  dl,
+  ol,
+  p,
+  pre,
+  samp,
+  table,
+  ul {
+    @extend %margin-0;
+    margin-top: $textElementsMarginTop;
+    @extend %padding-0;
+  }
+  //
+  //LISTS
+  ol,
+  ul {
+    padding-left: $defaultTextFontSize + 0.1em;
+  }
+  dt,
+  dd {
+    @extend %display-inline;
+  }
+  dt:before {
+    @extend %content;
+    @extend %display-block;
+  }
+}
