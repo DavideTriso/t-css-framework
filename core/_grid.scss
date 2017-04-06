@@ -1,5 +1,5 @@
 /*
-!!NOTE: Use polyfill script rem.js to ensure support for ie10 and ie8
+!!NOTE: Use polyfill script rem.js to ensure support for ie10 and previous versions
 */
 
 //VARIABLES -------------------------
@@ -12,7 +12,7 @@ $gDesktopGutter: 1rem;
 //CSS -------------------------
 //Set default font size on root element
 html {
-  font-size: 1rem;
+  font-size: 14px;
 }
 //Reset user stylesheet
 html,
