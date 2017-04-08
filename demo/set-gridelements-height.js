@@ -1,6 +1,7 @@
 //Automatically set height of grid elements based on highest grid elements inside of row.
 //Set class ".auto-height" on .row  in order to activate
 //!!!do not use class .auto-height if the row' children contains accordions or elements with changing heights
+/*
 $(document).ready(function () {
     var body = $("body"),
         rTime,
@@ -77,4 +78,17 @@ $(document).ready(function () {
 
         });
     }
+});
+*/
+
+(function ($) {
+  'use strict';
+  $.fn.autoHeight = function () {
+    
+  };
+}(jQuery))
+
+$(document).ready(function () {
+  'use strict';
+  $('.auto-height').autoHeight();
 });

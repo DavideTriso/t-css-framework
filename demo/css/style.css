@@ -60,7 +60,7 @@ output,
 select,
 option,
 optgroup,
-textarea, .form-group > .form-group .addon, .radio, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check, .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch, .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"], table {
+textarea, .form-group > .form-group .addon, table {
   box-sizing: border-box; }
 
 .txt dt:before {
@@ -77,7 +77,7 @@ output,
 select,
 option,
 optgroup,
-textarea, .form-group > .form-group .addon, .radio, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check, .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch, .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"], .switch > input[type="checkbox"] + span[aria-hidden="true"]:after {
+textarea, .form-group > .form-group .addon {
   display: block; }
 
 .form-group > .form-group label,
@@ -108,7 +108,7 @@ textarea, .form-group > .form-group .addon, .radio, .radio > input[type="radio"]
 .form-group textarea {
   float: left; }
 
-.form-group > .form-group .addon.l, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"] {
+.form-group > .form-group .addon.l {
   left: 0; }
 
 .cont {
@@ -138,11 +138,6 @@ body,
 .flex-cont {
   min-width: 100%; }
 
-.radio > input:focus,
-.check > input:focus,
-.switch > input:focus {
-  outline: none; }
-
 html,
 body, .txt h1,
 .txt h2,
@@ -163,20 +158,21 @@ body, .txt h1,
 button::-moz-focus-inner {
   padding: 0; }
 
-.form-group > .form-group .addon, .radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"] {
+.form-group > .form-group .addon {
   position: absolute; }
 
-.form-group > .form-group, .radio {
+.form-group > .form-group {
   position: relative; }
 
 .form-group > .form-group .addon.r {
   right: 0; }
 
+th,
+td {
+  text-align: left; }
+
 .form-group > .form-group .addon {
   text-align: center; }
-
-.radio > input[type="radio"], .radio > input[type="radio"] + span[aria-hidden="true"], .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"], .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"] {
-  top: 0; }
 
 .g, .form-group button,
 .form-group input[type="button"],
@@ -197,7 +193,7 @@ button::-moz-focus-inner {
 .form-group keygen,
 .form-group output,
 .form-group select,
-.form-group textarea {
+.form-group textarea, table {
   width: 100%; }
 
 .clearfix:before,
@@ -1591,10 +1587,10 @@ button::-moz-focus-inner {
   .pr10.desktop-p {
     padding-right: 1.25rem; } }
 /*
-!!NOTE: Use polyfill script rem.js to ensure support for ie10 and ie8
+!!NOTE: Use polyfill script rem.js to ensure support for ie10 and previous versions
 */
 html {
-  font-size: 1rem; }
+  font-size: 14px; }
 
 body {
   min-width: 280px; }
@@ -2831,84 +2827,14 @@ fieldset {
 .form-group > .form-group .imr10 {
   margin-right: 8.75rem; }
 
-.radio, .radio > input[type="radio"] + span[aria-hidden="true"] {
-  height: 1rem;
-  width: 1rem; }
-.radio > input[type="radio"] {
-  height: 0.8rem;
-  margin: 0.1rem;
-  width: 0.8rem; }
-  .radio > input[type="radio"] + span[aria-hidden="true"] {
-    background-color: #fdfbfb;
-    border: 0.1rem solid #ebebeb;
-    border-radius: 0.5rem;
-    pointer-events: none; }
-  .radio > input[type="radio"]:focus + span[aria-hidden="true"] {
-    border: 0.2rem solid #98b5e5; }
-  .radio > input[type="radio"]:checked + span[aria-hidden="true"] {
-    border: 0.3rem solid #5084d8; }
-
-.check {
-  position: relative; }
-  .check, .check > input[type="checkbox"], .check > input[type="checkbox"] + span[aria-hidden="true"] {
-    height: 1rem;
-    width: 1rem; }
-  .check > input[type="checkbox"] + span[aria-hidden="true"] {
-    background-color: #fdfbfb;
-    border: 0.1rem solid #ebebeb;
-    border-radius: 0.1rem;
-    pointer-events: none; }
-  .check > input[type="checkbox"]:focus + span[aria-hidden="true"] {
-    border: 0.2rem solid #98b5e5; }
-  .check > input[type="checkbox"]:checked + span[aria-hidden="true"] {
-    border: 0.3rem solid #5084d8; }
-
-.switch {
-  position: relative; }
-  .switch, .switch > input[type="checkbox"], .switch > input[type="checkbox"] + span[aria-hidden="true"] {
-    height: 1.4rem;
-    width: 2.2rem; }
-  .switch > input[type="checkbox"] {
-    margin-top: -0.1rem; }
-    .switch > input[type="checkbox"] + span[aria-hidden="true"] {
-      background-color: #fdfbfb;
-      border: 0.1rem solid #dddddd;
-      border-radius: 0.7rem;
-      margin-left: -0.1rem;
-      margin-top: -0.1rem;
-      pointer-events: none;
-      -webkit-transition: background-color 0.2s ease-in-out;
-      -moz-transition: background-color 0.2s ease-in-out;
-      -o-transition: background-color 0.2s ease-in-out;
-      transition: background-color 0.2s ease-in-out; }
-      .switch > input[type="checkbox"] + span[aria-hidden="true"]:after {
-        background-color: #dddddd;
-        border-radius: 100%;
-        content: "";
-        height: 1rem;
-        margin: 0.1rem;
-        -webkit-transition: margin-left 0.2s ease-in-out;
-        -moz-transition: margin-left 0.2s ease-in-out;
-        -o-transition: margin-left 0.2s ease-in-out;
-        transition: margin-left 0.2s ease-in-out;
-        width: 1rem; }
-    .switch > input[type="checkbox"]:focus + span[aria-hidden="true"]:after {
-      background-color: #b2b2b2; }
-    .switch > input[type="checkbox"]:checked + span[aria-hidden="true"] {
-      background-color: #5084d8; }
-      .switch > input[type="checkbox"]:checked + span[aria-hidden="true"]:after {
-        margin-left: 0.9rem; }
-
 table {
   border: 0.1rem solid #ccc;
-  border-collapse: collapse;
-  width: 100%; }
+  border-collapse: collapse; }
 
 th,
 td {
   padding: 0.5rem;
-  border: 0.1rem solid #ccc;
-  text-align: left; }
+  border: 0.1rem solid #ccc; }
 
 .access {
   left: -99999px;
