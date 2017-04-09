@@ -1,14 +1,6 @@
 /*
 !!NOTE: Use polyfill script rem.js to ensure support for ie10 and previous versions
 */
-
-//VARIABLES -------------------------
-//container extra margin on bigger screens
-$contExtraLeftRightMargin: 60px; //!ONLY PIXELS. 
-//grid elements gutter
-$gGutter: 0.5rem;
-$gTabletGutter: 0.75rem;
-$gDesktopGutter: 1rem;
 //CSS -------------------------
 //Set default font size on root element
 html {

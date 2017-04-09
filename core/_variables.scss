@@ -1,0 +1,87 @@
+//
+//--------------------------------------------------------------------
+//GRID SYSTEM
+//container extra margin on desktop screens
+$contExtraLeftRightMargin: 60px; //!ONLY PIXELS. 
+//grid elements gutter
+$gGutter: 0.5rem; //gutter on smartphones
+$gTabletGutter: 0.75rem; //gutter on tablets
+$gDesktopGutter: 1rem; //gutter on desktop
+
+//
+//--------------------------------------------------------------------
+//TYPOGRAPHY
+//
+//Headings
+$activateResponsiveHeadings: "true"; //activate responsive headings classes
+$activateAutoResponsiveHeadings: "true"; //if true headings will be resized without need to add class tablet and/or smart. Classes for resize will be not included in css
+//Font sizes for headings (on smartphones)
+$h1FontSize: 2rem;
+$h2FontSize: 1.8rem;
+$h3FontSize: 1.6rem;
+$h4FontSize: 1.4rem;
+$h5FontSize: 1.2rem;
+$h6FontSize: 1.2rem;
+//Multiply factor for tablet and desktop headings
+$headingsTabletMultiplyFactor: 1.25;
+$headingsDesktopMultiplyFactor: 1.5;
+//Hedings margin top factor
+$headingsMarginTopFactor: 1.5;
+//Left and right margin for headings
+$headingsMarginLeft: 0; //use rem
+$headingsMarginRight: 0; //use rem
+//Line height multiply factor
+$lineHeightFactor: 1.2;
+//
+//Paragraphs
+$defaultTextFontSize: 1em;
+$textElementsMarginTop: 1rem;
+//
+//Define standard font families
+$defaultFontFamily: 'serif';
+$fontFamilyHeadings: 'sans-serif';
+
+//
+//--------------------------------------------------------------------
+//FORMS
+$inputElementsPaddingTopBottom: 0.5rem;
+$inputElementsPaddingLeftRight: 0.5rem; 
+//Addon
+$stepsAddonWidth: 10;
+$intervalAddonWidth: 1rem;
+$firstAddonWidth: 1;
+$extraPaddingAddonInput: 0.5rem; 
+
+//
+//--------------------------------------------------------------------
+//RESPONSIVE MARGINS AND PADDINGS
+//Generate padding and margin classes with automatic or user difined adaptive resize.
+//Automatic resize: Padding and margin adapts to wievport width. Margins and paddings increase with larger viewports
+//User defined resize: Padding and margin adapts to wievport width if user adds classes .desktop-m and .desktop-p (for desktop Margins and Paddings) and/or classes tablet-m and .tablet-p (for tablet Margins and Paddings)
+$activateResponsiveMargins: "true"; //activate responsive margin classes
+$activateResponsivePaddings: "true"; //activate responsive margin classes
+$activateAutoResponsiveMargins: "true"; //if true margins will be resized with no need to add class tablet and/or desktop. Classes for resize will be not included in css
+$activateAutoResponsivePaddings: "true"; //if true paddings will be resized with no need to add class tablet and/or desktop. Classes for resize will be not included in css
+//
+//Margins
+$stepsMargin: 10;
+$intervalMargin: 0.25rem;
+$firstMargin: 0;
+$marginsTabletMultiplyFactor: 0.25;
+$marginsDesktopMultiplyFactor: 0.5;
+//
+//Paddings
+$stepsPadding: 10;
+$intervalPadding: 0.25rem;
+$firstPadding: 0;
+$paddingsTabletMultiplyFactor: 0.25;
+$paddingsDesktopMultiplyFactor: 0.5;
+
+//
+//--------------------------------------------------------------------
+//RESPONSIVE MULTI COLUM LAYOUT (columns number changes based on viewport width) --- USE CLASSES .col2 to .col4
+$columnGap: 1rem; //Use rem
+$columWidth: auto;
+$columnRuleType: solid;
+$columnRuleWidth: 1px;
+$columnRuleColor: #ccc;

@@ -16,7 +16,7 @@
     @include access;
   }
   .access-focus-smart {
-    @include access-focus;
+    @include access-focus; 
   }
 }
 @media screen and (min-width: $w3) and (max-width: $w5min) {

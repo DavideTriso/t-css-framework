@@ -1,11 +1,4 @@
 //RESPONSIVE MULTI COLUM LAYOUT (columns number changes based on viewport width) --- USE CLASSES .col2 to .col4
-//
-$columnGap: 1rem; //Use rem
-$columWidth: auto;
-$columnRuleType: solid;
-$columnRuleWidth: 1px;
-$columnRuleColor: #ccc;
-//
 .col2,
 .col3,
 .col4 {

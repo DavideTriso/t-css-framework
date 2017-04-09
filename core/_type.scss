@@ -2,37 +2,6 @@
 //Automatic resize for headeings: Font-size and margins adapts to wievport width. Size and margins increase with bigger viewport width 
 //User defined resize for headeings: Font-size and margins adapts to wievport width if user adds classes .smart and/or .desktop.
 //
-//VARIABLES FOR HEADINGS
-$activateResponsiveHeadings: "true"; //activate responsive headings classes
-$activateAutoResponsiveHeadings: "true"; //if true headings will be resized with no need to add class tablet and/or smart. Classes for resize will be not included in css
-$h1FontSize: 2rem;
-$h2FontSize: 1.8rem;
-$h3FontSize: 1.6rem;
-$h4FontSize: 1.4rem;
-$h5FontSize: 1.2rem;
-$h6FontSize: 1.2rem;
-//
-$headingsTabletMultiplyFactor: 1.25;
-$headingsDesktopMultiplyFactor: 1.5;
-//
-//
-//HEADINGS MARGIN TOP FACTORS
-$headingsMarginTopFactor: 1.5;
-//
-//HEADINGS MARGINS LEFT AND RIGHT
-$headingsMarginLeft: 0; //use rem
-$headingsMarginRight: 0; //use rem
-//
-//LINE HEIGHT MULTIPLY FACTOR
-$lineHeightFactor: 1.2;
-//VARIABLES FOR P AND OTHRE TEXT ELEMENTS
-$defaultTextFontSize: 1em;
-$textElementsMarginTop: 1rem;
-//
-//
-//Define standard font families
-$defaultFontFamily: 'serif';
-$fontFamilyHeadings: 'sans-serif';
 html,
 body {
   font-family: $defaultFontFamily;

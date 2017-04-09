@@ -1,9 +1,3 @@
-$stepsAddonWidth: 10;
-$intervalAddonWidth: 0.75rem;
-$beginMargin: 1.25;
-$extraPaddingAddonInput: 0.5rem;
-$inputElementsPaddingTopBottom: 0.5rem;
-$inputElementsPaddingLeftRight: 0.5rem;
 button,
 input[type="button"],
 input[type="date"],
@@ -124,21 +118,21 @@ fieldset {
       @extend %float-none;
     }
     //Width classes for form elements
-    @for $i from 1 through $stepsAddonWidth {
+    @for $i from 0 through $stepsAddonWidth {
       .w#{$i} {
-        width: $beginMargin + $i * $intervalAddonWidth;
+        width: $firstAddonWidth + $i * $intervalAddonWidth;
       }
       .ipl#{$i} {
-        padding-left: (($beginMargin + $i) * $intervalAddonWidth) + $extraPaddingAddonInput;
+        padding-left: (($firstAddonWidth + $i) * $intervalAddonWidth) + $extraPaddingAddonInput;
       }
       .ipr#{$i} {
-        padding-right: (($beginMargin + $i) * $intervalAddonWidth) + $extraPaddingAddonInput;
+        padding-right: (($firstAddonWidth + $i) * $intervalAddonWidth) + $extraPaddingAddonInput;
       }
       .iml#{$i} {
-        margin-left: $beginMargin + $i * $intervalAddonWidth;
+        margin-left: $firstAddonWidth + $i * $intervalAddonWidth;
       }
       .imr#{$i} {
-        margin-right: $beginMargin + $i * $intervalAddonWidth;
+        margin-right: $firstAddonWidth + $i * $intervalAddonWidth;
       }
     }
   }

@@ -1,82 +1,63 @@
 //Generate padding and margin classes with automatic or user difined adaptive resize.
 //Automatic resize: Padding and margin adapts to wievport width. Margins and paddings increase with larger viewports
-//User defined resize: Padding and margin adapts to wievport width if user adds classes .desktop-m and .desktop-p (for desktopPhone Margins and Paddings) and/or classes tabletM and .tablet-p (for tablet Margins and Paddings)
-//
-$activateResponsiveMargins: "true"; //activate responsive margin classes
-$activateResponsivePaddings: "true"; //activate responsive margin classes
-$activateAutoResponsiveMargins: "true"; //if true margins will be resized with no need to add class tablet and/or desktop. Classes for resize will be not included in css
-$activateAutoResponsivePaddings: "true"; //if true paddings will be resized with no need to add class tablet and/or desktop. Classes for resize will be not included in css
-//
-//MARGIN CLASSES
-$stepsMargin: 10;
-$intervalMargin: 0.25rem;
-$beginMargin: 0;
-$marginsTabletMultiplyFactor: 0.25;
-$marginsDesktopMultiplyFactor: 0.5;
-//
-//PADDING CLASSES
-$stepsPadding: 10;
-$intervalPadding: 0.25rem;
-$beginPadding: 0;
-$paddingsTabletMultiplyFactor: 0.25;
-$paddingsDesktopMultiplyFactor: 0.5;
+//User defined resize: Padding and margin adapts to wievport width if user adds classes .desktop-m and .desktop-p (for desktop Margins and Paddings) and/or classes tablet-m and .tablet-p (for tablet Margins and Paddings)
 //
 //mixins for margin classes
 //all four sides
 @mixin margins {
-  @for $i from 1 through $stepsMargin {
+  @for  $i from 1 through $firstMargin {
     .m#{$i} {
-      margin: $beginMargin + $intervalMargin * $i;
+      margin: $firstMargin + $intervalMargin * $i;
     }
   }
 }
 //left and right;
 @mixin margins-left-right {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     .mlr#{$i} {
-      margin-left: $beginMargin + $intervalMargin * $i;
-      margin-right: $beginMargin + $intervalMargin * $i;
+      margin-left: $firstMargin + $intervalMargin * $i;
+      margin-right: $firstMargin + $intervalMargin * $i;
     }
   }
 }
 //top and bottom;
 @mixin margins-top-bottom {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     .mtb#{$i} {
-      margin-bottom: $beginMargin + $intervalMargin * $i;
-      margin-top: $beginMargin + $intervalMargin * $i;
+      margin-bottom: $firstMargin + $intervalMargin * $i;
+      margin-top: $firstMargin + $intervalMargin * $i;
     }
   }
 }
 //top;
 @mixin margins-top {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     .mt#{$i} {
-      margin-top: $beginMargin + $intervalMargin * $i;
+      margin-top: $firstMargin + $intervalMargin * $i;
     }
   }
 }
 //bottom;
 @mixin margins-bottom {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     .mb#{$i} {
-      margin-bottom: $beginMargin + $intervalMargin * $i;
+      margin-bottom: $firstMargin + $intervalMargin * $i;
     }
   }
 }
 //left;
 @mixin margins-left {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     .ml#{$i} {
-      margin-left: $beginMargin + $intervalMargin * $i;
+      margin-left: $firstMargin + $intervalMargin * $i;
     }
   }
 }
 //bottom;
 @mixin margins-right {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     .mr#{$i} {
-      margin-right: $beginMargin + $intervalMargin * $i;
+      margin-right: $firstMargin + $intervalMargin * $i;
     }
   }
 }
@@ -85,218 +66,218 @@ $paddingsDesktopMultiplyFactor: 0.5;
 //responsive
 //tablet
 @mixin margins-tablet {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .m#{$i} {
-        margin: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
     @else {
       .m#{$i}.tablet-m {
-        margin: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
   }
 }
 //left and right;
 @mixin margins-left-right-tablet {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .mlr#{$i} {
-        margin-left: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
-        margin-right: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-left: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-right: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
     @else {
       .mlr#{$i}.tablet-m {
-        margin-left: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
-        margin-right: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-left: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-right: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
   }
 }
 //top and bottom;
 @mixin margins-top-bottom-tablet {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .mtb#{$i} {
-        margin-bottom: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
-        margin-top: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-bottom: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-top: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
     @else {
       .mtb#{$i}.tablet-m {
-        margin-bottom: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
-        margin-top: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-bottom: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-top: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
   }
 }
 //top;
 @mixin margins-top-tablet {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .mt#{$i} {
-        margin-top: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-top: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
     @else {
       .mt#{$i}.tablet-m {
-        margin-top: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-top: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
   }
 }
 //bottom;
 @mixin margins-bottom-tablet {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .mb#{$i} {
-        margin-bottom: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-bottom: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
     @else {
       .mb#{$i}.tablet-m {
-        margin-bottom: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-bottom: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
   }
 }
 //left;
 @mixin margins-left-tablet {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .ml#{$i} {
-        margin-left: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-left: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
     @else {
       .ml#{$i}.tablet-m {
-        margin-left: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-left: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
   }
 }
 //bottom;
 @mixin margins-right-tablet {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .mr#{$i} {
-        margin-right: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-right: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
     @else {
       .mr#{$i}.tablet-m {
-        margin-right: $beginMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+        margin-right: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
       }
     }
   }
 }
 //smart
 @mixin margins-desktop {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .m#{$i} {
-        margin: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
     @else {
       .m#{$i}.desktop-m {
-        margin: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
   }
 }
 //left and right;
 @mixin margins-left-right-desktop {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .mlr#{$i} {
-        margin-left: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
-        margin-right: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-left: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-right: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
     @else {
       .mlr#{$i}.desktop-m {
-        margin-left: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
-        margin-right: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-left: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-right: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
   }
 }
 //top and bottom;
 @mixin margins-top-bottom-desktop {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .mtb#{$i} {
-        margin-bottom: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
-        margin-top: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-bottom: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-top: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
     @else {
       .mtb#{$i}.desktop-m {
-        margin-bottom: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
-        margin-top: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-bottom: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-top: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
   }
 }
 //top;
 @mixin margins-top-desktop {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .mt#{$i} {
-        margin-top: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-top: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
     @else {
       .mt#{$i}.desktop-m {
-        margin-top: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-top: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
   }
 }
 //bottom;
 @mixin margins-bottom-desktop {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .mb#{$i} {
-        margin-bottom: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-bottom: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
     @else {
       .mb#{$i}.desktop-m {
-        margin-bottom: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-bottom: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
   }
 }
 //left;
 @mixin margins-left-desktop {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .ml#{$i} {
-        margin-left: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-left: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
     @else {
       .ml#{$i}.desktop-m {
-        margin-left: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-left: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
   }
 }
 //bottom;
 @mixin margins-right-desktop {
-  @for $i from 1 through $stepsMargin {
+  @for $i from 1 through $firstMargin {
     @if $activateAutoResponsiveMargins=="true" {
       .mr#{$i} {
-        margin-right: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-right: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
     @else {
       .mr#{$i}.desktop-m {
-        margin-right: $beginMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+        margin-right: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
       }
     }
   }
@@ -304,59 +285,59 @@ $paddingsDesktopMultiplyFactor: 0.5;
 //mixins for padding classes
 //all four sides
 @mixin paddings {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .p#{$i} {
-      padding: $beginPadding + $intervalPadding * $i;
+      padding: $firstPadding + $intervalPadding * $i;
     }
   }
 }
 //left and right;
 @mixin paddings-left-right {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .plr#{$i} {
-      padding-left: $beginPadding + $intervalPadding * $i;
-      padding-right: $beginPadding + $intervalPadding * $i;
+      padding-left: $firstPadding + $intervalPadding * $i;
+      padding-right: $firstPadding + $intervalPadding * $i;
     }
   }
 }
 //top and bottom;
 @mixin paddings-top-bottom {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .ptb#{$i} {
-      padding-bottom: $beginPadding + $intervalPadding * $i;
-      padding-top: $beginPadding + $intervalPadding * $i;
+      padding-bottom: $firstPadding + $intervalPadding * $i;
+      padding-top: $firstPadding + $intervalPadding * $i;
     }
   }
 }
 //top;
 @mixin paddings-top {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pt#{$i} {
-      padding-top: $beginPadding + $intervalPadding * $i;
+      padding-top: $firstPadding + $intervalPadding * $i;
     }
   }
 }
 //bottom;
 @mixin paddings-bottom {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pb#{$i} {
-      padding-bottom: $beginPadding + $intervalPadding * $i;
+      padding-bottom: $firstPadding + $intervalPadding * $i;
     }
   }
 }
 //left;
 @mixin paddings-left {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pl#{$i} {
-      padding-left: $beginPadding + $intervalPadding * $i;
+      padding-left: $firstPadding + $intervalPadding * $i;
     }
   }
 }
 //bottom;
 @mixin paddings-right {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pr#{$i} {
-      padding-right: $beginPadding + $intervalPadding * $i;
+      padding-right: $firstPadding + $intervalPadding * $i;
     }
   }
 }
@@ -365,117 +346,117 @@ $paddingsDesktopMultiplyFactor: 0.5;
 //responsive
 //tablet
 @mixin paddings-tablet {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .p#{$i}.tablet-p {
-      padding: $beginPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+      padding: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
   }
 }
 //left and right;
 @mixin paddings-left-right-tablet {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .plr#{$i}.tablet-p {
-      padding-left: $beginPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
-      padding-right: $beginPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+      padding-left: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+      padding-right: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
   }
 }
 //top and bottom;
 @mixin paddings-top-bottom-tablet {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .ptb#{$i}.tablet-p {
-      padding-bottom: $beginPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
-      padding-top: $beginPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+      padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+      padding-top: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
   }
 }
 //top;
 @mixin paddings-top-tablet {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pt#{$i}.tablet-p {
-      padding-top: $beginPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+      padding-top: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
   }
 }
 //bottom;
 @mixin paddings-bottom-tablet {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pb#{$i}.tablet-p {
-      padding-bottom: $beginPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+      padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
   }
 }
 //left;
 @mixin paddings-left-tablet {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pl#{$i}.tablet-p {
-      padding-left: $beginPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+      padding-left: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
   }
 }
 //bottom;
 @mixin paddings-right-tablet {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pr#{$i}.tablet-p {
-      padding-right: $beginPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+      padding-right: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
   }
 }
 //smart
 @mixin paddings-desktop {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .p#{$i}.desktop-p {
-      padding: $beginPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+      padding: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }
   }
 }
 //left and right;
 @mixin paddings-left-right-desktop {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .plr#{$i}.desktop-p {
-      padding-left: $beginPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
-      padding-right: $beginPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+      padding-left: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+      padding-right: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }
   }
 }
 //top and bottom;
 @mixin paddings-top-bottom-desktop {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .ptb#{$i}.desktop-p {
-      padding-bottom: $beginPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
-      padding-top: $beginPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+      padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+      padding-top: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }
   }
 }
 //top;
 @mixin paddings-top-desktop {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pt#{$i}.desktop-p {
-      padding-top: $beginPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+      padding-top: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }
   }
 }
 //bottom;
 @mixin paddings-bottom-desktop {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pb#{$i}.desktop-p {
-      padding-bottom: $beginPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+      padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }
   }
 }
 //left;
 @mixin paddings-left-desktop {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pl#{$i}.desktop-p {
-      padding-left: $beginPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+      padding-left: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }
   }
 }
 //bottom;
 @mixin paddings-right-desktop {
-  @for $i from 1 through $stepsPadding {
+  @for $i from 1 through $firstPadding {
     .pr#{$i}.desktop-p {
-      padding-right: $beginPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+      padding-right: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }
   }
 }
