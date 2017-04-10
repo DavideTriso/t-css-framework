@@ -1,0 +1,47 @@
+//Link default style
+@mixin button-default ($color, $textDecoration, $transitionSpeed, $transitionEasing) {
+  color: $color;
+    text-decoration: $textDecoration;
+  @if $transitionSpeed > 0 {
+    @include triple-transition (background-color, $transitionSpeed, $transitionEasing, border, $transitionSpeed, $transitionEasing, color, $transitionSpeed, $transitionEasing);
+  }
+}
+//
+//Button hover and focus styles
+@mixin button-hover-focus ($colorHoverFocus, $backgroundHoverFocus, $borderHoverFocus) {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $backgroundHoverFocus;
+    border: $borderHoverFocus;
+    color: $colorHoverFocus;
+  }
+}
+//
+//Button activ style
+@mixin button-active ($colorActive, $backgroundActive, $borderActive, $colorActiveHoverFocus, $backgroundActiveHoverFocus, $borderActiveHoverFocus) {
+  &.active {
+    background-color: $backgroundActive;
+    border: $borderActive;
+    color: $colorActive;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $backgroundActiveHoverFocus;
+      border: $borderActiveHoverFocus;
+      color: $colorActiveHoverFocus;
+    }
+  }
+}
+//
+//Button disabled style
+@mixin button-disabled ($colorDisabled, $backgroundDisabled, $borderDisabled) {
+  &.disabled,
+  &[disabled],
+  &.disabled:hover,
+  &[disabled]:hover {
+    background-color: $backgroundDisabled;
+    border: $borderDisabled;
+    color: $colorDisabled;
+  }
+}

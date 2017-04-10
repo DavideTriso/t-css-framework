@@ -96,51 +96,50 @@
           <fieldset class="g txt g100-1 g100-5">
             <legend>Input fields with addon</legend>
             <div class="row">
-              <div class="g txt g100-1 g50-3 g50-5 form-group">
+              <div class="g txt g100-1 g50-3 g50-5">
                 <div class="form-group">
-                  <label>Simple addon</label>
-                  <input type="text" class=" ipr1" />
-                  <button type="button" class="addon r w1">H</button>
+                  <label class="form-group__label">Simple Input field</label>
+                  <input type="text" class="form-group__field" />
                 </div>
               </div>
-              <div class="g txt g100-1 g50-3 g50-5 form-group">
+              <div class="g txt g100-1 g50-3 g50-5">
                 <div class="form-group">
-                  <label>Double addon</label>
-                  <button type="button" class="addon l w1">H</button>
-                  <input type="text" class="ipl1 ipr1" />
-                  <button type="button" class="addon r w1">H</button>
+                  <label class="form-group__label">Double addon</label>
+                  <button type="button" class="form-group__addon form-group__addon_left form-group__addon_width-1">H</button>
+                  <input type="text" class="form-group__field form-group__field_padding-left-1 form-group__field_padding-right-1" />
+                  <button type="button" class="form-group__addon form-group__addon_right form-group__addon_width-1">H</button>
                 </div>
               </div>
-              <div class="g txt g100-1 g50-3 g50-5 form-group">
+              <div class="g txt g100-1 g50-3 g50-5">
                 <div class="form-group">
-                  <label>Double addon same side</label>
-                  <button type="button" class="addon l w1">1</button>
-                  <button type="button" class="addon l w2 iml1">2</button>
-                  <input type="text" class="ipl5" />
+                   <label class="form-group__label">Double addon same side</label>
+                  <button type="button" class="form-group__addon form-group__addon_left form-group__addon_width-1">1</button>
+                  <button type="button" class="form-group__addon form-group__addon_left form-group__addon_width-1 form-group__addon_margin-left-1">2</button>
+                  <input type="text" class="form-group__field form-group__field_padding-left-3" />
                 </div>
               </div>
-              <div class="g txt g100-1 g50-3 g50-5 form-group">
+              <div class="g txt g100-1 g50-3 g50-5">
                 <div class="form-group">
-                  <label>Addon with decoration</label>
-                  <input type="text" class="ipl2" />
-                  <span class="addon l w2">Go!</span>
+                   <label class="form-group__label">Addon with decoration</label>
+                  <input type="text" class="form-group__field form-group__field_padding-left-3" />
+                  <span class="form-group__addon form-group__addon_left form-group__addon_width-3">Hello!</span>
                 </div>
               </div>
-              <div class="g txt g100-1 g50-3 g50-5 form-group">
+              <div class="g txt g100-1 g50-3 g50-5">
                 <div class="form-group">
-                  <label>Select list</label>
-                  <select>
+                   <label class="form-group__label">Select list with addon (not clickable)</label>
+                  <select class="form-group__field">
                     <option val="1">option 1</option>
                     <option val="2">option 2</option>
                     <option val="3">option 3</option>
                   </select>
-                  <span class="addon r w1 transparent">&darr;</span>
+                  <span class="form-group__addon form-group__addon_right form-group__addon_not-clickable form-group__addon_width-1">&darr;</span>
                 </div>
               </div>
             </div>
           </fieldset>
           <div class="g txt g100-1 g50-3 g20-5 form-group">
-            <input type="submit" class="w1" value="submit" />
+            <input type="submit" class="form-group__field" value="submit" />
           </div>
         </div>
       </form>

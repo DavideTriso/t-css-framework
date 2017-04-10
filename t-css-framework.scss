@@ -1,7 +1,10 @@
+//Breakpoints variables
 @import 'breakpoints'; 
 //Placeholders
 @import 'placeholders/placeholders';
-@import 'placeholders/placeholders-tablet';
-@import 'placeholders/placeholders-desktop';
+//CSS mixins
+@import 'css-mixins/css-mixins';
+//UI mixins
+@import 'ui-mixins/ui-mixins';
 //Framework core
-@import 'core/framework-core'; 
+@import 'framework-core/framework-core';

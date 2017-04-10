@@ -1,14 +1,25 @@
-//Generate CSS for typography.
+//CSS for typography.
 //Automatic resize for headeings: Font-size and margins adapts to wievport width. Size and margins increase with bigger viewport width 
 //User defined resize for headeings: Font-size and margins adapts to wievport width if user adds classes .smart and/or .desktop.
 //
+//Default fonts
 html,
 body {
   font-family: $defaultFontFamily;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontFamilyHeadings;
+}
+//these styles applies only to elements wrapped inside an element with class .txt
 .txt {
   font-size: $defaultTextFontSize;
   line-height: $defaultTextFontSize * $lineHeightFactor;
+  //
   //HEADINGS
   h1,
   h2,
@@ -16,7 +27,6 @@ body {
   h4,
   h5,
   h6 {
-    font-family: $fontFamilyHeadings;
     @extend %margin-0;
     @extend %padding-0;
   }
@@ -217,8 +227,8 @@ body {
       }
     }
   }
-  //paragraphs and other text elements
-  //text elements
+  //
+  //PARAGRAPHS LISTS, IMAGES & CO.
   a,
   address,
   code,
@@ -248,4 +258,6 @@ body {
     @extend %content;
     @extend %display-block;
   }
+  //
+  //TABLES d
 }

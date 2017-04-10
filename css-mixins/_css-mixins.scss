@@ -203,6 +203,12 @@
   -o-transition: $property1 $seconds1 $easing1, $property2 $seconds2 $easing2;
   transition: $property1 $seconds1 $easing1, $property2 $seconds2 $easing2;
 }
+@mixin triple-transition ($property1, $seconds1, $easing1, $property2, $seconds2, $easing2, $property3, $seconds3, $easing3) {
+  -webkit-transition: $property1 $seconds1 $easing1, $property2 $seconds2 $easing2, $property3 $seconds3 $easing3;
+  -moz-transition: $property1 $seconds1 $easing1, $property2 $seconds2 $easing2, $property3 $seconds3 $easing3;
+  -o-transition: $property1 $seconds1 $easing1, $property2 $seconds2 $easing2, $property3 $seconds3 $easing3;
+  transition: $property1 $seconds1 $easing1, $property2 $seconds2 $easing2, $property3 $seconds3 $easing3;
+}
 //Background color for user selected text
 @mixin text-selection-color ($color) {
   &::selection {

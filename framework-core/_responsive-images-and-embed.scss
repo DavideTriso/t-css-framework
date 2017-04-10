@@ -1,3 +1,12 @@
+//Responsive images
+img {
+  @extend %height-auto;
+  @extend %max-width-100;
+}
+.img-responsive {
+  @extend %width-100;
+}
+//
 // Embeds responsive
 // Credit: Nicolas Gallagher and SUIT CSS.
 .responsive-embed {
@@ -13,17 +22,16 @@
     @extend %border-0;
     @extend %bottom-0;
     @extend %left-0;
-    @extend %height-100;
     @extend %position-absolute;
     @extend %top-0;
     @extend %width-100;
   }
 }
-// Modifier class for 16:9 aspect ratio
-.resp16by9 {
+//Modifier class for 16:9 aspect ratio
+.responsive-embed_resp16by9 {
   padding-bottom: 56.25%;
 }
-// Modifier class for 4:3 aspect ratio
-.resp4by3 {
+//Modifier class for 4:3 aspect ratio
+.responsive-embed_resp4by3 {
   padding-bottom: 75%;
 }
