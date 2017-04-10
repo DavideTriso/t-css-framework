@@ -1,0 +1,30 @@
+//input size
+@mixin input-size ($fontSize, $lineHeight, $minWidth, $paddingVertical, $paddingHorizontal) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  min-width: $minWidth;
+  padding: $paddingVertical $paddingHorizontal;
+}
+//
+//Input default style
+@mixin input-default ($color, $background, $border, $textSelectionColor, $placeholderColor) {
+  background-color: $background;
+  border: $border;
+  color: $color;
+  @if $textSelectionColor !='' {
+    @include text-selection-color ($textSelectionColor);
+  }
+  @if $placeholderColor !='' {
+    @include placeholder-color ($placeholderColor);
+  }
+}
+//
+//Input focus styles
+@mixin input-focus ($colorFocus, $backgroundFocus, $borderFocus) {
+  &:focus,
+  &:active {
+    background-color: $backgroundFocus;
+    border: $borderFocus;
+    color: $colorFocus;
+  }
+}

@@ -9,7 +9,7 @@
 //Button default style
 @mixin button-default ($color, $background, $border, $transitionSpeed, $transitionEasing) {
   background-color: $background;
-  border: $borderRadius;
+  border: $border;
   color: $color;
   @if $transitionSpeed > 0 {
     @include triple-transition (background-color, $transitionSpeed, $transitionEasing, border, $transitionSpeed, $transitionEasing, color, $transitionSpeed, $transitionEasing);

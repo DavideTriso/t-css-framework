@@ -27,7 +27,6 @@
   -ms-backdrop-filter: $filter; //maybe will be supported in the future...
   backdrop-filter: $filter;
 }
-
 //The box-shadow property attaches one or more shadows to an element.
 @mixin box-shadow($xOffset, $yOffset, $blur, $spread, $color, $inset) {
   -webkit-box-shadow: $inset $xOffset $yOffset $blur $spread $color;
@@ -46,7 +45,6 @@
     clear: both;
   }
 }
-
 //
 //multi column layout
 //The column-count property specifies the number of columns an element should be divided into.
@@ -96,18 +94,19 @@
   perspective-origin: $origin;
 }
 //Input and Textarea placeholder color
-@mixin placeholder($color: $inputColorPlaceholder) {
-  // Firefox
+@mixin placeholder-color ($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
   &::-moz-placeholder {
     color: $color;
-    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
   }
   &:-ms-input-placeholder {
     color: $color;
-  } // Internet Explorer 10+
-  &::-webkit-input-placeholder {
+  }
+  &:-moz-placeholder {
     color: $color;
-  } // Safari and Chrome
+  }
 }
 // Transformations
 @mixin scale($ratioX, $ratioY) {
