@@ -1,47 +1,53 @@
 //Link default style
-@mixin button-default ($color, $textDecoration, $transitionSpeed, $transitionEasing) {
+@mixin link-default ($fontSize, $fontWeight, $color, $textDecoration) {
+  @if $fontSize != 0 {
+    font-size: $fontSize;
+  }
+  @if $fontWeight != 0 {
+    font-weight: $fontWeight;
+  }
   color: $color;
+  @if $textdecoration != 0 {
     text-decoration: $textDecoration;
-  @if $transitionSpeed > 0 {
-    @include triple-transition (background-color, $transitionSpeed, $transitionEasing, border, $transitionSpeed, $transitionEasing, color, $transitionSpeed, $transitionEasing);
   }
 }
-//
-//Button hover and focus styles
-@mixin button-hover-focus ($colorHoverFocus, $backgroundHoverFocus, $borderHoverFocus) {
+//Link hover, focus and active style
+@mixin link-hover-focus ($fontWeight, $color, $textDecoration) {
   &:hover,
   &:focus,
   &:active {
-    background-color: $backgroundHoverFocus;
-    border: $borderHoverFocus;
-    color: $colorHoverFocus;
-  }
-}
-//
-//Button activ style
-@mixin button-active ($colorActive, $backgroundActive, $borderActive, $colorActiveHoverFocus, $backgroundActiveHoverFocus, $borderActiveHoverFocus) {
-  &.active {
-    background-color: $backgroundActive;
-    border: $borderActive;
-    color: $colorActive;
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $backgroundActiveHoverFocus;
-      border: $borderActiveHoverFocus;
-      color: $colorActiveHoverFocus;
+    @if $fontWeight != 0 {
+      font-weight: $fontWeight;
+    }
+    color: $color;
+    @if $textdecoration != 0 {
+      text-decoration: $textDecoration;
     }
   }
 }
-//
-//Button disabled style
-@mixin button-disabled ($colorDisabled, $backgroundDisabled, $borderDisabled) {
-  &.disabled,
-  &[disabled],
-  &.disabled:hover,
-  &[disabled]:hover {
-    background-color: $backgroundDisabled;
-    border: $borderDisabled;
-    color: $colorDisabled;
+//Link visited style
+@mixin link-visited($fontWeight, $color, $textDecoration) {
+  &:visited {
+    @if $fontWeight != 0 {
+      font-weight: $fontWeight;
+    }
+    color: $color;
+    @if $textdecoration != 0 {
+      text-decoration: $textDecoration;
+    }
+  }
+}
+//Link visited hover, focus and active style
+@mixin link-visited-hover ($fontWeight, $color, $textDecoration) {
+  &:visited:hover,
+  &:visited:focus,
+  &:visited:active {
+    @if $fontWeight != 0 {
+      font-weight: $fontWeight;
+    }
+    color: $color;
+    @if $textdecoration != 0 {
+      text-decoration: $textDecoration;
+    }
   }
 }

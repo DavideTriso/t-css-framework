@@ -1,13 +1,11 @@
 @import 'variables';
+@import 'default-styles';
 @import 'responsive-margins-paddings';
-//Grid system
-@import 'grid';
-//Typography
+//Typography and layouting
+@import 'grid'; //Grid system
 @import 'typography';
 @import 'columns';
-//Responsive
 @import 'responsive-images-and-embed';
-//Forms
 @import 'forms';
 //Accessibility
 @import 'accessibility'; 

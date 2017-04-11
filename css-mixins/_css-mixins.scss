@@ -28,10 +28,10 @@
   backdrop-filter: $filter;
 }
 //The box-shadow property attaches one or more shadows to an element.
-@mixin box-shadow($xOffset, $yOffset, $blur, $spread, $color, $inset) {
-  -webkit-box-shadow: $inset $xOffset $yOffset $blur $spread $color;
-  -moz-box-shadow: $inset $xOffset $yOffset $blur $spread $color;
-  box-shadow: $inset $xOffset $yOffset $blur $spread $color;
+@mixin box-shadow($boxShadow) {
+  -webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
 }
 //bootstrap clearfix placeholder
 %clearfix {
