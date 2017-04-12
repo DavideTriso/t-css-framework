@@ -68,7 +68,7 @@
         textZoomCheck: true,
         textZoomCheckFrequency: 333
       },
-      settings = '',
+      settings = {},
       elementsArray = [],
       body = $('body'),
       bodyFontSize = 0,
