@@ -1,0 +1,45 @@
+//--------------------------------------------------
+//INCLUDE CLASSES FOR RESPONSIVE PADDINGS
+//--------------------------------------------------
+//all four sides
+@for $i from 1 through $firstPadding {
+  .p#{$i} {
+    @extend %p#{$i};
+  }
+}
+//left and right
+@for $i from 1 through $firstPadding {
+  .plr#{$i} {
+    @extend %plr#{$i};
+  }
+}
+//top and bottom
+@for $i from 1 through $firstPadding {
+  .ptb#{$i} {
+    @extend %ptb#{$i};
+  }
+}
+//top
+@for $i from 1 through $firstPadding {
+  .pt#{$i} {
+    @extend %pt#{$i};
+  }
+}
+//bottom
+@for $i from 1 through $firstPadding {
+  .pb#{$i} {
+    @extend %pb#{$i}
+  }
+}
+//left
+@for $i from 1 through $firstPadding {
+  .pl#{$i} {
+    @extend %pl#{$i};
+  }
+}
+//bottom
+@for $i from 1 through $firstPadding {
+  .pr#{$i} {
+    @extend %pr#{$i};
+  }
+}

@@ -1,0 +1,75 @@
+//Set all elements of the grid to border-box
+//to prevent alignement problems when applying borders
+%cont,
+%flex-cont,
+%row,
+%c {
+  @extend %box-sizing-border-box;
+}
+//Set min-width of flex-cont to 100
+%flex-cont {
+  @extend %min-width-100;
+}
+//Body should not scale for viewports smaller than $w0
+//Prevent horizontal scrolling on mobile devices
+body {
+  min-width: $w0;
+  @extend %overflow-y-hidden;
+}
+//Set margin auto to container to center it in the viewport
+%cont {
+  @extend %margin-auto;
+}
+//set gutter to elements
+%cont,
+%flex-cont,
+%c {
+  padding-left: $gGutter;
+  padding-right: $gGutter;
+}
+%row {
+  margin-left: -($gGutter);
+  margin-right: -($gGutter);
+}
+@media screen and (min-width: $w3) and (max-width: $w5min) {
+  %cont,
+  %flex-cont,
+  %c {
+    padding-left: $gTabletGutter;
+    padding-right: $gTabletGutter;
+  }
+  %row {
+    margin-left: -($gTabletGutter);
+    margin-right: -($gTabletGutter);
+  }
+}
+@media screen and (min-width: $w5) {
+  %cont,
+  %flex-cont,
+  %c {
+    padding-left: $gDesktopGutter;
+    padding-right: $gDesktopGutter;
+  }
+  %row {
+    margin-left: -($gDesktopGutter);
+    margin-right: -($gDesktopGutter);
+  }
+}
+//Set container widths based on viewport size
+//container is 100% up to $w3min (smartphones)
+//smart
+%cont {
+  width: 100%;
+}
+//tablet
+@media screen and (min-width: $w3) and (max-width: $w5min) {
+  %cont {
+    width: $w3 - $contExtraLeftRightMargin;
+  }
+}
+//desktop
+@media screen and (min-width: $w5) {
+  %cont {
+    width: $w5 - $contExtraLeftRightMargin;
+  }
+}

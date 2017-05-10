@@ -1,0 +1,11 @@
+html,
+body {
+  font-size: 16px; //Set default font size on root element(s)
+}
+html,
+body {
+  @extend %box-sizing-border-box;
+  @extend %margin-0;
+  @extend %min-width-100;
+  @extend %padding-0;
+}

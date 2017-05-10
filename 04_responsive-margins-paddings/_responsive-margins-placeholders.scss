@@ -1,0 +1,211 @@
+//--------------------------------------------------
+//MIXINS FOR MARGINS - DEFAULT (SMART)
+//--------------------------------------------------
+//all four sides
+@mixin margins {
+  @for $i from 1 through $firstMargin {
+    %m#{$i} {
+      margin: $firstMargin + $intervalMargin * $i;
+    }
+  }
+}
+//left and right
+@mixin margins-left-right {
+  @for $i from 1 through $firstMargin {
+    %mlr#{$i} {
+      margin-left: $firstMargin + $intervalMargin * $i;
+      margin-right: $firstMargin + $intervalMargin * $i;
+    }
+  }
+}
+//top and bottom
+@mixin margins-top-bottom {
+  @for $i from 1 through $firstMargin {
+    %mtb#{$i} {
+      margin-bottom: $firstMargin + $intervalMargin * $i;
+      margin-top: $firstMargin + $intervalMargin * $i;
+    }
+  }
+}
+//top
+@mixin margins-top {
+  @for $i from 1 through $firstMargin {
+    %mt#{$i} {
+      margin-top: $firstMargin + $intervalMargin * $i;
+    }
+  }
+}
+//bottom
+@mixin margins-bottom {
+  @for $i from 1 through $firstMargin {
+    %mb#{$i} {
+      margin-bottom: $firstMargin + $intervalMargin * $i;
+    }
+  }
+}
+//left
+@mixin margins-left {
+  @for $i from 1 through $firstMargin {
+    %ml#{$i} {
+      margin-left: $firstMargin + $intervalMargin * $i;
+    }
+  }
+}
+//bottom
+@mixin margins-right {
+  @for $i from 1 through $firstMargin {
+    %mr#{$i} {
+      margin-right: $firstMargin + $intervalMargin * $i;
+    }
+  }
+}
+//--------------------------------------------------
+//MIXINS FOR MARGINS - TABLET
+//--------------------------------------------------
+//all four sides
+@mixin margins-tablet {
+  @for $i from 1 through $firstMargin {
+    %m#{$i} {
+      margin: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+    }
+  }
+}
+//left and right
+@mixin margins-left-right-tablet {
+  @for $i from 1 through $firstMargin {
+    %mlr#{$i} {
+      margin-left: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+      margin-right: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+    }
+  }
+}
+//top and bottom
+@mixin margins-top-bottom-tablet {
+  @for $i from 1 through $firstMargin {
+    %mtb#{$i} {
+      margin-bottom: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+      margin-top: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+    }
+  }
+}
+//top
+@mixin margins-top-tablet {
+  @for $i from 1 through $firstMargin {
+    %mt#{$i} {
+      margin-top: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+    }
+  }
+}
+//bottom
+@mixin margins-bottom-tablet {
+  @for $i from 1 through $firstMargin {
+    %mb#{$i} {
+      margin-bottom: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+    }
+  }
+}
+//left
+@mixin margins-left-tablet {
+  @for $i from 1 through $firstMargin {
+    %ml#{$i} {
+      margin-left: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+    }
+  }
+}
+//bottom
+@mixin margins-right-tablet {
+  @for $i from 1 through $firstMargin {
+    %mr#{$i} {
+      margin-right: $firstMargin + $intervalMargin * $i * $marginsTabletMultiplyFactor;
+    }
+  }
+}
+//--------------------------------------------------
+//MIXINS FOR MARGINS - DESKTOP
+//--------------------------------------------------
+//all four sides
+@mixin margins-desktop {
+  @for $i from 1 through $firstMargin {
+    %m#{$i} {
+      margin: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+    }
+  }
+}
+//left and right
+@mixin margins-left-right-desktop {
+  @for $i from 1 through $firstMargin {
+    %mlr#{$i} {
+      margin-left: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+      margin-right: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+    }
+  }
+}
+//top and bottom
+@mixin margins-top-bottom-desktop {
+  @for $i from 1 through $firstMargin {
+    %mtb#{$i} {
+      margin-bottom: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+      margin-top: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+    }
+  }
+}
+//top
+@mixin margins-top-desktop {
+  @for $i from 1 through $firstMargin {
+    %mt#{$i} {
+      margin-top: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+    }
+  }
+}
+//bottom
+@mixin margins-bottom-desktop {
+  @for $i from 1 through $firstMargin {
+    %mb#{$i} {
+      margin-bottom: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+    }
+  }
+}
+//left
+@mixin margins-left-desktop {
+  @for $i from 1 through $firstMargin {
+    %ml#{$i} {
+      margin-left: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+    }
+  }
+}
+//bottom
+@mixin margins-right-desktop {
+  @for $i from 1 through $firstMargin {
+    %mr#{$i} {
+      margin-right: $firstMargin + $intervalMargin * $i * $marginsDesktopMultiplyFactor;
+    }
+  }
+}
+//--------------------------------------------------
+//INCLUDE MIXINS AND GENERATE PLACEHOLDERS
+//--------------------------------------------------
+@include margins;
+@include margins-left-right;
+@include margins-top-bottom;
+@include margins-top;
+@include margins-bottom;
+@include margins-left;
+@include margins-right;
+@media screen and (min-width: $w3) {
+  @include margins-tablet;
+  @include margins-left-right-tablet;
+  @include margins-top-bottom-tablet;
+  @include margins-top-tablet;
+  @include margins-bottom-tablet;
+  @include margins-left-tablet;
+  @include margins-right-tablet;
+}
+@media screen and (min-width: $w5 - 1px) {
+  @include margins-desktop;
+  @include margins-left-right-desktop;
+  @include margins-top-bottom-desktop;
+  @include margins-top-desktop;
+  @include margins-bottom-desktop;
+  @include margins-left-desktop;
+  @include margins-right-desktop;
+}

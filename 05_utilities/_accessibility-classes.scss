@@ -1,0 +1,27 @@
+//=====================
+//ACCESSIBILITY CLASSES
+//=====================
+.access {
+  @extend %access;
+}
+.access-focus {
+  @extend %access-focus;
+}
+.access-smart {
+  @extend %access-smart;
+}
+.access-focus-smart {
+  @extend %access-focus-smart;
+}
+.access-tablet {
+  @extend %access-tablet;
+}
+.access-focus-tablet {
+  @extend %access-focus-tablet;
+}
+.access-desktop {
+  @extend %access-desktop;
+}
+.access-focus-desktop {
+  @extend %access-focus-desktop;
+}

@@ -1,10 +1,20 @@
-//Breakpoints variables
+//Breakpoints, colors and variables
 @import 'breakpoints'; 
+@import 'colors';
+@import 'variables';
 //Placeholders
-@import 'placeholders/placeholders';
+@import '01_placeholders/import';
 //CSS mixins
-@import 'css-mixins/css-mixins';
+@import '02_css-mixins/import';
+//Grid systems
+@import '03_grid-systems/import';
+//Responsive margins and paddings
+@import '04_responsive-margins-paddings/import';
+//Utilities
+@import '05_utilities/import';
+//Typography
+@import '06_typography/import';
+//Forms
+@import '07_forms/import';
 //UI mixins
-@import 'ui-mixins/ui-mixins';
-//Framework core
-@import 'framework-core/framework-core';
+@import '08_ui-mixins/import';

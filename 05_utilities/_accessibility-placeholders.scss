@@ -1,0 +1,66 @@
+//=====================
+//ACCESSIBILITY MIXINS
+//=====================
+@mixin access {
+  left: -99999px;
+  position: absolute;
+}
+@mixin access-focus {
+  left: -99999px;
+  opacity: 0;
+  position: absolute;
+  @include transition (opacity, $accessFocusTransitionSpeed, $accessFocusTransitionTimingFunction);
+  &:focus {
+    opacity: 1;
+    position: static;
+  }
+}
+//============================
+//ACCESSIBILITY PLACEHOLDERS
+//==========================
+//Accessibility classes.
+//.access: Position elements outside of viewport.
+//.access-focus:  Position element outside of viewport and show when receives focus 
+
+//-------------------------
+//ALL VIEWPORTS
+//-------------------------
+%access {
+  @include access;
+}
+%access-focus {
+  @include access-focus;
+}
+//-------------------------
+//ONLY SMART
+//-------------------------
+@media screen and (max-width: $w3min) {
+  %access-smart {
+    @include access;
+  }
+  %access-focus-smart {
+    @include access-focus; 
+  }
+}
+//-------------------------
+//ONLY TABLET
+//-------------------------
+@media screen and (min-width: $w3) and (max-width: $w5min) {
+  %access-tablet {
+    @include access;
+  }
+  %access-focus-tablet {
+    @include access-focus;
+  }
+}
+//-------------------------
+//ONLY DESKTOP
+//-------------------------
+@media screen and (min-width: $w5) {
+  %access-desktop {
+    @include access;
+  }
+  %access-focus-desktop {
+    @include access-focus;
+  }
+}

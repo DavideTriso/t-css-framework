@@ -1,0 +1,45 @@
+//--------------------------------------------------
+//INCLUDE CLASSES FOR RESPONSIVE MARGINS
+//--------------------------------------------------
+//all four sides
+@for $i from 1 through $firstMargin {
+  .m#{$i} {
+    @extend %m#{$i};
+  }
+}
+//left and right
+@for $i from 1 through $firstMargin {
+  .mlr#{$i} {
+    @extend %mlr#{$i};
+  }
+}
+//top and bottom
+@for $i from 1 through $firstMargin {
+  .mtb#{$i} {
+    @extend %mtb#{$i};
+  }
+}
+//top
+@for $i from 1 through $firstMargin {
+  .mt#{$i} {
+    @extend %mt#{$i};
+  }
+}
+//bottom
+@for $i from 1 through $firstMargin {
+  .mb#{$i} {
+    @extend %mb#{$i}
+  }
+}
+//left
+@for $i from 1 through $firstMargin {
+  .ml#{$i} {
+    @extend %ml#{$i};
+  }
+}
+//bottom
+@for $i from 1 through $firstMargin {
+  .mr#{$i} {
+    @extend %mr#{$i};
+  }
+}

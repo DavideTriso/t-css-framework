@@ -1,0 +1,54 @@
+//=================
+//TYPOGRAPHY
+//=================
+//-----------------
+//TEXT CONTENT
+//-----------------
+$defaultTextFontSize: 1rem !default;
+$defaultTextLetterSpacing: normal !default;
+$textElementsMargin: 1rem !default;
+$defaultFontFamily: 'serif' !default;
+
+//-----------------
+//HEADINGS
+//-----------------
+//Font sizes for headings (on smartphones)
+$h1FontSize: 2rem;
+$h2FontSize: 1.8rem;
+$h3FontSize: 1.6rem;
+$h4FontSize: 1.4rem;
+$h5FontSize: 1.2rem;
+$h6FontSize: 1.2rem;
+//Multiply factor for tablet and desktop headings
+$headingsTabletMultiplyFactor: 1.25;
+$headingsDesktopMultiplyFactor: 1.5;
+//Hedings margin top factor
+$headingsMarginTopFactor: 1.5;
+//Left and right margin for headings
+$headingsMarginLeft: 0; //use rem
+$headingsMarginRight: 0; //use rem
+//Line height multiply factor
+$lineHeightFactor: 1.2;
+$fontFamilyHeadings: 'Helvetica';
+
+//
+//-----------
+//FORMS
+$inputElementsPaddingTopBottom: 0.5rem;
+$inputElementsPaddingLeftRight: 0.5rem; 
+//Addon
+$stepsAddonWidth: 10;
+$intervalAddonWidth: 1rem;
+$firstAddonWidth: 1;
+$extraPaddingAddonInput: 0; 
+
+
+
+//=============================
+//RESPONSIVE MULTI COLUMNS LAYOUT
+//=============================
+$columnGap: 1rem !default; //Use rem only
+$columWidth: auto !default;
+$columnRuleType: solid !default;
+$columnRuleWidth: 0.2rem !default;
+$columnRuleColor: #000 !default;

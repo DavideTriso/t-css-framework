@@ -1,0 +1,114 @@
+//------------------
+//RESET STYLES
+//----------------- 
+a,
+abbr,
+acronym,
+address,
+b,
+big,
+cite,
+code,
+del,
+em,
+i,
+ins,
+kbd,
+mark,
+output,
+q,
+ruby,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+time,
+tt,
+u,
+var,
+dfn,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+applet,
+canvas,
+embed,
+figure,
+figcaption,
+iframe,
+img,
+object {
+  background: transparent;
+  @extend %border-none;
+  font-size: 100%;
+  font: inherit;
+  @extend %letter-spacing-normal;
+  line-height: 1;
+  @extend %margin-0;
+  @extend %padding-0;
+  @extend %vertical-align-baseline;
+}
+a {
+  &:hover,
+  &:active,
+  &:focus {
+    @extend %text-decoration-none;
+  }
+}
+button {
+  background: transparent;
+  @extend %border-none;
+  @extend %padding-0;
+}
+dl,
+ol,
+ul {
+  list-style: none;
+  @extend %list-style-position-inside;
+}
+dt,
+dd {
+  @extend %display-inline;
+}
+dt:before {
+  @extend %content;
+  @extend %display-block;
+}
+//------------------
+//SET DEFAULT FONT FAMILIES
+//------------------
+html,
+body {
+  font-family: $defaultFontFamily;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontFamilyHeadings;
+}

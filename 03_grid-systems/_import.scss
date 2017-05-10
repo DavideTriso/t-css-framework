@@ -1,0 +1,27 @@
+//--------------------------------------------------
+//GRID SYSTEMS
+//--------------------------------------------------
+@import 'variables';
+@import 'grid-systems-commons';
+//--------------------------------------------------
+//FLEXBOX GRID SYSTEM
+//--------------------------------------------------
+@import 'flexbox-grid-placeholders';
+@import 'flexbox-grid-classes'; 
+//--------------------------------------------------
+//FLOAT-BASED GRID SYSTEM
+//--------------------------------------------------
+//@import 'float-grid-placeholders';
+//@import 'float-grid-classes';
+//--------------------------------------------------
+//COMPATIBILITY GRID SYSTEM
+//--------------------------------------------------
+//@import 'compatibility-grid-placeholders';
+//@import 'compatibility-grid-classes'; 
+//--------------------------------------------------
+
+//INSTRUCTIONS:
+/*
+Uncomment the file(s) of the grid system you want to use.
+Including only one grid system. Including more than one grid system will lead to problems and redundant css code.
+*/

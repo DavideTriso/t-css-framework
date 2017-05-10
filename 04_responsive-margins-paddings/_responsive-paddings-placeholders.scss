@@ -1,0 +1,211 @@
+//--------------------------------------------------
+//MIXINS FOR PADDINGS - DEFAULT (SMART)
+//--------------------------------------------------
+//all four sides
+@mixin paddings {
+  @for $i from 1 through $firstPadding {
+    %p#{$i} {
+      padding: $firstPadding + $intervalPadding * $i;
+    }
+  }
+}
+//left and right
+@mixin paddings-left-right {
+  @for $i from 1 through $firstPadding {
+    %plr#{$i} {
+      padding-left: $firstPadding + $intervalPadding * $i;
+      padding-right: $firstPadding + $intervalPadding * $i;
+    }
+  }
+}
+//top and bottom
+@mixin paddings-top-bottom {
+  @for $i from 1 through $firstPadding {
+    %ptb#{$i} {
+      padding-bottom: $firstPadding + $intervalPadding * $i;
+      padding-top: $firstPadding + $intervalPadding * $i;
+    }
+  }
+}
+//top
+@mixin paddings-top {
+  @for $i from 1 through $firstPadding {
+    %pt#{$i} {
+      padding-top: $firstPadding + $intervalPadding * $i;
+    }
+  }
+}
+//bottom
+@mixin paddings-bottom {
+  @for $i from 1 through $firstPadding {
+    %pb#{$i} {
+      padding-bottom: $firstPadding + $intervalPadding * $i;
+    }
+  }
+}
+//left
+@mixin paddings-left {
+  @for $i from 1 through $firstPadding {
+    %pl#{$i} {
+      padding-left: $firstPadding + $intervalPadding * $i;
+    }
+  }
+}
+//bottom
+@mixin paddings-right {
+  @for $i from 1 through $firstPadding {
+    %pr#{$i} {
+      padding-right: $firstPadding + $intervalPadding * $i;
+    }
+  }
+}
+//--------------------------------------------------
+//MIXINS FOR PADDINGS - TABLET
+//--------------------------------------------------
+//all four sides
+@mixin paddings-tablet {
+  @for $i from 1 through $firstPadding {
+    %p#{$i} {
+      padding: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+    }
+  }
+}
+//left and right
+@mixin paddings-left-right-tablet {
+  @for $i from 1 through $firstPadding {
+    %plr#{$i} {
+      padding-left: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+      padding-right: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+    }
+  }
+}
+//top and bottom
+@mixin paddings-top-bottom-tablet {
+  @for $i from 1 through $firstPadding {
+    %ptb#{$i} {
+      padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+      padding-top: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+    }
+  }
+}
+//top
+@mixin paddings-top-tablet {
+  @for $i from 1 through $firstPadding {
+    %pt#{$i} {
+      padding-top: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+    }
+  }
+}
+//bottom
+@mixin paddings-bottom-tablet {
+  @for $i from 1 through $firstPadding {
+    %pb#{$i} {
+      padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+    }
+  }
+}
+//left
+@mixin paddings-left-tablet {
+  @for $i from 1 through $firstPadding {
+    %pl#{$i} {
+      padding-left: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+    }
+  }
+}
+//bottom
+@mixin paddings-right-tablet {
+  @for $i from 1 through $firstPadding {
+    %pr#{$i} {
+      padding-right: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
+    }
+  }
+}
+//--------------------------------------------------
+//MIXINS FOR PADDINGS - DESKTOP
+//--------------------------------------------------
+//all four sides
+@mixin paddings-desktop {
+  @for $i from 1 through $firstPadding {
+    %p#{$i} {
+      padding: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+    }
+  }
+}
+//left and right
+@mixin paddings-left-right-desktop {
+  @for $i from 1 through $firstPadding {
+    %plr#{$i} {
+      padding-left: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+      padding-right: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+    }
+  }
+}
+//top and bottom
+@mixin paddings-top-bottom-desktop {
+  @for $i from 1 through $firstPadding {
+    %ptb#{$i} {
+      padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+      padding-top: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+    }
+  }
+}
+//top
+@mixin paddings-top-desktop {
+  @for $i from 1 through $firstPadding {
+    %pt#{$i} {
+      padding-top: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+    }
+  }
+}
+//bottom
+@mixin paddings-bottom-desktop {
+  @for $i from 1 through $firstPadding {
+    %pb#{$i} {
+      padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+    }
+  }
+}
+//left
+@mixin paddings-left-desktop {
+  @for $i from 1 through $firstPadding {
+    %pl#{$i} {
+      padding-left: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+    }
+  }
+}
+//bottom
+@mixin paddings-right-desktop {
+  @for $i from 1 through $firstPadding {
+    %pr#{$i} {
+      padding-right: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
+    }
+  }
+}
+//--------------------------------------------------
+//INCLUDE MIXINS AND GENERATE PLACEHOLDERS
+//--------------------------------------------------
+@include paddings;
+@include paddings-left-right;
+@include paddings-top-bottom;
+@include paddings-top;
+@include paddings-bottom;
+@include paddings-left;
+@include paddings-right;
+@media screen and (min-width: $w3) {
+  @include paddings-tablet;
+  @include paddings-left-right-tablet;
+  @include paddings-top-bottom-tablet;
+  @include paddings-top-tablet;
+  @include paddings-bottom-tablet;
+  @include paddings-left-tablet;
+  @include paddings-right-tablet;
+}
+@media screen and (min-width: $w5 - 1px) {
+  @include paddings-desktop;
+  @include paddings-left-right-desktop;
+  @include paddings-top-bottom-desktop;
+  @include paddings-top-desktop;
+  @include paddings-bottom-desktop;
+  @include paddings-left-desktop;
+  @include paddings-right-desktop;
+}
