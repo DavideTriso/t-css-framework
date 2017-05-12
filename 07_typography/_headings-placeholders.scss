@@ -1,0 +1,97 @@
+//------------------
+//RESPONSIVE HEADINGS
+//-----------------
+%h1 {
+  font-size: $h1FontSize;
+  line-height: $h1FontSize * $lineHeightFactor;
+  margin: $h1FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+}
+%h2 {
+  font-size: $h2FontSize;
+  line-height: $h2FontSize * $lineHeightFactor;
+  margin: $h2FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+}
+%h3 {
+  font-size: $h3FontSize;
+  line-height: $h3FontSize * $lineHeightFactor;
+  margin: $h3FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+}
+%h4 {
+  font-size: $h4FontSize;
+  line-height: $h4FontSize * $lineHeightFactor;
+  margin: $h4FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+}
+%h5 {
+  font-size: $h5FontSize;
+  line-height: $h5FontSize * $lineHeightFactor;
+  margin: $h5FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+}
+%h6 {
+  font-size: $h6FontSize;
+  line-height: $h6FontSize * $lineHeightFactor;
+  margin: $h6FontSize * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+}
+@media screen and (min-width: $w3) {
+  %h1 {
+    font-size: $h1FontSize * $headingsTabletMultiplyFactor;
+    line-height: $h1FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+    margin: $h1FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  %h2 {
+    font-size: $h2FontSize * $headingsTabletMultiplyFactor;
+    line-height: $h2FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+    margin: $h2FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  %h3 {
+    font-size: $h3FontSize * $headingsTabletMultiplyFactor;
+    line-height: $h3FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+    margin: $h3FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  %h4 {
+    font-size: $h4FontSize * $headingsTabletMultiplyFactor;
+    line-height: $h4FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+    margin: $h4FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  %h5 {
+    font-size: $h5FontSize * $headingsTabletMultiplyFactor;
+    line-height: $h5FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+    margin: $h5FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  %h6 {
+    font-size: $h6FontSize * $headingsTabletMultiplyFactor;
+    line-height: $h6FontSize * $headingsTabletMultiplyFactor * $lineHeightFactor;
+    margin: $h6FontSize * $headingsTabletMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+}
+@media screen and (min-width: $w5) {
+  %h1 {
+    font-size: $h1FontSize * $headingsDesktopMultiplyFactor;
+    line-height: $h1FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+    margin: $h1FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  %h2 {
+    font-size: $h2FontSize * $headingsDesktopMultiplyFactor;
+    line-height: $h2FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+    margin: $h2FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  %h3 {
+    font-size: $h3FontSize * $headingsDesktopMultiplyFactor;
+    line-height: $h3FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+    margin: $h3FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  %h4 {
+    font-size: $h4FontSize * $headingsDesktopMultiplyFactor;
+    line-height: $h4FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+    margin: $h4FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  %h5 {
+    font-size: $h5FontSize * $headingsDesktopMultiplyFactor;
+    line-height: $h5FontSize * $headingsDesktopMultiplyFactor* $lineHeightFactor;
+    margin: $h5FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+  %h6 {
+    font-size: $h6FontSize * $headingsDesktopMultiplyFactor;
+    line-height: $h6FontSize * $headingsDesktopMultiplyFactor * $lineHeightFactor;
+    margin: $h6FontSize * $headingsDesktopMultiplyFactor * $headingsMarginTopFactor $headingsMarginRight 0 $headingsMarginLeft;
+  }
+}

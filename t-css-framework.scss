@@ -6,15 +6,17 @@
 @import '01_placeholders/import';
 //CSS mixins
 @import '02_css-mixins/import';
+//CSS mixins
+@import '03_html-mixins/import';
 //Grid systems
-@import '03_grid-systems/import';
+@import '04_grid-systems/import';
 //Responsive margins and paddings
-@import '04_responsive-margins-paddings/import';
+@import '05_responsive-margins-paddings/import';
 //Utilities
-@import '05_utilities/import';
+@import '06_utilities/import';
 //Typography
-@import '06_typography/import';
+@import '07_typography/import';
 //Forms
-@import '07_forms/import';
+@import '08_forms/import';
 //UI mixins
-@import '08_ui-mixins/import';
+@import '09_ui-mixins/import';
