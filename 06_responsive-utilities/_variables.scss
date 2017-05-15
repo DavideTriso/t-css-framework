@@ -1,0 +1,29 @@
+//-------------------------------
+//MARGINS SETTINGS
+//-------------------------------
+$stepsMargin: 10 !default;
+$intervalMargin: 0.25rem !default;
+$firstMargin: 0 !default;
+$marginsTabletMultiplyFactor: 0.25 !default;
+$marginsDesktopMultiplyFactor: 0.5 !default;
+//-------------------------------
+//PADDINGS SETTINGS
+//-------------------------------
+$stepsPadding: 10 !default;
+$intervalPadding: 0.25rem !default;
+$firstPadding: 0 !default;
+$paddingsTabletMultiplyFactor: 0.25 !default;
+$paddingsDesktopMultiplyFactor: 0.5 !default;
+//-------------------------------
+//FONT SIZES SETTINGS
+//-------------------------------
+$stepsFontSize: 20 !default;
+$intervalFontSize: 0.2rem !default;
+$firstFontSize: 0.6 !default;
+$fontSizeTabletMultiplyFactor: 0.25 !default;
+$fontSizeDesktopMultiplyFactor: 0.5 !default;
+//-------------------------------
+//ACCESSIBILITY
+//-------------------------------
+$accessFocusTransitionSpeed: 0.3s !default;
+$accessFocusTransitionTimingFunction: ease !default;

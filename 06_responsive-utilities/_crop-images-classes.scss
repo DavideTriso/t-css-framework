@@ -1,0 +1,20 @@
+.crop-cont {
+  @extend %crop-cont;
+}
+
+.crop-center {
+  @extend %crop-center;
+}
+.crop-top-left {
+  @extend %crop-top-left;
+}
+.crop-top-right {
+  @extend %crop-top-right;
+}
+.crop-bottom-left {
+  @extend %crop-bottom-left;
+}
+.crop-center {
+  @extend %crop-bottom-right;
+}
+

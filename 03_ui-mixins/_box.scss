@@ -1,0 +1,11 @@
+//----------------------
+//BOX
+//----------------------
+//Define border and background style for box.
+//Margins and paddings should be defined by extending classes with responsive margins and paddings placeholders
+@mixin box-default ($backgroundColor, $borderColor, $borderRadius, $borderStyle, $borderWidth) {
+  @if $backgroundColor !=transparent {
+    background-color: $backgroundColor;
+  }
+  @include border ($borderStyle, $borderWidth, $borderColor, $borderRadius);
+}

@@ -1,0 +1,35 @@
+//.c, .cont, .flex-cont and .row are defined in the specific grid system classes files
+
+.cont--small {
+  @extend %cont--small;
+}
+.cont--big {
+  @extend %cont--big;
+}
+.cont--gutter {
+  @extend %cont--gutter;
+}
+.cont--gutter-small {
+  @extend %cont--gutter-small;
+}
+.cont--gutter-big {
+  @extend %cont--gutter-big;
+}
+.flex-cont--gutter {
+  @extend %flex-cont--gutter;
+}
+.flex-cont--gutter-small {
+  @extend %flex-cont--gutter-small;
+}
+.flex-cont--gutter-big {
+  @extend %flex-cont--gutter-big;
+}
+.c--gutter {
+  @extend %c--gutter;
+}
+.c--gutter-small {
+  @extend %c--gutter-small;
+}
+.c--gutter-big {
+  @extend %c--gutter-big;
+}

@@ -2,21 +2,12 @@
 @import 'breakpoints'; 
 @import 'colors';
 @import 'variables';
-//Placeholders
 @import '01_placeholders/import';
-//CSS mixins
 @import '02_css-mixins/import';
-//CSS mixins
-@import '03_html-mixins/import';
-//Grid systems
-@import '04_grid-systems/import';
-//Responsive margins and paddings
-@import '05_responsive-margins-paddings/import';
-//Utilities
-@import '06_utilities/import';
-//Typography
-@import '07_typography/import';
-//Forms
-@import '08_forms/import';
-//UI mixins
-@import '09_ui-mixins/import';
+@import '03_ui-mixins/import';
+@import '04_html-defaults/import';
+@import '05_grid-systems/import';
+@import '06_responsive-utilities/import';
+@import '08_typography/import';
+@import '09_forms/import';
+ 

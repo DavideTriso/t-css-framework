@@ -71,8 +71,7 @@ object, button {
 .cont,
 .flex-cont,
 .row,
-.c, html,
-body {
+.c {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -175,8 +174,7 @@ ul {
 .cont {
   margin: auto; }
 
-html,
-body, a,
+a,
 abbr,
 acronym,
 address,
@@ -238,15 +236,13 @@ img,
 object {
   margin: 0; }
 
-.flex-cont, html,
-body {
+.flex-cont {
   min-width: 100%; }
 
 body {
   overflow: hidden; }
 
-html,
-body, a,
+a,
 abbr,
 acronym,
 address,
@@ -384,36 +380,10 @@ object {
 body {
   min-width: 280px; }
 
-.cont,
-.flex-cont,
 .c {
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
 
-.row {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem; }
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .cont,
-  .flex-cont,
-  .c {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem; }
-
-  .row {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem; } }
-@media screen and (min-width: 1200px) {
-  .cont,
-  .flex-cont,
-  .c {
-    padding-left: 1rem;
-    padding-right: 1rem; }
-
-  .row {
-    margin-left: -1rem;
-    margin-right: -1rem; } }
 .cont {
   width: 100%; }
 
@@ -422,7 +392,7 @@ body {
     width: 708px; } }
 @media screen and (min-width: 1200px) {
   .cont {
-    width: 1140px; } }
+    width: 1080px; } }
 .c1 {
   -webkit-flex-basis: 4.16667;
   flex-basis: 4.16667%; }
@@ -688,76 +658,76 @@ body {
     -webkit-flex-basis: 100;
     flex-basis: 100%; }
 
-  .o1#-2 {
+  .o1-2 {
     margin-left: 4.16667; }
 
-  .o2#-2 {
+  .o2-2 {
     margin-left: 8.33333; }
 
-  .o3#-2 {
+  .o3-2 {
     margin-left: 12.5; }
 
-  .o4#-2 {
+  .o4-2 {
     margin-left: 16.66667; }
 
-  .o5#-2 {
+  .o5-2 {
     margin-left: 20.83333; }
 
-  .o6#-2 {
+  .o6-2 {
     margin-left: 25; }
 
-  .o7#-2 {
+  .o7-2 {
     margin-left: 29.16667; }
 
-  .o8#-2 {
+  .o8-2 {
     margin-left: 33.33333; }
 
-  .o9#-2 {
+  .o9-2 {
     margin-left: 37.5; }
 
-  .o10#-2 {
+  .o10-2 {
     margin-left: 41.66667; }
 
-  .o11#-2 {
+  .o11-2 {
     margin-left: 45.83333; }
 
-  .o12#-2 {
+  .o12-2 {
     margin-left: 50; }
 
-  .o13#-2 {
+  .o13-2 {
     margin-left: 54.16667; }
 
-  .o14#-2 {
+  .o14-2 {
     margin-left: 58.33333; }
 
-  .o15#-2 {
+  .o15-2 {
     margin-left: 62.5; }
 
-  .o16#-2 {
+  .o16-2 {
     margin-left: 66.66667; }
 
-  .o17#-2 {
+  .o17-2 {
     margin-left: 70.83333; }
 
-  .o18#-2 {
+  .o18-2 {
     margin-left: 75; }
 
-  .o19#-2 {
+  .o19-2 {
     margin-left: 79.16667; }
 
-  .o20#-2 {
+  .o20-2 {
     margin-left: 83.33333; }
 
-  .o21#-2 {
+  .o21-2 {
     margin-left: 87.5; }
 
-  .o22#-2 {
+  .o22-2 {
     margin-left: 91.66667; }
 
-  .o23#-2 {
+  .o23-2 {
     margin-left: 95.83333; }
 
-  .o24#-2 {
+  .o24-2 {
     margin-left: 100; } }
 @media screen and (min-width: 768px) {
   .c1-3 {
@@ -856,76 +826,76 @@ body {
     -webkit-flex-basis: 100;
     flex-basis: 100%; }
 
-  .o1#-3 {
+  .o1-3 {
     margin-left: 4.16667; }
 
-  .o2#-3 {
+  .o2-3 {
     margin-left: 8.33333; }
 
-  .o3#-3 {
+  .o3-3 {
     margin-left: 12.5; }
 
-  .o4#-3 {
+  .o4-3 {
     margin-left: 16.66667; }
 
-  .o5#-3 {
+  .o5-3 {
     margin-left: 20.83333; }
 
-  .o6#-3 {
+  .o6-3 {
     margin-left: 25; }
 
-  .o7#-3 {
+  .o7-3 {
     margin-left: 29.16667; }
 
-  .o8#-3 {
+  .o8-3 {
     margin-left: 33.33333; }
 
-  .o9#-3 {
+  .o9-3 {
     margin-left: 37.5; }
 
-  .o10#-3 {
+  .o10-3 {
     margin-left: 41.66667; }
 
-  .o11#-3 {
+  .o11-3 {
     margin-left: 45.83333; }
 
-  .o12#-3 {
+  .o12-3 {
     margin-left: 50; }
 
-  .o13#-3 {
+  .o13-3 {
     margin-left: 54.16667; }
 
-  .o14#-3 {
+  .o14-3 {
     margin-left: 58.33333; }
 
-  .o15#-3 {
+  .o15-3 {
     margin-left: 62.5; }
 
-  .o16#-3 {
+  .o16-3 {
     margin-left: 66.66667; }
 
-  .o17#-3 {
+  .o17-3 {
     margin-left: 70.83333; }
 
-  .o18#-3 {
+  .o18-3 {
     margin-left: 75; }
 
-  .o19#-3 {
+  .o19-3 {
     margin-left: 79.16667; }
 
-  .o20#-3 {
+  .o20-3 {
     margin-left: 83.33333; }
 
-  .o21#-3 {
+  .o21-3 {
     margin-left: 87.5; }
 
-  .o22#-3 {
+  .o22-3 {
     margin-left: 91.66667; }
 
-  .o23#-3 {
+  .o23-3 {
     margin-left: 95.83333; }
 
-  .o24#-3 {
+  .o24-3 {
     margin-left: 100; } }
 @media screen and (min-width: 992px) {
   .c1-4 {
@@ -1024,76 +994,76 @@ body {
     -webkit-flex-basis: 100;
     flex-basis: 100%; }
 
-  .o1#-4 {
+  .o1-4 {
     margin-left: 4.16667; }
 
-  .o2#-4 {
+  .o2-4 {
     margin-left: 8.33333; }
 
-  .o3#-4 {
+  .o3-4 {
     margin-left: 12.5; }
 
-  .o4#-4 {
+  .o4-4 {
     margin-left: 16.66667; }
 
-  .o5#-4 {
+  .o5-4 {
     margin-left: 20.83333; }
 
-  .o6#-4 {
+  .o6-4 {
     margin-left: 25; }
 
-  .o7#-4 {
+  .o7-4 {
     margin-left: 29.16667; }
 
-  .o8#-4 {
+  .o8-4 {
     margin-left: 33.33333; }
 
-  .o9#-4 {
+  .o9-4 {
     margin-left: 37.5; }
 
-  .o10#-4 {
+  .o10-4 {
     margin-left: 41.66667; }
 
-  .o11#-4 {
+  .o11-4 {
     margin-left: 45.83333; }
 
-  .o12#-4 {
+  .o12-4 {
     margin-left: 50; }
 
-  .o13#-4 {
+  .o13-4 {
     margin-left: 54.16667; }
 
-  .o14#-4 {
+  .o14-4 {
     margin-left: 58.33333; }
 
-  .o15#-4 {
+  .o15-4 {
     margin-left: 62.5; }
 
-  .o16#-4 {
+  .o16-4 {
     margin-left: 66.66667; }
 
-  .o17#-4 {
+  .o17-4 {
     margin-left: 70.83333; }
 
-  .o18#-4 {
+  .o18-4 {
     margin-left: 75; }
 
-  .o19#-4 {
+  .o19-4 {
     margin-left: 79.16667; }
 
-  .o20#-4 {
+  .o20-4 {
     margin-left: 83.33333; }
 
-  .o21#-4 {
+  .o21-4 {
     margin-left: 87.5; }
 
-  .o22#-4 {
+  .o22-4 {
     margin-left: 91.66667; }
 
-  .o23#-4 {
+  .o23-4 {
     margin-left: 95.83333; }
 
-  .o24#-4 {
+  .o24-4 {
     margin-left: 100; } }
 @media screen and (min-width: 1200px) {
   .c1-5 {
@@ -1192,76 +1162,76 @@ body {
     -webkit-flex-basis: 100;
     flex-basis: 100%; }
 
-  .o1#-5 {
+  .o1-5 {
     margin-left: 4.16667; }
 
-  .o2#-5 {
+  .o2-5 {
     margin-left: 8.33333; }
 
-  .o3#-5 {
+  .o3-5 {
     margin-left: 12.5; }
 
-  .o4#-5 {
+  .o4-5 {
     margin-left: 16.66667; }
 
-  .o5#-5 {
+  .o5-5 {
     margin-left: 20.83333; }
 
-  .o6#-5 {
+  .o6-5 {
     margin-left: 25; }
 
-  .o7#-5 {
+  .o7-5 {
     margin-left: 29.16667; }
 
-  .o8#-5 {
+  .o8-5 {
     margin-left: 33.33333; }
 
-  .o9#-5 {
+  .o9-5 {
     margin-left: 37.5; }
 
-  .o10#-5 {
+  .o10-5 {
     margin-left: 41.66667; }
 
-  .o11#-5 {
+  .o11-5 {
     margin-left: 45.83333; }
 
-  .o12#-5 {
+  .o12-5 {
     margin-left: 50; }
 
-  .o13#-5 {
+  .o13-5 {
     margin-left: 54.16667; }
 
-  .o14#-5 {
+  .o14-5 {
     margin-left: 58.33333; }
 
-  .o15#-5 {
+  .o15-5 {
     margin-left: 62.5; }
 
-  .o16#-5 {
+  .o16-5 {
     margin-left: 66.66667; }
 
-  .o17#-5 {
+  .o17-5 {
     margin-left: 70.83333; }
 
-  .o18#-5 {
+  .o18-5 {
     margin-left: 75; }
 
-  .o19#-5 {
+  .o19-5 {
     margin-left: 79.16667; }
 
-  .o20#-5 {
+  .o20-5 {
     margin-left: 83.33333; }
 
-  .o21#-5 {
+  .o21-5 {
     margin-left: 87.5; }
 
-  .o22#-5 {
+  .o22-5 {
     margin-left: 91.66667; }
 
-  .o23#-5 {
+  .o23-5 {
     margin-left: 95.83333; }
 
-  .o24#-5 {
+  .o24-5 {
     margin-left: 100; } }
 @media screen and (min-width: 1440px) {
   .c1-6 {
@@ -1360,85 +1330,81 @@ body {
     -webkit-flex-basis: 100;
     flex-basis: 100%; }
 
-  .o1#-6 {
+  .o1-6 {
     margin-left: 4.16667; }
 
-  .o2#-6 {
+  .o2-6 {
     margin-left: 8.33333; }
 
-  .o3#-6 {
+  .o3-6 {
     margin-left: 12.5; }
 
-  .o4#-6 {
+  .o4-6 {
     margin-left: 16.66667; }
 
-  .o5#-6 {
+  .o5-6 {
     margin-left: 20.83333; }
 
-  .o6#-6 {
+  .o6-6 {
     margin-left: 25; }
 
-  .o7#-6 {
+  .o7-6 {
     margin-left: 29.16667; }
 
-  .o8#-6 {
+  .o8-6 {
     margin-left: 33.33333; }
 
-  .o9#-6 {
+  .o9-6 {
     margin-left: 37.5; }
 
-  .o10#-6 {
+  .o10-6 {
     margin-left: 41.66667; }
 
-  .o11#-6 {
+  .o11-6 {
     margin-left: 45.83333; }
 
-  .o12#-6 {
+  .o12-6 {
     margin-left: 50; }
 
-  .o13#-6 {
+  .o13-6 {
     margin-left: 54.16667; }
 
-  .o14#-6 {
+  .o14-6 {
     margin-left: 58.33333; }
 
-  .o15#-6 {
+  .o15-6 {
     margin-left: 62.5; }
 
-  .o16#-6 {
+  .o16-6 {
     margin-left: 66.66667; }
 
-  .o17#-6 {
+  .o17-6 {
     margin-left: 70.83333; }
 
-  .o18#-6 {
+  .o18-6 {
     margin-left: 75; }
 
-  .o19#-6 {
+  .o19-6 {
     margin-left: 79.16667; }
 
-  .o20#-6 {
+  .o20-6 {
     margin-left: 83.33333; }
 
-  .o21#-6 {
+  .o21-6 {
     margin-left: 87.5; }
 
-  .o22#-6 {
+  .o22-6 {
     margin-left: 91.66667; }
 
-  .o23#-6 {
+  .o23-6 {
     margin-left: 95.83333; }
 
-  .o24#-6 {
+  .o24-6 {
     margin-left: 100; } }
 /*
 Uncomment the file(s) of the grid system you want to use.
 Including only one grid system. Including more than one grid system will lead to problems and redundant css code.
 */
-html,
-body {
-  font-size: 16px; }
-
 a,
 abbr,
 acronym,

@@ -1,0 +1,40 @@
+//--------------------------------------------------
+//MIXINS FOR FONT SIZE - DEFAULT (SMART)
+//--------------------------------------------------
+@mixin font-size {
+  @for $i from 1 through $stepsFontSize {
+    %fs#{$i} {
+      font-size: $firstFontSize + $intervalFontSize * $i;
+    }
+  }
+}
+//--------------------------------------------------
+//MIXINS FOR FONT SIZE - TABLET
+//--------------------------------------------------
+@mixin font-size-tablet {
+  @for $i from 1 through $stepsFontSize {
+    %fs#{$i}-3 {
+      font-size: $firstFontSize + $intervalFontSize * $i * $fontSizeTabletMultiplyFactor;
+    }
+  }
+}
+//--------------------------------------------------
+//MIXINS FOR FONT SIZE - DESKTOP
+//--------------------------------------------------
+@mixin font-size-desktop {
+  @for $i from 1 through $stepsFontSize {
+    %fs#{$i}-5 {
+      font-size: $firstFontSize + $intervalFontSize * $i * $fontSizeDesktopMultiplyFactor;
+    }
+  } 
+}
+//--------------------------------------------------
+//INCLUDE MIXINS AND GENERATE PLACEHOLDERS
+//--------------------------------------------------
+@include font-size;
+@media screen and (min-width: $w3) {
+  @include font-size-tablet
+}
+@media screen and (min-width: $w5) {
+  @include font-size-desktop;
+}

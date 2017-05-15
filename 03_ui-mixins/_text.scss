@@ -1,0 +1,21 @@
+//---------------------------
+//mixin for text style
+//---------------------------
+//font-size and font-family should be defined by extending the styles with placeholders
+@mixin text ($lineHeight, $letterSpacing, $color, $fontWeight, $fontStyle, $textTransform, $textDecoration) {
+  color: $color;
+  @if $fontStyle !=normal {
+    font-style: $fontStyle;
+  }
+  @if $fontWeight !=normal {
+    font-weight: $fontWeight;
+  }
+  letter-spacing: $letterSpacing;
+  line-height: $lineHeight;
+  @if $textDecoration !=none {
+    text-decoration: $textDecoration;
+  }
+  @if $textTransform !=none {
+    text-transform: $textTransform;
+  }
+}
