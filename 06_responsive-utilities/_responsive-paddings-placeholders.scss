@@ -3,7 +3,7 @@
 //--------------------------------------------------
 //all four sides
 @mixin paddings {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %p#{$i} {
       padding: $firstPadding + $intervalPadding * $i;
     }
@@ -11,7 +11,7 @@
 }
 //left and right
 @mixin paddings-left-right {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %plr#{$i} {
       padding-left: $firstPadding + $intervalPadding * $i;
       padding-right: $firstPadding + $intervalPadding * $i;
@@ -20,7 +20,7 @@
 }
 //top and bottom
 @mixin paddings-top-bottom {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %ptb#{$i} {
       padding-bottom: $firstPadding + $intervalPadding * $i;
       padding-top: $firstPadding + $intervalPadding * $i;
@@ -29,7 +29,7 @@
 }
 //top
 @mixin paddings-top {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pt#{$i} {
       padding-top: $firstPadding + $intervalPadding * $i;
     }
@@ -37,7 +37,7 @@
 }
 //bottom
 @mixin paddings-bottom {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pb#{$i} {
       padding-bottom: $firstPadding + $intervalPadding * $i;
     }
@@ -45,7 +45,7 @@
 }
 //left
 @mixin paddings-left {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pl#{$i} {
       padding-left: $firstPadding + $intervalPadding * $i;
     }
@@ -53,7 +53,7 @@
 }
 //bottom
 @mixin paddings-right {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pr#{$i} {
       padding-right: $firstPadding + $intervalPadding * $i;
     }
@@ -64,7 +64,7 @@
 //--------------------------------------------------
 //all four sides
 @mixin paddings-tablet {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %p#{$i} {
       padding: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
@@ -72,7 +72,7 @@
 }
 //left and right
 @mixin paddings-left-right-tablet {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %plr#{$i} {
       padding-left: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
       padding-right: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
@@ -81,7 +81,7 @@
 }
 //top and bottom
 @mixin paddings-top-bottom-tablet {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %ptb#{$i} {
       padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
       padding-top: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
@@ -90,7 +90,7 @@
 }
 //top
 @mixin paddings-top-tablet {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pt#{$i} {
       padding-top: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
@@ -98,7 +98,7 @@
 }
 //bottom
 @mixin paddings-bottom-tablet {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pb#{$i} {
       padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
@@ -106,7 +106,7 @@
 }
 //left
 @mixin paddings-left-tablet {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pl#{$i} {
       padding-left: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
@@ -114,7 +114,7 @@
 }
 //bottom
 @mixin paddings-right-tablet {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pr#{$i} {
       padding-right: $firstPadding + $intervalPadding * $i * $paddingsTabletMultiplyFactor;
     }
@@ -125,7 +125,7 @@
 //--------------------------------------------------
 //all four sides
 @mixin paddings-desktop {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %p#{$i} {
       padding: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }
@@ -133,7 +133,7 @@
 }
 //left and right
 @mixin paddings-left-right-desktop {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %plr#{$i} {
       padding-left: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
       padding-right: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
@@ -142,7 +142,7 @@
 }
 //top and bottom
 @mixin paddings-top-bottom-desktop {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %ptb#{$i} {
       padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
       padding-top: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
@@ -151,7 +151,7 @@
 }
 //top
 @mixin paddings-top-desktop {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pt#{$i} {
       padding-top: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }
@@ -159,7 +159,7 @@
 }
 //bottom
 @mixin paddings-bottom-desktop {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pb#{$i} {
       padding-bottom: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }
@@ -167,7 +167,7 @@
 }
 //left
 @mixin paddings-left-desktop {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pl#{$i} {
       padding-left: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }
@@ -175,7 +175,7 @@
 }
 //bottom
 @mixin paddings-right-desktop {
-  @for $i from 1 through $firstPadding {
+  @for $i from 1 through $stepsPadding {
     %pr#{$i} {
       padding-right: $firstPadding + $intervalPadding * $i * $paddingsDesktopMultiplyFactor;
     }

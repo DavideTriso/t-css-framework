@@ -124,6 +124,12 @@
   %desktop-background-clip-content-box {
     background-clip: content-box;
   }
+  %desktop-background-color-none {
+    background-color: none;
+  }
+  %desktop-background-color-transparent {
+    background-color: transparent;
+  }
   %desktop-background-color-1 {
     background-color: #fff;
   }
@@ -900,6 +906,9 @@
   }
   %desktop-height-0 {
     height: 0;
+  }
+  %desktop-height-100 {
+    height: 100%;
   }
   %desktop-justify-content-flex-start {
     -webkit-justify-content: flex-start;

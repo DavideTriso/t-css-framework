@@ -5,6 +5,7 @@
   @for $i from 1 through $stepsFontSize {
     %fs#{$i} {
       font-size: $firstFontSize + $intervalFontSize * $i;
+      line-height: $firstFontSize + $intervalFontSize * $i * $lineHeightMultiplyFactor;
     }
   }
 }
@@ -15,6 +16,7 @@
   @for $i from 1 through $stepsFontSize {
     %fs#{$i}-3 {
       font-size: $firstFontSize + $intervalFontSize * $i * $fontSizeTabletMultiplyFactor;
+      line-height: $firstFontSize + $intervalFontSize * $i * $fontSizeTabletMultiplyFactor * $lineHeightMultiplyFactor;
     }
   }
 }
@@ -25,8 +27,9 @@
   @for $i from 1 through $stepsFontSize {
     %fs#{$i}-5 {
       font-size: $firstFontSize + $intervalFontSize * $i * $fontSizeDesktopMultiplyFactor;
+      line-height: $firstFontSize + $intervalFontSize * $i * $fontSizeDesktopMultiplyFactor * $lineHeightMultiplyFactor;
     }
-  } 
+  }
 }
 //--------------------------------------------------
 //INCLUDE MIXINS AND GENERATE PLACEHOLDERS

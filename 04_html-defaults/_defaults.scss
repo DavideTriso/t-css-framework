@@ -3,16 +3,12 @@
 //-----------------------
 html,
 body {
-  font-size: 16px; //Set default font size on root element(s)
-}
-html,
-body {
+  font-size: $defaultFontSize; //Set default font size on root element(s)
   @extend %box-sizing-border-box;
   @extend %margin-0;
   @extend %min-width-100;
   @extend %padding-0;
 }
-
 //------------------
 //RESET STYLES
 //----------------- 
@@ -76,7 +72,7 @@ figcaption,
 iframe,
 img,
 object {
-  background: transparent;
+  @extend %background-color-none;
   @extend %border-none;
   font-size: 100%;
   font: inherit;
@@ -96,7 +92,7 @@ a {
 }
 button {
   @extend %appearance-none;
-  background: transparent;
+  @extend %background-color-none;
   @extend %border-none;
   @extend %padding-0;
 }
@@ -113,4 +109,26 @@ dd {
 dt:before {
   @extend %content;
   @extend %display-block;
+}
+//-----------------------
+// FONT FAMILIES
+//-----------------------
+html,
+body {
+  font-family: $defaultFontFamily;
+}
+button,
+datalist,
+input,
+select,
+textarea {
+  font-family: $fontFamilyForms;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontFamilyHeadings;
 }

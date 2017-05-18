@@ -1,8 +1,17 @@
 //---------------------------
-//mixin for text style
+//mixin for text 
 //---------------------------
-//font-size and font-family should be defined by extending the styles with placeholders
-@mixin text ($lineHeight, $letterSpacing, $color, $fontWeight, $fontStyle, $textTransform, $textDecoration) {
+@mixin font-sizing ($fontSize, $lineHeight, $letterSpacing) {
+  font-size: $fontSize;
+  @if $letterSpacing !=0 {
+    letter-spacing: $letterSpacing;
+  }
+  @if $lineHeight !=0 {
+    line-height: $lineHeight;
+  }
+}
+
+@mixin text-style ($color, $fontWeight, $fontStyle, $textTransform, $textDecoration) {
   color: $color;
   @if $fontStyle !=normal {
     font-style: $fontStyle;
@@ -10,8 +19,24 @@
   @if $fontWeight !=normal {
     font-weight: $fontWeight;
   }
-  letter-spacing: $letterSpacing;
-  line-height: $lineHeight;
+  
+  @if $textDecoration !=none {
+    text-decoration: $textDecoration;
+  }
+  @if $textTransform !=none {
+    text-transform: $textTransform;
+  }
+}
+
+
+@mixin text-variation ($color, $fontWeight, $fontStyle, $textTransform, $textDecoration) {
+  color: $color;
+  @if $fontStyle !=normal {
+    font-style: $fontStyle;
+  }
+  @if $fontWeight !=normal {
+    font-weight: $fontWeight;
+  }
   @if $textDecoration !=none {
     text-decoration: $textDecoration;
   }

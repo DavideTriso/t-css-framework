@@ -6,6 +6,73 @@
   -webkit-align-items: stretch;
   align-items: stretch; }
 
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+a,
+abbr,
+acronym,
+address,
+b,
+big,
+cite,
+code,
+del,
+em,
+i,
+ins,
+kbd,
+mark,
+output,
+q,
+ruby,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+time,
+tt,
+u,
+var,
+dfn,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+applet,
+canvas,
+embed,
+figure,
+figcaption,
+iframe,
+img,
+object, button {
+  background-color: none; }
+
 a,
 abbr,
 acronym,
@@ -68,7 +135,8 @@ img,
 object, button {
   border: none; }
 
-.cont,
+html,
+body, .cont,
 .flex-cont,
 .row,
 .c {
@@ -169,12 +237,18 @@ object {
 dl,
 ol,
 ul {
+  list-style: none; }
+
+dl,
+ol,
+ul {
   list-style-position: inside; }
 
 .cont {
   margin: auto; }
 
-a,
+html,
+body, a,
 abbr,
 acronym,
 address,
@@ -236,13 +310,15 @@ img,
 object {
   margin: 0; }
 
-.flex-cont {
+html,
+body, .flex-cont {
   min-width: 100%; }
 
 body {
   overflow: hidden; }
 
-a,
+html,
+body, a,
 abbr,
 acronym,
 address,
@@ -304,7 +380,7 @@ img,
 object, button {
   padding: 0; }
 
-a:hover, a:active, a:focus {
+a, a:hover, a:active, a:focus {
   text-decoration: none; }
 
 a,
@@ -377,6 +453,93 @@ object {
   -webkit-align-self: $value;
   align-self: $value;
 }*/
+html,
+body {
+  font-size: 16px; }
+
+a,
+abbr,
+acronym,
+address,
+b,
+big,
+cite,
+code,
+del,
+em,
+i,
+ins,
+kbd,
+mark,
+output,
+q,
+ruby,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+time,
+tt,
+u,
+var,
+dfn,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+applet,
+canvas,
+embed,
+figure,
+figcaption,
+iframe,
+img,
+object {
+  font-size: 100%;
+  font: inherit;
+  line-height: 1; }
+
+html,
+body {
+  font-family: "sans-serif"; }
+
+button,
+datalist,
+input,
+select,
+textarea {
+  font-family: "sans-serif"; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "sans-serif"; }
+
 body {
   min-width: 280px; }
 
@@ -1405,89 +1568,5 @@ body {
 Uncomment the file(s) of the grid system you want to use.
 Including only one grid system. Including more than one grid system will lead to problems and redundant css code.
 */
-a,
-abbr,
-acronym,
-address,
-b,
-big,
-cite,
-code,
-del,
-em,
-i,
-ins,
-kbd,
-mark,
-output,
-q,
-ruby,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-time,
-tt,
-u,
-var,
-dfn,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-blockquote,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-pre,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-applet,
-canvas,
-embed,
-figure,
-figcaption,
-iframe,
-img,
-object {
-  background: transparent;
-  font-size: 100%;
-  font: inherit;
-  line-height: 1; }
-
-button {
-  background: transparent; }
-
-dl,
-ol,
-ul {
-  list-style: none; }
-
-html,
-body {
-  font-family: "serif"; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Helvetica"; }
 
 /*# sourceMappingURL=style.css.map */

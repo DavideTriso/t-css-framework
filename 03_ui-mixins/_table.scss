@@ -1,19 +1,23 @@
-//table default style
+//----------------------
+//TABLE DEFAULT STYLE
+//----------------------
+//Use to set the default styles of a table
+@mixin table-default () {
+  @extend %border-collapse-collapse;
+}
 
-
-//table
-
-//caption
-
-//tr
-
-//td
-
-//th
-
-//thead
-
-//tfoot
-
-//tbody
-
+//----------------------
+//TABLE ROW STYLE
+//----------------------
+//Use to style a single row like the thead or tfoot
+@mixin table-row-style () {
+  
+}
+//----------------------
+//TABLE CELL STYLE
+//----------------------
+//Use to style a single cell
+@mixin table-row-style () {
+  
+}
+//caption - > use text mixins

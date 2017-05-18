@@ -124,6 +124,12 @@
   %tablet-background-clip-content-box {
     background-clip: content-box;
   }
+  %tablet-background-color-none {
+    background-color: none;
+  }
+  %tablet-background-color-transparent {
+    background-color: transparent;
+  }
   %tablet-background-color-1 {
     background-color: #fff;
   }
@@ -900,6 +906,9 @@
   }
   %tablet-height-0 {
     height: 0;
+  }
+  %tablet-height-100 {
+    height: 100%;
   }
   %tablet-justify-content-flex-start {
     -webkit-justify-content: flex-start;

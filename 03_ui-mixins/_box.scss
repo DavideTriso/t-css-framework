@@ -8,4 +8,51 @@
     background-color: $backgroundColor;
   }
   @include border ($borderStyle, $borderWidth, $borderColor, $borderRadius);
+  @extend %box-sizing-border-box;
+}
+//----------------------
+//BOX GROUP HORIZONTAL
+//----------------------
+//Set borders on a group of horizontally positioned elements like an inline list or a group of buttons
+@mixin box-group-horizontal ($backgroundColor, $borderColor, $borderRadius, $borderStyle, $borderWidth) {
+  @if $backgroundColor !=transparent {
+    background-color: $backgroundColor;
+  }
+  @include border ($borderStyle, $borderWidth, $borderColor, 0);
+  border-right: none;
+  &:first-child {
+    @include border ($borderStyle, $borderWidth, $borderColor, $borderRadius);
+    border-bottom-right-radius: 0;
+    border-right: none;
+    border-top-right-radius: 0;
+  }
+  &:last-child {
+    @include border ($borderStyle, $borderWidth, $borderColor, $borderRadius);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  @extend %box-sizing-border-box;
+}
+//----------------------
+//BOX GROUP VERTICAL
+//----------------------
+//Set borders on a group of vertically positioned elements like a list
+@mixin box-group-vertical ($backgroundColor, $borderColor, $borderRadius, $borderStyle, $borderWidth) {
+  @if $backgroundColor !=transparent {
+    background-color: $backgroundColor;
+  }
+  @include border ($borderStyle, $borderWidth, $borderColor, 0);
+  border-bottom: none;
+  &:first-child {
+    @include border ($borderStyle, $borderWidth, $borderColor, $borderRadius);
+    border-top-left-radius: 0;
+    border-bottom: none;
+    border-top-right-radius: 0;
+  }
+  &:last-child {
+    @include border ($borderStyle, $borderWidth, $borderColor, $borderRadius);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  @extend %box-sizing-border-box;
 }
