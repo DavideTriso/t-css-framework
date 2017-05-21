@@ -5,8 +5,7 @@
   @for $i from 1 through $colNumber {
     %c#{$i} {
       width: 100 / $colNumber * $i;
-      -webkit-flex-basis: 100 / $colNumber * $i;
-      flex-basis: 100 / $colNumber * $i;
+      @include flex-basis(100% / $colNumber * $i);
     }
   }
 }
@@ -14,8 +13,7 @@
   @for $i from 1 through $colNumber {
     %c#{$i}-2 {
       width: 100 / $colNumber * $i;
-      -webkit-flex-basis: 100 / $colNumber * $i;
-      flex-basis: 100 / $colNumber * $i;
+      @include flex-basis(100% / $colNumber * $i);
     }
   }
 }
@@ -23,8 +21,7 @@
   @for $i from 1 through $colNumber {
     %c#{$i}-3 {
       width: 100 / $colNumber * $i;
-      -webkit-flex-basis: 100 / $colNumber * $i;
-      flex-basis: 100 / $colNumber * $i;
+      @include flex-basis(100% / $colNumber * $i);
     }
   }
 }
@@ -32,8 +29,7 @@
   @for $i from 1 through $colNumber {
     %c#{$i}-4 {
       width: 100 / $colNumber * $i;
-      -webkit-flex-basis: 100 / $colNumber * $i;
-      flex-basis: 100 / $colNumber * $i;
+      @include flex-basis(100% / $colNumber * $i);
     }
   }
 }
@@ -41,8 +37,7 @@
   @for $i from 1 through $colNumber {
     %c#{$i}-5 {
       width: 100 / $colNumber * $i;
-      -webkit-flex-basis: 100 / $colNumber * $i;
-      flex-basis: 100 / $colNumber * $i;
+      @include flex-basis(100% / $colNumber * $i);
     }
   }
 }
@@ -50,48 +45,47 @@
   @for $i from 1 through $colNumber {
     %c#{$i}-6 {
       width: 100 / $colNumber * $i;
-      -webkit-flex-basis: 100 / $colNumber * $i;
-      flex-basis: 100 / $colNumber * $i;
+      @include flex-basis(100% / $colNumber * $i);
     }
   }
 }
 @mixin offset {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i} {
       margin-left: 100 / $colNumber * $i;
     }
   }
 }
 @mixin offset-2 {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i}-2 {
       margin-left: 100 / $colNumber * $i;
     }
   }
 }
 @mixin offset-3 {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i}-3 {
       margin-left: 100 / $colNumber * $i;
     }
   }
 }
 @mixin offset-4 {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i}-4 {
       margin-left: 100 / $colNumber * $i;
     }
   }
 }
 @mixin offset-5 {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i}-5 {
       margin-left: 100 / $colNumber * $i;
     }
   }
 }
 @mixin offset-6 {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i}-6 {
       margin-left: 100 / $colNumber * $i;
     }

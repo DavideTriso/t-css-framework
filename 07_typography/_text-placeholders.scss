@@ -10,7 +10,7 @@
 //RESPONSIVE HEADINGS
 //-----------------
 %text-default {
-  h1 & {
+  h1 {
     @extend %fs14;
     @extend %mt16;
     @include text-variation (#000, bold, normal, none, none);
@@ -28,17 +28,25 @@
   h4 {
     @extend %fs6;
     @extend %mt8;
-    @include text-variation (#000, normal, normal, uppercase, none);
+    @include text-variation (#000, normal, normal, none, none);
   }
   h5 {
     @extend %fs6;
     @extend %mt8;
-    @include text-variation (#000, normal, normal, uppercase, none);
+    @include text-variation (#000, normal, normal, none, none);
   }
   h6 {
     @extend %fs6;
     @extend %mt8;
-    @include text-variation (#000, normal, normal, uppercase, none);
+    @include text-variation (#000, normal, normal, none, none);
+  }
+}
+//-----------------
+//PARAGRAPHS
+//-----------------
+%text-default {
+  p {
+    @extend %mt2;
   }
 }
 //------------------
@@ -70,6 +78,15 @@
   ol {}
   ul {}
 }
+//-----------------
+//PRE
+//-----------------
+%text-default {
+  pre {
+    
+  }
+}
+
 //------------------
 //INLINE @include text SEMANTIC
 //-----------------

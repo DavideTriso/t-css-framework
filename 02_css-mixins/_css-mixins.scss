@@ -33,7 +33,6 @@
   -moz-box-shadow: $boxShadow;
   box-shadow: $boxShadow;
 }
-
 @mixin background-gradient ($gradient) {
   //always define a fallback background-color when using this mixin
   background: -webkit-linear-gradient($gradient);
@@ -70,6 +69,10 @@
   -webkit-column-rule: $columnRuleWidth $columnRuleType $columnRuleColor;
   -moz-column-rule: $columnRuleWidth $columnRuleType $columnRuleColor;
   column-rule: $columnRuleWidth $columnRuleType $columnRuleColor;
+}
+@mixin flex-basis ($value) {
+  -webkit-flex-basis: $value;
+  flex-basis: $value;
 }
 @mixin filter ($filter) {
   -webkit-filter: $filter;
@@ -137,9 +140,8 @@
   -o-transform: translate($x, $y);
   transform: translate($x, $y);
 }
-
-@mixin translateZ($z) {  
-  -webkit-transform: translateZ($z); 
+@mixin translateZ($z) {
+  -webkit-transform: translateZ($z);
   -moz-transform: translateZ($z);
   -ms-transform: translateZ($z);
   -o-transform: translateZ($z);
@@ -180,7 +182,6 @@
   -o-transform: $transformations;
   transform: $transformations;
 }
-
 @mixin perspective($perspective) {
   -webkit-perspective: $perspective;
   -moz-perspective: $perspective;

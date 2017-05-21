@@ -1,35 +1,55 @@
-//.c, .cont, .flex-cont and .row are defined in the specific grid system classes files
-
-.cont--small {
-  @extend %cont--small;
+//.c, .cont, .fluid-cont and .row are defined in the specific grid system classes files
+.cont {
+  @extend %cont;
 }
-.cont--big {
-  @extend %cont--big;
+.fluid-cont {
+  @extend %fluid-cont;
 }
-.cont--gutter {
-  @extend %cont--gutter;
+.row {
+  @extend %row;
 }
-.cont--gutter-small {
-  @extend %cont--gutter-small;
+.c {
+  @extend %c;
 }
-.cont--gutter-big {
-  @extend %cont--gutter-big;
+.cont_small {
+  @extend %cont_small;
 }
-.flex-cont--gutter {
-  @extend %flex-cont--gutter;
+.cont_big {
+  @extend %cont_big;
 }
-.flex-cont--gutter-small {
-  @extend %flex-cont--gutter-small;
+.cont_gutter {
+  @extend %cont_gutter;
 }
-.flex-cont--gutter-big {
-  @extend %flex-cont--gutter-big;
+.cont_gutter-small {
+  @extend %cont_gutter-small;
 }
-.c--gutter {
-  @extend %c--gutter;
+.cont_gutter-big {
+  @extend %cont_gutter-big;
 }
-.c--gutter-small {
-  @extend %c--gutter-small;
+.fluid-cont_gutter {
+  @extend %fluid-cont_gutter;
 }
-.c--gutter-big {
-  @extend %c--gutter-big;
+.fluid-cont_gutter-small {
+  @extend %fluid-cont_gutter-small;
+}
+.fluid-cont_gutter-big {
+  @extend %fluid-cont_gutter-big;
+}
+.row_gutter {
+  @extend %row_gutter;
+}
+.row_gutter-big {
+  @extend %row_gutter-big;
+}
+.row_gutter-small {
+  @extend %row_gutter-small;
+}
+.c_gutter {
+  @extend %c_gutter;
+}
+.c_gutter-small {
+  @extend %c_gutter-small;
+}
+.c_gutter-big {
+  @extend %c_gutter-big;
 }

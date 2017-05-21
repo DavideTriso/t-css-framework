@@ -1,0 +1,41 @@
+.cont_colored {
+  @extend %ptb6;
+  @include box-default ($color-1, $color-1-darker, 0.2rem, solid, 0.05rem);
+  @extend %text-align-center;
+}
+.row_colored {
+  @extend %mtb3;
+  @extend %ptb1;
+  @include box-default ($color-2, $color-2-darker, 0.2rem, solid, 0.05rem);
+  .row_colored {
+    @include box-default ($color-2-dark, $color-2-darker, 0.2rem, solid, 0.05rem);
+  }
+}
+.c {
+  > .bg {
+    @extend %mtb1;
+    @extend %ptb6;
+    @include box-default ($color-1, $color-1-darker, 0.2rem, solid, 0.05rem);
+    @extend %text-align-center;
+    @include font-sizing (1.6rem, 1, 0);
+    @include text-style ($white, bold, normal, none, none);
+  }
+}
+pre {
+  @include box-default ($color-3, $color-3-darker-plus, 0.2rem, solid, 0.05rem);
+  font-family: monospace;
+  @extend %mtb3;
+  @extend %ptb3;
+  @extend %plr4;
+  @extend %overflow-x-scroll;
+}
+.big {
+  font-size: 130%;
+  font-weight: bold;
+}
+.small {
+  font-size: 60%;
+}
+.fluid {
+  letter-spacing: 1rem;
+}

@@ -4,84 +4,84 @@
 @mixin grid {
   @for $i from 1 through $colNumber {
     %c#{$i} {
-      width: 100 / $colNumber * $i;
+      width: 100% / $colNumber * $i;
     }
   }
 }
 @mixin grid-2 {
   @for $i from 1 through $colNumber {
     %c#{$i}-2 {
-      width: 100 / $colNumber * $i;
+      width: 100% / $colNumber * $i;
     }
   }
 }
 @mixin grid-3 {
   @for $i from 1 through $colNumber {
     %c#{$i}-3 {
-      width: 100 / $colNumber * $i;
+      width: 100% / $colNumber * $i;
     }
   }
 }
 @mixin grid-4 {
   @for $i from 1 through $colNumber {
     %c#{$i}-4 {
-      width: 100 / $colNumber * $i;
+      width: 100% / $colNumber * $i;
     }
   }
 }
 @mixin grid-5 {
   @for $i from 1 through $colNumber {
     %c#{$i}-5 {
-      width: 100 / $colNumber * $i;
+      width: 100% / $colNumber * $i;
     }
   }
 }
 @mixin grid-6 {
   @for $i from 1 through $colNumber {
     %c#{$i}-6 {
-      width: 100 / $colNumber * $i;
+      width: 100% / $colNumber * $i;
     }
   }
 }
 @mixin offset {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i} {
-      margin-left: 100 / $colNumber * $i;
+      margin-left: 100% / $colNumber * $i;
     }
   }
 }
 @mixin offset-2 {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i}-2 {
-      margin-left: 100 / $colNumber * $i;
+      margin-left: 100% / $colNumber * $i;
     }
   }
 }
 @mixin offset-3 {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i}-3 {
-      margin-left: 100 / $colNumber * $i;
+      margin-left: 100% / $colNumber * $i;
     }
   }
 }
 @mixin offset-4 {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i}-4 {
-      margin-left: 100 / $colNumber * $i;
+      margin-left: 100% / $colNumber * $i;
     }
   }
 }
 @mixin offset-5 {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i}-5 {
-      margin-left: 100 / $colNumber * $i;
+      margin-left: 100% / $colNumber * $i;
     }
   }
 }
 @mixin offset-6 {
-  @for $i from 1 through $colNumber {
+  @for $i from 0 through $colNumber {
     %o#{$i}-6 {
-      margin-left: 100 / $colNumber * $i;
+      margin-left: 100% / $colNumber * $i;
     }
   }
 }
@@ -100,7 +100,6 @@
 //-------------------------------
 %c {
   @extend %float-left; //Float all column elements to generate responsive grid
-  @extend %width-100; //Default width of column elements
 }
 //-------------------------------
 //GRID ELEMENTS WIDTHS AND OFFSETS
@@ -127,5 +126,5 @@
 }
 @media screen and (min-width: $w6) {
   @include grid-6;
-  @include offset-26
+  @include offset-6;
 }

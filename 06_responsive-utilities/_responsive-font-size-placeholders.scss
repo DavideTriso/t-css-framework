@@ -14,7 +14,7 @@
 //--------------------------------------------------
 @mixin font-size-tablet {
   @for $i from 1 through $stepsFontSize {
-    %fs#{$i}-3 {
+    %fs#{$i} {
       font-size: $firstFontSize + $intervalFontSize * $i * $fontSizeTabletMultiplyFactor;
       line-height: $firstFontSize + $intervalFontSize * $i * $fontSizeTabletMultiplyFactor * $lineHeightMultiplyFactor;
     }
@@ -25,7 +25,7 @@
 //--------------------------------------------------
 @mixin font-size-desktop {
   @for $i from 1 through $stepsFontSize {
-    %fs#{$i}-5 {
+    %fs#{$i} {
       font-size: $firstFontSize + $intervalFontSize * $i * $fontSizeDesktopMultiplyFactor;
       line-height: $firstFontSize + $intervalFontSize * $i * $fontSizeDesktopMultiplyFactor * $lineHeightMultiplyFactor;
     }
