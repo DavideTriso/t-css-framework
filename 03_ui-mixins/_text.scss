@@ -3,10 +3,10 @@
 //---------------------------
 @mixin font-sizing ($fontSize, $lineHeight, $letterSpacing) {
   font-size: $fontSize;
-  @if $letterSpacing !=0 {
+  @if $letterSpacing !=inherit {
     letter-spacing: $letterSpacing;
   }
-  @if $lineHeight !=0 {
+  @if $lineHeight !=inherit {
     line-height: $lineHeight;
   }
 }

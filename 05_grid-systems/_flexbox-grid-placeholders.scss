@@ -3,85 +3,43 @@
 //------------------------------
 @mixin grid {
   @for $i from 1 through $colNumber {
-    %c#{$i} {
+    %c_#{$i} {
       @include flex-basis(100% / $colNumber * $i);
     }
   }
 }
 @mixin grid-2 {
   @for $i from 1 through $colNumber {
-    %c#{$i}-2 {
+    %c_#{$i}-2 {
       @include flex-basis(100% / $colNumber * $i);
     }
   }
 }
 @mixin grid-3 {
   @for $i from 1 through $colNumber {
-    %c#{$i}-3 {
+    %c_#{$i}-3 {
       @include flex-basis(100% / $colNumber * $i);
     }
   }
 }
 @mixin grid-4 {
   @for $i from 1 through $colNumber {
-    %c#{$i}-4 {
+    %c_#{$i}-4 {
       @include flex-basis(100% / $colNumber * $i);
     }
   }
 }
 @mixin grid-5 {
   @for $i from 1 through $colNumber {
-    %c#{$i}-5 {
+    %c_#{$i}-5 {
       @include flex-basis(100% / $colNumber * $i);
     }
   }
 }
 @mixin grid-6 {
   @for $i from 1 through $colNumber {
-    %c#{$i}-6 {
+    %c_#{$i}-6 {
       @include flex-basis(100% / $colNumber * $i);
-    }
-  }
-}
-@mixin offset {
-  @for $i from 0 through $colNumber {
-    %o#{$i} {
-      margin-left: 100% / $colNumber * $i;
-    }
-  }
-}
-@mixin offset-2 {
-  @for $i from 0 through $colNumber {
-    %o#{$i}-2 {
-      margin-left: 100% / $colNumber * $i;
-    }
-  }
-}
-@mixin offset-3 {
-  @for $i from 0 through $colNumber {
-    %o#{$i}-3 {
-      margin-left: 100% / $colNumber * $i;
-    }
-  }
-}
-@mixin offset-4 {
-  @for $i from 0 through $colNumber {
-    %o#{$i}-4 {
-      margin-left: 100% / $colNumber * $i;
-    }
-  }
-}
-@mixin offset-5 {
-  @for $i from 0 through $colNumber {
-    %o#{$i}-5 {
-      margin-left: 100% / $colNumber * $i;
-    }
-  }
-}
-@mixin offset-6 {
-  @for $i from 0 through $colNumber {
-    %o#{$i}-6 {
-      margin-left: 100% / $colNumber * $i;
     }
   }
 }
@@ -108,24 +66,18 @@
 //Column elements responsive width classes
 //First set of classes without breakpoint index. Applies to every screen.
 @include grid;
-@include offset;
 @media screen and (min-width: $w2) {
   @include grid-2;
-  @include offset-2;
 }
 @media screen and (min-width: $w3) {
   @include grid-3;
-  @include offset-3;
 }
 @media screen and (min-width: $w4) {
   @include grid-4;
-  @include offset-4;
 }
 @media screen and (min-width: $w5) {
   @include grid-5;
-  @include offset-5;
 }
 @media screen and (min-width: $w6) {
   @include grid-6;
-  @include offset-6;
 }

@@ -35,6 +35,15 @@
 .fluid-cont_gutter-big {
   @extend %fluid-cont_gutter-big;
 }
+.fluid-cont_regular {
+  @extend %fluid-cont_regular;
+}
+.fluid-cont_small {
+  @extend %fluid-cont_small;
+}
+.fluid-cont_big {
+  @extend %fluid-cont_big;
+}
 .row_gutter {
   @extend %row_gutter;
 }
@@ -52,4 +61,40 @@
 }
 .c_gutter-big {
   @extend %c_gutter-big;
+}
+.cont_no-gutter-smart {
+  @extend %cont_no-gutter-smart;
+}
+.fluid-cont_no-gutter-smart {
+  @extend %fluid-cont_no-gutter-smart;
+}
+.c_no-gutter-smart {
+  @extend %c_no-gutter-smart;
+}
+.row_no-gutter-smart {
+  @extend %row_no-gutter-smart;
+}
+.cont_no-gutter-tablet {
+  @extend %cont_no-gutter-tablet;
+}
+.fluid-cont_no-gutter-tablet {
+  @extend %fluid-cont_no-gutter-tablet;
+}
+.c_no-gutter-tablet {
+  @extend %c_no-gutter-tablet;
+}
+.row_no-gutter-tablet {
+  @extend %row_no-gutter-tablet;
+}
+.cont_no-gutter-desktop {
+  @extend %cont_no-gutter-desktop;
+}
+.fluid-cont_no-gutter-desktop {
+  @extend %fluid-cont_no-gutter-desktop;
+}
+.c_no-gutter-desktop {
+  @extend %c_no-gutter-desktop;
+}
+.row_no-gutter-desktop {
+  @extend %row_no-gutter-desktop;
 }

@@ -8,21 +8,28 @@
 //FLEXBOX GRID SYSTEM
 //--------------------------------------------------
 //@import 'flexbox-grid-placeholders';
-//@import 'flexbox-grid-classes';
 //--------------------------------------------------
 //FLOAT-BASED GRID SYSTEM
 //--------------------------------------------------
 //@import 'float-grid-placeholders';
-//@import 'float-grid-classes';
 //--------------------------------------------------
 //COMPATIBILITY GRID SYSTEM
 //--------------------------------------------------
 @import 'compatibility-grid-placeholders';
-@import 'compatibility-grid-classes'; 
 //--------------------------------------------------
+//--------------------------------------------------
+//OFFSET COLS
+//--------------------------------------------------
+@import 'offset-cols-placeholders';
+//--------------------------------------------------
+//INCLUDE ALL CLASSES (col#-#, o#-#)
+//--------------------------------------------------
+@import 'grid-classes'; 
+
+
 //INSTRUCTIONS:
 
 /*
-Uncomment the file(s) of the grid system you want to use.
-Includ only one grid system. Including more than one grid system will lead to problems and redundant css code.
+Uncomment the file of the grid system you want to use.
+Includ only one grid system. Including more than one grid system will lead to redundant css code.
 */

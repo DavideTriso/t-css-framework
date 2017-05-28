@@ -1,0 +1,102 @@
+//-------------------------------
+//DEFINE MIXINS
+//------------------------------
+@mixin grid {
+  @for $i from 1 through $colNumber {
+    .c_#{$i} {
+      @extend %c_#{$i};
+    }
+  }
+}
+@mixin grid-2 {
+  @for $i from 1 through $colNumber {
+    .c_#{$i}-2 {
+      @extend %c_#{$i}-3;
+    }
+  }
+}
+@mixin grid-3 {
+  @for $i from 1 through $colNumber {
+    .c_#{$i}-3 {
+      @extend %c_#{$i}-3;
+    }
+  }
+}
+@mixin grid-4 {
+  @for $i from 1 through $colNumber {
+    .c_#{$i}-4 {
+      @extend %c_#{$i}-4;
+    }
+  }
+}
+@mixin grid-5 {
+  @for $i from 1 through $colNumber {
+    .c_#{$i}-5 {
+      @extend %c_#{$i}-5;
+    }
+  }
+}
+@mixin grid-6 {
+  @for $i from 1 through $colNumber {
+    .c_#{$i}-6 {
+      @extend %c_#{$i}-6;
+    }
+  }
+}
+@mixin offset {
+  @for $i from 0 through $colNumber {
+    .o_#{$i} {
+      @extend %o_#{$i};
+    }
+  }
+}
+@mixin offset-2 {
+  @for $i from 0 through $colNumber {
+    .o_#{$i}-2 {
+      @extend %o_#{$i}-2;
+    }
+  }
+}
+@mixin offset-3 {
+  @for $i from 0 through $colNumber {
+    .o_#{$i}-3 {
+      @extend %o_#{$i}-3;
+    }
+  }
+}
+@mixin offset-4 {
+  @for $i from 0 through $colNumber {
+    .o_#{$i}-4 {
+      @extend %o_#{$i}-4;
+    }
+  }
+}
+@mixin offset-5 {
+  @for $i from 0 through $colNumber {
+    .o_#{$i}-5 {
+      @extend %o_#{$i}-5;
+    }
+  }
+}
+@mixin offset-6 {
+  @for $i from 0 through $colNumber {
+    .o_#{$i}-6 {
+      @extend %o_#{$i}-6;
+    }
+  }
+}
+//-------------------------------
+//INCLUDE ALL GRID PLACEHOLDERS IN CSS
+//------------------------------
+@include grid;
+@include offset;
+@include grid-2;
+@include offset-2;
+@include grid-3;
+@include offset-3;
+@include grid-4;
+@include offset-4;
+@include grid-5;
+@include offset-5;
+@include grid-6;
+@include offset-6

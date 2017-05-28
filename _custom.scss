@@ -39,3 +39,123 @@ pre {
 .fluid {
   letter-spacing: 1rem;
 }
+//BOXES
+.box-default {
+  @extend %mtb4;
+  @extend %p6;
+  @include box-default ($color-1, $color-1-darker, 1rem, solid, 0.2rem);
+}
+.box-top {
+  @extend %mtb4;
+  @extend %p6;
+  @include box-top ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
+}
+.box-left {
+  @extend %mtb4;
+  @extend %p6;
+  @include box-left ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
+}
+.box-right {
+  @extend %mtb4;
+  @extend %p6;
+  @include box-right ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
+}
+.box-bottom {
+  @extend %mtb4;
+  @extend %p6;
+  @include box-bottom ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
+}
+.box-group-horizontal {
+  @extend %row;
+  @extend %mtb4;
+  > li {
+    @extend %c6;
+    @extend %p6;
+    @include box-group-horizontal ($color-1, $color-1-darker, 1rem, solid, 0.2rem);
+  }
+}
+.box-group-horizontal-top {
+  @extend %mtb4;
+  @extend %row;
+  > li {
+    @extend %c6;
+    @extend %p6;
+    @include box-group-horizontal-top ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
+  }
+}
+.box-group-horizontal-bottom {
+  @extend %mtb4;
+  @extend %row;
+  > li {
+    @extend %p6;
+    @extend %c6;
+    @include box-group-horizontal-bottom ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
+  }
+}
+.box-group-horizontal-left {
+  @extend %mtb4;
+  @extend %row;
+  > li {
+    @extend %p6;
+    @extend %c6;
+    @include box-group-horizontal-left ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
+  }
+}
+.box-group-horizontal-right {
+  @extend %mtb4;
+  @extend %row;
+  > li {
+    @extend %p6;
+    @extend %c6;
+    @include box-group-horizontal-right ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
+  }
+}
+.box-group-vertical {
+  @extend %mtb4;
+  > li {
+    @extend %p6;
+    @include box-group-vertical ($color-1, $color-1-darker, 1rem, solid, 0.2rem);
+  }
+}
+.box-group-vertical-top {
+  @extend %mtb4;
+  > li {
+    @extend %p6;
+    @include box-group-vertical-top ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
+  }
+}
+.box-group-vertical-bottom {
+  @extend %mtb4;
+  > li {
+    @extend %p6;
+    @include box-group-vertical-bottom ($color-1, $color-1-darker, 1rem, solid, 0.2rem, false);
+  }
+}
+.box-group-vertical-left {
+  @extend %mtb4;
+  > li {
+    @extend %p6;
+    @include box-group-vertical-left ($color-1, $color-1-darker, 1rem, solid, 0.2rem, false);
+  }
+}
+.box-group-vertical-right {
+  @extend %mtb4;
+  > li {
+    @extend %p6;
+    @include box-group-vertical-right ($color-1, $color-1-darker, 1rem, solid, 0.2rem, false);
+  }
+}
+.btn1 {
+  @include button-size(0.8rem, 0, 10rem, 40rem, 0.8rem 2rem);
+  @include button-default ($color-1, none, $color-1-darker, 0.5rem, solid, 0.1rem, none, #fff, uppercase, 0.1s, ease-in);
+  @include button-focus ($color-1-dark, none, $color-1-darker, none, #fff);
+  @include button-hover (#fff, none, $color-1-darker, none, $color-1-darker);
+  @include button-active ($color-1-dark, none, $color-1-darker, none, #fff);
+  @include button-disabled (#ccc, none, #8e8e8e, none, #fff);
+}
+.btn-group-horizontal {
+  > button {}
+}
+.link1 {
+  @include link-default (#3b55e6, bold, underline, uppercase);
+}

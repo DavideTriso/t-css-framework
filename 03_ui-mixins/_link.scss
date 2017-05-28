@@ -1,23 +1,27 @@
 //Link default style
-@mixin link-default ($fontWeight, $color, $textDecoration) {
+@mixin link-default ($color, $fontWeight, $textDecoration, $textTransform) {
   @if $fontWeight !=normal {
     font-weight: $fontWeight;
   }
   color: $color;
   text-decoration: $textDecoration;
+  @if $textTransform !=none {
+    text-transform: $textTransform;
+  }
 }
-//Link hover, focus and active style
-@mixin link-hover-focus ($color, $textDecoration, $outline) {
+//Link hover and focus style
+@mixin link-hover-focus ($color, $textDecoration) {
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     color: $color;
     text-decoration: $textDecoration;
   }
-  @if $outline !=none {
-    &:focus {
-      outline: $outline;
-    }
+}
+//Link hover and focus style
+@mixin link-active ($color, $textDecoration) {
+  &:active {
+    color: $color;
+    text-decoration: $textDecoration;
   }
 }
 //Link visited style
@@ -28,16 +32,10 @@
   }
 }
 //Link visited hover, focus and active style
-@mixin link-visited-hover ($color, $textDecoration, $outline) {
+@mixin link-visited-hover-focus ($color, $textDecoration) {
   &:visited:hover,
-  &:visited:focus,
-  &:visited:active {
+  &:visited:focus {
     color: $color;
     text-decoration: $textDecoration;
-  }
-   @if $outline !=none {
-    &:visited:focus {
-      outline: $outline;
-    }
   }
 }

@@ -7,14 +7,14 @@ $colNumber: 24 !default; //Number of columns
 //CONTAINERS
 //-----------------
 //default container
-$contTabletWidth: $w3 - 60px;
-$contDesktopWidth: $w5 - 120px;
+$contTabletWidth: $w3 - 60px !default;
+$contDesktopWidth: $w5 - 120px !default;
 //small container
-$contTabletWidthSmall: $w3 - 90px;
-$contDesktopWidthSmall: $w5 - 180px;
+$contTabletWidthSmall: $w3 - 90px !default;
+$contDesktopWidthSmall: $w5 - 180px !default;
 //big container
-$contTabletWidthBig: $w3 - 30px;
-$contDesktopWidthBig: $w5 - 60px;
+$contTabletWidthBig: $w3 - 30px !default;
+$contDesktopWidthBig: $w5 - 60px !default;
 
 //-----------------
 //GUTTERS

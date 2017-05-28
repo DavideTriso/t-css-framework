@@ -6,17 +6,14 @@
 %c {
   @extend %box-sizing-border-box;
 }
-//Set min-width of fluid-cont to 100
-%fluid-cont {
-  @extend %min-width-100;
-}
 //Body should not scale for viewports smaller than $w0
 body {
   min-width: $w0;
   @extend %overflow-x-hidden;
 }
 //Set margin auto to container to center it in the viewport
-%cont {
+%cont,
+%fluid-cont {
   @extend %margin-auto;
 }
 //--------------------------
@@ -131,6 +128,48 @@ body {
   }
 }
 //--------------------------
+//RESET GUTTERS BASED ON VIEWPORT WIDHT
+//--------------------------
+//no gutter on smartphone
+@media screen and (max-width: $w3min) {
+  %cont_no-gutter-smart,
+  %fluid-cont_no-gutter-smart,
+  %c_no-gutter-smart {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  %row_no-gutter-smart {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+//no gutter on tablet
+@media screen and (min-width: $w3) and (max-width: $w5min) {
+  %cont_no-gutter-tablet,
+  %fluid-cont_no-gutter-tablet,
+  %c_no-gutter-tablet {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  %row_no-gutter-tablet {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+//no gutter on desktop
+@media screen and (min-width: $w5min) {
+  %cont_no-gutter-desktop,
+  %fluid-cont_no-gutter-desktop,
+  %c_no-gutter-desktop {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  %row_no-gutter-desktop {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+//--------------------------
 //CONTAINER WIDTHS
 //--------------------------
 %cont {
@@ -171,4 +210,18 @@ body {
   %cont_small {
     width: $contDesktopWidthSmall;
   }
+}
+//--------------------------
+//FLUID CONTAINER MAX WIDTHS
+//--------------------------
+%fluid-cont_regular {
+  max-width: $contDesktopWidth;
+}
+
+%fluid-cont_small {
+  max-width: $contDesktopWidthSmall;
+}
+
+%fluid-cont_big {
+  max-width: $contDesktopWidthBig;
 }

@@ -35,10 +35,10 @@
 //ONLY SMART
 //-------------------------
 @media screen and (max-width: $w3min) {
-  %access-smart {
+  %access_smart {
     @include access;
   }
-  %access-focus-smart {
+  %access-focus_smart {
     @include access-focus; 
   }
 }
@@ -46,10 +46,10 @@
 //ONLY TABLET
 //-------------------------
 @media screen and (min-width: $w3) and (max-width: $w5min) {
-  %access-tablet {
+  %access_tablet {
     @include access;
   }
-  %access-focus-tablet {
+  %access-focus_tablet {
     @include access-focus;
   }
 }
@@ -57,10 +57,10 @@
 //ONLY DESKTOP
 //-------------------------
 @media screen and (min-width: $w5) {
-  %access-desktop {
+  %access_desktop {
     @include access;
   }
-  %access-focus-desktop {
+  %access-focus_desktop {
     @include access-focus;
   }
 }

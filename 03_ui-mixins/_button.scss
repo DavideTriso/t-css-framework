@@ -4,7 +4,9 @@
 // Button size
 @mixin button-size($fontSize, $lineHeight, $minWidth, $maxWidth, $padding) {
   font-size: $fontSize;
-  line-height: $lineHeight;
+  @if $lineHeight !=0 {
+    line-height: $lineHeight;
+  }
   @if $maxWidth !=0 {
     max-width: $maxWidth;
   }
@@ -14,7 +16,7 @@
   padding: $padding;
 }
 //Button default style
-@mixin button-default ($backgroundColor, $backgroundGradient, $borderColor, $borderRadius, $borderStyle, $borderWidth, $boxShadow, $color, $transitionSpeed, $transitionEasing) {
+@mixin button-default ($backgroundColor, $backgroundGradient, $borderColor, $borderRadius, $borderStyle, $borderWidth, $boxShadow, $color, $textTransform, $transitionSpeed, $transitionEasing) {
   background-color: $backgroundColor;
   @if $backgroundGradient !=none {
     @include background-gradient ($backgroundGradient);
@@ -24,32 +26,67 @@
     box-shadow: $boxShadow;
   }
   color: $color;
-  @if $transitionSpeed > 0 {
-    @include triple-transition (background-color $transitionSpeed $transitionEasing, border $transitionSpeed $transitionEasing, color $transitionSpeed $transitionEasing);
+  @if $transitionSpeed !=0 {
+    @include triple-transition (background-color, $transitionSpeed, $transitionEasing, border, $transitionSpeed, $transitionEasing, color, $transitionSpeed, $transitionEasing);
+  }
+  @if $textTransform !=none {
+    text-transform: $textTransform;
   }
 }
-//Button hover and focus styles
-@mixin button-hover-focus ($color, $backgroundColor, $backgroundGradient, $borderColor, $borderRadius, $borderStyle, $borderWidth) {
-  &:hover,
-  &:focus,
+//Button focus
+@mixin button-focus ($backgroundColor, $backgroundGradient, $borderColor, $boxShadow, $color) {
+  &:focus {
+    background-color: $backgroundColor;
+    @if $backgroundGradient !=none {
+      @include background-gradient ($backgroundGradient);
+    }
+    border-color: $borderColor;
+    @if $boxShadow !=none {
+      box-shadow: $boxShadow;
+    }
+    color: $color;
+  }
+}
+//Button hover
+@mixin button-hover ($backgroundColor, $backgroundGradient, $borderColor, $boxShadow, $color) {
+  &:hover {
+    background-color: $backgroundColor;
+    @if $backgroundGradient !=none {
+      @include background-gradient ($backgroundGradient);
+    }
+    border-color: $borderColor;
+    @if $boxShadow !=none {
+      box-shadow: $boxShadow;
+    }
+    color: $color;
+  }
+}
+//Button active
+@mixin button-active ($backgroundColor, $backgroundGradient, $borderColor, $boxShadow, $color) {
   &:active {
     background-color: $backgroundColor;
     @if $backgroundGradient !=none {
       @include background-gradient ($backgroundGradient);
     }
-    @include border ($borderStyle, $borderWidth, $borderColor, $borderRadius);
+    border-color: $borderColor;
+    @if $boxShadow !=none {
+      box-shadow: $boxShadow;
+    }
     color: $color;
   }
 }
 //Button disabled style
-@mixin button-disabled ($color, $backgroundColor, $backgroundGradient, $borderColor, $borderRadius, $borderStyle, $borderWidth) {
+@mixin button-disabled ($backgroundColor, $backgroundGradient, $borderColor, $boxShadow, $color) {
   &[disabled],
   &[disabled]:hover {
     background-color: $backgroundColor;
     @if $backgroundGradient !=none {
       @include background-gradient ($backgroundGradient);
     }
-    @include border ($borderStyle, $borderWidth, $borderColor, $borderRadius);
+    border-color: $borderColor;
+    @if $boxShadow !=none {
+      box-shadow: $boxShadow;
+    }
     color: $color;
   }
 }
