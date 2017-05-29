@@ -43,7 +43,12 @@
     }
   }
 }
-
+//Reverse row mixin
+@mixin row_reverse() {
+  > * {
+    float: right !important; // overrrride float: left
+  }
+}
 //-------------------------------
 //INCLUDE ALL GRID PLACEHOLDERS IN CSS
 //------------------------------
@@ -51,6 +56,25 @@
 //apply bootstrap clearfix to row to prevent uncorrect alignement and reflow
 %row {
   @extend %clearfix;
+}
+//define reverse row placeholders
+%row_reverse {
+  @include row_reverse();
+}
+@media screen and (max-width: $w3min) {
+  %row_reverse-smart {
+    @include row_reverse();
+  }
+}
+@media screen and (min-width: $w3) and (max-width: $w5min) {
+  %row_reverse-tablet {
+    @include row_reverse();
+  }
+}
+@media screen and (min-width: $w5) {
+  %row_reverse-desktop {
+    @include row_reverse();
+  }
 }
 //-------------------------------
 //COLUMN ELEMENTS

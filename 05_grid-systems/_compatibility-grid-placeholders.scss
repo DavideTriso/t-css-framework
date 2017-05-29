@@ -5,7 +5,7 @@
   @for $i from 1 through $colNumber {
     %c_#{$i} {
       width: 100% / $colNumber * $i;
-      @include flex-basis(100% / $colNumber * $i);
+      @include flex(0, 0, 100% / $colNumber * $i);
     }
   }
 }
@@ -13,7 +13,7 @@
   @for $i from 1 through $colNumber {
     %c_#{$i}-2 {
       width: 100% / $colNumber * $i;
-      @include flex-basis(100% / $colNumber * $i);
+      @include flex(0, 0, 100% / $colNumber * $i);
     }
   }
 }
@@ -21,7 +21,7 @@
   @for $i from 1 through $colNumber {
     %c_#{$i}-3 {
       width: 100% / $colNumber * $i;
-      @include flex-basis(100% / $colNumber * $i);
+      @include flex(0, 0, 100% / $colNumber * $i);
     }
   }
 }
@@ -29,7 +29,7 @@
   @for $i from 1 through $colNumber {
     %c_#{$i}-4 {
       width: 100% / $colNumber * $i;
-      @include flex-basis(100% / $colNumber * $i);
+      @include flex(0, 0, 100% / $colNumber * $i);
     }
   }
 }
@@ -37,7 +37,7 @@
   @for $i from 1 through $colNumber {
     %c_#{$i}-5 {
       width: 100% / $colNumber * $i;
-      @include flex-basis(100% / $colNumber * $i);
+      @include flex(0, 0, 100% / $colNumber * $i);
     }
   }
 }
@@ -45,9 +45,16 @@
   @for $i from 1 through $colNumber {
     %c_#{$i}-6 {
       width: 100% / $colNumber * $i;
-      @include flex-basis(100% / $colNumber * $i);
+      @include flex(0, 0, 100% / $colNumber * $i);
     }
   }
+}
+//Reverse row mixin
+@mixin row_reverse() {
+  > * {
+    float: right !important; // overrrride float: left
+  }
+  @include flex-direction (row-reverse);
 }
 //-------------------------------
 //INCLUDE ALL GRID PLACEHOLDERS IN CSS
@@ -63,6 +70,26 @@
   @extend %justify-content-flex-start;
   @extend %align-items-stretch;
   @extend %align-content-flex-start;
+}
+
+//define reverse row placeholders
+%row_reverse {
+  @include row_reverse();
+}
+@media screen and (max-width: $w3min) {
+  %row_reverse-smart {
+    @include row_reverse();
+  }
+}
+@media screen and (min-width: $w3) and (max-width: $w5min) {
+  %row_reverse-tablet {
+    @include row_reverse();
+  }
+}
+@media screen and (min-width: $w5) {
+  %row_reverse-desktop {
+    @include row_reverse();
+  }
 }
 //-------------------------------
 //COLUMN ELEMENTS

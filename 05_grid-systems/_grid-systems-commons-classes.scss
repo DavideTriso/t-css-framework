@@ -1,100 +1,112 @@
-//.c, .cont, .fluid-cont and .row are defined in the specific grid system classes files
-.cont {
-  @extend %cont;
-}
-.fluid-cont {
-  @extend %fluid-cont;
-}
-.row {
-  @extend %row;
-}
-.c {
-  @extend %c;
-}
-.cont_small {
-  @extend %cont_small;
-}
-.cont_big {
-  @extend %cont_big;
-}
-.cont_gutter {
-  @extend %cont_gutter;
-}
-.cont_gutter-small {
-  @extend %cont_gutter-small;
-}
-.cont_gutter-big {
-  @extend %cont_gutter-big;
-}
-.fluid-cont_gutter {
-  @extend %fluid-cont_gutter;
-}
-.fluid-cont_gutter-small {
-  @extend %fluid-cont_gutter-small;
-}
-.fluid-cont_gutter-big {
-  @extend %fluid-cont_gutter-big;
-}
-.fluid-cont_regular {
-  @extend %fluid-cont_regular;
-}
-.fluid-cont_small {
-  @extend %fluid-cont_small;
-}
-.fluid-cont_big {
-  @extend %fluid-cont_big;
-}
-.row_gutter {
-  @extend %row_gutter;
-}
-.row_gutter-big {
-  @extend %row_gutter-big;
-}
-.row_gutter-small {
-  @extend %row_gutter-small;
-}
-.c_gutter {
-  @extend %c_gutter;
-}
-.c_gutter-small {
-  @extend %c_gutter-small;
-}
-.c_gutter-big {
-  @extend %c_gutter-big;
-}
-.cont_no-gutter-smart {
-  @extend %cont_no-gutter-smart;
-}
-.fluid-cont_no-gutter-smart {
-  @extend %fluid-cont_no-gutter-smart;
-}
-.c_no-gutter-smart {
-  @extend %c_no-gutter-smart;
-}
-.row_no-gutter-smart {
-  @extend %row_no-gutter-smart;
-}
-.cont_no-gutter-tablet {
-  @extend %cont_no-gutter-tablet;
-}
-.fluid-cont_no-gutter-tablet {
-  @extend %fluid-cont_no-gutter-tablet;
-}
-.c_no-gutter-tablet {
-  @extend %c_no-gutter-tablet;
-}
-.row_no-gutter-tablet {
-  @extend %row_no-gutter-tablet;
-}
-.cont_no-gutter-desktop {
-  @extend %cont_no-gutter-desktop;
-}
-.fluid-cont_no-gutter-desktop {
-  @extend %fluid-cont_no-gutter-desktop;
-}
-.c_no-gutter-desktop {
-  @extend %c_no-gutter-desktop;
-}
-.row_no-gutter-desktop {
-  @extend %row_no-gutter-desktop;
-}
+  //.c, .cont, .fluid-cont and .row are defined in the specific grid system classes files
+  .cont {
+    @extend %cont;
+  }
+  .fluid-cont {
+    @extend %fluid-cont;
+  }
+  .row {
+    @extend %row;
+  }
+  .c {
+    @extend %c;
+  }
+  .cont_small {
+    @extend %cont_small;
+  }
+  .cont_big {
+    @extend %cont_big;
+  }
+  .cont_gutter {
+    @extend %cont_gutter;
+  }
+  .cont_gutter-small {
+    @extend %cont_gutter-small;
+  }
+  .cont_gutter-big {
+    @extend %cont_gutter-big;
+  }
+  .fluid-cont_gutter {
+    @extend %fluid-cont_gutter;
+  }
+  .fluid-cont_gutter-small {
+    @extend %fluid-cont_gutter-small;
+  }
+  .fluid-cont_gutter-big {
+    @extend %fluid-cont_gutter-big;
+  }
+  .fluid-cont_regular {
+    @extend %fluid-cont_regular;
+  }
+  .fluid-cont_small {
+    @extend %fluid-cont_small;
+  }
+  .fluid-cont_big {
+    @extend %fluid-cont_big;
+  }
+  .row_gutter {
+    @extend %row_gutter;
+  }
+  .row_gutter-big {
+    @extend %row_gutter-big;
+  }
+  .row_gutter-small {
+    @extend %row_gutter-small;
+  }
+  .c_gutter {
+    @extend %c_gutter;
+  }
+  .c_gutter-small {
+    @extend %c_gutter-small;
+  }
+  .c_gutter-big {
+    @extend %c_gutter-big;
+  }
+  .cont_no-gutter-smart {
+    @extend %cont_no-gutter-smart;
+  }
+  .fluid-cont_no-gutter-smart {
+    @extend %fluid-cont_no-gutter-smart;
+  }
+  .c_no-gutter-smart {
+    @extend %c_no-gutter-smart;
+  }
+  .row_no-gutter-smart {
+    @extend %row_no-gutter-smart;
+  }
+  .cont_no-gutter-tablet {
+    @extend %cont_no-gutter-tablet;
+  }
+  .fluid-cont_no-gutter-tablet {
+    @extend %fluid-cont_no-gutter-tablet;
+  }
+  .c_no-gutter-tablet {
+    @extend %c_no-gutter-tablet;
+  }
+  .row_no-gutter-tablet {
+    @extend %row_no-gutter-tablet;
+  }
+  .cont_no-gutter-desktop {
+    @extend %cont_no-gutter-desktop;
+  }
+  .fluid-cont_no-gutter-desktop {
+    @extend %fluid-cont_no-gutter-desktop;
+  }
+  .c_no-gutter-desktop {
+    @extend %c_no-gutter-desktop;
+  }
+  .row_no-gutter-desktop {
+    @extend %row_no-gutter-desktop;
+  }
+  .row_reverse {
+    @extend %row_reverse;
+  }
+  .row_reverse-smart {
+    @extend %row_reverse-smart;
+  }
+  .row_reverse-tablet {
+    @extend %row_reverse-tablet;
+  }
+  .row_reverse-desktop {
+    @extend %row_reverse-desktop;
+  }

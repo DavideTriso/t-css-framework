@@ -70,10 +70,20 @@
   -moz-column-rule: $columnRuleWidth $columnRuleType $columnRuleColor;
   column-rule: $columnRuleWidth $columnRuleType $columnRuleColor;
 }
+@mixin flex ($flexGrow, $flexShrink, $flexBasis) {
+  -ms-flex: $flexGrow $flexShrink $flexBasis;
+  -webkit-flex: $flexGrow $flexShrink $flexBasis;
+  flex: $flexGrow $flexShrink $flexBasis;
+}
 @mixin flex-basis ($value) {
   -webkit-flex-basis: $value;
   flex-basis: $value;
 }
+@mixin flex-direction ($value) {
+  -webkit-flex-direction: $value;
+  flex-direction: $value;
+}
+
 @mixin filter ($filter) {
   -webkit-filter: $filter;
   filter: $filter;

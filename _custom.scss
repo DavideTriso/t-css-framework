@@ -28,6 +28,7 @@ pre {
   @extend %ptb3;
   @extend %plr4;
   @extend %overflow-x-scroll;
+  @extend %width-100; 
 }
 .big {
   font-size: 130%;
@@ -69,7 +70,7 @@ pre {
   @extend %row;
   @extend %mtb4;
   > li {
-    @extend %c6;
+    @extend %c_6;
     @extend %p6;
     @include box-group-horizontal ($color-1, $color-1-darker, 1rem, solid, 0.2rem);
   }
@@ -78,7 +79,7 @@ pre {
   @extend %mtb4;
   @extend %row;
   > li {
-    @extend %c6;
+    @extend %c_6;
     @extend %p6;
     @include box-group-horizontal-top ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
   }
@@ -88,7 +89,7 @@ pre {
   @extend %row;
   > li {
     @extend %p6;
-    @extend %c6;
+    @extend %c_6;
     @include box-group-horizontal-bottom ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
   }
 }
@@ -97,7 +98,7 @@ pre {
   @extend %row;
   > li {
     @extend %p6;
-    @extend %c6;
+    @extend %c_6;
     @include box-group-horizontal-left ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
   }
 }
@@ -106,7 +107,7 @@ pre {
   @extend %row;
   > li {
     @extend %p6;
-    @extend %c6;
+    @extend %c_6;
     @include box-group-horizontal-right ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
   }
 }
