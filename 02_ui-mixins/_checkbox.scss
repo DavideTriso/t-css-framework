@@ -1,0 +1,50 @@
+//checkbox default style
+@mixin checkbox-default ($size, $backgroundColor, $borderColor, $borderRadius, $borderStyle, $borderWidth) {
+  @extend %appearance-none;
+  @extend %display-inline-block;
+  height: $size;
+  @extend %position-relative;
+  @extend %vertical-align-middle;
+  width: $size;
+  &:before {
+    @if $backgroundColor !=transparent {
+      background-color: $backgroundColor;
+    }
+    @include border ($borderStyle, $borderWidth, $borderColor, $borderRadius);
+    @extend %box-sizing-border-box;
+    @extend %content;
+    @extend %display-block; 
+    height: $size;
+    width: $size;
+  }
+} 
+//checked style 
+@mixin checkbox-checked ($backgroundColor, $borderColor) {
+  &:before {
+    background-color: $backgroundColor;
+    border-color: $borderColor;
+  }
+  &:after {
+    @extend %box-sizing-border-box;
+    @extend %content;
+    @extend %display-block;
+    @extend %position-absolute;
+    @extend %top-50;
+    @extend %left-50;
+    transform: translate(-50%, -50%) rotate(-45deg) skewX(-10deg);
+    width: 1.3rem;
+    height: 0.5rem;
+    border-left: 0.1rem solid #fff;
+    border-bottom: 0.1rem solid #fff;
+  }
+}
+input[type='checkbox'] {
+  & + .fake-checkbox {
+    @include checkbox-default (1.2rem, transparent, $color-1-darker, 0.2rem, solid, 0.05rem);
+  }
+  &:checked {
+    & + .fake-checkbox {
+      @include checkbox-checked ($color-1-dark, $color-1-darker);
+    }
+  }
+}

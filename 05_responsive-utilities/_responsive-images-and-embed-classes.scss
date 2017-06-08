@@ -1,0 +1,24 @@
+//========================
+//RESPONSIVE IMAGES CLASSES
+//========================
+//any image should be responsive
+img,
+.img {
+  @extend %img;
+}
+.img_responsive {
+  @extend %img_responsive;
+}
+//========================
+//RESPONSIVE EMBED CLASSES
+//========================
+//Credit: Nicolas Gallagher and SUIT CSS.
+.responsive-embed {
+  @extend %responsive-embed;
+}
+.responsive-embed_resp16by9 {
+  @extend %responsive-embed_resp16by9;
+}
+.responsive-embed_resp4by3 {
+  @extend %responsive-embed_resp4by3;
+}

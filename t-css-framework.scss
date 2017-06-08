@@ -3,14 +3,13 @@
 @import 'colors';
 @import 'variables';
 //
-@import '01_placeholders/import';
-@import '02_css-mixins/import';
-@import '03_ui-mixins/import';
-@import '04_html-defaults/import';
-@import '05_grid-systems/import';
-@import '06_responsive-utilities/import';
-@import '07_typography/import';
-@import '08_forms/import';
+@import '01_css-placeholders/import';
+@import '02_ui-mixins/import';
+@import '03_html-defaults/import';
+@import '04_grid-systems/import';
+@import '05_responsive-utilities/import';
+@import '06_typography/import';
+@import '07_forms/import';
 
 //custom
 @import 'custom';

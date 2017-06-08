@@ -1,0 +1,21 @@
+//--------------------------------------------------
+//MIXINS FOR FONT SIZE - DEFAULT (SMART)
+//--------------------------------------------------
+@mixin font-size ($suffix, $multiplyFactor) {
+  @for $i from 1 through $stepsFontSize {
+    %fs_#{$i}#{$suffix} {
+      font-size: $firstFontSize + $intervalFontSize * $i * $multiplyFactor;
+      line-height: $firstFontSize + $intervalFontSize * $i * $lineHeightMultiplyFactor * $multiplyFactor;
+    }
+  }
+}
+//--------------------------------------------------
+//INCLUDE MIXINS AND GENERATE PLACEHOLDERS
+//--------------------------------------------------
+@include font-size ('', 1);
+@media screen and (min-width: $w3) {
+  @include font-size ('-tablet', $fontSizeTabletMultiplyFactor)
+}
+@media screen and (min-width: $w5) {
+  @include font-size ('-desktop', $fontSizeDesktopMultiplyFactor);
+}

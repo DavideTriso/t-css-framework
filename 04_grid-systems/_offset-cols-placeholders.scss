@@ -1,0 +1,23 @@
+@mixin offset ($suffix) {
+  @for $i from 0 through $colNumber {
+    %c_o-#{$i}#{$suffix} {
+      margin-left: 100% / $colNumber * $i;
+    }
+  }
+}
+@include offset ('');
+@media screen and (min-width: $w2) {
+  @include offset ('-2');
+}
+@media screen and (min-width: $w3) {
+  @include offset ('-3');
+}
+@media screen and (min-width: $w4) {
+  @include offset ('-4');
+}
+@media screen and (min-width: $w5) {
+  @include offset ('-5');
+}
+@media screen and (min-width: $w6) {
+  @include offset ('-6');
+}

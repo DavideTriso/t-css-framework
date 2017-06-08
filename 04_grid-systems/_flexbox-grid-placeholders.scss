@@ -1,0 +1,67 @@
+//-------------------------------
+//DEFINE MIXINS
+//------------------------------
+@mixin grid ($suffix) {
+  @for $i from 1 through $colNumber {
+    %c_#{$i}#{$suffix} {
+      flex: 0, 0, 100% / $colNumber * $i;
+    }
+  }
+}
+//-------------------------------
+//INCLUDE ALL GRID PLACEHOLDERS IN CSS
+//------------------------------
+%row {
+  @extend %display-flex;
+  @extend %flex-direction-row;
+  @extend %flex-wrap-wrap;
+  @extend %justify-content-flex-start;
+  @extend %align-items-stretch;
+  @extend %align-content-flex-start;
+}
+//define reverse row placeholders
+%row_reverse {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: $w3min) {
+  %row_reverse-smart {
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: $w3) and (max-width: $w5min) {
+  %row_reverse-tablet {
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: $w5) {
+  %row_reverse-desktop {
+    flex-direction: row-reverse;
+  }
+}
+//-------------------------------
+//COLUMN ELEMENTS
+//-------------------------------
+%c {
+  @extend %width-100; //Default width of column elements
+}
+//-------------------------------
+//GRID ELEMENTS WIDTHS
+//-------------------------------
+//Column elements responsive width classes
+//First set of classes without breakpoint index. Applies to every screen.
+@include grid('');
+@media screen and (min-width: $w2) {
+  @include grid('-2');
+}
+@media screen and (min-width: $w3) {
+  @include grid('-3');
+}
+@media screen and (min-width: $w4) {
+  @include grid('-4');
+}
+@media screen and (min-width: $w5) {
+  @include grid('-5');
+}
+@media screen and (min-width: $w6) {
+  @include grid('-6');
+}

@@ -1,0 +1,23 @@
+//=================
+//TYPOGRAPHY
+//=================
+
+
+//
+//-----------
+//FORMS
+$inputElementsPaddingTopBottom: 0.5rem;
+$inputElementsPaddingLeftRight: 0.5rem; 
+//Addon
+$stepsAddonWidth: 10;
+$intervalAddonWidth: 1rem;
+$firstAddonWidth: 1;
+$extraPaddingAddonInput: 0; 
+
+//=============================
+//RESPONSIVE MULTI COLUMNS LAYOUT
+//=============================
+$columnGap: 0.75rem !default; //Use rem only
+$tabletColumnGap: 1rem !default; //Use rem only
+$desktopColumnGap: 1.25rem !default; //Use rem only
+$columWidth: auto !default;

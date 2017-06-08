@@ -1,0 +1,15 @@
+//---------------------
+//BORDER
+//---------------------
+@mixin border ($borderStyle, $borderWidth, $borderColor, $borderRadius) {
+  @if $borderColor !=transparent {
+    border-color: $borderColor;
+  }
+  @extend %border-style-#{$borderStyle};
+  @if $borderRadius > 0 {
+    border-radius: $borderRadius;
+  }
+  @if $borderWidth > 0 {
+    border-width: $borderWidth;
+  }
+}

@@ -1,8 +1,0 @@
-//--------------------------------------------------
-//INCLUDE CLASSES FOR RESPONSIVE FONT SIZE
-//--------------------------------------------------
-@for $i from 1 through $stepsFontSize {
-  .fs#{$i} {
-    @extend %fs#{$i};
-  }
-}

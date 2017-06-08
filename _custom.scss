@@ -28,7 +28,7 @@ pre {
   @extend %ptb3;
   @extend %plr4;
   @extend %overflow-x-scroll;
-  @extend %width-100; 
+  @extend %width-100;
 }
 .big {
   font-size: 130%;
@@ -155,7 +155,17 @@ pre {
   @include button-disabled (#ccc, none, #8e8e8e, none, #fff);
 }
 .btn-group-horizontal {
-  > button {}
+  @extend %row;
+  > .btn1 {
+    @extend %c_6;
+    @include button-group-horizontal();
+  }
+}
+.btn-group-vertical {
+  > .btn1 {
+    @include button-group-vertical();
+    @extend %display-block;
+  }
 }
 .link1 {
   @include link-default (#3b55e6, bold, underline, uppercase);
