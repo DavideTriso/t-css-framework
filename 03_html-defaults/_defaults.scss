@@ -86,7 +86,9 @@ a {
   &,
   &:hover,
   &:active,
-  &:focus {
+  &:focus,
+  &:visited {
+    color: #000;
     @extend %text-decoration-none;
   }
 }

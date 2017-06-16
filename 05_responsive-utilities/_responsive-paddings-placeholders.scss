@@ -38,7 +38,7 @@
 //bottom
 @mixin paddings-bottom ($suffix, $multiplyFactor) {
   @for $i from 1 through $stepsPadding {
-    %pb+#{$i}#{$suffix} {
+    %pb_#{$i}#{$suffix} {
       padding-bottom: $firstPadding + $intervalPadding * $i * $multiplyFactor;
     }
   }

@@ -1,50 +1,73 @@
-//checkbox default style
-@mixin checkbox-default ($size, $backgroundColor, $borderColor, $borderRadius, $borderStyle, $borderWidth) {
-  @extend %appearance-none;
-  @extend %display-inline-block;
-  height: $size;
-  @extend %position-relative;
-  @extend %vertical-align-middle;
-  width: $size;
-  &:before {
-    @if $backgroundColor !=transparent {
-      background-color: $backgroundColor;
+  //checkbox default style
+  @mixin checkbox-unchecked ($checkboxInputSelector, $checkboxLabelSelector, $chekboxLabelPaddingTop, $checkboxSize, $checkboxBackgroundColor, $checkboxBorderColor, $checkboxBorderRadius, $checkboxBorderStyle, $checkboxBorderWidth, $checkboxRightSpacing, $checkedIconColor, $checkboxCheckedBackgroundColor, $checkboxCheckedBorderColor, $transitionDuration) {
+    @extend %display-inline-block;
+    min-height: $checkboxSize;
+    //HIDE CHECKBOX INPUT
+    #{$checkboxInputSelector} {
+      left: -9999rem;
+      @extend %position-absolute;
     }
-    @include border ($borderStyle, $borderWidth, $borderColor, $borderRadius);
-    @extend %box-sizing-border-box;
-    @extend %content;
-    @extend %display-block; 
-    height: $size;
-    width: $size;
-  }
-} 
-//checked style 
-@mixin checkbox-checked ($backgroundColor, $borderColor) {
-  &:before {
-    background-color: $backgroundColor;
-    border-color: $borderColor;
-  }
-  &:after {
-    @extend %box-sizing-border-box;
-    @extend %content;
-    @extend %display-block;
-    @extend %position-absolute;
-    @extend %top-50;
-    @extend %left-50;
-    transform: translate(-50%, -50%) rotate(-45deg) skewX(-10deg);
-    width: 1.3rem;
-    height: 0.5rem;
-    border-left: 0.1rem solid #fff;
-    border-bottom: 0.1rem solid #fff;
-  }
-}
-input[type='checkbox'] {
-  & + .fake-checkbox {
-    @include checkbox-default (1.2rem, transparent, $color-1-darker, 0.2rem, solid, 0.05rem);
-  }
-  &:checked {
-    & + .fake-checkbox {
-      @include checkbox-checked ($color-1-dark, $color-1-darker);
+    //CHECKBOX LABEL
+    #{$checkboxLabelSelector} {
+      @extend %display-inline-block;
+      @if $chekboxLabelPaddingTop !=0 {
+        padding-top: $chekboxLabelPaddingTop;
+      }
+      padding-left: $checkboxRightSpacing + $checkboxSize;
+      @extend %position-relative;
+      //CHECKBOX DEFAULT STYLE
+      &:before {
+        background-color: $checkboxBackgroundColor;
+        border-color: $checkboxBorderColor;
+        border-radius: $checkboxBorderRadius;
+        border-style: $checkboxBorderStyle;
+        border-width: $checkboxBorderWidth;
+        @extend %box-sizing-border-box;
+        @extend %content;
+        @extend %display-inline-block;
+        height: $checkboxSize;
+        @extend %left-0;
+        @extend %position-absolute;
+        @extend %top-0;
+        @if $transitionDuration !=0 {
+          transition: color $transitionDuration ease-in, background-color $transitionDuration ease-in;
+        }
+        width: $checkboxSize;
+        z-index: 1;
+      }
+      &:after {
+        border-color: $checkedIconColor;
+        @extend %border-style-solid;
+        border-width: 0 0 ($checkboxSize / 10) ($checkboxSize / 10);
+        @extend %box-sizing-border-box;
+        @extend %content;
+        @extend %display-inline-block;
+        height: $checkboxSize / 3.2;
+        @extend %left-0;
+        margin: ($checkboxSize / 4) 0 0 ($checkboxSize / 5.2);
+        @extend %opacity-0;
+        @extend %position-absolute;
+        @extend %top-0;
+        transform: rotate(-45deg) skewY(-5deg);
+        @if $transitionDuration !=0 {
+          transition: opacity $transitionDuration ease-in;
+        }
+        width: $checkboxSize / 1.6;
+        @extend %z-index-1;
+      }
+    }
+    //CHECKBOX SELECTED STYLE
+    #{$checkboxInputSelector}:checked + #{$checkboxLabelSelector} {
+      &:before {
+        background-color: $checkboxCheckedBackgroundColor;
+        border-color: $checkboxCheckedBorderColor;
+      }
+      &:after {
+        opacity: 1;
+      }
     }
   }
-}
+  .checkbox {
+    //@extend %clearfix;
+    @include checkbox-unchecked('.checkbox__input', '.checkbox__label', 0, 1rem, $color-1, $color-1-darker, 0.2rem, solid, 0.01rem, 0.5rem, #fff, $color-1-dark, $color-1-darker, 0.2s);
+  }

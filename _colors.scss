@@ -7,9 +7,7 @@ $colorPercentVariationThree: 18%;
 //==========================
 //DEFINE COLORS
 //==========================
-$white: rgba(255, 255, 255, 1);
-$black: rgba(0, 0, 0, 1);
-$mid-gray: rgb(128, 128, 128);
+
 $color-1: rgb(139, 22, 125);
 $color-2: rgb(152, 152, 152);
 $color-3: rgb(235, 235, 235);
@@ -22,25 +20,6 @@ $color-9: rgba(50, 200, 150, 1);
 //==========================
 //COLORS VARIATIONS
 //==========================
-//white
-$white-90: rgba($white, .9);
-$white-80: rgba($white, .8);
-$white-70: rgba($white, .7);
-$white-60: rgba($white, .6);
-$white-50: rgba($white, .5);
-//black
-$black-90: rgba($black, .9);
-$black-80: rgba($black, .8);
-$black-70: rgba($black, .7);
-$black-60: rgba($black, .6);
-$black-50: rgba($black, .5);
-//gray
-$mid-gray-light: lighten($mid-gray, $colorPercentVariationOne);
-$mid-gray-lighter: lighten($mid-gray, $colorPercentVariationTwo);
-$mid-gray-lighter-plus: lighten($mid-gray, $colorPercentVariationThree);
-$mid-gray-dark: darken($mid-gray, $colorPercentVariationOne);
-$mid-gray-darker: darken($mid-gray, $colorPercentVariationTwo);
-$mid-gray-darker-plus: darken($mid-gray, $colorPercentVariationThree);
 //color 1
 $color-1-light: lighten($color-1, $colorPercentVariationOne);
 $color-1-lighter: lighten($color-1, $colorPercentVariationTwo);

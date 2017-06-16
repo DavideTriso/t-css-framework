@@ -1,111 +1,2053 @@
-/*
-Error: Invalid CSS after "%pb+": expected selector, was "1"
-        on line 41 of 05_responsive-utilities/_responsive-paddings-placeholders.scss, in `paddings-bottom'
-        from line 70 of 05_responsive-utilities/_responsive-paddings-placeholders.scss
-        from line 6 of 05_responsive-utilities/_import.scss
-        from line 10 of t-css-framework.scss
+.row, .box-group-horizontal, .box-group-horizontal-top, .box-group-horizontal-bottom, .box-group-horizontal-left, .box-group-horizontal-right, .btn-group-horizontal {
+  align-content: flex-start; }
 
-Backtrace:
-05_responsive-utilities/_responsive-paddings-placeholders.scss:41:in `paddings-bottom'
-05_responsive-utilities/_responsive-paddings-placeholders.scss:70
-05_responsive-utilities/_import.scss:6
-t-css-framework.scss:10
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/scss/static_parser.rb:21:in `parse_selector'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:427:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:272:in `block (3 levels) in visit_for'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:272:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:272:in `block (2 levels) in visit_for'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:268:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:268:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:268:in `block in visit_for'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:267:in `visit_for'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:366:in `block (4 levels) in visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:366:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:366:in `block (3 levels) in visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:366:in `block (2 levels) in visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:84:in `perform_arguments'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:361:in `block in visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `with_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+.row, .box-group-horizontal, .box-group-horizontal-top, .box-group-horizontal-bottom, .box-group-horizontal-left, .box-group-horizontal-right, .btn-group-horizontal {
+  align-items: stretch; }
+
+button,
+input,
+textarea {
+  appearance: none; }
+
+a,
+abbr,
+acronym,
+address,
+b,
+big,
+cite,
+code,
+del,
+em,
+i,
+ins,
+kbd,
+mark,
+output,
+q,
+ruby,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+time,
+tt,
+u,
+var,
+dfn,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+applet,
+canvas,
+embed,
+figure,
+figcaption,
+iframe,
+img,
+object, button,
+input,
+textarea {
+  background-color: none; }
+
+a,
+abbr,
+acronym,
+address,
+b,
+big,
+cite,
+code,
+del,
+em,
+i,
+ins,
+kbd,
+mark,
+output,
+q,
+ruby,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+time,
+tt,
+u,
+var,
+dfn,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+applet,
+canvas,
+embed,
+figure,
+figcaption,
+iframe,
+img,
+object, button,
+input,
+textarea {
+  border: none; }
+
+.checkbox .checkbox__label:after, .cont_colored, .row_colored, .row_colored .row_colored, .c > .bg, pre, .box-default, .box-top, .box-left, .box-right, .box-bottom, .box-group-horizontal > li, .box-group-horizontal > li:last-child, .box-group-horizontal-top > li, .box-group-horizontal-top > li:last-child, .box-group-horizontal-bottom > li, .box-group-horizontal-bottom > li:last-child, .box-group-horizontal-left > li, .box-group-horizontal-left > li:last-child, .box-group-horizontal-right > li, .box-group-horizontal-right > li:last-child, .box-group-vertical > li, .box-group-vertical > li:last-child, .box-group-vertical-top > li, .box-group-vertical-bottom > li, .box-group-vertical-bottom > li:last-child, .box-group-vertical-left > li, .box-group-vertical-left > li:last-child, .box-group-vertical-right > li, .box-group-vertical-right > li:last-child, .btn1 {
+  border-style: solid; }
+
+.checkbox .checkbox__label:before, .checkbox .checkbox__label:after, html,
+body, .cont,
+.fluid-cont,
+.row,
+.box-group-horizontal,
+.box-group-horizontal-top,
+.box-group-horizontal-bottom,
+.box-group-horizontal-left,
+.box-group-horizontal-right,
+.btn-group-horizontal,
+.c, .cont_colored, .row_colored, .row_colored .row_colored, .c > .bg, pre, .box-default, .box-top, .box-left, .box-right, .box-bottom, .box-group-horizontal > li, .box-group-horizontal-top > li, .box-group-horizontal-bottom > li, .box-group-horizontal-left > li, .box-group-horizontal-right > li, .box-group-vertical > li, .box-group-vertical-top > li, .box-group-vertical-bottom > li, .box-group-vertical-left > li, .box-group-vertical-right > li {
+  box-sizing: border-box; }
+
+.checkbox .checkbox__label:before, .checkbox .checkbox__label:after, dt:before {
+  content: ""; }
+
+dt,
+dd {
+  display: inline; }
+
+dt:before, .btn-group-vertical > .btn1 {
+  display: block; }
+
+.row, .box-group-horizontal, .box-group-horizontal-top, .box-group-horizontal-bottom, .box-group-horizontal-left, .box-group-horizontal-right, .btn-group-horizontal {
+  display: flex; }
+
+.checkbox, .checkbox .checkbox__label, .checkbox .checkbox__label:before, .checkbox .checkbox__label:after {
+  display: inline-block; }
+
+.row, .box-group-horizontal, .box-group-horizontal-top, .box-group-horizontal-bottom, .box-group-horizontal-left, .box-group-horizontal-right, .btn-group-horizontal {
+  flex-direction: row; }
+
+.row, .box-group-horizontal, .box-group-horizontal-top, .box-group-horizontal-bottom, .box-group-horizontal-left, .box-group-horizontal-right, .btn-group-horizontal {
+  flex-wrap: wrap; }
+
+.row, .box-group-horizontal, .box-group-horizontal-top, .box-group-horizontal-bottom, .box-group-horizontal-left, .box-group-horizontal-right, .btn-group-horizontal {
+  justify-content: flex-start; }
+
+.checkbox .checkbox__label:before, .checkbox .checkbox__label:after {
+  left: 0; }
+
+a,
+abbr,
+acronym,
+address,
+b,
+big,
+cite,
+code,
+del,
+em,
+i,
+ins,
+kbd,
+mark,
+output,
+q,
+ruby,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+time,
+tt,
+u,
+var,
+dfn,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+applet,
+canvas,
+embed,
+figure,
+figcaption,
+iframe,
+img,
+object {
+  letter-spacing: normal; }
+
+dl,
+ol,
+ul {
+  list-style: none; }
+
+dl,
+ol,
+ul {
+  list-style-position: inside; }
+
+.cont,
+.fluid-cont {
+  margin: auto; }
+
+html,
+body, a,
+abbr,
+acronym,
+address,
+b,
+big,
+cite,
+code,
+del,
+em,
+i,
+ins,
+kbd,
+mark,
+output,
+q,
+ruby,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+time,
+tt,
+u,
+var,
+dfn,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+applet,
+canvas,
+embed,
+figure,
+figcaption,
+iframe,
+img,
+object, button,
+input,
+textarea {
+  margin: 0; }
+
+html,
+body {
+  min-width: 100%; }
+
+.checkbox .checkbox__label:after {
+  opacity: 0; }
+
+body {
+  overflow-x: hidden; }
+
+pre {
+  overflow-x: scroll; }
+
+html,
+body, a,
+abbr,
+acronym,
+address,
+b,
+big,
+cite,
+code,
+del,
+em,
+i,
+ins,
+kbd,
+mark,
+output,
+q,
+ruby,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+time,
+tt,
+u,
+var,
+dfn,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+applet,
+canvas,
+embed,
+figure,
+figcaption,
+iframe,
+img,
+object, button,
+input,
+textarea {
+  padding: 0; }
+
+.checkbox .checkbox__input, .checkbox .checkbox__label:before, .checkbox .checkbox__label:after {
+  position: absolute; }
+
+.checkbox .checkbox__label {
+  position: relative; }
+
+.cont_colored, .c > .bg {
+  text-align: center; }
+
+a, a:hover, a:active, a:focus, a:visited {
+  text-decoration: none; }
+
+.checkbox .checkbox__label:before, .checkbox .checkbox__label:after {
+  top: 0; }
+
+a,
+abbr,
+acronym,
+address,
+b,
+big,
+cite,
+code,
+del,
+em,
+i,
+ins,
+kbd,
+mark,
+output,
+q,
+ruby,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+time,
+tt,
+u,
+var,
+dfn,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+applet,
+canvas,
+embed,
+figure,
+figcaption,
+iframe,
+img,
+object {
+  vertical-align: baseline; }
+
+.cont, .c, pre {
+  width: 100%; }
+
+.checkbox .checkbox__label:after {
+  z-index: 1; }
+
+.checkbox {
+  min-height: 1rem; }
+  .checkbox .checkbox__input {
+    left: -9999rem; }
+  .checkbox .checkbox__label {
+    padding-left: 1.5rem; }
+    .checkbox .checkbox__label:before {
+      background-color: #8b167d;
+      border-color: #560e4d;
+      border-radius: 0.2rem;
+      border-style: solid;
+      border-width: 0.01rem;
+      height: 1rem;
+      transition: color 0.2s ease-in, background-color 0.2s ease-in;
+      width: 1rem;
+      z-index: 1; }
+    .checkbox .checkbox__label:after {
+      border-color: #fff;
+      border-width: 0 0 0.1rem 0.1rem;
+      height: 0.3125rem;
+      margin: 0.25rem 0 0 0.19231rem;
+      transform: rotate(-45deg) skewY(-5deg);
+      transition: opacity 0.2s ease-in;
+      width: 0.625rem; }
+  .checkbox .checkbox__input:checked + .checkbox__label:before {
+    background-color: #711265;
+    border-color: #560e4d; }
+  .checkbox .checkbox__input:checked + .checkbox__label:after {
+    opacity: 1; }
+
+html,
+body {
+  font-size: 16px; }
+
+a,
+abbr,
+acronym,
+address,
+b,
+big,
+cite,
+code,
+del,
+em,
+i,
+ins,
+kbd,
+mark,
+output,
+q,
+ruby,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+time,
+tt,
+u,
+var,
+dfn,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+applet,
+canvas,
+embed,
+figure,
+figcaption,
+iframe,
+img,
+object {
+  font-size: 100%;
+  font: inherit;
+  line-height: 1; }
+
+a, a:hover, a:active, a:focus, a:visited {
+  color: #000; }
+
+html,
+body {
+  font-family: "Helvetica"; }
+
+button,
+datalist,
+input,
+select,
+textarea {
+  font-family: "Helvetica"; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica"; }
+
+body {
+  min-width: 280px; }
+
+.cont_gutter,
+.fluid-cont_gutter,
+.c_gutter {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+.row_gutter {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cont_gutter,
+  .fluid-cont_gutter,
+  .c_gutter {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem; }
+
+  .row_gutter {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem; } }
+@media screen and (min-width: 1200px) {
+  .cont_gutter,
+  .fluid-cont_gutter,
+  .c_gutter {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .row_gutter {
+    margin-left: -1rem;
+    margin-right: -1rem; } }
+.cont_gutter-small,
+.fluid-cont_gutter-small,
+.c_gutter-small {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; }
+
+.row_gutter-small {
+  margin-left: -0.25rem;
+  margin-right: -0.25rem; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cont_gutter-small,
+  .fluid-cont_gutter-small,
+  .c_gutter-small {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+
+  .row_gutter-small {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem; } }
+@media screen and (min-width: 1200px) {
+  .cont_gutter-small,
+  .fluid-cont_gutter-small {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem; }
+
+  .row_gutter-small {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem; } }
+.cont_gutter-big,
+.fluid-cont_gutter-big,
+.c_gutter-big {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.row_gutter-big {
+  margin-left: -1rem;
+  margin-right: -1rem; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cont_gutter-big,
+  .fluid-cont_gutter-big,
+  .c_gutter-big {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; }
+
+  .row_gutter-big {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem; } }
+@media screen and (min-width: 1200px) {
+  .cont_gutter-big,
+  .fluid-cont_gutter-big,
+  .c_gutter-big {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+
+  .row_gutter-big {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem; } }
+@media screen and (max-width: 767px) {
+  .cont_no-gutter-smart,
+  .fluid-cont_no-gutter-smart,
+  .c_no-gutter-smart {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row_no-gutter-smart {
+    margin-left: 0;
+    margin-right: 0; } }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cont_no-gutter-tablet,
+  .fluid-cont_no-gutter-tablet,
+  .c_no-gutter-tablet {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row_no-gutter-tablet {
+    margin-left: 0;
+    margin-right: 0; } }
+@media screen and (min-width: 1199px) {
+  .cont_no-gutter-desktop,
+  .fluid-cont_no-gutter-desktop,
+  .c_no-gutter-desktop {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row_no-gutter-desktop {
+    margin-left: 0;
+    margin-right: 0; } }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cont {
+    width: 708px; } }
+@media screen and (min-width: 1200px) {
+  .cont {
+    width: 1080px; } }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cont_big {
+    width: 738px; } }
+@media screen and (min-width: 1200px) {
+  .cont_big {
+    width: 1140px; } }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cont_small {
+    width: 678px; } }
+@media screen and (min-width: 1200px) {
+  .cont_small {
+    width: 1020px; } }
+.fluid-cont_regular {
+  max-width: 1080px; }
+
+.fluid-cont_small {
+  max-width: 1020px; }
+
+.fluid-cont_big {
+  max-width: 1140px; }
+
+.row_reverse {
+  flex-direction: row-reverse; }
+
+@media screen and (max-width: 767px) {
+  .row_reverse-smart {
+    flex-direction: row-reverse; } }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .row_reverse-tablet {
+    flex-direction: row-reverse; } }
+@media screen and (min-width: 1200px) {
+  .row_reverse-desktop {
+    flex-direction: row-reverse; } }
+.c_1 {
+  flex: 0, 0, 4.16667%; }
+
+.c_2 {
+  flex: 0, 0, 8.33333%; }
+
+.c_3 {
+  flex: 0, 0, 12.5%; }
+
+.c_4 {
+  flex: 0, 0, 16.66667%; }
+
+.c_5 {
+  flex: 0, 0, 20.83333%; }
+
+.c_6, .box-group-horizontal > li, .box-group-horizontal-top > li, .box-group-horizontal-bottom > li, .box-group-horizontal-left > li, .box-group-horizontal-right > li, .btn-group-horizontal > .btn1 {
+  flex: 0, 0, 25%; }
+
+.c_7 {
+  flex: 0, 0, 29.16667%; }
+
+.c_8 {
+  flex: 0, 0, 33.33333%; }
+
+.c_9 {
+  flex: 0, 0, 37.5%; }
+
+.c_10 {
+  flex: 0, 0, 41.66667%; }
+
+.c_11 {
+  flex: 0, 0, 45.83333%; }
+
+.c_12 {
+  flex: 0, 0, 50%; }
+
+.c_13 {
+  flex: 0, 0, 54.16667%; }
+
+.c_14 {
+  flex: 0, 0, 58.33333%; }
+
+.c_15 {
+  flex: 0, 0, 62.5%; }
+
+.c_16 {
+  flex: 0, 0, 66.66667%; }
+
+.c_17 {
+  flex: 0, 0, 70.83333%; }
+
+.c_18 {
+  flex: 0, 0, 75%; }
+
+.c_19 {
+  flex: 0, 0, 79.16667%; }
+
+.c_20 {
+  flex: 0, 0, 83.33333%; }
+
+.c_21 {
+  flex: 0, 0, 87.5%; }
+
+.c_22 {
+  flex: 0, 0, 91.66667%; }
+
+.c_23 {
+  flex: 0, 0, 95.83333%; }
+
+.c_24 {
+  flex: 0, 0, 100%; }
+
+@media screen and (min-width: 414px) {
+  .c_1-2 {
+    flex: 0, 0, 4.16667%; }
+
+  .c_2-2 {
+    flex: 0, 0, 8.33333%; }
+
+  .c_3-2 {
+    flex: 0, 0, 12.5%; }
+
+  .c_4-2 {
+    flex: 0, 0, 16.66667%; }
+
+  .c_5-2 {
+    flex: 0, 0, 20.83333%; }
+
+  .c_6-2 {
+    flex: 0, 0, 25%; }
+
+  .c_7-2 {
+    flex: 0, 0, 29.16667%; }
+
+  .c_8-2 {
+    flex: 0, 0, 33.33333%; }
+
+  .c_9-2 {
+    flex: 0, 0, 37.5%; }
+
+  .c_10-2 {
+    flex: 0, 0, 41.66667%; }
+
+  .c_11-2 {
+    flex: 0, 0, 45.83333%; }
+
+  .c_12-2 {
+    flex: 0, 0, 50%; }
+
+  .c_13-2 {
+    flex: 0, 0, 54.16667%; }
+
+  .c_14-2 {
+    flex: 0, 0, 58.33333%; }
+
+  .c_15-2 {
+    flex: 0, 0, 62.5%; }
+
+  .c_16-2 {
+    flex: 0, 0, 66.66667%; }
+
+  .c_17-2 {
+    flex: 0, 0, 70.83333%; }
+
+  .c_18-2 {
+    flex: 0, 0, 75%; }
+
+  .c_19-2 {
+    flex: 0, 0, 79.16667%; }
+
+  .c_20-2 {
+    flex: 0, 0, 83.33333%; }
+
+  .c_21-2 {
+    flex: 0, 0, 87.5%; }
+
+  .c_22-2 {
+    flex: 0, 0, 91.66667%; }
+
+  .c_23-2 {
+    flex: 0, 0, 95.83333%; }
+
+  .c_24-2 {
+    flex: 0, 0, 100%; } }
+@media screen and (min-width: 768px) {
+  .c_1-3 {
+    flex: 0, 0, 4.16667%; }
+
+  .c_2-3 {
+    flex: 0, 0, 8.33333%; }
+
+  .c_3-3 {
+    flex: 0, 0, 12.5%; }
+
+  .c_4-3 {
+    flex: 0, 0, 16.66667%; }
+
+  .c_5-3 {
+    flex: 0, 0, 20.83333%; }
+
+  .c_6-3 {
+    flex: 0, 0, 25%; }
+
+  .c_7-3 {
+    flex: 0, 0, 29.16667%; }
+
+  .c_8-3 {
+    flex: 0, 0, 33.33333%; }
+
+  .c_9-3 {
+    flex: 0, 0, 37.5%; }
+
+  .c_10-3 {
+    flex: 0, 0, 41.66667%; }
+
+  .c_11-3 {
+    flex: 0, 0, 45.83333%; }
+
+  .c_12-3 {
+    flex: 0, 0, 50%; }
+
+  .c_13-3 {
+    flex: 0, 0, 54.16667%; }
+
+  .c_14-3 {
+    flex: 0, 0, 58.33333%; }
+
+  .c_15-3 {
+    flex: 0, 0, 62.5%; }
+
+  .c_16-3 {
+    flex: 0, 0, 66.66667%; }
+
+  .c_17-3 {
+    flex: 0, 0, 70.83333%; }
+
+  .c_18-3 {
+    flex: 0, 0, 75%; }
+
+  .c_19-3 {
+    flex: 0, 0, 79.16667%; }
+
+  .c_20-3 {
+    flex: 0, 0, 83.33333%; }
+
+  .c_21-3 {
+    flex: 0, 0, 87.5%; }
+
+  .c_22-3 {
+    flex: 0, 0, 91.66667%; }
+
+  .c_23-3 {
+    flex: 0, 0, 95.83333%; }
+
+  .c_24-3 {
+    flex: 0, 0, 100%; } }
+@media screen and (min-width: 992px) {
+  .c_1-4 {
+    flex: 0, 0, 4.16667%; }
+
+  .c_2-4 {
+    flex: 0, 0, 8.33333%; }
+
+  .c_3-4 {
+    flex: 0, 0, 12.5%; }
+
+  .c_4-4 {
+    flex: 0, 0, 16.66667%; }
+
+  .c_5-4 {
+    flex: 0, 0, 20.83333%; }
+
+  .c_6-4 {
+    flex: 0, 0, 25%; }
+
+  .c_7-4 {
+    flex: 0, 0, 29.16667%; }
+
+  .c_8-4 {
+    flex: 0, 0, 33.33333%; }
+
+  .c_9-4 {
+    flex: 0, 0, 37.5%; }
+
+  .c_10-4 {
+    flex: 0, 0, 41.66667%; }
+
+  .c_11-4 {
+    flex: 0, 0, 45.83333%; }
+
+  .c_12-4 {
+    flex: 0, 0, 50%; }
+
+  .c_13-4 {
+    flex: 0, 0, 54.16667%; }
+
+  .c_14-4 {
+    flex: 0, 0, 58.33333%; }
+
+  .c_15-4 {
+    flex: 0, 0, 62.5%; }
+
+  .c_16-4 {
+    flex: 0, 0, 66.66667%; }
+
+  .c_17-4 {
+    flex: 0, 0, 70.83333%; }
+
+  .c_18-4 {
+    flex: 0, 0, 75%; }
+
+  .c_19-4 {
+    flex: 0, 0, 79.16667%; }
+
+  .c_20-4 {
+    flex: 0, 0, 83.33333%; }
+
+  .c_21-4 {
+    flex: 0, 0, 87.5%; }
+
+  .c_22-4 {
+    flex: 0, 0, 91.66667%; }
+
+  .c_23-4 {
+    flex: 0, 0, 95.83333%; }
+
+  .c_24-4 {
+    flex: 0, 0, 100%; } }
+@media screen and (min-width: 1200px) {
+  .c_1-5 {
+    flex: 0, 0, 4.16667%; }
+
+  .c_2-5 {
+    flex: 0, 0, 8.33333%; }
+
+  .c_3-5 {
+    flex: 0, 0, 12.5%; }
+
+  .c_4-5 {
+    flex: 0, 0, 16.66667%; }
+
+  .c_5-5 {
+    flex: 0, 0, 20.83333%; }
+
+  .c_6-5 {
+    flex: 0, 0, 25%; }
+
+  .c_7-5 {
+    flex: 0, 0, 29.16667%; }
+
+  .c_8-5 {
+    flex: 0, 0, 33.33333%; }
+
+  .c_9-5 {
+    flex: 0, 0, 37.5%; }
+
+  .c_10-5 {
+    flex: 0, 0, 41.66667%; }
+
+  .c_11-5 {
+    flex: 0, 0, 45.83333%; }
+
+  .c_12-5 {
+    flex: 0, 0, 50%; }
+
+  .c_13-5 {
+    flex: 0, 0, 54.16667%; }
+
+  .c_14-5 {
+    flex: 0, 0, 58.33333%; }
+
+  .c_15-5 {
+    flex: 0, 0, 62.5%; }
+
+  .c_16-5 {
+    flex: 0, 0, 66.66667%; }
+
+  .c_17-5 {
+    flex: 0, 0, 70.83333%; }
+
+  .c_18-5 {
+    flex: 0, 0, 75%; }
+
+  .c_19-5 {
+    flex: 0, 0, 79.16667%; }
+
+  .c_20-5 {
+    flex: 0, 0, 83.33333%; }
+
+  .c_21-5 {
+    flex: 0, 0, 87.5%; }
+
+  .c_22-5 {
+    flex: 0, 0, 91.66667%; }
+
+  .c_23-5 {
+    flex: 0, 0, 95.83333%; }
+
+  .c_24-5 {
+    flex: 0, 0, 100%; } }
+@media screen and (min-width: 1440px) {
+  .c_1-6 {
+    flex: 0, 0, 4.16667%; }
+
+  .c_2-6 {
+    flex: 0, 0, 8.33333%; }
+
+  .c_3-6 {
+    flex: 0, 0, 12.5%; }
+
+  .c_4-6 {
+    flex: 0, 0, 16.66667%; }
+
+  .c_5-6 {
+    flex: 0, 0, 20.83333%; }
+
+  .c_6-6 {
+    flex: 0, 0, 25%; }
+
+  .c_7-6 {
+    flex: 0, 0, 29.16667%; }
+
+  .c_8-6 {
+    flex: 0, 0, 33.33333%; }
+
+  .c_9-6 {
+    flex: 0, 0, 37.5%; }
+
+  .c_10-6 {
+    flex: 0, 0, 41.66667%; }
+
+  .c_11-6 {
+    flex: 0, 0, 45.83333%; }
+
+  .c_12-6 {
+    flex: 0, 0, 50%; }
+
+  .c_13-6 {
+    flex: 0, 0, 54.16667%; }
+
+  .c_14-6 {
+    flex: 0, 0, 58.33333%; }
+
+  .c_15-6 {
+    flex: 0, 0, 62.5%; }
+
+  .c_16-6 {
+    flex: 0, 0, 66.66667%; }
+
+  .c_17-6 {
+    flex: 0, 0, 70.83333%; }
+
+  .c_18-6 {
+    flex: 0, 0, 75%; }
+
+  .c_19-6 {
+    flex: 0, 0, 79.16667%; }
+
+  .c_20-6 {
+    flex: 0, 0, 83.33333%; }
+
+  .c_21-6 {
+    flex: 0, 0, 87.5%; }
+
+  .c_22-6 {
+    flex: 0, 0, 91.66667%; }
+
+  .c_23-6 {
+    flex: 0, 0, 95.83333%; }
+
+  .c_24-6 {
+    flex: 0, 0, 100%; } }
+.c_o-0 {
+  margin-left: 0%; }
+
+.c_o-1 {
+  margin-left: 4.16667%; }
+
+.c_o-2 {
+  margin-left: 8.33333%; }
+
+.c_o-3 {
+  margin-left: 12.5%; }
+
+.c_o-4 {
+  margin-left: 16.66667%; }
+
+.c_o-5 {
+  margin-left: 20.83333%; }
+
+.c_o-6 {
+  margin-left: 25%; }
+
+.c_o-7 {
+  margin-left: 29.16667%; }
+
+.c_o-8 {
+  margin-left: 33.33333%; }
+
+.c_o-9 {
+  margin-left: 37.5%; }
+
+.c_o-10 {
+  margin-left: 41.66667%; }
+
+.c_o-11 {
+  margin-left: 45.83333%; }
+
+.c_o-12 {
+  margin-left: 50%; }
+
+.c_o-13 {
+  margin-left: 54.16667%; }
+
+.c_o-14 {
+  margin-left: 58.33333%; }
+
+.c_o-15 {
+  margin-left: 62.5%; }
+
+.c_o-16 {
+  margin-left: 66.66667%; }
+
+.c_o-17 {
+  margin-left: 70.83333%; }
+
+.c_o-18 {
+  margin-left: 75%; }
+
+.c_o-19 {
+  margin-left: 79.16667%; }
+
+.c_o-20 {
+  margin-left: 83.33333%; }
+
+.c_o-21 {
+  margin-left: 87.5%; }
+
+.c_o-22 {
+  margin-left: 91.66667%; }
+
+.c_o-23 {
+  margin-left: 95.83333%; }
+
+.c_o-24 {
+  margin-left: 100%; }
+
+@media screen and (min-width: 414px) {
+  .c_o-0-2 {
+    margin-left: 0%; }
+
+  .c_o-1-2 {
+    margin-left: 4.16667%; }
+
+  .c_o-2-2 {
+    margin-left: 8.33333%; }
+
+  .c_o-3-2 {
+    margin-left: 12.5%; }
+
+  .c_o-4-2 {
+    margin-left: 16.66667%; }
+
+  .c_o-5-2 {
+    margin-left: 20.83333%; }
+
+  .c_o-6-2 {
+    margin-left: 25%; }
+
+  .c_o-7-2 {
+    margin-left: 29.16667%; }
+
+  .c_o-8-2 {
+    margin-left: 33.33333%; }
+
+  .c_o-9-2 {
+    margin-left: 37.5%; }
+
+  .c_o-10-2 {
+    margin-left: 41.66667%; }
+
+  .c_o-11-2 {
+    margin-left: 45.83333%; }
+
+  .c_o-12-2 {
+    margin-left: 50%; }
+
+  .c_o-13-2 {
+    margin-left: 54.16667%; }
+
+  .c_o-14-2 {
+    margin-left: 58.33333%; }
+
+  .c_o-15-2 {
+    margin-left: 62.5%; }
+
+  .c_o-16-2 {
+    margin-left: 66.66667%; }
+
+  .c_o-17-2 {
+    margin-left: 70.83333%; }
+
+  .c_o-18-2 {
+    margin-left: 75%; }
+
+  .c_o-19-2 {
+    margin-left: 79.16667%; }
+
+  .c_o-20-2 {
+    margin-left: 83.33333%; }
+
+  .c_o-21-2 {
+    margin-left: 87.5%; }
+
+  .c_o-22-2 {
+    margin-left: 91.66667%; }
+
+  .c_o-23-2 {
+    margin-left: 95.83333%; }
+
+  .c_o-24-2 {
+    margin-left: 100%; } }
+@media screen and (min-width: 768px) {
+  .c_o-0-3 {
+    margin-left: 0%; }
+
+  .c_o-1-3 {
+    margin-left: 4.16667%; }
+
+  .c_o-2-3 {
+    margin-left: 8.33333%; }
+
+  .c_o-3-3 {
+    margin-left: 12.5%; }
+
+  .c_o-4-3 {
+    margin-left: 16.66667%; }
+
+  .c_o-5-3 {
+    margin-left: 20.83333%; }
+
+  .c_o-6-3 {
+    margin-left: 25%; }
+
+  .c_o-7-3 {
+    margin-left: 29.16667%; }
+
+  .c_o-8-3 {
+    margin-left: 33.33333%; }
+
+  .c_o-9-3 {
+    margin-left: 37.5%; }
+
+  .c_o-10-3 {
+    margin-left: 41.66667%; }
+
+  .c_o-11-3 {
+    margin-left: 45.83333%; }
+
+  .c_o-12-3 {
+    margin-left: 50%; }
+
+  .c_o-13-3 {
+    margin-left: 54.16667%; }
+
+  .c_o-14-3 {
+    margin-left: 58.33333%; }
+
+  .c_o-15-3 {
+    margin-left: 62.5%; }
+
+  .c_o-16-3 {
+    margin-left: 66.66667%; }
+
+  .c_o-17-3 {
+    margin-left: 70.83333%; }
+
+  .c_o-18-3 {
+    margin-left: 75%; }
+
+  .c_o-19-3 {
+    margin-left: 79.16667%; }
+
+  .c_o-20-3 {
+    margin-left: 83.33333%; }
+
+  .c_o-21-3 {
+    margin-left: 87.5%; }
+
+  .c_o-22-3 {
+    margin-left: 91.66667%; }
+
+  .c_o-23-3 {
+    margin-left: 95.83333%; }
+
+  .c_o-24-3 {
+    margin-left: 100%; } }
+@media screen and (min-width: 992px) {
+  .c_o-0-4 {
+    margin-left: 0%; }
+
+  .c_o-1-4 {
+    margin-left: 4.16667%; }
+
+  .c_o-2-4 {
+    margin-left: 8.33333%; }
+
+  .c_o-3-4 {
+    margin-left: 12.5%; }
+
+  .c_o-4-4 {
+    margin-left: 16.66667%; }
+
+  .c_o-5-4 {
+    margin-left: 20.83333%; }
+
+  .c_o-6-4 {
+    margin-left: 25%; }
+
+  .c_o-7-4 {
+    margin-left: 29.16667%; }
+
+  .c_o-8-4 {
+    margin-left: 33.33333%; }
+
+  .c_o-9-4 {
+    margin-left: 37.5%; }
+
+  .c_o-10-4 {
+    margin-left: 41.66667%; }
+
+  .c_o-11-4 {
+    margin-left: 45.83333%; }
+
+  .c_o-12-4 {
+    margin-left: 50%; }
+
+  .c_o-13-4 {
+    margin-left: 54.16667%; }
+
+  .c_o-14-4 {
+    margin-left: 58.33333%; }
+
+  .c_o-15-4 {
+    margin-left: 62.5%; }
+
+  .c_o-16-4 {
+    margin-left: 66.66667%; }
+
+  .c_o-17-4 {
+    margin-left: 70.83333%; }
+
+  .c_o-18-4 {
+    margin-left: 75%; }
+
+  .c_o-19-4 {
+    margin-left: 79.16667%; }
+
+  .c_o-20-4 {
+    margin-left: 83.33333%; }
+
+  .c_o-21-4 {
+    margin-left: 87.5%; }
+
+  .c_o-22-4 {
+    margin-left: 91.66667%; }
+
+  .c_o-23-4 {
+    margin-left: 95.83333%; }
+
+  .c_o-24-4 {
+    margin-left: 100%; } }
+@media screen and (min-width: 1200px) {
+  .c_o-0-5 {
+    margin-left: 0%; }
+
+  .c_o-1-5 {
+    margin-left: 4.16667%; }
+
+  .c_o-2-5 {
+    margin-left: 8.33333%; }
+
+  .c_o-3-5 {
+    margin-left: 12.5%; }
+
+  .c_o-4-5 {
+    margin-left: 16.66667%; }
+
+  .c_o-5-5 {
+    margin-left: 20.83333%; }
+
+  .c_o-6-5 {
+    margin-left: 25%; }
+
+  .c_o-7-5 {
+    margin-left: 29.16667%; }
+
+  .c_o-8-5 {
+    margin-left: 33.33333%; }
+
+  .c_o-9-5 {
+    margin-left: 37.5%; }
+
+  .c_o-10-5 {
+    margin-left: 41.66667%; }
+
+  .c_o-11-5 {
+    margin-left: 45.83333%; }
+
+  .c_o-12-5 {
+    margin-left: 50%; }
+
+  .c_o-13-5 {
+    margin-left: 54.16667%; }
+
+  .c_o-14-5 {
+    margin-left: 58.33333%; }
+
+  .c_o-15-5 {
+    margin-left: 62.5%; }
+
+  .c_o-16-5 {
+    margin-left: 66.66667%; }
+
+  .c_o-17-5 {
+    margin-left: 70.83333%; }
+
+  .c_o-18-5 {
+    margin-left: 75%; }
+
+  .c_o-19-5 {
+    margin-left: 79.16667%; }
+
+  .c_o-20-5 {
+    margin-left: 83.33333%; }
+
+  .c_o-21-5 {
+    margin-left: 87.5%; }
+
+  .c_o-22-5 {
+    margin-left: 91.66667%; }
+
+  .c_o-23-5 {
+    margin-left: 95.83333%; }
+
+  .c_o-24-5 {
+    margin-left: 100%; } }
+@media screen and (min-width: 1440px) {
+  .c_o-0-6 {
+    margin-left: 0%; }
+
+  .c_o-1-6 {
+    margin-left: 4.16667%; }
+
+  .c_o-2-6 {
+    margin-left: 8.33333%; }
+
+  .c_o-3-6 {
+    margin-left: 12.5%; }
+
+  .c_o-4-6 {
+    margin-left: 16.66667%; }
+
+  .c_o-5-6 {
+    margin-left: 20.83333%; }
+
+  .c_o-6-6 {
+    margin-left: 25%; }
+
+  .c_o-7-6 {
+    margin-left: 29.16667%; }
+
+  .c_o-8-6 {
+    margin-left: 33.33333%; }
+
+  .c_o-9-6 {
+    margin-left: 37.5%; }
+
+  .c_o-10-6 {
+    margin-left: 41.66667%; }
+
+  .c_o-11-6 {
+    margin-left: 45.83333%; }
+
+  .c_o-12-6 {
+    margin-left: 50%; }
+
+  .c_o-13-6 {
+    margin-left: 54.16667%; }
+
+  .c_o-14-6 {
+    margin-left: 58.33333%; }
+
+  .c_o-15-6 {
+    margin-left: 62.5%; }
+
+  .c_o-16-6 {
+    margin-left: 66.66667%; }
+
+  .c_o-17-6 {
+    margin-left: 70.83333%; }
+
+  .c_o-18-6 {
+    margin-left: 75%; }
+
+  .c_o-19-6 {
+    margin-left: 79.16667%; }
+
+  .c_o-20-6 {
+    margin-left: 83.33333%; }
+
+  .c_o-21-6 {
+    margin-left: 87.5%; }
+
+  .c_o-22-6 {
+    margin-left: 91.66667%; }
+
+  .c_o-23-6 {
+    margin-left: 95.83333%; }
+
+  .c_o-24-6 {
+    margin-left: 100%; } }
+/*
+Uncomment the file of the grid system you want to use.
+Includ only one grid system. Including more than one grid system will lead to redundant css code.
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"%pb+\": expected selector, was \"1\"\A         on line 41 of 05_responsive-utilities/_responsive-paddings-placeholders.scss, in `paddings-bottom'\A         from line 70 of 05_responsive-utilities/_responsive-paddings-placeholders.scss\A         from line 6 of 05_responsive-utilities/_import.scss\A         from line 10 of t-css-framework.scss"; }
+.c > .bg {
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem; }
+
+.row_colored, pre {
+  margin-bottom: 0.6rem;
+  margin-top: 0.6rem; }
+
+.box-default, .box-top, .box-left, .box-right, .box-bottom, .box-group-horizontal, .box-group-horizontal-top, .box-group-horizontal-bottom, .box-group-horizontal-left, .box-group-horizontal-right, .box-group-vertical, .box-group-vertical-top, .box-group-vertical-bottom, .box-group-vertical-left, .box-group-vertical-right {
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem; }
+
+.box-default, .box-top, .box-left, .box-right, .box-bottom, .box-group-horizontal > li, .box-group-horizontal-top > li, .box-group-horizontal-bottom > li, .box-group-horizontal-left > li, .box-group-horizontal-right > li, .box-group-vertical > li, .box-group-vertical-top > li, .box-group-vertical-bottom > li, .box-group-vertical-left > li, .box-group-vertical-right > li {
+  padding: 1.2rem; }
+
+pre {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem; }
+
+.row_colored {
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem; }
+
+pre {
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem; }
+
+.cont_colored, .c > .bg {
+  padding-bottom: 1.2rem;
+  padding-top: 1.2rem; }
+
+/*
+%text-default {
+  @extend %mt5;
+  @include font-sizing (1rem, 1.4, 0);
+  @include text-style (#444, normal, normal, none, none);
+}
+//------------------
+//RESPONSIVE HEADINGS
+//-----------------
+%text-default {
+  h1 {
+    @extend %fs14;
+    @extend %mt16;
+    @include text-variation (#000, bold, normal, none, none);
+  }
+  h2 {
+    @extend %fs12;
+    @extend %mt14;
+    @include text-variation (#000, bold, normal, none, none);
+  }
+  h3 {
+    @extend %fs8;
+    @extend %mt10;
+    @include text-variation (#000, normal, normal, none, none);
+  }
+  h4 {
+    @extend %fs6;
+    @extend %mt8;
+    @include text-variation (#000, normal, normal, none, none);
+  }
+  h5 {
+    @extend %fs6;
+    @extend %mt8;
+    @include text-variation (#000, normal, normal, none, none);
+  }
+  h6 {
+    @extend %fs6;
+    @extend %mt8;
+    @include text-variation (#000, normal, normal, none, none);
+  }
+}
+//-----------------
+//PARAGRAPHS
+//-----------------
+%text-default {
+  p {
+    @extend %mt2;
+  }
+}
+//------------------
+//LINKS @include text
+//-----------------
+//------------------
+//BLOCKQUOTE 
+//-----------------
+%text-default {
+  blockquote {
+    @extend %mt2;
+    @include text-variation (#ccc, normal, italic, none, none);
+  }
+}
+//------------------
+//FIGCAPTION 
+//-----------------
+%text-default {
+  figcaption {
+    @extend %mt2;
+    @include text-variation (#ccc, normal, italic, none, none);
+  }
+}
+//------------------
+//LISTS 
+//-----------------
+%text-default {
+  dl {}
+  ol {}
+  ul {}
+}
+//-----------------
+//PRE
+//-----------------
+%text-default {
+  pre {
+    
+  }
+}
+
+//------------------
+//INLINE @include text SEMANTIC
+//-----------------
+*/
+/*
+.text-default {
+  @extend %text-default;
+}
+*/
+.cont_colored {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-radius: 0.2rem;
+  border-width: 0.05rem; }
+
+.row_colored {
+  background-color: #989898;
+  border-color: #797979;
+  border-radius: 0.2rem;
+  border-width: 0.05rem; }
+  .row_colored .row_colored {
+    background-color: #898989;
+    border-color: #797979;
+    border-radius: 0.2rem;
+    border-width: 0.05rem; }
+
+.c > .bg {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-radius: 0.2rem;
+  border-width: 0.05rem;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 1;
+  color: #000;
+  font-weight: bold; }
+
+pre {
+  background-color: #ebebeb;
+  border-color: #bdbdbd;
+  border-radius: 0.2rem;
+  border-width: 0.05rem;
+  font-family: monospace; }
+
+.big {
+  font-size: 130%;
+  font-weight: bold; }
+
+.small {
+  font-size: 60%; }
+
+.fluid {
+  letter-spacing: 1rem; }
+
+.box-default {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-radius: 1rem;
+  border-width: 0.2rem; }
+
+.box-top {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-radius: 1rem;
+  border-width: 0.2rem;
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.box-left {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-radius: 1rem;
+  border-width: 0.2rem;
+  border-right: none;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0; }
+
+.box-right {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-radius: 1rem;
+  border-width: 0.2rem;
+  border-left: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; }
+
+.box-bottom {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-radius: 1rem;
+  border-width: 0.2rem;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.box-group-horizontal > li {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-width: 0.2rem;
+  border-right: none; }
+  .box-group-horizontal > li:first-child {
+    border-radius: 1rem 0 0 1rem; }
+  .box-group-horizontal > li:last-child {
+    border-color: #560e4d;
+    border-width: 0.2rem;
+    border-radius: 0 1rem 1rem 0; }
+
+.box-group-horizontal-top > li {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-width: 0.2rem;
+  border-bottom: none;
+  border-right: none; }
+  .box-group-horizontal-top > li:first-child {
+    border-radius: 1rem 0 0 0; }
+  .box-group-horizontal-top > li:last-child {
+    border-color: #560e4d;
+    border-width: 0.2rem;
+    border-bottom: none;
+    border-radius: 0 1rem 0 0; }
+
+.box-group-horizontal-bottom > li {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-width: 0.2rem;
+  border-right: none;
+  border-top: none; }
+  .box-group-horizontal-bottom > li:first-child {
+    border-radius: 0 0 0 1rem; }
+  .box-group-horizontal-bottom > li:last-child {
+    border-color: #560e4d;
+    border-width: 0.2rem;
+    border-top: none;
+    border-radius: 0 0 1rem 0; }
+
+.box-group-horizontal-left > li {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-width: 0.2rem;
+  border-right: none; }
+  .box-group-horizontal-left > li:first-child {
+    border-radius: 1rem 0 0 1rem; }
+  .box-group-horizontal-left > li:last-child {
+    border-color: #560e4d;
+    border-width: 0.2rem;
+    border-right: none;
+    border-radius: 0; }
+
+.box-group-horizontal-right > li {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-width: 0.2rem;
+  border-right: none; }
+  .box-group-horizontal-right > li:first-child {
+    border-left: none;
+    border-radius: 0 0; }
+  .box-group-horizontal-right > li:last-child {
+    border-color: #560e4d;
+    border-width: 0.2rem;
+    border-radius: 0 1rem 1rem 0; }
+
+.box-group-vertical > li {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-width: 0.2rem;
+  border-bottom: none; }
+  .box-group-vertical > li:first-child {
+    border-radius: 1rem 1rem 0 0; }
+  .box-group-vertical > li:last-child {
+    border-color: #560e4d;
+    border-radius: 1rem;
+    border-width: 0.2rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+
+.box-group-vertical-top > li {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-width: 0.2rem;
+  border-bottom: none; }
+  .box-group-vertical-top > li:first-child {
+    border-radius: 1rem 1rem 0 0; }
+  .box-group-vertical-top > li:last-child else {
+    border-radius: 0; }
+
+.box-group-vertical-bottom > li {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-width: 0.2rem;
+  border-bottom: none; }
+  .box-group-vertical-bottom > li:first-child {
+    border-radius: 0; }
+  .box-group-vertical-bottom > li:last-child {
+    border-color: #560e4d;
+    border-width: 0.2rem;
+    border-radius: 0 0 1rem 1rem; }
+
+.box-group-vertical-left > li {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-width: 0.2rem;
+  border-bottom: none; }
+  .box-group-vertical-left > li:first-child {
+    border-radius: 1rem 0 0 0; }
+  .box-group-vertical-left > li:last-child {
+    border-color: #560e4d;
+    border-width: 0.2rem;
+    border-radius: 0 0 0 1rem; }
+
+.box-group-vertical-right > li {
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-width: 0.2rem;
+  border-bottom: none; }
+  .box-group-vertical-right > li:first-child {
+    border-radius: 0 1rem 0 0; }
+  .box-group-vertical-right > li:last-child {
+    border-color: #560e4d;
+    border-width: 0.2rem;
+    border-radius: 0 0 1rem 0; }
+
+.btn1 {
+  font-size: 0.8rem;
+  max-width: 40rem;
+  min-width: 10rem;
+  padding: 0.8rem 2rem;
+  background-color: #8b167d;
+  border-color: #560e4d;
+  border-radius: 0.5rem;
+  border-width: 0.1rem;
+  color: #fff;
+  transition: background-color 0.1s ease-in, border 0.1s ease-in, color 0.1s ease-in;
+  text-transform: uppercase; }
+  .btn1:focus {
+    background-color: #711265;
+    border-color: #560e4d;
+    color: #fff; }
+  .btn1:hover {
+    background-color: #fff;
+    border-color: #560e4d;
+    color: #560e4d; }
+  .btn1:active {
+    background-color: #711265;
+    border-color: #560e4d;
+    color: #fff; }
+  .btn1[disabled], .btn1[disabled]:hover {
+    background-color: #ccc;
+    border-color: #8e8e8e;
+    color: #fff; }
+
+.btn-group-horizontal > .btn1:not(:first-child):not(:last-child) {
+  border-right: none;
+  border-radius: 0; }
+.btn-group-horizontal > .btn1:first-child {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right: none; }
+.btn-group-horizontal > .btn1:last-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; }
+
+.btn-group-vertical > .btn1:not(:first-child):not(:last-child) {
+  border-bottom: 0;
+  border-radius: 0; }
+.btn-group-vertical > .btn1:first-child {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+.btn-group-vertical > .btn1:last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.link1 {
+  font-weight: bold;
+  color: #3b55e6;
+  text-decoration: underline;
+  text-transform: uppercase; }
+
+body {
+  background-color: #404040; }
+
+/*# sourceMappingURL=style.css.map */

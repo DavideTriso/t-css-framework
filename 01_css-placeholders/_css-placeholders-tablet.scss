@@ -1,141 +1,104 @@
 @media screen and (min-width: $w3) {
   %tablet-align-content-stretch {
-
     align-content: stretch;
   }
   %tablet-align-content-center {
-
     align-content: center;
   }
   %tablet-align-content-flex-start {
-
     align-content: flex-start;
   }
   %tablet-align-content-flex-end {
-
     align-content: flex-end;
   }
   %tablet-align-content-space-between {
-
     align-content: space-between;
   }
   %tablet-align-content-space-around {
-
     align-content: space-around;
   }
   %tablet-align-items-stretch {
-
     align-items: stretch;
   }
   %tablet-align-items-center {
-
     align-items: center;
   }
   %tablet-align-items-flex-start {
-
     align-items: flex-start;
   }
   %tablet-align-items-flex-end {
-
     align-items: flex-end;
   }
   %tablet-align-items-baseline {
-
     align-items: baseline;
   }
   %tablet-align-self-auto {
-
     align-self: auto;
   }
   %tablet-align-self-stretch {
-
     align-self: stretch;
   }
   %tablet-align-self-center {
-
     align-self: center;
   }
   %tablet-align-self-flex-start {
-
     align-self: flex-start;
   }
   %tablet-align-self-flex-end {
-
     align-self: flex-end;
   }
   %tablet-align-self-baseline {
-
     align-self: baseline;
   }
   %tablet-animation-fill-mode-none {
-
     animation-fill-mode: none;
   }
   %tablet-animation-fill-mode-none {
-
     animation-fill-mode: none;
   }
   %tablet-animation-fill-mode-forwards {
-
     animation-fill-mode: forwards;
   }
   %tablet-animation-fill-mode-both {
-
     animation-fill-mode: both;
   }
   %tablet-animation-iteration-count-infinite {
-
     animation-iteration-count: infinite;
   }
   %tablet-animation-play-state-paused {
-
     animation-play-state: paused;
   }
   %tablet-animation-play-state-running {
-
     animation-play-state: running;
   }
   %tablet-animation-timing-function-linear {
-
     animation-timing-function: linear;
   }
   %tablet-animation-timing-function-ease {
-
     animation-timing-function: ease;
   }
   %tablet-animation-timing-function-ease-in {
-
     animation-timing-function: ease-in;
   }
   %tablet-animation-timing-function-ease-out {
-
     animation-timing-function: ease-out;
   }
   %tablet-animation-timing-function-ease-in-out {
-
     animation-timing-function: ease-in-out;
   }
   %tablet-animation-timing-function-step-start {
-
     animation-timing-function: step-start;
   }
   %tablet-animation-timing-function-step-end {
-
     animation-timing-function: step-end;
   }
   %tablet-appearance-none {
-
-
     appearance: none;
   }
   %tablet-backface-visibility-visible {
-
-
     backface-visibility: visible;
   }
   %tablet-backface-visibility-hidden {
-
-
     backface-visibility: hidden;
   }
   %tablet-background-attachment-scroll {
@@ -192,10 +155,10 @@
   %tablet-background-color-transparent {
     background-color: transparent;
   }
-  %tablet-background-color-1 {
+  %tablet-background-color-white {
     background-color: #fff;
   }
-  %tablet-background-color-2 {
+  %tablet-background-color-black {
     background-color: #000;
   }
   %tablet-background-origin-padding-box {
@@ -387,10 +350,10 @@
   %tablet-border-right-0 {
     border-right: 0;
   }
-  %tablet-border-right-color-1 {
+  %tablet-border-right-color-white {
     border-right-color: #fff;
   }
-  %tablet-border-right-color-2 {
+  %tablet-border-right-color-black {
     border-right-color: #000;
   }
   %tablet-border-right-style-none {
@@ -459,10 +422,10 @@
   %tablet-border-top-0 {
     border-top: 0;
   }
-  %tablet-border-top-color-1 {
+  %tablet-border-top-color-white {
     border-top-color: #fff;
   }
-  %tablet-border-top-color-2 {
+  %tablet-border-top-color-black {
     border-top-color: #000;
   }
   %tablet-border-top-style-none {
@@ -502,17 +465,12 @@
     bottom: 0;
   }
   %tablet-box-shadow-none {
-
     box-shadow: none;
   }
   %tablet-box-sizing-content-box {
-
-
     box-sizing: content-box;
   }
   %tablet-box-sizing-border-box {
-
-
     box-sizing: border-box;
   }
   %tablet-caption-side-top {
@@ -536,113 +494,73 @@
   %tablet-clip-auto {
     clip: auto;
   }
-  %tablet-color-1 {
+  %tablet-color-white {
     color: #fff;
   }
-  %tablet-color-2 {
+  %tablet-color-black {
     color: #000;
   }
   %tablet-column-count-auto {
-
-
     column-count: auto;
   }
   %tablet-column-fill-auto {
-
-
     column-fill: auto;
   }
   %tablet-column-fill-balance {
-
-
     column-fill: balance;
   }
   %tablet-column-gap-normal {
-
-
     column-gap: normal;
   }
   %tablet-colum-gap-0 {
-
-
     column-gap: 0;
   }
-  %tablet-column-rule-color-1 {
-
-
+  %tablet-column-rule-color-whtie {
     column-rule-color: #fff;
   }
-  %tablet-column-rule-color-2 {
-
-
+  %tablet-column-rule-color-black {
     column-rule-color: #000;
   }
   %tablet-column-rule-style-none {
-
-
     column-rule-style: none;
   }
   %tablet-column-rule-style-hidden {
-
-
     column-rule-style: hidden;
   }
   %tablet-column-rule-style-dotted {
-
-
     column-rule-style: dotted;
   }
   %tablet-column-rule-style-dashed {
-
-
     column-rule-style: dashed;
   }
   %tablet-column-rule-style-solid {
-
-
     column-rule-style: solid;
   }
   %tablet-column-rule-style-double {
-
-
     column-rule-style: double;
   }
   %tablet-column-rule-style-groove {
-
-
     column-rule-style: groove;
   }
   %tablet-column-rule-style-ridge {
-
-
     column-rule-style: ridge;
   }
   %tablet-column-rule-style-inset {
-
-
     column-rule-style: inset;
   }
   %tablet-column-rule-style-outset {
-
-
     column-rule-style: outset;
   }
   %tablet-column-span-1 {
-
     column-span: 1;
   }
   %tablet-column-span-all {
-
     column-span: all;
   }
   %tablet-column-width-auto {
-
-
     column-width: auto;
   }
   %tablet-columns-auto-auto {
-
-
     columns: auto;
   }
   %tablet-content {
@@ -793,16 +711,12 @@
     display: block;
   }
   %tablet-display-flex {
-
-
     display: flex;
   }
   %tablet-display-inline-block {
     display: inline-block;
   }
   %tablet-display-inline-flex {
-
-
     display: inline-flex
   }
   %tablet-display-inline-table {
@@ -851,40 +765,30 @@
     empty-cells: show;
   }
   %tablet-flex-auto {
-
-
     flex: auto;
   }
   %tablet-flex-basis-auto {
-
     flex-basis: auto;
   }
   %tablet-flex-direction-row {
-
     flex-direction: row;
   }
   %tablet-flex-direction-row-reverse {
-
     flex-direction: row-reverse;
   }
   %tablet-flex-direction-column {
-
     flex-direction: column;
   }
   %tablet-flex-direction-column-reverse {
-
     flex-direction: column-reverse;
   }
   %tablet-flex-wrap-nowrap {
-
     flex-wrap: nowrap;
   }
   %tablet-flex-wrap-wrap {
-
     flex-wrap: wrap;
   }
   %tablet-flex-wrap-wrap-reverse {
-
     flex-wrap: wrap-reverse;
   }
   %tablet-float-none {
@@ -960,23 +864,18 @@
     height: 100%;
   }
   %tablet-justify-content-flex-start {
-
     justify-content: flex-start;
   }
   %tablet-justify-content-flex-end {
-
     justify-content: flex-end;
   }
   %tablet-justify-content-center {
-
     justify-content: center;
   }
   %tablet-justify-content-space-between {
-
     justify-content: space-between;
   }
   %tablet-justify-content-space-around {
-
     justify-content: space-around;
   }
   %tablet-left-auto {
@@ -1183,10 +1082,10 @@
   %tablet-outline-none {
     outline: none;
   }
-  %tablet-outline-color-1 {
+  %tablet-outline-color-white {
     outline-color: #fff;
   }
-  %tablet-outline-color-2 {
+  %tablet-outline-color-black {
     outline-color: #000;
   }
   %tablet-outline-style-none {
@@ -1307,7 +1206,6 @@
     page-break-inside: avoid;
   }
   %tablet-perspective-none {
-
     perspective: none;
   }
   %tablet-position-static {
@@ -1395,11 +1293,9 @@
     text-indent: 0;
   }
   %tablet-text-overflow-clip {
-
     text-overflow: clip;
   }
   %tablet-text-overflow-ellipsis {
-
     text-overflow: ellipsis;
   }
   %tablet-text-shadow-none {
@@ -1433,39 +1329,30 @@
     top: 100%;
   }
   %tablet-transform-style-flat {
-
     transform-style: flat;
   }
   %tablet-transform-style-preserve-3d {
-
     transform-style: preserve-3d;
   }
   %tablet-transition-timing-function-linear {
-
     transition-timing-function: linear;
   }
   %tablet-transition-timing-function-ease {
-
     transition-timing-function: ease;
   }
   %tablet-transition-timing-function-ease-in {
-
     transition-timing-function: ease-in;
   }
   %tablet-transition-timing-function-ease-out {
-
     transition-timing-function: ease-out;
   }
   %tablet-transition-timing-function-ease-in-out {
-
     transition-timing-function: ease-in-out;
   }
   %tablet-transition-timing-function-step-start {
-
     transition-timing-function: step-start;
   }
   %tablet-transition-timing-function-step-end {
-
     transition-timing-function: step-end;
   }
   %tablet-unicode-bidi-normal {
@@ -1478,27 +1365,15 @@
     unicode-bidi: bidi-override;
   }
   %tablet-user-select-auto {
-
-
-
     user-select: auto;
   }
   %tablet-user-select-none {
-
-
-
     user-select: none;
   }
   %tablet-user-select-text {
-
-
-
     user-select: text;
   }
   %tablet-user-select-all {
-
-
-
     user-select: all;
   }
   %tablet-vertical-align-baseline {

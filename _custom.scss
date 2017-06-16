@@ -1,11 +1,11 @@
 .cont_colored {
-  @extend %ptb6;
+  @extend %ptb_6;
   @include box-default ($color-1, $color-1-darker, 0.2rem, solid, 0.05rem);
   @extend %text-align-center;
 }
 .row_colored {
-  @extend %mtb3;
-  @extend %ptb1;
+  @extend %mtb_3;
+  @extend %ptb_1;
   @include box-default ($color-2, $color-2-darker, 0.2rem, solid, 0.05rem);
   .row_colored {
     @include box-default ($color-2-dark, $color-2-darker, 0.2rem, solid, 0.05rem);
@@ -13,20 +13,20 @@
 }
 .c {
   > .bg {
-    @extend %mtb1;
-    @extend %ptb6;
+    @extend %mtb_1;
+    @extend %ptb_6;
     @include box-default ($color-1, $color-1-darker, 0.2rem, solid, 0.05rem);
     @extend %text-align-center;
     @include font-sizing (1.6rem, 1, 0);
-    @include text-style ($white, bold, normal, none, none);
+    @include text-style (#000, bold, normal, none, none);
   }
 }
 pre {
   @include box-default ($color-3, $color-3-darker-plus, 0.2rem, solid, 0.05rem);
   font-family: monospace;
-  @extend %mtb3;
-  @extend %ptb3;
-  @extend %plr4;
+  @extend %mtb_3;
+  @extend %ptb_3;
+  @extend %plr_3;
   @extend %overflow-x-scroll;
   @extend %width-100;
 }
@@ -42,107 +42,107 @@ pre {
 }
 //BOXES
 .box-default {
-  @extend %mtb4;
-  @extend %p6;
+  @extend %mtb_4;
+  @extend %p_6;
   @include box-default ($color-1, $color-1-darker, 1rem, solid, 0.2rem);
 }
 .box-top {
-  @extend %mtb4;
-  @extend %p6;
+  @extend %mtb_4;
+  @extend %p_6;
   @include box-top ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
 }
 .box-left {
-  @extend %mtb4;
-  @extend %p6;
+  @extend %mtb_4;
+  @extend %p_6;
   @include box-left ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
 }
 .box-right {
-  @extend %mtb4;
-  @extend %p6;
+  @extend %mtb_4;
+  @extend %p_6;
   @include box-right ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
 }
 .box-bottom {
-  @extend %mtb4;
-  @extend %p6;
+  @extend %mtb_4;
+  @extend %p_6;
   @include box-bottom ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
 }
 .box-group-horizontal {
   @extend %row;
-  @extend %mtb4;
+  @extend %mtb_4;
   > li {
     @extend %c_6;
-    @extend %p6;
+    @extend %p_6;
     @include box-group-horizontal ($color-1, $color-1-darker, 1rem, solid, 0.2rem);
   }
 }
 .box-group-horizontal-top {
-  @extend %mtb4;
+  @extend %mtb_4;
   @extend %row;
   > li {
     @extend %c_6;
-    @extend %p6;
+    @extend %p_6;
     @include box-group-horizontal-top ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
   }
 }
 .box-group-horizontal-bottom {
-  @extend %mtb4;
+  @extend %mtb_4;
   @extend %row;
   > li {
-    @extend %p6;
+    @extend %p_6;
     @extend %c_6;
     @include box-group-horizontal-bottom ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
   }
 }
 .box-group-horizontal-left {
-  @extend %mtb4;
+  @extend %mtb_4;
   @extend %row;
   > li {
-    @extend %p6;
+    @extend %p_6;
     @extend %c_6;
     @include box-group-horizontal-left ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
   }
 }
 .box-group-horizontal-right {
-  @extend %mtb4;
+  @extend %mtb_4;
   @extend %row;
   > li {
-    @extend %p6;
+    @extend %p_6;
     @extend %c_6;
     @include box-group-horizontal-right ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
   }
 }
 .box-group-vertical {
-  @extend %mtb4;
+  @extend %mtb_4;
   > li {
-    @extend %p6;
+    @extend %p_6;
     @include box-group-vertical ($color-1, $color-1-darker, 1rem, solid, 0.2rem);
   }
 }
 .box-group-vertical-top {
-  @extend %mtb4;
+  @extend %mtb_4;
   > li {
-    @extend %p6;
+    @extend %p_6;
     @include box-group-vertical-top ($color-1, $color-1-darker, 1rem, solid, 0.2rem, true);
   }
 }
 .box-group-vertical-bottom {
-  @extend %mtb4;
+  @extend %mtb_4;
   > li {
-    @extend %p6;
+    @extend %p_6;
     @include box-group-vertical-bottom ($color-1, $color-1-darker, 1rem, solid, 0.2rem, false);
   }
 }
 .box-group-vertical-left {
-  @extend %mtb4;
+  @extend %mtb_4;
   > li {
-    @extend %p6;
+    @extend %p_6;
     @include box-group-vertical-left ($color-1, $color-1-darker, 1rem, solid, 0.2rem, false);
   }
 }
 .box-group-vertical-right {
-  @extend %mtb4;
+  @extend %mtb_4;
   > li {
-    @extend %p6;
+    @extend %p_6;
     @include box-group-vertical-right ($color-1, $color-1-darker, 1rem, solid, 0.2rem, false);
   }
 }
@@ -169,4 +169,9 @@ pre {
 }
 .link1 {
   @include link-default (#3b55e6, bold, underline, uppercase);
+}
+
+
+body {
+  background-color: #404040;
 }
