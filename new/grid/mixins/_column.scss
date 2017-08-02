@@ -1,0 +1,21 @@
+@mixin generateColumns ($breakpointsMap, $columnsNumber, $columnClassName) {
+  @for $i from 1 through $columnsNumber {
+    #{$columnClassName}#{$modifierSeparator}#{$i} {
+      width: 100% / $columnsNumber * $i;
+      flex: 0 1 (100% / $columnsNumber * $i);
+    }
+  }
+  @if $breakpointsMap !=skip {
+    @each $key,
+    $value in $breakpointsMap {
+      @media screen and (min-width: $value) {
+        @for $i from 1 through $columnsNumber {
+          #{$columnClassName}#{$modifierSeparator}#{$key}-#{$i} {
+            width: 100% / $columnsNumber * $i;
+            flex: 0 1 (100% / $columnsNumber * $i);
+          }
+        }
+      }
+    }
+  }
+}

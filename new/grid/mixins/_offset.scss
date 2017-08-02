@@ -1,0 +1,19 @@
+@mixin generateOffsets ($breakpointsMap, $columnsNumber, $columnClassName, $offsetModifierName) {
+  @for $i from 1 through $columnsNumber {
+    #{$columnClassName}#{$modifierSeparator}#{$offsetModifierName}-#{$i} {
+      margin-left: 100% / $columnsNumber * $i;
+    }
+  }
+  @if $breakpointsMap !=skip {
+    @each $key,
+    $value in $breakpointsMap {
+      @media screen and (min-width: $value) {
+        @for $i from 1 through $columnsNumber {
+          #{$columnClassName}#{$modifierSeparator}#{$key}-#{$offsetModifierName}-#{$i} {
+            margin-left: 100% / $columnsNumber * $i;
+          }
+        }
+      }
+    }
+  }
+}

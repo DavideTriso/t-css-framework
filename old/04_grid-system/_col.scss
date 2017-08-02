@@ -1,0 +1,35 @@
+//-------------------------------
+//DEFINE MIXINS
+//------------------------------
+@mixin col ($suffix) {
+  @for $i from 1 through $colNumber {
+    %c_#{$i}#{$suffix} {
+      width: 100% / $colNumber * $i;
+      flex: 0, 0, (100% / $colNumber * $i);
+    }
+  }
+}
+//-------------------------------
+//INCLUDE ALL GRID PLACEHOLDERS IN CSS
+//------------------------------
+//-------------------------------
+//GRID ELEMENTS WIDTHS
+//-------------------------------
+//Column elements responsive width classes
+//First set of classes without breakpoint index. Applies to every screen.
+@include col('');
+@media screen and (min-width: $w2) {
+  @include col('-2');
+}
+@media screen and (min-width: $w3) {
+  @include col('-3');
+}
+@media screen and (min-width: $w4) {
+  @include col('-4');
+}
+@media screen and (min-width: $w5) {
+  @include col('-5');
+}
+@media screen and (min-width: $w6) {
+  @include col('-6');
+}

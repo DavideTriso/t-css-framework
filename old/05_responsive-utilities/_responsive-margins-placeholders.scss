@@ -1,0 +1,112 @@
+//--------------------------------------------------
+//MIXINS FOR MARGINS - DEFAULT (SMART)
+//--------------------------------------------------
+//all four sides
+@mixin margins ($suffix, $multiplyFactor) {
+  %m_0#{$suffix} {
+    margin: 0;
+  }
+  @for $i from 1 through $stepsMargin {
+    %m_#{$i}#{$suffix} {
+      margin: $firstMargin + $intervalMargin * $i * $multiplyFactor;
+    }
+  }
+}
+//left and right
+@mixin margins-left-right ($suffix, $multiplyFactor) {
+  %mlr_0#{$suffix} {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @for $i from 1 through $stepsMargin {
+    %mlr_#{$i}#{$suffix} {
+      margin-left: $firstMargin + $intervalMargin * $i * $multiplyFactor;
+      margin-right: $firstMargin + $intervalMargin * $i * $multiplyFactor;
+    }
+  }
+}
+//top and bottom
+@mixin margins-top-bottom ($suffix, $multiplyFactor) {
+  %mtb_0#{$suffix} {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  @for $i from 1 through $stepsMargin {
+    %mtb_#{$i}#{$suffix} {
+      margin-bottom: $firstMargin + $intervalMargin * $i * $multiplyFactor;
+      margin-top: $firstMargin + $intervalMargin * $i * $multiplyFactor;
+    }
+  }
+}
+//top
+@mixin margins-top ($suffix, $multiplyFactor) {
+  %mt_0#{$suffix} {
+    margin-top: 0;
+  }
+  @for $i from 1 through $stepsMargin {
+    %mt_#{$i}#{$suffix} {
+      margin-top: $firstMargin + $intervalMargin * $i * $multiplyFactor;
+    }
+  }
+}
+//bottom
+@mixin margins-bottom ($suffix, $multiplyFactor) {
+  %mb_0#{$suffix} {
+    margin-bottom: 0;
+  }
+  @for $i from 1 through $stepsMargin {
+    %mb_#{$i}#{$suffix} {
+      margin-bottom: $firstMargin + $intervalMargin * $i * $multiplyFactor;
+    }
+  }
+}
+//left
+@mixin margins-left ($suffix, $multiplyFactor) {
+  %ml_0#{$suffix} {
+    margin-left: 0;
+  }
+  @for $i from 1 through $stepsMargin {
+    %ml_#{$i}#{$suffix} {
+      margin-left: $firstMargin + $intervalMargin * $i * $multiplyFactor;
+    }
+  }
+}
+//right
+@mixin margins-right ($suffix, $multiplyFactor) {
+  %mr_0#{$suffix} {
+    margin-right: 0;
+  }
+  @for $i from 1 through $stepsMargin {
+    %mr_#{$i}#{$suffix} {
+      margin-right: $firstMargin + $intervalMargin * $i * $multiplyFactor;
+    }
+  }
+}
+//--------------------------------------------------
+//INCLUDE MIXINS AND GENERATE PLACEHOLDERS
+//--------------------------------------------------
+@include margins ('', 1);
+@include margins-left-right ('', 1);
+@include margins-top-bottom ('', 1);
+@include margins-top ('', 1);
+@include margins-bottom ('', 1);
+@include margins-left ('', 1);
+@include margins-right ('', 1);
+@media screen and (min-width: $w3) {
+  @include margins ('-tablet', $marginsTabletMultiplyFactor);
+  @include margins-left-right ('-tablet', $marginsTabletMultiplyFactor);
+  @include margins-top-bottom ('-tablet', $marginsTabletMultiplyFactor);
+  @include margins-top ('-tablet', $marginsTabletMultiplyFactor);
+  @include margins-bottom ('-tablet', $marginsTabletMultiplyFactor);
+  @include margins-left ('-tablet', $marginsTabletMultiplyFactor);
+  @include margins-right ('-tablet', $marginsTabletMultiplyFactor);
+}
+@media screen and (min-width: $w5 - 1px) {
+  @include margins ('-desktop', $marginsDesktopMultiplyFactor);
+  @include margins-left-right ('-desktop', $marginsDesktopMultiplyFactor);
+  @include margins-top-bottom ('-desktop', $marginsDesktopMultiplyFactor);
+  @include margins-top ('-desktop', $marginsDesktopMultiplyFactor);
+  @include margins-bottom ('-desktop', $marginsDesktopMultiplyFactor);
+  @include margins-left ('-desktop', $marginsDesktopMultiplyFactor);
+  @include margins-right ('-desktop', $marginsDesktopMultiplyFactor);
+}

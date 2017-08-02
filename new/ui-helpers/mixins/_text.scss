@@ -1,0 +1,50 @@
+@mixin text ($fontSize, $fontStyle, $fontWeight, $textTransform, $textDecoration, $currentBreakpointKey) {
+  @if $fontSize !=skip {
+    @if $fontSize==1rem {
+      @if $currentBreakpointKey !=skip {
+        @extend %#{$currentBreakpointKey}#{$breakpointSeparator}font-size-1rem;
+      }
+      @else {
+        @extend %font-size-1rem;
+      }
+    }
+    @elseif str-slice($fontSize, 0, 1)=='%' {
+      @extend #{$fontSize};
+    }
+    @else {
+      font-size: $fontSize;
+    }
+  }
+  @if $fontStyle !=skip {
+    @if $currentBreakpointKey !=skip {
+      @extend %#{$currentBreakpointKey}#{$breakpointSeparator}font-style-#{$fontStyle};
+    }
+    @else {
+      @extend %font-style-#{$fontStyle};
+    }
+  }
+  @if $fontWeight !=skip {
+    @if $currentBreakpointKey !=skip {
+      @extend %#{$currentBreakpointKey}#{$breakpointSeparator}font-weight-#{$fontWeight};
+    }
+    @else {
+      @extend %font-weight-#{$fontWeight};
+    }
+  }
+  @if $textTransform !=skip {
+    @if $currentBreakpointKey !=skip {
+      @extend %#{$currentBreakpointKey}#{$breakpointSeparator}text-transform-#{$textTransform};
+    }
+    @else {
+      @extend %text-transform-#{$textTransform};
+    }
+  }
+  @if $textTransform !=skip {
+    @if $currentBreakpointKey !=skip {
+      @extend %#{$currentBreakpointKey}#{$breakpointSeparator}text-decoration-#{$textDecoration};
+    }
+    @else {
+      @extend %text-decoration-#{$textDecoration};
+    }
+  }
+}

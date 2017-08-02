@@ -1,0 +1,9 @@
+html,
+body {
+  @extend %box-sizing-border-box;
+  @extend %color-black;
+  @extend %margin-0;
+  @extend %max-width-100;
+  @extend %min-width-100;
+  @extend %padding-0;
+}

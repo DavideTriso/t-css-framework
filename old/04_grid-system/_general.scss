@@ -1,0 +1,166 @@
+//Set all elements of the grid to border-box
+//to prevent alignement problems when applying borders
+%cont,
+%fluid-cont,
+%row,
+%c {
+  @extend %box-sizing-border-box;
+}
+//Set margin auto to container to center it in the viewport
+%cont,
+%fluid-cont {
+  @extend %margin-auto;
+}
+//--------------------------
+//GUTTER PLACEHOLDERS
+//--------------------------
+%cont_gutter,
+%fluid-cont_gutter,
+%c_gutter {
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+%row_gutter {
+  margin-left: -($gutter);
+  margin-right: -($gutter);
+}
+@media screen and (min-width: $w3) and (max-width: $w5min) {
+  %cont_gutter,
+  %fluid-cont_gutter,
+  %c_gutter {
+    padding-left: $tabletGutter;
+    padding-right: $tabletGutter;
+  }
+  %row_gutter {
+    margin-left: -($tabletGutter);
+    margin-right: -($tabletGutter);
+  }
+}
+@media screen and (min-width: $w5) {
+  %cont_gutter,
+  %fluid-cont_gutter,
+  %c_gutter {
+    padding-left: $desktopGutter;
+    padding-right: $desktopGutter;
+  }
+  %row_gutter {
+    margin-left: -($desktopGutter);
+    margin-right: -($desktopGutter);
+  }
+}
+//--------------------------
+//SMALL GUTTER PLACEHOLDERS
+//--------------------------
+%cont_gutter-small,
+%fluid-cont_gutter-small,
+%c_gutter-small {
+  padding-left: $gutterSmall;
+  padding-right: $gutterSmall;
+}
+%row_gutter-small {
+  margin-left: -($gutterSmall);
+  margin-right: -($gutterSmall);
+}
+@media screen and (min-width: $w3) and (max-width: $w5min) {
+  %cont_gutter-small,
+  %fluid-cont_gutter-small,
+  %c_gutter-small {
+    padding-left: $tabletGutterSmall;
+    padding-right: $tabletGutterSmall;
+  }
+  %row_gutter-small {
+    margin-left: -($tabletGutterSmall);
+    margin-right: -($tabletGutterSmall);
+  }
+}
+@media screen and (min-width: $w5) {
+  %cont_gutter-small,
+  %fluid-cont_gutter-small,
+  %c_small {
+    padding-left: $desktopGutterSmall;
+    padding-right: $desktopGutterSmall;
+  }
+  %row_gutter-small {
+    margin-left: -($desktopGutterSmall);
+    margin-right: -($desktopGutterSmall);
+  }
+}
+//--------------------------
+//BIG GUTTER PLACEHOLDERS
+//--------------------------
+%cont_gutter-big,
+%fluid-cont_gutter-big,
+%c_gutter-big {
+  padding-left: $gutterBig;
+  padding-right: $gutterBig;
+}
+%row_gutter-big {
+  margin-left: -($gutterBig);
+  margin-right: -($gutterBig);
+}
+@media screen and (min-width: $w3) and (max-width: $w5min) {
+  %cont_gutter-big,
+  %fluid-cont_gutter-big,
+  %c_gutter-big {
+    padding-left: $tabletGutterBig;
+    padding-right: $tabletGutterBig;
+  }
+  %row_gutter-big {
+    margin-left: -($tabletGutterBig);
+    margin-right: -($tabletGutterBig);
+  }
+}
+@media screen and (min-width: $w5) {
+  %cont_gutter-big,
+  %fluid-cont_gutter-big,
+  %c_gutter-big {
+    padding-left: $desktopGutterBig;
+    padding-right: $desktopGutterBig;
+  }
+  %row_gutter-big {
+    margin-left: -($desktopGutterBig);
+    margin-right: -($desktopGutterBig);
+  }
+}
+//--------------------------
+//RESET GUTTERS BASED ON VIEWPORT WIDHT
+//--------------------------
+//no gutter on smartphone
+@media screen and (max-width: $w3min) {
+  %cont_no-gutter-smart,
+  %fluid-cont_no-gutter-smart,
+  %c_no-gutter-smart {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  %row_no-gutter-smart {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+//no gutter on tablet
+@media screen and (min-width: $w3) and (max-width: $w5min) {
+  %cont_no-gutter-tablet,
+  %fluid-cont_no-gutter-tablet,
+  %c_no-gutter-tablet {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  %row_no-gutter-tablet {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+//no gutter on desktop
+@media screen and (min-width: $w5min) {
+  %cont_no-gutter-desktop,
+  %fluid-cont_no-gutter-desktop,
+  %c_no-gutter-desktop {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  %row_no-gutter-desktop {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
