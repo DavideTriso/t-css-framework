@@ -155,12 +155,6 @@
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}background-color-transparent {
     background-color: transparent;
   }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}background-color-white {
-    background-color: #fff;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}background-color-black {
-    background-color: #000;
-  }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}background-origin-padding-box {
     background-origin: padding-box;
   }
@@ -233,12 +227,6 @@
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-bottom-color-transparent {
     border-bottom-color: transparent;
   }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-bottom-color-black {
-    border-bottom-color: #000;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-bottom-color-white {
-    border-bottom-color: #fff;
-  }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-bottom-style-none {
     border-bottom-style: none;
   }
@@ -271,12 +259,6 @@
   }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-color-transparent {
     border-color: transparent;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-color-black {
-    border-color: #000;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-color-white {
-    border-color: white;
   }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-collapse-separate {
     border-collapse: separate;
@@ -323,12 +305,6 @@
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-left-color-transparent {
     border-left-color: transparent;
   }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-left-color-black {
-    border-left-color: #000;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-left-color-white {
-    border-left-color: #fff;
-  }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-left-style-none {
     border-left-style: none;
   }
@@ -373,12 +349,6 @@
   }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-right-color-transparent {
     border-right-color: transparent;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-right-color-white {
-    border-right-color: #fff;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-right-color-black {
-    border-right-color: #000;
   }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-right-style-none {
     border-right-style: none;
@@ -451,12 +421,6 @@
   }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-top-color-transparent {
     border-top-color: transparent;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-top-color-white {
-    border-top-color: #fff;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-top-color-black {
-    border-top-color: #000;
   }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}border-top-style-none {
     border-top-style: none;
@@ -550,12 +514,6 @@
   }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}colum-gap-0 {
     column-gap: 0;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}column-rule-color-white {
-    column-rule-color: #fff;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}column-rule-color-black {
-    column-rule-color: #000;
   }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}column-rule-style-none {
     column-rule-style: none;
@@ -1130,12 +1088,7 @@
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}outline-none {
     outline: none;
   }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}outline-color-white {
-    outline-color: #fff;
-  }
-  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}outline-color-black {
-    outline-color: #000;
-  }
+  
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}outline-style-none {
     outline-style: none;
   }

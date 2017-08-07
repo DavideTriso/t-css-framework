@@ -1,23 +1,31 @@
 @mixin generateCssPlaceholders ($breakpointsMap, $namespace, $breakpointSeparator, $namespaceSeparator) {
+  $a: 1;
   @if $namespace !=skip {
-    @include cssPlaceholders ('', $namespace, '', $namespaceSeparator);
-    @if $breakpointsMap !=skip {
-      @each $key,
-      $value in $breakpointsMap {
+    @each $key,
+    $value in $breakpointsMap {
+      @if $a==1 {
+        @include cssPlaceholders ('', $namespace, '', $namespaceSeparator);
+      }
+      @else {
         @media screen and (min-width: $value) {
           @include cssPlaceholders ($key, $namespace, $breakpointSeparator, $namespaceSeparator);
         }
       }
+      $a: $a + 1;
     }
-  } @else {
-    @include cssPlaceholders ('', '', '', '');
-    @if $breakpointsMap !=skip {
-      @each $key,
-      $value in $breakpointsMap {
+  }
+  @else {
+    @each $key,
+    $value in $breakpointsMap {
+      @if $a==1 {
+        @include cssPlaceholders ('', '', '', '');
+      }
+      @else {
         @media screen and (min-width: $value) {
           @include cssPlaceholders ($key, '', $breakpointSeparator, '');
         }
       }
+      $a: $a + 1;
     }
   }
 }

@@ -1,2 +1,2 @@
-$cssPlaceholdersBreakpoints: map-remove($breakpoints, w0);
+$cssPlaceholdersBreakpoints: $breakpoints;
 $overwriteNamespace: 'overwrite'; 

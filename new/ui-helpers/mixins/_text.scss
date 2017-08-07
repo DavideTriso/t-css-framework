@@ -1,50 +1,34 @@
-@mixin text ($fontSize, $fontStyle, $fontWeight, $textTransform, $textDecoration, $currentBreakpointKey) {
-  @if $fontSize !=skip {
-    @if $fontSize==1rem {
-      @if $currentBreakpointKey !=skip {
-        @extend %#{$currentBreakpointKey}#{$breakpointSeparator}font-size-1rem;
-      }
-      @else {
-        @extend %font-size-1rem;
-      }
-    }
-    @elseif str-slice($fontSize, 0, 1)=='%' {
-      @extend #{$fontSize};
-    }
-    @else {
-      font-size: $fontSize;
-    }
+@mixin text ($color, $lineHeight, $wordSpacing, $textIndent, $letterSpacing, $textShadow) {
+  @if $color !=skip {
+    color: $color;
   }
-  @if $fontStyle !=skip {
-    @if $currentBreakpointKey !=skip {
-      @extend %#{$currentBreakpointKey}#{$breakpointSeparator}font-style-#{$fontStyle};
-    }
-    @else {
-      @extend %font-style-#{$fontStyle};
-    }
+  @if $lineHeight !=skip {
+    line-height: $lineHeight;
   }
-  @if $fontWeight !=skip {
-    @if $currentBreakpointKey !=skip {
-      @extend %#{$currentBreakpointKey}#{$breakpointSeparator}font-weight-#{$fontWeight};
-    }
-    @else {
-      @extend %font-weight-#{$fontWeight};
-    }
+  @if $letterSpacing !=skip {
+    color: $letterSpacing;
   }
-  @if $textTransform !=skip {
-    @if $currentBreakpointKey !=skip {
-      @extend %#{$currentBreakpointKey}#{$breakpointSeparator}text-transform-#{$textTransform};
-    }
-    @else {
-      @extend %text-transform-#{$textTransform};
-    }
+  @if $textIndent !=skip {
+    text-indent: $textIndent; 
   }
-  @if $textTransform !=skip {
-    @if $currentBreakpointKey !=skip {
-      @extend %#{$currentBreakpointKey}#{$breakpointSeparator}text-decoration-#{$textDecoration};
+  @if $textShadow !=skip {
+    color: $textShadow;
+  }
+  @if $wordSpacing !=skip {
+    word-spacing: $wordSpacing;
+  }
+}
+//set text-decoration, text-transform, font-style, font-weight, font-size and vertical align by extending css-placeholders (e.g: @extend %text-decoration-underline;, @extend %vetical-align-middle;)
+//
+//
+//
+@mixin textSelection ($textSelectionColor, $textSelectionBackground) {
+  &::selection {
+    @if $textSelectionBackground !=skip {
+      background: $textSelectionBackground;
     }
-    @else {
-      @extend %text-decoration-#{$textDecoration};
+    @if $textSelectionColor !=skip {
+      color: $textSelectionColor;
     }
   }
 }

@@ -3,6 +3,7 @@
     @extend %display-block;
     @extend %margin-left-auto;
     @extend %margin-right-auto;
+    @extend %width-100;
   }
 }
 @mixin generateContainerModifiers ($maxWidthsMap, $containerClassName) {
@@ -26,7 +27,7 @@
     @each $key,
     $value in $breakpointsMap {
       @media screen and (min-width: $value) {
-         #{$containerClassName}#{$modifierSeparator}#{$boxedContainerModifierName} {
+        #{$containerClassName}#{$modifierSeparator}#{$boxedContainerModifierName} {
           width: ($value - nth($subtractList, $i));
         }
       }

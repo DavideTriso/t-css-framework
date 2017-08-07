@@ -20,11 +20,13 @@ $rowJustifyContent: flex-start;
 //COLUMNS
 $columnClassName: '.col';
 $columnsNumber: 24;
-$columnsBreakpointsMap: map-remove($breakpoints, w1);
+$columnsBreakpointsMap: $breakpoints;
 //
 //
 //OFFSET 
 $offsetModifierName: 'off';
+$offsetColumnsNumber: 48;
+
 //
 //
 //GUTTERS

@@ -15,7 +15,7 @@
 //
 //
 //OFFSETS
-@include generateOffsets ($columnsBreakpointsMap, $columnsNumber, $columnClassName, $offsetModifierName);
+@include generateOffsets ($columnsBreakpointsMap, $offsetColumnsNumber, $columnClassName, $offsetModifierName);
 //
 //
 //GUTTERS

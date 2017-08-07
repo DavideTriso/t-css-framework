@@ -1,15 +1,18 @@
 @mixin generateResponsiveLengths ($breakpointsMap, $cssPropertiesList, $intervalIncrement, $intervalsNumber, $elementClassName) {
+  $b: 1;
   $l: length($cssPropertiesList);
-  @for $i from 1 through $intervalsNumber {
-    #{$elementClassName}#{$modifierSeparator}#{$i} {
-      @for $a from 1 through $l {
-        #{nth($cssPropertiesList, $a)}: $i * $intervalIncrement;
+  @each $key,
+  $value in $breakpointsMap {
+    @if $b==1 {
+      @for $i from 1 through $intervalsNumber {
+        #{$elementClassName}#{$modifierSeparator}#{$i} {
+          @for $a from 1 through $l {
+            #{nth($cssPropertiesList, $a)}: $i * $intervalIncrement;
+          }
+        }
       }
     }
-  }
-  @if $breakpointsMap !=skip {
-    @each $key,
-    $value in $breakpointsMap {
+    @else {
       @media screen and (min-width: $value) {
         @for $i from 1 through $intervalsNumber {
           #{$elementClassName}#{$modifierSeparator}#{$key}-#{$i} {
@@ -22,4 +25,3 @@
     }
   }
 }
- 

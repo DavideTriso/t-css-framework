@@ -1,5 +1,5 @@
 //RESPONSIVE LENGHTS
-$generateResponsiveLenghtsBreakpoints: map-remove($breakpoints, w0, w1, w3, w5);
+$generateResponsiveLenghtsBreakpoints: map-remove($breakpoints, w1, w3, w5);
 //
 //
 //

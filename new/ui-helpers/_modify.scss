@@ -1,0 +1,10 @@
+//========================
+//
+//========================
+
+
+%border_test {
+  @include border(skip, skip, red, 0.2rem, 1rem);
+    @include border(w3, skip, red, 0.2rem, 1rem);
+
+}
