@@ -1,0 +1,36 @@
+.breadcrumb {
+  @extend %align-items-center;
+  @extend %justify-content-flex-start;
+  @extend %display-none;
+  @extend %w2-overwrite-display-flex;
+  @extend %r-ptb_3;
+}
+.breadcrumb__heading {
+  @extend %r-pr_2;
+}
+.breadcrumb__trail {
+    @extend %r-mlr-neg_1;
+}
+.breadcrumb__item {
+  @extend %display-inline-block;
+  &:after {
+    @extend %arrow-right;
+  }
+  &:last-child {
+    &:after {
+      @extend %overwrite-content-none;
+    }
+  }
+} 
+.breadcrumb__link {
+  @extend %r-plr_1;
+  &[href] {
+    &:hover,
+    &:focus {
+      @extend %text-decoration-underline;
+    }
+  }
+}
+.breadcrumb__link_current {
+  @extend %font-weight-600;
+}

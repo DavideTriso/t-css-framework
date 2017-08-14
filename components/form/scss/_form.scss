@@ -1,0 +1,31 @@
+.form {
+  @extend %container;
+  @extend %container_small;
+}
+.form__fieldset {
+  @extend %row;
+  @extend %r-ptb_2;
+  @extend %r-plr_2;
+  @extend %r-mtb_1;
+  @extend %bg-1;
+}
+.form__item {
+  @extend %col_gutter;
+  @extend %r-mtb_2;
+}
+.form__item_1 {
+  @extend %col_24;
+}
+.form__item_2 {
+  @extend %col_24;
+  @extend %col_w3-12;
+}
+.form__item_3 {
+  @extend %col_24;
+  @extend %col_w3-8;
+}
+.form__legend {
+  @extend %r-mtb_2;
+  @extend %col_24;
+  @extend %col_gutter;
+}

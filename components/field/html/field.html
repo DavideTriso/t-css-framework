@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>test</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../style.css" />
+</head>
+
+<body>
+
+  <div class="field-group">
+    <label class="field-group__label field-group__label_required" for="#1">
+      My input field
+      <abbr title="required field">*</abbr>
+    </label>
+    <input type="text" name="#1" id="#1" class="field-group__field" required />
+    <div class="field-group__alertbox">Alert msg</div>
+    <div class="field-group__successbox">Success msg</div>
+  </div>
+
+
+  <div class="field-group">
+    <label class="field-group__label field-group__label_required" for="#2">
+      My input field
+      <abbr title="required field">*</abbr>
+    </label>
+    <div class="field-group__addon-aligner">
+      <input type="text" name="#2" id="#2" class="field-group__field" required />
+      <button class="field-group__addon">Hello!</button>
+    </div>
+    <div class="field-group__alertbox">Alert msg</div>
+    <div class="field-group__successbox">Success msg</div>
+  </div>
+
+
+  <div class="field-group">
+    <input type="checkbox" name="#3" id="#3" class="field-group__field field-group__field_hide-me" />
+    <label class="field-group__checkbox" for="#3">
+      <span class="field-group__fake-label">My chekcbox</span>
+    </label>
+  </div>
+
+  <div class="field-group">
+    <input type="radio" name="#4" id="#4" class="field-group__field field-group__field_hide-me" />
+    <label class="field-group__radio" for="#4">
+      <span class="field-group__fake-label">My radio</span>
+    </label>
+  </div>
+
+  <!--
+
+MODIFIERS
+  field:
+  field-group__field_has-addon-right
+  field-group__field_has-addon-left
+
+  addon:
+  field-group__addon_sm
+  field-group__addon_md
+  field-group__addon_lg
+
+  field-group__addon_right
+  field-group__addon_left
+  field-group__addon_not-clickable (pointer-event: none)
+
+  -->
+
+
+
+</body>
+
+</html>

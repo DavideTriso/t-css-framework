@@ -1,5 +1,0 @@
-@mixin generateResponsiveCssPlaceholders ($breakpoint, $namespace, $mediaQuery) {
-  @media #{$mediaQuery} {
-    @include generateCssPlaceholders ($breakpoint, $namespace);
-  }
-}
