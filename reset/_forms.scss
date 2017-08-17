@@ -54,3 +54,9 @@ datalist {
 keygen {
   //
 }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -moz-box-sizing: border-box;
+}

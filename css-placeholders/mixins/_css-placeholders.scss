@@ -1097,7 +1097,6 @@
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}outline-none {
     outline: none;
   }
-  
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}outline-style-none {
     outline-style: none;
   }
@@ -1217,6 +1216,12 @@
   }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}perspective-none {
     perspective: none;
+  }
+  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}pointer-events-all {
+    pointer-events: all;
+  }
+  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}pointer-events-none {
+    pointer-events: none;
   }
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}position-static {
     position: static;
