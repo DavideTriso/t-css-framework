@@ -22,7 +22,6 @@
 @include generateResponsiveGutter($guttersBreakpointsMap, $guttersList, $containerClassName, $rowClassName, $columnClassName, $gutterModifierName);
 
 @include responsiveGutterReset ($guttersBreakpointsMap, $containerClassName, $rowClassName, $columnClassName, $resetGutterModifierName);
-
 //responsive gutters
 /*
 @include generateResponsiveGutter($guttersBreakpointsMap, $smallGuttersList, $containerClassName, $rowClassName, $columnClassName, $smallGutterModifierName);
