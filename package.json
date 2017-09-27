@@ -15,5 +15,6 @@
     "gulp-ruby-sass": "^2.1.1",
     "require-dir": "^0.3.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "version": "0.1.1"
 }
