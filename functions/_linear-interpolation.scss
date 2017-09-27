@@ -8,7 +8,7 @@
 @function linearInterpolation($map) {
   $keys: map-keys($map);
   @if (length($keys) !=2) {
-    @error "linearInterpolation() $map must be exactly 2 values";
+     @error"linearInterpolation() $map must be exactly 2 values";
   }
   $m: (map-get($map, nth($keys, 2)) - map-get($map, nth($keys, 1)))/(nth($keys, 2) - nth($keys, 1));
   $b: map-get($map, nth($keys, 1)) - $m * nth($keys, 1);

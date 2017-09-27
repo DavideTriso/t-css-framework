@@ -1,12 +1,10 @@
 //CONTAINER
 $containerClassName: '%container';
-$containerMaxWidthsMap: (mid: 1200px, small: 1000px, large: 1400px);
-//
+$containerMaxWidthsMap: (mid: 1200px, small: 1000px, large: 1400px); //
 //BOXED CONTAINER
 $boxedContainerModifierName: 'boxed';
 $boxedContainerBreakpointsMap: map-remove($breakpoints, w0, w1, w2);
-$boxedContainerSubtractList: 16px 50px 120px 180px;
-//
+$boxedContainerSubtractList: 16px 50px 120px 180px; //
 //
 //ROWS
 $rowClassName: '%row';
@@ -14,20 +12,16 @@ $rowAlignItems: flex-start;
 $rowAlignContent: flex-start;
 $rowFlexDirection: row;
 $rowFlexWrap: wrap;
-$rowJustifyContent: flex-start; 
-//
+$rowJustifyContent: flex-start; //
 //
 //COLUMNS
 $columnClassName: '%col';
 $columnsNumber: 24;
-$columnsBreakpointsMap: $breakpoints; 
+$columnsBreakpointsMap: $breakpoints; //
 //
-//
-//OFFSET 
+//OFFSET
 $offsetModifierName: 'off';
-$offsetColumnsNumber: 48;
-
-//
+$offsetColumnsNumber: 48; //
 //
 //GUTTERS
 $gutterModifierName: 'gutter';
@@ -36,7 +30,5 @@ $smallGutterModifierName: 'gutter-small';
 $smallGuttersList: 0.25rem 0.5rem 75rem;
 $largeGutterModifierName: 'gutter-large';
 $largeGuttersList: 1rem 1.5rem 2rem;
-$guttersBreakpointsMap: map-remove($breakpoints, w1, w2, w4, w6);
-
-//RESET GUTTER
+$guttersBreakpointsMap: map-remove($breakpoints, w1, w2, w4, w6); //RESET GUTTER
 $resetGutterModifierName: 'reset';
