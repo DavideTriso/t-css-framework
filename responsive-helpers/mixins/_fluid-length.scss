@@ -1,3 +1,8 @@
+//---------------------
+// FLUID LENGTH
+// Take advantage from the linearInterpolation function
+// to generate classes with CSS properties coupled to the viewport width.
+//---------------------
 @mixin fluidLength ($breakpointMin, $breakpointMax, $lengthMin, $lengthMax, $cssProperty, $elementClassName) {
   $bMin: pxToRem($breakpointMin, $htmlElementFontSize);
   $bMax: pxToRem($breakpointMax, $htmlElementFontSize);

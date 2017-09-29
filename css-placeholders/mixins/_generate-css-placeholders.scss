@@ -1,3 +1,10 @@
+//-----------------------------
+// GENERATE CSS PLACEHOLDERS
+// Generate a set of CSS placeholders
+// for each breakpoint and namespace passed to the mixin.
+// Using namespaces will allow developer to have multiple 'levels' of placehoders for each property
+// with different specificity, wich can be useful to overwrite placeholders with lower specificity.
+//-----------------------------
 @mixin generateCssPlaceholders ($breakpointsMap, $namespace, $breakpointSeparator, $namespaceSeparator) {
   $a: 1;
   @if $namespace !=skip {

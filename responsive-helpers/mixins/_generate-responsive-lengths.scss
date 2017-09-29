@@ -1,3 +1,6 @@
+//----------------------
+// GENERATE RESPONSIVE LENGTHS
+//----------------------
 @mixin generateResponsiveLengths ($breakpointsMap, $cssPropertiesList, $intervalIncrement, $intervalsNumber, $elementClassName) {
   $b: 1;
   $l: length($cssPropertiesList);

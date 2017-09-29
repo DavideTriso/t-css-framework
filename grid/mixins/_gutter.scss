@@ -1,3 +1,7 @@
+//-------------------------
+//GENERATE RESPONSIVE GUTTER
+//Generate modifier classses to add responsive gutters to the grid.
+//-------------------------
 @mixin generateResponsiveGutter($breakpointsMap, $guttersList, $containerClassName, $rowClassName, $columnClassName, $gutterModifierName) {
   $i: 1;
   @each $key,

@@ -1,3 +1,7 @@
+//-------------------------
+//RESET RESPONSIVE GUTTERS
+// Generate modifier classes to reset grid's gutter responsively
+//-------------------------
 @mixin responsiveGutterReset ($breakpointsMap, $containerClassName, $rowClassName, $columnClassName, $resetGutterModifierName) {
   $i: 1;
   $keys: map-values($breakpointsMap);

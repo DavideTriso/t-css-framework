@@ -1,3 +1,7 @@
+//-------------------------
+// GENERATE OFFSETS
+// Generate offsets modifiers classes for columns
+//-------------------------
 @mixin generateOffsets ($breakpointsMap, $columnsNumber, $columnClassName, $offsetModifierName) {
   $a: 1;
   @each $key,

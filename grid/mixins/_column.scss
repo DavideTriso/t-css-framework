@@ -1,3 +1,6 @@
+//-------------------------
+//GENERATE COLUMNS
+//-------------------------
 @mixin generateColumns ($breakpointsMap, $columnsNumber, $columnClassName) {
   $a: 1;
   @each $key,

@@ -1,3 +1,6 @@
+//-------------------------
+//GENERATE CONTAINER
+//-------------------------
 @mixin generateContainer ($containerClassName) {
   #{$containerClassName} {
     @extend %display-block;

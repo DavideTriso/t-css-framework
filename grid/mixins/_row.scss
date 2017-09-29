@@ -1,3 +1,7 @@
+//-------------------------
+// GENERATE ROW
+// Generate classes for grid's rows
+//-------------------------
 @mixin generateFlexRow ($alignItems, $alignContent, $flexDirection, $flexWrap, $justifyContent, $rowClassName) {
   #{$rowClassName} {
     @if $alignContent !=skip {
@@ -19,6 +23,10 @@
     @extend %width-auto;
   }
 }
+//-------------------------
+// GENERATE ROW
+// Generate modifiers classes for grid's rows
+//-------------------------
 @mixin generateFlexRowModifiers ($alignItems, $alignContent, $flexDirection, $flexWrap, $justifyContent, $rowClassName, $rowModifierName) {
   #{$rowClassName}#{$modifierSeparator}#{$rowModifierName} {
     @if $alignContent !=skip {

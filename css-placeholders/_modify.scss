@@ -5,4 +5,6 @@
 @include generateCssPlaceholders ($cssPlaceholdersBreakpoints, $overwriteNamespace, $breakpointSeparator, $namespaceSeparator);
 //--------------------------
 //EDIT
+//@include the mixin below and set custom namespaces in order to generate more
+//sets of placeholders with higher specificity
 //--------------------------

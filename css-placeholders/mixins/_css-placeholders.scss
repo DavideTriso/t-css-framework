@@ -1,3 +1,8 @@
+//-----------------------------
+// CSS PLACEHOLDERS
+// Generate CSS placeholders
+// for each CSS property wich accepts token values
+//-----------------------------
 @mixin cssPlaceholders ($breakpoint, $namespace, $breakpointSeparator, $namespaceSeparator) {
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}align-content-stretch {
     align-content: stretch;

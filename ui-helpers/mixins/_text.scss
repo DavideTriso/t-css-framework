@@ -19,9 +19,3 @@
   }
 }
 //set text-decoration, text-transform, font-style, font-weight, font-size and vertical align by extending css-placeholders (e.g: @extend %text-decoration-underline;, @extend %vetical-align-middle;)
-
-@mixin textExtender ($textDecoration, $textTransform, $verticalAlign, $breakpointKey, $namespace) {
-  @if $textDecoration != skip {
-    
-  } 
-}
