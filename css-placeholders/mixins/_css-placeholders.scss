@@ -1200,6 +1200,14 @@
     left: 100%;
   }
 
+  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}left--50 {
+    left: -50%;
+  }
+
+  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}left--100 {
+    left: -100%;
+  }
+
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}letter-spacing-normal {
     letter-spacing: normal;
   }
@@ -1710,6 +1718,22 @@
 
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}right-0 {
     right: 0;
+  }
+
+  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}right-50 {
+    right: 50%;
+  }
+
+  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}right-100 {
+    right: 100%;
+  }
+
+  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}right--50 {
+    right: -50%;
+  }
+
+  %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}right--100 {
+    right: -100%;
   }
 
   %#{$breakpoint}#{$breakpointSeparator}#{$namespace}#{$namespaceSeparator}table-layout-auto {
