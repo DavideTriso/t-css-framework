@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 //SCSS -> CSS
 //Compile SCSS and save compiled + minified CSS file to 'dist' folder
 gulp.task('scss', function () {
-  return sass('t-css-framework.scss', {
+  return sass('src/t-css-framework.scss', {
       style: 'expanded'
     })
     .pipe(autoprefixer('last 5 version'))
@@ -28,5 +28,5 @@ gulp.task('scss', function () {
 
 //WATCH TASKS
 gulp.task('watchScss', function () {
-  gulp.watch('**/*.scss', ['scss']);
+  gulp.watch('src/**/*.scss', ['scss']);
 });

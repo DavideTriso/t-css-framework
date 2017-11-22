@@ -1,0 +1,14 @@
+@mixin border ($borderColor, $borderRadius, $borderWidth, $borderStyle) {
+  @if $borderColor !=skip {
+    border-color: $borderColor;
+  }
+  @if $borderRadius !=skip {
+    border-radius: $borderRadius;
+  }
+  @if $borderWidth !=skip {
+    border-width: $borderWidth;
+  }
+  @if $borderStyle != skip {
+    border-style: $borderStyle;
+  }
+}

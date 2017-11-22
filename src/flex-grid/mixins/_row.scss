@@ -1,0 +1,59 @@
+//-------------------------
+// GENERATE ROW
+// Generate classes for grid's rows
+//-------------------------
+@mixin generateRow($alignItems, $alignContent, $flexDirection, $flexWrap, $justifyContent, $rowClassName) {
+  #{$rowClassName} {
+    @if $alignContent != skip {
+      align-content: $alignContent;
+    }
+
+    @if $alignItems != skip {
+      align-items: $alignItems;
+    }
+
+    display: flex;
+
+    @if $flexDirection != skip {
+      flex-direction: $flexDirection;
+    }
+
+    @if $flexWrap != skip {
+      flex-wrap: $flexWrap;
+    }
+
+    @if $justifyContent != skip {
+      justify-content: $justifyContent;
+    }
+
+    width: auto;
+  }
+}
+
+//-------------------------
+// GENERATE ROW
+// Generate modifiers classes for grid's rows
+//-------------------------
+@mixin generateRowModifiers($alignItems, $alignContent, $flexDirection, $flexWrap, $justifyContent, $rowClassName, $rowModifierName) {
+  #{$rowClassName}#{$modifierSeparator}#{$rowModifierName} {
+    @if $alignContent != skip {
+      align-content: $alignContent;
+    }
+
+    @if $alignItems != skip {
+      align-items: $alignItems;
+    }
+
+    @if $flexDirection != skip {
+      flex-direction: $flexDirection;
+    }
+
+    @if $flexWrap != skip {
+      flex-wrap: $flexWrap;
+    }
+
+    @if $justifyContent != skip {
+      justify-content: $justifyContent;
+    }
+  }
+}
