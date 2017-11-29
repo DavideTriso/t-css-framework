@@ -1,0 +1,17 @@
+@mixin font($fontFamily, $fontSize, $fontStyle, $fontWeight) {
+  @if $fontFamily != skip {
+    font-size: $fontFamily;
+  }
+
+  @if $fontSize != skip {
+    font-size: $fontSize;
+  }
+
+  @if $fontStyle != skip {
+    font-style: $fontStyle;
+  }
+
+  @if $fontWeight != skip {
+    font-weight: $fontWeight;
+  }
+}

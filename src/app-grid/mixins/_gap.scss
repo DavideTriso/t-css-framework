@@ -27,7 +27,7 @@
 //RESET RESPONSIVE GAP
 // Generate modifier classes to reset app-grid's gap responsively
 //-------------------------
-@mixin responsiveGutterReset($breakpointsMap, $appGridClassName, $resetGapModifierName) {
+@mixin responsiveGapReset($breakpointsMap, $appGridClassName, $resetGapModifierName) {
   $i: 1;
   $keys: map-values($breakpointsMap);
   $l: length($keys);

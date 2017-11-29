@@ -1,8 +1,8 @@
-@mixin responsiveLength ($breakpointsMap, $lengthsList, $cssProperty, $elementClassName) {
+@mixin responsiveLength($breakpointsMap, $lengthsList, $cssProperty, $elementClassName) {
   $i: 1;
-  @each $key,
-  $value in $breakpointsMap {
-    @if $i==1 { 
+
+  @each $key, $value in $breakpointsMap {
+    @if $i == 1 {
       #{$elementClassName} {
         #{$cssProperty}: nth($lengthsList, $i);
       }
@@ -14,6 +14,7 @@
         }
       }
     }
+
     $i: $i + 1;
   }
 }

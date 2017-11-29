@@ -1,8 +1,15 @@
-$appGridClassName: ".app-grid";
-
+//APP GRID
+$appGridClassName: ".appGrid";
 $appGridColumnsMap: (one: 1fr, two: 1fr, three: 1fr, four: 1fr, five: 1fr, six: 1fr, seven: 1fr, eight: 1fr, nine: 1fr, ten: 1fr, eleven: 1fr, twelve: 1fr);
 $appGridRowsMap: (one: 8.333vh, two: 8.333vh, three: 8.333vh, four: 8.333vh, five: 8.333vh, six: 8.333vh, seven: 8.333vh, eight: 8.333vh, nine: 8.333vh, ten: 8.333vh, eleven: 8.333vh, twelve: 8.333vh);
 
+//APP NESTED GRID
+
+$appNestedGridClassName: ".appNestedGrid";
+$appNestedGridColumnsMap: (one: 1fr, two: 1fr, three: 1fr, four: 1fr, five: 1fr, six: 1fr, seven: 1fr, eight: 1fr, nine: 1fr, ten: 1fr, eleven: 1fr, twelve: 1fr);
+$appNestedGridRowsMap: (one: auto, two: auto, three: auto, four: auto, five: auto, six: auto);
+
+//GRID RESPONSIVE GAP FOR APP GRID AND APP NESTED GRID
 $gapModifierName: "gap";
 $gapBreakpointsMap: map-remove($breakpoints, w1, w2, w4, w6);
 $gapList: 0.5rem 0.75rem 1rem;

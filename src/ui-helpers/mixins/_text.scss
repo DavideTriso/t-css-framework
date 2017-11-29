@@ -1,21 +1,21 @@
-@mixin text ($color, $lineHeight, $wordSpacing, $textIndent, $letterSpacing, $textShadow) {
-  @if $color !=skip {
+@mixin text($color, $textDecoration, $textTransform, $verticalAlign) {
+  @if $color != skip {
     color: $color;
   }
-  @if $lineHeight !=skip {
+
+  @if $lineHeight != skip {
     line-height: $lineHeight;
   }
-  @if $letterSpacing !=skip {
-    color: $letterSpacing;
+
+  @if $textDecoration != skip {
+    text-decoration: $textDecoration;
   }
-  @if $textIndent !=skip {
-    text-indent: $textIndent; 
+
+  @if $textTransform != skip {
+    text-transform: $textTransform;
   }
-  @if $textShadow !=skip {
-    color: $textShadow;
-  }
-  @if $wordSpacing !=skip {
-    word-spacing: $wordSpacing;
+
+  @if $verticalAlign != skip {
+    vertical-align: $verticalAlign;
   }
 }
-//set text-decoration, text-transform, font-style, font-weight, font-size and vertical align by extending css-placeholders (e.g: @extend %text-decoration-underline;, @extend %vetical-align-middle;)

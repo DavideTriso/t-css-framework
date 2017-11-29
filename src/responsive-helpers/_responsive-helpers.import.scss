@@ -1,6 +1,3 @@
+@import "mixins/fluid-length";
 @import "mixins/media-queries";
-@import 'mixins/responsive-length';
-@import 'mixins/fluid-length';
-@import 'mixins/generate-responsive-lengths';
-@import 'settings';
-@import 'modify';
+@import "mixins/responsive-length";

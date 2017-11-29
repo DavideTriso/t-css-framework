@@ -54,7 +54,7 @@ Explanation:
 $offsetModifierName -> is the modifier name used to generate the offset modifier classes.
 $offsetColumnsNumber -> is the number of modifier classes to generate for each modifier breakpoint.
 */
-$offsetModifierName: "off";
+$offsetModifierName: "offset";
 $offsetColumnsNumber: 24;
 
 //NEGATIVE OFFSET
@@ -63,7 +63,7 @@ Explanation:
 $negativeOffsetModifierName -> is the modifier name used to generate the negative offset modifier classes.
 $negativeOffsetColumnsNumber -> is the number of modifier classes to generate for each modifier breakpoint.
 */
-$negativeOffsetModifierName: "negative-off";
+$negativeOffsetModifierName: "negativeOffset";
 $negativeOffsetColumnsNumber: 24;
 
 //GUTTERS
@@ -92,4 +92,4 @@ The $guttersBreakpointsMap is used to generate the breakpoints.
 Gutter reset classes looks like .container_w0-reset-gutter, .row_w0-reset-gutter, .col_w0-reset-gutter, .container_w3-reset-gutter, .row_w3-reset-gutter, .col_w3-reset-gutter, [...]
 Because the classes are bound between a min and max width, .container_w0-reset-gutter will apply only until w3 width, so will .container_w3-reset-gutter apply only until w5 width.
 */
-$resetGutterModifierName: "reset-gutter";
+$resetGutterModifierName: "resetGutter";
