@@ -1,14 +1,17 @@
-@mixin border ($borderColor, $borderRadius, $borderWidth, $borderStyle) {
-  @if $borderColor !=skip {
-    border-color: $borderColor;
+@mixin border($borderMap) {
+  @if map-get($borderMap, borderColor) != "" {
+    border-color: map-get($borderMap, borderColor);
   }
-  @if $borderRadius !=skip {
-    border-radius: $borderRadius;
+
+  @if map-get($borderMap, borderRadius) != "" {
+    border-radius: map-get($borderMap, borderRadius);
   }
-  @if $borderWidth !=skip {
-    border-width: $borderWidth;
+
+  @if map-get($borderMap, borderStyle) != "" {
+    border-style: map-get($borderMap, borderStyle);
   }
-  @if $borderStyle != skip {
-    border-style: $borderStyle;
+
+  @if map-get($borderMap, borderWidth) != "" {
+    border-width: map-get($borderMap, borderWidth);
   }
 }
