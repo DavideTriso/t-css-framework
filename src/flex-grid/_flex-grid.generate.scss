@@ -9,8 +9,8 @@
 @include generateRow($rowAlignItems, $rowAlignContent, $rowFlexDirection, $rowFlexWrap, $rowJustifyContent, $rowClassName);
 
 //ROW MODIFIERS
-@include generateRowModifiers($rowJustifyCenterAlignItems, $rowJustifyCenterAlignContent, $rowJustifyCenterFlexDirection, $rowJustifyCenterFlexWrap, $rowJustifyCenterJustifyContent, $rowJustifyCenterRowClassName, $rowJustifyCenterRowModifierName);
-@include generateRowModifiers($rowAlignCenterAlignItems, $rowAlignCenterAlignContent, $rowAlignCenterFlexDirection, $rowAlignCenterFlexWrap, $rowAlignCenterJustifyContent, $rowAlignCenterRowClassName, $rowAlignCenterRowModifierName);
+@include generateRowModifiers($rowJustifyCenterAlignItems, $rowJustifyCenterAlignContent, $rowJustifyCenterFlexDirection, $rowJustifyCenterFlexWrap, $rowJustifyCenterJustifyContent, $rowClassName, $rowJustifyCenterModifierName);
+@include generateRowModifiers($rowAlignCenterAlignItems, $rowAlignCenterAlignContent, $rowAlignCenterFlexDirection, $rowAlignCenterFlexWrap, $rowAlignCenterJustifyContent, $rowClassName, $rowAlignCenterModifierName);
 
 //COLUMNS
 @include generateColumns($columnsBreakpointsMap, $columnsNumber, $columnClassName);
