@@ -3,6 +3,10 @@
     color: map-get($textMap, color);
   }
 
+  @if map-has-key($textMap, textAlign) {
+    text-align: map-get($textMap, textAlign);
+  }
+
   @if map-has-key($textMap, textDecoration) {
     text-decoration: map-get($textMap, textDecoration);
   }

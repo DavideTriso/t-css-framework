@@ -87,7 +87,7 @@ stripUnit($number)
 **Parameters:**
 
 * `$imageUrlMap`: accepts 1 - 2 keys
-    * `normal`: url of normal image
+    * `normal`: url of normal image _(required)_
     * `retina`: url of hi-res img _(optional)_
 
 ### border
@@ -134,6 +134,20 @@ stripUnit($number)
 **Parameters:**
 
 * No parameters
+
+### flexPositioning
+
+```
+@flexPositioning($flexMap)
+```
+**Parameters:**
+
+* `$flexPositioningMap`
+    * `alignItems` _(optional)_
+    * `alignContent` _(optional)_
+    * `flexDirection` _(optional)_
+    * `flexWrap` _(optional)_
+    * `justifyContent` _(optional)_
 
 ### fontFace
 
@@ -257,6 +271,7 @@ stripUnit($number)
 
 * `$textMap`: accepts one - four parameters
     * `color` _(optional)_
+    * `textAlign` _(optional)_
     * `textDecoration` _(optional)_
     * `textTransform` _(optional)_
 
@@ -274,14 +289,15 @@ stripUnit($number)
     * `lineHeight` _(optional)_
     * `verticalAlign` _(optional)_
     * `wordSpacing` _(optional)_
-    
+
 
 ## RESET
 
-## GRIDS
+## FLEX GRID
+
+## APP GRID
 
 
-
-
+## SETTINGS
 
 ## SETTINGS
