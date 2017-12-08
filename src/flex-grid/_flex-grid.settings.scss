@@ -36,6 +36,22 @@ $rowFlexDirection: row !default;
 $rowFlexWrap: wrap !default;
 $rowJustifyContent: flex-start !default;
 
+//ROW MODIFIERS
+$rowJustifyCenterModifierName: "hcenter" !default;
+$rowJustifyCenterAlignItems: "" !default;
+$rowJustifyCenterAlignContent: "" !default;
+$rowJustifyCenterFlexDirection: "" !default;
+$rowJustifyCenterFlexWrap: "" !default;
+$rowJustifyCenterJustifyContent: center !default;
+
+//
+$rowAlignCenterModifierName: "vcenter" !default;
+$rowAlignCenterAlignItems: center !default;
+$rowAlignCenterAlignContent: "" !default;
+$rowAlignCenterFlexDirection: "" !default;
+$rowAlignCenterFlexWrap: "" !default;
+$rowAlignCenterJustifyContent: "" !default;
+
 //COLUMNS
 /*
 Explanation:

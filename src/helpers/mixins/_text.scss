@@ -1,0 +1,13 @@
+@mixin text($textMap) {
+  @if map-has-key($textMap, color) {
+    color: map-get($textMap, color);
+  }
+
+  @if map-has-key($textMap, textDecoration) {
+    text-decoration: map-get($textMap, textDecoration);
+  }
+
+  @if map-has-key($textMap, textTransform) {
+    text-transform: map-get($textMap, textTransform);
+  }
+}

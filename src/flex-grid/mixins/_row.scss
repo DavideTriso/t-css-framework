@@ -4,25 +4,25 @@
 //-------------------------
 @mixin generateRow($alignItems, $alignContent, $flexDirection, $flexWrap, $justifyContent, $rowClassName) {
   #{$rowClassName} {
-    @if $alignContent != skip {
+    @if $alignContent != "" {
       align-content: $alignContent;
     }
 
-    @if $alignItems != skip {
+    @if $alignItems != "" {
       align-items: $alignItems;
     }
 
     display: flex;
 
-    @if $flexDirection != skip {
+    @if $flexDirection != "" {
       flex-direction: $flexDirection;
     }
 
-    @if $flexWrap != skip {
+    @if $flexWrap != "" {
       flex-wrap: $flexWrap;
     }
 
-    @if $justifyContent != skip {
+    @if $justifyContent != "" {
       justify-content: $justifyContent;
     }
 
@@ -36,23 +36,23 @@
 //-------------------------
 @mixin generateRowModifiers($alignItems, $alignContent, $flexDirection, $flexWrap, $justifyContent, $rowClassName, $rowModifierName) {
   #{$rowClassName}#{$modifierSeparator}#{$rowModifierName} {
-    @if $alignContent != skip {
+    @if $alignContent != "" {
       align-content: $alignContent;
     }
 
-    @if $alignItems != skip {
+    @if $alignItems != "" {
       align-items: $alignItems;
     }
 
-    @if $flexDirection != skip {
+    @if $flexDirection != "" {
       flex-direction: $flexDirection;
     }
 
-    @if $flexWrap != skip {
+    @if $flexWrap != "" {
       flex-wrap: $flexWrap;
     }
 
-    @if $justifyContent != skip {
+    @if $justifyContent != "" {
       justify-content: $justifyContent;
     }
   }

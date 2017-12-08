@@ -1,17 +1,17 @@
 @mixin font($fontMap) {
-  @if map-get($fontMap, fontFamily) != skip {
+  @if map-has-key($fontMap, fontFamily) {
     font-size: map-get($fontMap, fontFamily);
   }
 
-  @if map-get($fontMap, fontSize) != skip {
+  @if map-has-key($fontMap, fontSize) {
     font-size: map-get($fontMap, fontSize);
   }
 
-  @if map-get($fontMap, fontStyle) != skip {
+  @if map-has-key($fontMap, fontStyle) {
     font-style: map-get($fontMap, fontStyle);
   }
 
-  @if map-get($fontMap, fontWeight) != skip {
+  @if map-has-key($fontMap, fontWeight) {
     font-weight: map-get($fontMap, fontWeight);
   }
 }

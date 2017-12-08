@@ -1,34 +1,41 @@
 //-------------------------
 //CONVERT PIXEL INTO REM
 //-------------------------
-@function pxToRem($size, $htmlElementFontSize) {
-  $size: stripUnit($size);
-  @if ($size < 0) {
-    $size: abs($size);
-    $htmlElementFontSize: stripUnit($htmlElementFontSize);
-    $remSize: (-$size) / ($htmlElementFontSize);
-    @return $remSize + 0rem;
+@function pxToRem($length, $htmlElementFontlength) {
+  $length: stripUnit($length);
+
+  @if $length < 0 {
+    $length: abs($length);
+    $htmlElementFontlength: stripUnit($htmlElementFontlength);
+    $remlength: -$length / $htmlElementFontlength;
+
+    @return $remlength + 0rem;
   }
   @else {
-    $htmlElementFontSize: stripUnit($htmlElementFontSize);
-    $remSize: ($size) / ($htmlElementFontSize);
-    @return $remSize + 0rem;
+    $htmlElementFontlength: stripUnit($htmlElementFontlength);
+    $remlength: $length / $htmlElementFontlength;
+
+    @return $remlength + 0rem;
   }
 }
+
 //-------------------------
 //CONVERT REM INTO PIXEL
 //-------------------------
-@function remToPx($size, $htmlElementFontSize) {
-  $size: stripUnit($size);
-  @if ($size < 0) {
-    $size: abs($size);
-    $htmlElementFontSize: stripUnit($htmlElementFontSize);
-    $pxSize: (-$size) * ($htmlElementFontSize);
-    @return $pxSize + 0px;
+@function remToPx($length, $htmlElementFontlength) {
+  $length: stripUnit($length);
+
+  @if $length < 0 {
+    $length: abs($length);
+    $htmlElementFontlength: stripUnit($htmlElementFontlength);
+    $pxlength: -$length * $htmlElementFontlength;
+
+    @return $pxlength + 0px;
   }
   @else {
-    $htmlElementFontSize: stripUnit($htmlElementFontSize);
-    $pxSize: ($size) * ($htmlElementFontSize);
-    @return $pxSize + 0px;
+    $htmlElementFontlength: stripUnit($htmlElementFontlength);
+    $pxlength: $length * $htmlElementFontlength;
+
+    @return $pxlength + 0px;
   }
 }

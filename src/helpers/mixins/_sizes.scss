@@ -1,0 +1,25 @@
+@mixin sizes($sizesMap) {
+  @if map-has-key($sizesMap, height) {
+    height: map-get($sizesMap, height);
+  }
+
+  @if map-has-key($sizesMap, maxHeight) {
+    max-height: map-get($sizesMap, maxHeight);
+  }
+
+  @if map-has-key($sizesMap, maxWidth) {
+    max-width: map-get($sizesMap, maxWidth);
+  }
+
+  @if map-has-key($sizesMap, minHeight) {
+    min-height: map-get($sizesMap, minHeight);
+  }
+
+  @if map-has-key($sizesMap, minWidth) {
+    min-width: map-get($sizesMap, minWidth);
+  }
+
+  @if map-has-key($sizesMap, width) {
+    width: map-get($sizesMap, width);
+  }
+}

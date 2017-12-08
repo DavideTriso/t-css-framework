@@ -1,17 +1,17 @@
 @mixin border($borderMap) {
-  @if map-get($borderMap, borderColor) != "" {
+  @if map-has-key($borderMap, borderColor) {
     border-color: map-get($borderMap, borderColor);
   }
 
-  @if map-get($borderMap, borderRadius) != "" {
+  @if map-has-key($borderMap, borderRadius) {
     border-radius: map-get($borderMap, borderRadius);
   }
 
-  @if map-get($borderMap, borderStyle) != "" {
+  @if map-has-key($borderMap, borderStyle) {
     border-style: map-get($borderMap, borderStyle);
   }
 
-  @if map-get($borderMap, borderWidth) != "" {
+  @if map-has-key($borderMap, borderWidth) {
     border-width: map-get($borderMap, borderWidth);
   }
 }
