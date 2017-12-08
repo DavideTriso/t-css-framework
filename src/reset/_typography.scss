@@ -1,0 +1,113 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+code {
+  font-family: inherit;
+}
+
+del {
+  text-decoration: none;
+}
+
+dfn {
+  font-style: normal;
+}
+
+em {
+  font-style: normal;
+}
+
+i {
+  font-style: normal;
+}
+
+ins {
+  text-decoration: none;
+}
+
+kbd {
+  font-family: inherit;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+pre {
+  font-family: inherit;
+  margin: 0;
+}
+
+q {
+  &:before,
+  &:after {
+    content: none;
+  }
+}
+
+s {
+  text-decoration: none;
+}
+
+samp {
+  font-family: inherit;
+}
+
+small {
+  //
+}
+
+strong {
+  font-weight: 400;
+}
+
+sub {
+  //
+}
+
+sup {
+  //
+}
+
+time {
+  //
+}
+
+u {
+  text-decoration: none;
+}
+
+var {
+  font-style: normal;
+}
+
+wbr {
+  //
+}

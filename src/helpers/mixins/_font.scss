@@ -1,0 +1,17 @@
+@mixin font($fontMap) {
+  @if map-has-key($fontMap, fontFamily) {
+    font-size: map-get($fontMap, fontFamily);
+  }
+
+  @if map-has-key($fontMap, fontSize) {
+    font-size: map-get($fontMap, fontSize);
+  }
+
+  @if map-has-key($fontMap, fontStyle) {
+    font-style: map-get($fontMap, fontStyle);
+  }
+
+  @if map-has-key($fontMap, fontWeight) {
+    font-weight: map-get($fontMap, fontWeight);
+  }
+}

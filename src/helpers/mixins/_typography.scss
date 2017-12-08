@@ -1,0 +1,17 @@
+@mixin typography($typographyMap) {
+  @if map-has-key($typographyMap, letterSpacing) {
+    letter-spacing: $letterSpacing;
+  }
+
+  @if map-has-key($typographyMap, lineHeight) {
+    line-height: map-get($typographyMap, lineHeight);
+  }
+
+  @if map-has-key($typographyMap, verticalAlign) {
+    vertical-align: map-get($typographyMap, verticalAlign);
+  }
+
+  @if map-has-key($typographyMap, wordSpacing) {
+    word-spacing: map-get($typographyMap, wordSpacing);
+  }
+}
