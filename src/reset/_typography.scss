@@ -5,50 +5,51 @@ h4,
 h5,
 h6,
 p {
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
+  @include font((fontSize: 1rem));
+  @include text((textAlign: left));
+  @include margin((all: 0));
+  @include padding((all: 0));
 }
 
 abbr {
-  text-decoration: none;
+  @include text((textDecoration: none));
 }
 
 address {
-  font-style: normal;
+  @include font((fontStyle: normal));
 }
 
 blockquote {
-  margin: 0;
-  padding: 0;
+  @include margin((all: 0));
+  @include padding((all: 0));
 }
 
 cite {
-  font-style: normal;
+  @include font((fontStyle: normal));
 }
 
 code {
-  font-family: inherit;
+  @include font((fontFamily: inherit));
 }
 
 del {
-  text-decoration: none;
+  @include text((textDecoration: none));
 }
 
 dfn {
-  font-style: normal;
+  @include font((fontStyle: normal));
 }
 
 em {
-  font-style: normal;
+  @include font((fontStyle: normal));
 }
 
 i {
-  font-style: normal;
+  @include font((fontStyle: normal));
 }
 
 ins {
-  text-decoration: none;
+  @include text((textDecoration: none));
 }
 
 kbd {
@@ -56,13 +57,13 @@ kbd {
 }
 
 mark {
-  background-color: transparent;
-  color: inherit;
+  @include background((backgroundColor: transparent));
+  @include text((color: inherit));
 }
 
 pre {
-  font-family: inherit;
-  margin: 0;
+  @include font((fontFamily: inherit));
+  @include margin((all: 0));
 }
 
 q {
@@ -73,11 +74,11 @@ q {
 }
 
 s {
-  text-decoration: none;
+  @include text((textDecoration: none));
 }
 
 samp {
-  font-family: inherit;
+  @include font((fontFamily: inherit));
 }
 
 small {
@@ -85,7 +86,7 @@ small {
 }
 
 strong {
-  font-weight: 400;
+  @include font((fontWeight: 400));
 }
 
 sub {
@@ -101,11 +102,11 @@ time {
 }
 
 u {
-  text-decoration: none;
+  @include text((textDecoration: none));
 }
 
 var {
-  font-style: normal;
+  @include font((fontStyle: normal));
 }
 
 wbr {

@@ -11,7 +11,15 @@
     vertical-align: map-get($typographyMap, verticalAlign);
   }
 
+  @if map-has-key($typographyMap, wordBreak) {
+    word-break: map-get($typographyMap, wordBreak);
+  }
+
   @if map-has-key($typographyMap, wordSpacing) {
     word-spacing: map-get($typographyMap, wordSpacing);
+  }
+
+  @if map-has-key($typographyMap, wordWrap) {
+    word-wrap: map-get($typographyMap, wordWrap);
   }
 }

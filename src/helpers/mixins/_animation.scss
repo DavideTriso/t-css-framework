@@ -1,0 +1,33 @@
+@mixin animation($animationMap) {
+  @if map-has-key($animationMap, animationDelay) {
+    animation-delay: map-get($animationMap, animationDelay);
+  }
+
+  @if map-has-key($animationMap, animationDirection) {
+    animation-direction: map-get($animationMap, animationDirection);
+  }
+
+  @if map-has-key($animationMap, animationDuration) {
+    animation-duration: map-get($animationMap, animationDuration);
+  }
+
+  @if map-has-key($animationMap, animationFillMode) {
+    animation-fill-mode: map-get($animationMap, animationFillMode);
+  }
+
+  @if map-has-key($animationMap, animationIterationCount) {
+    animation-iteration-count: map-get($animationMap, animationIterationCount);
+  }
+
+  @if map-has-key($animationMap, animationName) {
+    animation-name: map-get($animationMap, animationName);
+  }
+
+  @if map-has-key($animationMap, animationPlayState) {
+    animation-play-state: map-get($animationMap, animationPlayState);
+  }
+
+  @if map-has-key($animationMap, animationTimingFunction) {
+    animation-timing-function: map-get($animationMap, animationTimingFunction);
+  }
+}

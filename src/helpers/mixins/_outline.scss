@@ -1,0 +1,9 @@
+@mixin outline($outlineMap) {
+  @if map-has-key($outlineMap, outline) {
+    outline: map-get($outlineMap, outline);
+  }
+
+  @if map-has-key($outlineMap, outlineOffset) {
+    outline-offset: map-get($outlineMap, outlineOffset);
+  }
+}

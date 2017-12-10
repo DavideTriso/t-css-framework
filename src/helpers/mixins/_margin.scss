@@ -1,5 +1,11 @@
 @mixin margin($marginMap) {
-  @if map-has-key($marginMap, top) and map-has-key($marginMap, right) and map-has-key($marginMap, bottom) and map-has-key($marginMap, left) {
+  @if map-has-key($marginMap, all) {
+    margin: map-get($marginMap, all);
+  }
+  @else if map-has-key($marginMap, topBottom) and map-has-key($marginMap, leftRight) {
+    margin: map-get($marginMap, topBottom) map-get($marginMap, leftRight);
+  }
+  @else if map-has-key($marginMap, top) and map-has-key($marginMap, right) and map-has-key($marginMap, bottom) and map-has-key($marginMap, left) {
     @if map-get($marginMap, top) == map-get($marginMap, left) and map-get($marginMap, top) == map-get($marginMap, bottom) and map-get($marginMap, top) == map-get($marginMap, right) {
       margin: map-get($marginMap, top);
     }

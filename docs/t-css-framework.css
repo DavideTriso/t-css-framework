@@ -1,3 +1,27 @@
+/*
+.demo {
+    background-color: red;
+    @include mqMin(w4) {
+	    background-color: blue;
+	}
+}
+*/
+/*
+.demo {
+    background-color: red;
+    @include mqMax(w4) {
+	    background-color: blue;
+	}
+}
+*/
+/*
+.demo {
+    background-color: red;
+    @include mqRange(w2, w4) {
+	    background-color: blue;
+	}
+}
+*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11,13 +35,147 @@
 
 html,
 body {
-  color: black;
+  color: #000;
   margin: 0;
   max-width: 100%;
   min-width: 100%;
-  font-family: sans-serif;
+  font-size: "sans-serif";
   font-size: 16px;
   padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  border-radius: 0;
+  border-width: 0;
+  background-color: transparent;
+  font-size: inherit;
+  font-size: 1rem;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+::-webkit-search-decoration {
+  display: none;
+}
+
+fieldset {
+  border-radius: 0;
+  border-width: 0;
+  margin: 0;
+  padding: 0.01rem 0 0 0;
+  min-width: 0;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
+
+label,
+legend {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: table;
+  float: left;
+  width: 0;
+}
+legend + * {
+  clear: both;
+}
+
+output {
+  font-size: 1rem;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -moz-box-sizing: border-box;
+}
+
+img,
+map,
+figure,
+picture {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+canvas {
+  height: auto;
+  width: 100%;
+}
+
+figcaption {
+  font-size: 1rem;
+  font-style: normal;
+}
+
+a, a:focus, a:hover, a:active {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+
+dl,
+menu,
+ol,
+ul {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+dl,
+dt,
+li,
+menuitem {
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-color: transparent;
+  border-width: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  font-weight: normal;
+  text-align: left;
+}
+
+tr {
+  border-color: transparent;
+  border-width: 0;
+}
+
+th {
+  font-weight: normal;
+  text-align: left;
 }
 
 h1,
@@ -28,6 +186,7 @@ h5,
 h6,
 p {
   font-size: 1rem;
+  text-align: left;
   margin: 0;
   padding: 0;
 }
@@ -50,7 +209,7 @@ cite {
 }
 
 code {
-  font-family: inherit;
+  font-size: inherit;
 }
 
 del {
@@ -83,7 +242,7 @@ mark {
 }
 
 pre {
-  font-family: inherit;
+  font-size: inherit;
   margin: 0;
 }
 
@@ -96,7 +255,7 @@ s {
 }
 
 samp {
-  font-family: inherit;
+  font-size: inherit;
 }
 
 strong {
@@ -111,165 +270,6 @@ var {
   font-style: normal;
 }
 
-a, a:focus, a:hover, a:active {
-  color: black;
-  outline: none;
-  text-decoration: none;
-}
-
-dl,
-menu,
-ol,
-ul {
-  list-style: none;
-  list-style-position: inside;
-  margin: 0;
-  padding: 0;
-}
-
-dl,
-dt,
-li,
-menuitem {
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-}
-
-table {
-  border: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
-  border-color: transparent;
-}
-
-caption {
-  font-weight: normal;
-  text-align: left;
-}
-
-tr {
-  border-color: transparent;
-}
-
-th {
-  font-weight: normal;
-  text-align: left;
-}
-
-button,
-input,
-select,
-textarea {
-  border: 0;
-  border-radius: 0;
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 1rem;
-  line-height: 1;
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
-}
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-}
-
-input[type=search] {
-  -webkit-appearance: textfield;
-}
-
-::-webkit-search-decoration {
-  display: none;
-}
-
-fieldset {
-  border: 0;
-  border-radius: 0;
-  margin: 0;
-  min-width: 0;
-  padding-top: 0.01em 0 0 0;
-}
-
-body:not(:-moz-handler-blocked) fieldset {
-  display: table-cell;
-}
-
-label,
-legend {
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-legend {
-  display: table;
-  float: left;
-  width: 100%;
-}
-legend + * {
-  clear: both;
-}
-
-output {
-  font-size: 1rem;
-}
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -moz-box-sizing: border-box;
-}
-
-img,
-map,
-figure,
-picture {
-  display: block;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-canvas {
-  height: auto;
-  width: 100%;
-}
-
-figcaption {
-  font-style: normal;
-  font-size: 1rem;
-}
-
-/*
-.demo {
-    background-color: red;
-    @include mqMin(w4) {
-	    background-color: blue;
-	}
-}
-*/
-/*
-.demo {
-    background-color: red;
-    @include mqMax(w4) {
-	    background-color: blue;
-	}
-}
-*/
-/*
-.demo {
-    background-color: red;
-    @include mqRange(w2, w4) {
-	    background-color: blue;
-	}
-}
-*/
 /*
 Explanation:
 $containerClassName -> is the name of the container classes.

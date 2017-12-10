@@ -11,6 +11,10 @@
     font-style: map-get($fontMap, fontStyle);
   }
 
+  @if map-has-key($fontMap, fontVariant) {
+    font-variant: map-get($fontMap, fontVariant);
+  }
+
   @if map-has-key($fontMap, fontWeight) {
     font-weight: map-get($fontMap, fontWeight);
   }

@@ -3,8 +3,7 @@ a {
   &:focus,
   &:hover,
   &:active {
-    color: black;
-    outline: none;
-    text-decoration: none;
+    @include text((color: #000, textDecoration: none));
+    @include outline((outline: none));
   }
 }

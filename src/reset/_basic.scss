@@ -9,11 +9,9 @@
 
 html,
 body {
-  color: black;
-  margin: 0;
-  max-width: 100%;
-  min-width: 100%;
-  font-family: sans-serif;
-  font-size: $htmlElementFontSize;
-  padding: 0;
+  @include text((color: #000));
+  @include margin((all: 0));
+  @include sizes((maxWidth: 100%, minWidth: 100%));
+  @include font((fontFamily: "sans-serif", fontSize: $htmlElementFontSize));
+  @include padding((all: 0));
 }

@@ -1,13 +1,13 @@
 table {
-  border: 0;
+  @include border((borderWidth: 0, borderColor: transparent));
+
   border-collapse: collapse;
   border-spacing: 0;
-  border-color: transparent;
 }
 
 caption {
-  font-weight: normal;
-  text-align: left;
+  @include font((fontWeight: normal));
+  @include text((textAlign: left));
 }
 
 thead,
@@ -17,12 +17,12 @@ tfoot {
 }
 
 tr {
-  border-color: transparent;
+  @include border((borderWidth: 0, borderColor: transparent));
 }
 
 th {
-  font-weight: normal;
-  text-align: left;
+  @include font((fontWeight: normal));
+  @include text((textAlign: left));
 }
 
 td {

@@ -3,18 +3,16 @@ map,
 figure,
 picture {
   display: block;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+
+  @include margin((all: 0));
+  @include padding((all: 0));
+  @include sizes((height: auto, width: 100%));
 }
 
 canvas {
-  height: auto;
-  width: 100%;
+  @include sizes((height: auto, width: 100%));
 }
 
 figcaption {
-  font-style: normal;
-  font-size: 1rem;
+  @include font((fontSize: 1rem, fontStyle: normal));
 }

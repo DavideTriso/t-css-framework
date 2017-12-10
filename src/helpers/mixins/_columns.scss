@@ -1,0 +1,33 @@
+@mixin columns($columnsMap) {
+  @if map-has-key($columnsMap, columnCount) {
+    column-count: map-get($columnsMap, columnCount);
+  }
+
+  @if map-has-key($columnsMap, columnFill) {
+    column-fill: map-get($columnsMap, columnFill);
+  }
+
+  @if map-has-key($columnsMap, columnGap) {
+    column-gap: map-get($columnsMap, columnGap);
+  }
+
+  @if map-has-key($columnsMap, columnRule) {
+    column-rule: map-get($columnsMap, columnRule);
+  }
+
+  @if map-has-key($columnsMap, columnRuleColor) {
+    column-rule-color: map-get($columnsMap, columnRuleColor);
+  }
+
+  @if map-has-key($columnsMap, columnRuleStyle) {
+    column-rule-style: map-get($columnsMap, columnRuleStyle);
+  }
+
+  @if map-has-key($columnsMap, columnRuleWidth) {
+    column-rule-width: map-get($columnsMap, columnRuleWidth);
+  }
+
+  @if map-has-key($columnsMap, columnWidth) {
+    column-width: map-get($columnsMap, columnWidth);
+  }
+}

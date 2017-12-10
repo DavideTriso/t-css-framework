@@ -11,7 +11,27 @@
     text-decoration: map-get($textMap, textDecoration);
   }
 
+  @if map-has-key($textMap, textDecorationColor) {
+    text-decoration-color: map-get($textMap, textDecorationColor);
+  }
+
+  @if map-has-key($textMap, textDecorationLine) {
+    text-decoration-line: map-get($textMap, textDecorationLine);
+  }
+
+  @if map-has-key($textMap, textDecorationStyle) {
+    text-decoration-style: map-get($textMap, textDecorationStyle);
+  }
+
+  @if map-has-key($textMap, textIndent) {
+    text-indent: map-get($textMap, textIndent);
+  }
+
   @if map-has-key($textMap, textTransform) {
     text-transform: map-get($textMap, textTransform);
+  }
+
+  @if map-has-key($textMap, textShadow) {
+    text-shadow: map-get($textMap, textShadow);
   }
 }

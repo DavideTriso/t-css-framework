@@ -2,13 +2,23 @@
 
 ## ABOUT
 
-Mobile-first, fully customisable CSS / SASS framework built for large projects.
+Mobile-first, customisable CSS / SASS framework that scales.
+
+**Key features**:
+
+* Customisable and mobile-first flexbox grid
+* Functions and mixin helpers to speed up development and keep code DRY
+* Reset stylesheet
+* Extremely lightweight
+* Adoptable for BEM projects
 
 ## DEPENDENCIES
 
 **No dependencies**
 
 ## FUNCTIONS
+
+Following functions are included in the framework:
 
 ### clampNumber
 
@@ -78,17 +88,47 @@ stripUnit($number)
 
 ## HELPERS
 
-### backgroundImage
+Following mixin helpers  are included in the framework:
+
+### animation
 
 ```
-@include backgroundImage($imageUrlMap)
+@include animation($animationMap)
 ```
 
 **Parameters:**
 
-* `$imageUrlMap`: accepts 1 - 2 keys
-    * `normal`: url of normal image _(required)_
-    * `retina`: url of hi-res img _(optional)_
+* `$animationMap`
+    * `animationDelay`
+    * `animationDirection`
+    * `animationDuration`
+    * `animationFillMode`
+    * `animationIterationCount`
+    * `animationName`
+    * `animationPlayState`
+    * `animationTimingFunction`
+
+
+### background
+
+```
+@include backgroundImage($backgroundMap)
+```
+
+**Parameters:**
+
+* `$backgroundMap`
+    * `backgroundAttachment`
+    * `backgroundClip`
+    * `backgroundColor`
+    * `backgroundGradient`
+    * `normalImage` url of normal background image _(required when retinaImage is set)_
+    * `retinaImage` url of hi-res background image
+    * `backgroundOrigin`
+    * `backgroundPosition`
+    * `backgroundRepeat`
+    * `backgroundSize`
+
 
 ### border
 
@@ -98,11 +138,11 @@ stripUnit($number)
 
 **Parameters:**
 
-* `$borderMap`: accepts one - four keys
-    * `borderColor`  _(optional)_
-    * `borderRadius` _(optional)_
-    * `borderStyle` _(optional)_
-    * `borderWidth` _(optional)_
+* `$borderMap`
+    * `borderColor`  
+    * `borderRadius`
+    * `borderStyle`
+    * `borderWidth`
 
 ### centerAbsolute
 
@@ -125,6 +165,24 @@ stripUnit($number)
 * No parameters
 
 
+### columns
+
+```
+@include columns($columnsMap)
+```
+
+**Parameters:**
+
+* `$columnsMap`
+    * `columnCount`
+    * `columnFill`
+    * `columnGap`
+    * `columnRule`
+    * `columnRuleColor`
+    * `columnRuleStyle`
+    * `columnRuleWidth`
+    * `columnWidth`
+
 ### ellipsis
 
 ```
@@ -140,14 +198,32 @@ stripUnit($number)
 ```
 @flexPositioning($flexMap)
 ```
+
 **Parameters:**
 
 * `$flexPositioningMap`
-    * `alignItems` _(optional)_
-    * `alignContent` _(optional)_
-    * `flexDirection` _(optional)_
-    * `flexWrap` _(optional)_
-    * `justifyContent` _(optional)_
+    * `alignItems`
+    * `alignContent`
+    * `flexDirection`
+    * `flexWrap`
+    * `justifyContent`
+
+
+### font
+
+```
+@include font($fontMap)
+```
+
+**Parameters:**
+
+* `$fontMap`
+    * `fontFamily`
+    * `fontSize`
+    * `fontStyle`
+    * `fontVariant`
+    * `fontWeight`
+
 
 ### fontFace
 
@@ -173,6 +249,19 @@ stripUnit($number)
 
 * No parameters
 
+### list
+
+```
+@include list($listMap)
+```
+
+**Parameters**
+
+* `$listMap`
+    * `listStyleImage`
+    * `listStyleType`
+    * `listStylePosition`
+
 ### margin
 
 ```
@@ -181,11 +270,14 @@ stripUnit($number)
 
 **Parameters:**
 
-* `$marginMap`: accepts one - four keys
-    * `top`  _(optional)_
-    * `bottom` _(optional)_
-    * `left` _(optional)_
-    * `right` _(optional)_
+* `$marginMap`
+    * `all` _(optional - when this parameter is set, all other parameters are ignored)_
+    * `topBottom` _(optional - when this parameter is set, the parameter top, bottom, left, right are ignored, and the parameter leftRight becomes required)_
+    * `leftRight` _(optional - when this parameter is set, the parameter top, bottom, left, right are ignored, and the parameter topBottom becomes required)_
+    * `top`  
+    * `bottom`
+    * `left`
+    * `right`
 
 
 ### media queries
@@ -211,6 +303,20 @@ stripUnit($number)
 * `$breakpointMinName`: key name of the min breakpoint (from breakpoints map)
 * `$breakpointMaxName`: key name of the max breakpoint (from breakpoints map)
 
+
+### outline
+
+```
+@include outline($outlineMap)
+```
+
+**Parameters**
+
+* `$outlineMap`
+    * `outline`
+    * `outlineOffset`
+
+
 ### padding
 
 ```
@@ -219,11 +325,14 @@ stripUnit($number)
 
 **Parameters:**
 
-* `$paddingMap`: accepts one - four keys
-    * `top`  _(optional)_
-    * `bottom` _(optional)_
-    * `left` _(optional)_
-    * `right` _(optional)_
+* `$paddingMap`
+    * `all` _(optional - when this parameter is set, all other parameters are ignored)_
+    * `topBottom` _(optional - when this parameter is set, the parameter top, bottom, left, right are ignored, and the parameter leftRight becomes required)_
+    * `leftRight` _(optional - when this parameter is set, the parameter top, bottom, left, right are ignored, and the parameter topBottom becomes required)_
+    * `top`  
+    * `bottom`
+    * `left`
+    * `right`
 
 ### placeholderColor
 
@@ -243,13 +352,13 @@ stripUnit($number)
 
 **Parameters:**
 
-* `$sizesMap`: accepts one - six keys
-    * `height`  _(optional)_
-    * `minHeight` _(optional)_
-    * `maxHeight` _(optional)_
-    * `width` _(optional)_
-    * `minWidth` _(optional)_
-    * `maxWidth` _(optional)_
+* `$sizesMap`
+    * `height`  
+    * `minHeight`
+    * `maxHeight`
+    * `width`
+    * `minWidth`
+    * `maxWidth`
 
 ### srOnly
 
@@ -269,11 +378,16 @@ stripUnit($number)
 
 **Parameters:**
 
-* `$textMap`: accepts one - four parameters
-    * `color` _(optional)_
-    * `textAlign` _(optional)_
-    * `textDecoration` _(optional)_
-    * `textTransform` _(optional)_
+* `$textMap`
+    * `color`
+    * `textAlign`
+    * `textDecoration`
+    * `textDecorationColor`
+    * `textDecorationLine`
+    * `textDecorationStyle`
+    * `textIndent`
+    * `textTransform`
+    * `textShadow`
 
 
 ### typography
@@ -285,19 +399,21 @@ stripUnit($number)
 **Parameters:**
 
 * `$typographyMap`
-    * `letterSpacing` _(optional)_
-    * `lineHeight` _(optional)_
-    * `verticalAlign` _(optional)_
-    * `wordSpacing` _(optional)_
+    * `letterSpacing`
+    * `lineHeight`
+    * `verticalAlign`
+    * `wordBeak`
+    * `wordSpacing`
+    * `wordWrap`
 
 
 ## RESET
 
+The framework includes an extensive and easy to customise CSS styles reset.
+
 ## FLEX GRID
 
-## APP GRID
+A customisable responsive flexbox grid module:
 
-
-## SETTINGS
 
 ## SETTINGS

@@ -1,0 +1,48 @@
+@mixin background($backgroundMap) {
+  @if map-has-key($backgroundMap, backgroundAttachment) {
+    background-attachment: map-get($backgroundMap, backgroundAttachment);
+  }
+
+  @if map-has-key($backgroundMap, backgroundClip) {
+    background-clip: map-get($backgroundMap, backgroundClip);
+  }
+
+  @if map-has-key($backgroundMap, backgroundColor) {
+    background-color: map-get($backgroundMap, backgroundColor);
+  }
+
+  @if map-has-key($backgroundMap, backgroundGradient) {
+    background: map-get($backgroundMap, backgroundGradient);
+  }
+
+  //background images logic
+  @if map-has-key($backgroundMap, normalImage) {
+    $normal: map-get($backgroundMap, normalImage);
+
+    background-image: url($normal);
+
+    @if map-has-key($backgroundMap, retinaImage) {
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        $retina: map-get($backgroundMap, retinaImage);
+
+        background-image: url($retina);
+      }
+    }
+  }
+
+  @if map-has-key($backgroundMap, backgroundOrigin) {
+    background-origin: map-get($backgroundMap, backgroundOrigin);
+  }
+
+  @if map-has-key($backgroundMap, backgroundPosition) {
+    background-position: map-get($backgroundMap, backgroundPosition);
+  }
+
+  @if map-has-key($backgroundMap, backgroundRepeat) {
+    background-repeat: map-get($backgroundMap, backgroundRepeat);
+  }
+
+  @if map-has-key($backgroundMap, backgroundSize) {
+    background-size: map-get($backgroundMap, backgroundSize);
+  }
+}
