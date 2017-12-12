@@ -1,0 +1,8 @@
+@function zIndex($zIndexMapKey) {
+  @if map-has-key($zIndexMap, $zIndexMapKey) {
+    @return map-has-key($zIndexMap, $zIndexMapKey);
+  }
+  @else {
+    @error "The key #{$zIndexMapKey} does not exist in $zIndexMap.";
+  }
+}

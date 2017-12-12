@@ -4,6 +4,8 @@
 $htmlElementFontSize: 16px;
 $breakpoints: (w0: 0, w1: 480px, w2: 768px, w3: 992px, w4: 1200px, w5: 1440px, w6: 1680);
 
+$zIndexMap: (hide: -1, default: 0, level1: 1, level2: 2, level3: 3, level4: 4, level5: 5, dropdown: 50, fixedNavbar: 100, fixedNewsFeed: 200, fixedNotice: 300, dialogNonModal: 400, dialogModal: 500, dialogAlert: 1000, errorWindow: 2000);
+
 //--------------------------
 //STOP EDITING
 //--------------------------

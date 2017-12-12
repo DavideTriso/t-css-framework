@@ -73,7 +73,7 @@ replaceStr($string, $search, $replace)
 * `$search`: the query sting
 * `$replace`: the string which replaces the query string
 
-**Output:** the new string .
+**Output:** the new string.
 
 ### stripUnit
 
@@ -84,6 +84,21 @@ stripUnit($number)
 * `$number`: a number with unit
 
 **Output:** number without unit
+
+
+### zIndex
+
+Manage z-index across the application.
+
+```
+zIndex('zIndexMapKey')
+```
+
+**Parameters:**
+
+* `$zIndexMapKey`: a key of the map `$zIndexMap`
+
+**Output:** the value associated with the key.
 
 
 ## HELPERS
