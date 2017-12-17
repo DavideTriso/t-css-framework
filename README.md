@@ -500,6 +500,6 @@ The framework includes an extensive and easy to customize CSS reset stylesheet.
 
 ## FLEX GRID
 
-A customizable responsive flexbox grid is included in the framework: check the [https://davidetriso.github.io/t-css-framework/flex-grid.html](demo).
+A customizable responsive flexbox grid is included in the framework: check the [demo](https://davidetriso.github.io/t-css-framework/flex-grid.html).
 
 ## SETTINGS
