@@ -15,11 +15,13 @@ gulp.task('scss', function () {
       style: 'expanded'
     })
     .pipe(autoprefixer('last 5 version'))
+    .pipe(gulp.dest('dist'))
     .pipe(gulp.dest('docs'))
     .pipe(rename({
       suffix: '.min'
     }))
     .pipe(cssnano())
+    .pipe(gulp.dest('dist'))
     .pipe(gulp.dest('docs'))
     .pipe(notify({
       message: 'scss task complete'
@@ -30,4 +32,3 @@ gulp.task('scss', function () {
 gulp.task('watchScss', function () {
   gulp.watch('src/**/*.scss', ['scss']);
 });
- 
