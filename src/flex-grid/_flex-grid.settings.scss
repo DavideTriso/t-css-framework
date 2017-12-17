@@ -8,7 +8,12 @@ The default output will result in: .container_mid {[...]} .container_small {[...
 */
 
 $containerClassName: ".container" !default;
-$containerMaxWidthsMap: (mid: 1200px, small: 1000px, large: 1400px) !default;
+$containerMaxWidthsMap: (
+  mid  : 1200px,
+  small: 1000px,
+  large: 1400px
+)
+!default;
 
 //BOXED CONTAINER
 /*
@@ -46,8 +51,8 @@ $rowJustifyCenterJustifyContent: center !default;
 
 //
 $rowAlignCenterModifierName: "vcenter" !default;
-$rowAlignCenterAlignItems: center !default;
-$rowAlignCenterAlignContent: "" !default;
+$rowAlignCenterAlignItems: "" !default;
+$rowAlignCenterAlignContent: center !default;
 $rowAlignCenterFlexDirection: "" !default;
 $rowAlignCenterFlexWrap: "" !default;
 $rowAlignCenterJustifyContent: "" !default;
@@ -79,7 +84,7 @@ Explanation:
 $negativeOffsetModifierName -> is the modifier name used to generate the negative offset modifier classes.
 $negativeOffsetColumnsNumber -> is the number of modifier classes to generate for each modifier breakpoint.
 */
-$negativeOffsetModifierName: "negativeOffset" !default;
+$negativeOffsetModifierName: "negative-offset" !default;
 $negativeOffsetColumnsNumber: 24 !default;
 
 //GUTTERS
@@ -105,7 +110,7 @@ Explanation:
 $resetGutterModifierName -> is the modifier name used to generate the responsive classes to reset gutter for specific breakpoints.
 The mixin generates responsive classes bound between a max and min width, wich will reset the gutter for the specific breakpoint.
 The $guttersBreakpointsMap is used to generate the breakpoints.
-Gutter reset classes looks like .container_w0-reset-gutter, .row_w0-reset-gutter, .col_w0-reset-gutter, .container_w3-reset-gutter, .row_w3-reset-gutter, .col_w3-reset-gutter, [...]
-Because the classes are bound between a min and max width, .container_w0-reset-gutter will apply only until w3 width, so will .container_w3-reset-gutter apply only until w5 width.
+Gutter reset classes looks like .container_w0-gutter-reset, .row_w0-gutter-reset, .col_w0-gutter-reset, .container_w3-gutter, .row_w3-gutter-reset, .col_w3-gutter-reset, [...]
+Because the classes are bound between a min and max width, .container_w0-gutter-reset will apply only until w3 width, so will .container_w3-gutter-reset apply only until w5 width.
 */
-$resetGutterModifierName: "resetGutter" !default;
+$resetGutterModifierName: "gutter-reset" !default;

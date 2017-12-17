@@ -7,26 +7,26 @@
 
   @each $key, $value in $breakpointsMap {
     @if $i == 1 {
-      #{$containerClassName}#{$modifierSeparator}#{$gutterModifierName},
-      #{$columnClassName}#{$modifierSeparator}#{$gutterModifierName} {
-        padding-left: nth($guttersList, $i) / 2;
+      #{$columnClassName}#{$modifierSeparator}#{$gutterModifierName},
+      #{$containerClassName}#{$modifierSeparator}#{$gutterModifierName} {
+        padding-left : nth($guttersList, $i) / 2;
         padding-right: nth($guttersList, $i) / 2;
       }
 
       #{$rowClassName}#{$modifierSeparator}#{$gutterModifierName} {
-        margin-left: -(nth($guttersList, $i) / 2);
+        margin-left : -(nth($guttersList, $i) / 2);
         margin-right: -(nth($guttersList, $i) / 2);
       }
-    }
-    @else {
+    } @else {
       @media screen and (min-width: $value) {
-        #{$containerClassName}#{$modifierSeparator}#{$gutterModifierName}, #{$columnClassName}#{$modifierSeparator}#{$gutterModifierName} {
-          padding-left: nth($guttersList, $i) / 2;
+        #{$columnClassName}#{$modifierSeparator}#{$gutterModifierName},
+        #{$containerClassName}#{$modifierSeparator}#{$gutterModifierName} {
+          padding-left : nth($guttersList, $i) / 2;
           padding-right: nth($guttersList, $i) / 2;
         }
 
         #{$rowClassName}#{$modifierSeparator}#{$gutterModifierName} {
-          margin-left: -(nth($guttersList, $i) / 2);
+          margin-left : -(nth($guttersList, $i) / 2);
           margin-right: -(nth($guttersList, $i) / 2);
         }
       }
@@ -41,46 +41,48 @@
 // Generate modifier classes to reset grid's gutter responsively
 //-------------------------
 @mixin responsiveGutterReset($breakpointsMap, $containerClassName, $rowClassName, $columnClassName, $resetGutterModifierName) {
-  $i: 1;
+  $i   : 1;
   $keys: map-values($breakpointsMap);
-  $l: length($keys);
+  $l   : length($keys);
 
   @each $key, $value in $breakpointsMap {
     @if $i == 1 {
       @media screen and (max-width: nth($keys, $i + 1) - 1) {
-        #{$containerClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName}, #{$columnClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName} {
-          padding-left: 0;
+        #{$columnClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName},
+        #{$containerClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName} {
+          padding-left : 0;
           padding-right: 0;
         }
 
         #{$rowClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName} {
-          margin-left: 0;
+          margin-left : 0;
           margin-right: 0;
         }
       }
-    }
-    @else if $i < $l {
+    } @else 
+    if $i < $l {
       @media screen and (min-width: $value) and (max-width: nth($keys, $i + 1) - 1) {
-        #{$containerClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName}, #{$columnClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName} {
-          padding-left: 0;
+        #{$columnClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName},
+        #{$containerClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName} {
+          padding-left : 0;
           padding-right: 0;
         }
 
         #{$rowClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName} {
-          margin-left: 0;
+          margin-left : 0;
           margin-right: 0;
         }
       }
-    }
-    @else {
+    } @else {
       @media screen and (min-width: $value) {
-        #{$containerClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName}, #{$columnClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName} {
-          padding-left: 0;
+        #{$columnClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName},
+        #{$containerClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName} {
+          padding-left : 0;
           padding-right: 0;
         }
 
         #{$rowClassName}#{$modifierSeparator}#{$key}-#{$resetGutterModifierName} {
-          margin-left: 0;
+          margin-left : 0;
           margin-right: 0;
         }
       }

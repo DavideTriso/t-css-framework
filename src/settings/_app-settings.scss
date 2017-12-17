@@ -2,10 +2,69 @@
 //EDIT
 //--------------------------
 $htmlElementFontSize: 16px;
-$breakpoints: (w0: 0, w1: 480px, w2: 768px, w3: 992px, w4: 1200px, w5: 1440px, w6: 1680);
 
-$zIndexMap: (hide: -1, default: 0, level1: 1, level2: 2, level3: 3, level4: 4, level5: 5, dropdown: 50, fixedNavbar: 100, fixedNewsFeed: 200, fixedNotice: 300, dialogNonModal: 400, dialogModal: 500, dialogAlert: 1000, errorWindow: 2000);
+$breakpoints: (
+  w0: 0,
+  w1: 480px,
+  w2: 768px,
+  w3: 992px,
+  w4: 1200px,
+  w5: 1440px,
+  w6: 1680
+);
 
+$zIndexMap: (
+  hide           : -1,
+  default        : 0,
+  level1         : 10,
+  level2         : 20,
+  level3         : 30,
+  level4         : 40,
+  level5         : 50,
+  dropdown       : 60,
+  fixedNavbar    : 100,
+  fixedNewsFeed  : 200,
+  fixedNotice    : 300,
+  dialogNonModal : 400,
+  dialogModal    : 500,
+  dialogAlert    : 1000,
+  fatalErrorAlert: 2000
+);
+
+$fontSizesMap: (
+  xxxs  : 0.2rem,
+  xxs   : 0.4rem,
+  xs    : 0.6rem,
+  sm    : 0.8rem,
+  md    : 1rem,
+  lg    : 1.2rem,
+  xl    : 1.4rem,
+  xxl   : 1.6rem,
+  xxxl  : 1.8rem,
+  heroXs: 2rem,
+  heroSm: 3.5rem,
+  heroMd: 5rem,
+  heroLg: 6.5rem,
+  heroXl: 8rem
+);
+
+$sizesMap: (
+  xxxxs: 0.25rem,
+  xxxs : 0.5rem,
+  xxs  : 0.75rem,
+  xs   : 1rem,
+  sm   : 1.5rem,
+  md   : 2rem,
+  lg   : 3rem,
+  xl   : 4rem,
+  xxl  : 5rem,
+  xxxl : 6rem,
+  xxxxl: 7rem,
+  bigSm: 10rem,
+  bigMd: 14rem,
+  bigLg: 18rem,
+  bigXl: 22rem
+);
 //--------------------------
 //STOP EDITING
 //--------------------------
@@ -13,7 +72,7 @@ $zIndexMap: (hide: -1, default: 0, level1: 1, level2: 2, level3: 3, level4: 4, l
 $breakpointsRem: ();
 
 @each $key, $value in $breakpoints {
-  $valueMin: pxToRem($value, $htmlElementFontSize);
+  $valueMin      : pxToRem($value, $htmlElementFontSize);
   $breakpointsRem: map-merge($breakpointsRem, ($key: $valueMin));
 }
 
@@ -23,9 +82,8 @@ $breakpointsMax: ();
 @each $key, $value in $breakpoints {
   @if $value <= 0 {
     $breakpointsMax: map-merge($breakpointsMax, ($key: 0));
-  }
-  @else {
-    $valueMax: $value - 1;
+  } @else {
+    $valueMax      : $value - 1;
     $breakpointsMax: map-merge($breakpointsMax, ($key: $valueMax));
   }
 }
@@ -36,9 +94,8 @@ $breakpointsMaxRem: ();
 @each $key, $value in $breakpoints {
   @if $value <= 0 {
     $breakpointsMaxRem: map-merge($breakpointsMaxRem, ($key: 0));
-  }
-  @else {
-    $valueMax: pxToRem($value - 1, $htmlElementFontSize);
+  } @else {
+    $valueMax         : pxToRem($value - 1, $htmlElementFontSize);
     $breakpointsMaxRem: map-merge($breakpointsMaxRem, ($key: $valueMax));
   }
 }

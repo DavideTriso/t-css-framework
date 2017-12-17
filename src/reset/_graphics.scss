@@ -1,6 +1,6 @@
+figure,
 img,
 map,
-figure,
 picture {
   display: block;
 
@@ -14,5 +14,5 @@ canvas {
 }
 
 figcaption {
-  @include font((fontSize: 1rem, fontStyle: normal));
+  @include font((fontSize: map-get($fontSizesMap, 'md'), fontStyle: normal));
 }

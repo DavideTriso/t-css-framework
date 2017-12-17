@@ -4,7 +4,7 @@ select,
 textarea {
   @include border((borderWidth: 0, borderRadius: 0));
   @include background((backgroundColor: transparent));
-  @include font((fontFamily: inherit, fontSize: 1rem));
+  @include font((fontFamily: inherit, fontSize: map-get($fontSizesMap, 'md')));
   @include typography((lineheight: 1, verticalAlign: middle));
   @include margin((all: 0));
   @include padding((all: 0));
@@ -35,14 +35,14 @@ body:not(:-moz-handler-blocked) fieldset {
 
 label,
 legend {
-  @include font((fontSize: 1rem));
+  @include font((fontSize: map-get($fontSizesMap, 'md')));
   @include margin((all: 0));
   @include padding((all: 0));
 }
 
 legend {
   display: table;
-  float: left;
+  float  : left;
 
   @include sizes((width: 0));
 
@@ -52,7 +52,7 @@ legend {
 }
 
 output {
-  @include font((fontSize: 1rem));
+  @include font((fontSize: map-get($fontSizesMap, 'md')));
 }
 
 datalist {
@@ -65,7 +65,7 @@ keygen {
 
 select {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -moz-box-sizing: border-box;
+  -moz-appearance   : none;
+  appearance        : none;
+  -moz-box-sizing   : border-box;
 }

@@ -2,15 +2,18 @@
 
 ## ABOUT
 
-Mobile-first, customisable CSS / SASS framework that scales.
+Mobile-first, customisable CSS framework that scales.
 
 **Key features**:
 
-* Customisable and mobile-first flexbox grid
-* Functions and mixin helpers to speed up development and keep code DRY
+* Modular, easy to customise and incrementally adoptable
+* Mobile-first
+* Follows the BEM methodology
+* Built using relative units (`%` and `rem`)
+* Responsive flexbox grid
+* Functions and mixins to speed up development and keep code DRY
 * Reset stylesheet
-* Extremely lightweight
-* Adoptable for BEM projects
+
 
 ## DEPENDENCIES
 
@@ -21,6 +24,8 @@ Mobile-first, customisable CSS / SASS framework that scales.
 Following functions are included in the framework:
 
 ### clampNumber
+
+Clamp a number between two given values.
 
 ```
 clampNumber($value, $min, $max)
@@ -36,6 +41,7 @@ clampNumber($value, $min, $max)
 
 ### linearInterpolation
 
+
 ```
 linearInterpolation($map)
 ```
@@ -46,7 +52,24 @@ linearInterpolation($map)
 
 **Output:** a linear equation (CSS `calc()`function)
 
+### mapDeepGet
+
+Retrieve values from deep nested maps.
+
+```
+mapDeepGet($map, $key...)
+```
+
+**Parameters:**
+
+* `$map`: the map
+* `$key...`: a comma separated list of keys.
+
+**Output:** the value associated with the last key of the list.
+
 ### pxToRem and remToPx
+
+Convert px values to rem and vice versa.
 
 ```
 pxToRem($length, $htmlElementFontlength)
@@ -63,6 +86,8 @@ remToPx($length, $htmlElementFontlength)
 
 ### replaceString
 
+Replace part of a string.
+
 ```
 replaceStr($string, $search, $replace)
 ```
@@ -76,6 +101,8 @@ replaceStr($string, $search, $replace)
 **Output:** the new string.
 
 ### stripUnit
+
+Remove unit from a value.
 
 ```
 stripUnit($number)
@@ -107,6 +134,8 @@ Following mixin helpers  are included in the framework:
 
 ### animation
 
+Set animation properties
+
 ```
 @include animation($animationMap)
 ```
@@ -125,6 +154,8 @@ Following mixin helpers  are included in the framework:
 
 
 ### background
+
+Set background properties
 
 ```
 @include backgroundImage($backgroundMap)
@@ -147,6 +178,8 @@ Following mixin helpers  are included in the framework:
 
 ### border
 
+Set border properties
+
 ```
 @include border($borderMap)
 ```
@@ -160,6 +193,9 @@ Following mixin helpers  are included in the framework:
     * `borderWidth`
 
 ### centerAbsolute
+
+Absolutely position and element and center it in his relative positioned container.
+Mimic the behavior of background images positioned with `background-position: center;` and `background-size: cover;`.
 
 ```
 @include centerAbsolute
@@ -182,6 +218,8 @@ Following mixin helpers  are included in the framework:
 
 ### columns
 
+Set multi-column layout properties.
+
 ```
 @include columns($columnsMap)
 ```
@@ -200,6 +238,8 @@ Following mixin helpers  are included in the framework:
 
 ### ellipsis
 
+Do not wrap a text when too large for the container, instead show ellipsis.
+
 ```
 @include ellipsis
 ```
@@ -209,6 +249,8 @@ Following mixin helpers  are included in the framework:
 * No parameters
 
 ### flexPositioning
+
+Set flexbox module properties for container
 
 ```
 @flexPositioning($flexMap)
@@ -226,6 +268,8 @@ Following mixin helpers  are included in the framework:
 
 ### font
 
+Set font properties
+
 ```
 @include font($fontMap)
 ```
@@ -242,6 +286,8 @@ Following mixin helpers  are included in the framework:
 
 ### fontFace
 
+Include custom font using the `@font-face` rule
+
 ```
 @include fontFace($name, $path, $weigh, $style, $exts)
 ```
@@ -256,6 +302,8 @@ Following mixin helpers  are included in the framework:
 
 ### hardwareAcceleration
 
+Apply a 3d translation of 0, 0, 0 to an element, which, in most scenarios, will trigger GPU rendering.
+
 ```
 @include hardwareAcceleration
 ```
@@ -265,6 +313,8 @@ Following mixin helpers  are included in the framework:
 * No parameters
 
 ### list
+
+Set list properties.
 
 ```
 @include list($listMap)
@@ -278,6 +328,8 @@ Following mixin helpers  are included in the framework:
     * `listStylePosition`
 
 ### margin
+
+Set margins.
 
 ```
 @include margin($marginMap)
@@ -297,6 +349,8 @@ Following mixin helpers  are included in the framework:
 
 ### media queries
 
+Simply manage your media queries.
+
 ```
 @include mqMin($breakpointName)
 
@@ -307,11 +361,15 @@ Following mixin helpers  are included in the framework:
 
 #### mqMin and mqMax
 
+(mqMin = `@media (min-width)`; mqMax = `@media (max-width)`)
+
 **Parameters:**
 
 * `$breakpointName`: key name of the breakpoint (from breakpoints map)
 
 #### mqRange
+
+(mqRange = `@media (min-width) and (min-width)`)
 
 **Parameters:**
 
@@ -320,6 +378,8 @@ Following mixin helpers  are included in the framework:
 
 
 ### outline
+
+Apply outline and outline-offset.
 
 ```
 @include outline($outlineMap)
@@ -333,6 +393,8 @@ Following mixin helpers  are included in the framework:
 
 
 ### padding
+
+Set padding
 
 ```
 @include padding($paddingMap)
@@ -351,6 +413,8 @@ Following mixin helpers  are included in the framework:
 
 ### placeholderColor
 
+Set the color of placeholder text.
+
 ```
 @include placeholderColor ($color) {
 ```
@@ -360,6 +424,8 @@ Following mixin helpers  are included in the framework:
 * `$color`: the color for placeholder text
 
 ### sizes
+
+Size an element.
 
 ```
 @include lengths($sizesMap)
@@ -377,6 +443,8 @@ Following mixin helpers  are included in the framework:
 
 ### srOnly
 
+Position element off-screen, in order to make the content available only to screen-reader users.
+
 ```
 @include srOnly
 ```
@@ -386,6 +454,8 @@ Following mixin helpers  are included in the framework:
 * No parameters
 
 ### text
+
+Style text.
 
 ```
 @include text($textMap)
@@ -407,6 +477,8 @@ Following mixin helpers  are included in the framework:
 
 ### typography
 
+Set typographic properties like `line-height` and `letter-spacing`.
+
 ```
 @include typography($typographyMap)
 ```
@@ -424,11 +496,10 @@ Following mixin helpers  are included in the framework:
 
 ## RESET
 
-The framework includes an extensive and easy to customise CSS styles reset.
+The framework includes an extensive and easy to customize CSS reset stylesheet.
 
 ## FLEX GRID
 
-A customisable responsive flexbox grid module:
-
+A customizable responsive flexbox grid is included in the framework: check the [https://davidetriso.github.io/t-css-framework/flex-grid.html](demo).
 
 ## SETTINGS

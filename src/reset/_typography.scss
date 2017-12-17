@@ -5,7 +5,7 @@ h4,
 h5,
 h6,
 p {
-  @include font((fontSize: 1rem));
+  @include font((fontSize: map-get($fontSizesMap, 'md')));
   @include text((textAlign: left));
   @include margin((all: 0));
   @include padding((all: 0));
@@ -67,8 +67,8 @@ pre {
 }
 
 q {
-  &:before,
-  &:after {
+  &:after,
+  &:before {
     content: none;
   }
 }
