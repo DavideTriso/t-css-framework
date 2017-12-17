@@ -77,3 +77,9 @@ p {
   display: block;
   font-size: 0.8rem;
 }
+
+.back-link:hover {
+  color: #fff;
+  text-decoration: underline;
+  ;
+}
