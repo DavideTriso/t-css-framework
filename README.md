@@ -634,3 +634,10 @@ All flex-grid classes are generate by highly customisable mixins, which can be u
 
 * `$elementSeparator`: the BEM element separator symbol used to generate BEM classes (default is `__`).
 * `$modifierSeparator`: the BEM modifier separator sybol used to generate BEM classes (default is `_`).
+
+
+## LICENSE
+
+This project is licensed under the terms of the **MIT license**.
+
+See [LICENSE.md](LICENSE.md) for detailed informations.
