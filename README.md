@@ -193,8 +193,17 @@ Set border properties
 * `$borderMap`
     * `borderColor`  
     * `borderRadius`
+    * `borderBottomLeftRadius`
+    * `borderBottomRightRadius`
+    * `borderTopLeftRadius`
+    * `borderTopRightRadius`
     * `borderStyle`
     * `borderWidth`
+    * `borderBottomWidth`
+    * `borderLeftWidth`
+    * `borderRightWidth`
+    * `borderTOpWidth`
+
 
 ### centerAbsolute
 
