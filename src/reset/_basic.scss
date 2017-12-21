@@ -1,14 +1,16 @@
+@charset 'utf-8';
+
 * {
   box-sizing: border-box;
 }
 
-*:before,
-*:after {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
-html,
-body {
+body,
+html {
   @include text((color: #000));
   @include margin((all: 0));
   @include sizes((maxWidth: 100%, minWidth: 100%));

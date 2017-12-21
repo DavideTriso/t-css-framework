@@ -11,6 +11,18 @@
   @if map-has-key($borderMap, borderWidth) {
     border-width: map-get($borderMap, borderWidth);
   }
+  @if map-has-key($borderMap, borderBottomColor) {
+    border-bottom-color: map-get($borderMap, borderBottomColor);
+  }
+  @if map-has-key($borderMap, borderLeftColor) {
+    border-left-color: map-get($borderMap, borderLeftColor);
+  }
+  @if map-has-key($borderMap, borderRightColor) {
+    border-right-color: map-get($borderMap, borderRightColor);
+  }
+  @if map-has-key($borderMap, borderTopColor) {
+    border-top-color: map-get($borderMap, borderTopColor);
+  }
   @if map-has-key($borderMap, borderBottomWidth) {
     border-bottom-width: map-get($borderMap, borderBottomWidth);
   }

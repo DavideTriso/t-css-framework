@@ -16,8 +16,7 @@
     @media screen and (min-width: #{inspect(map-get($breakpoints, $breakpointName))}) {
       @content;
     }
-  }
-  @else {
+  } @else {
     @error "There is no breakpoint `#{$breakpointName}` in the breakpoints map.";
   }
 }
@@ -40,8 +39,7 @@
     @media screen and (max-width: #{inspect(map-get($breakpointsMax, $breakpointName))}) {
       @content;
     }
-  }
-  @else {
+  } @else {
     @error "There is no breakpoint `#{$breakpointName}` in the breakpoints map.";
   }
 }
@@ -64,8 +62,7 @@
     @media screen and (min-width: #{inspect(map-get($breakpoints, $breakpointMinName))}) and (max-width: #{inspect(map-get($breakpointsMax, $breakpointMaxName))}) {
       @content;
     }
-  }
-  @else {
+  } @else {
     @error "One or both of the breakpoints `#{$breakpointMinName}`,`#{$breakpointMaxName}` could not be found in the breakpoints map.";
   }
 }
