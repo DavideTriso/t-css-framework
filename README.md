@@ -191,7 +191,11 @@ Set border properties
 **Parameters:**
 
 * `$borderMap`
-    * `borderColor`  
+    * `borderColor`
+    * `borderBottomColor`  
+    * `borderLeftColor`  
+    * `borderRightColor`  
+    * `borderTopColor`
     * `borderRadius`
     * `borderBottomLeftRadius`
     * `borderBottomRightRadius`
