@@ -13,6 +13,32 @@ Mobile-first, customisable CSS framework that scales.
 * Responsive flexbox grid
 * Functions and mixins to speed up development and keep code DRY
 * Reset stylesheet
+* **Lot of ready-to-use compatible BEM components (check list at the end of this document)**
+
+
+## TABLE OF CONTENT
+
+1. [Compatible components](#compatible-components)
+1. [Dependencies](#dependencies)
+1. [Functions](#functions)
+1. [Helpers](#helpers)
+1. [Reset](#reset)
+1. [Flex grid](#flex-grid)
+1. [Settings](#settings)
+1. [License](#license)
+
+
+## COMPATIBLE COMPONENTS
+
+* [Accordion widget - aria-accordion](https://github.com/DavideTriso/aria-accordion)
+* [Tab widget - aria-tabs](https://github.com/DavideTriso/aria-tabs)
+* [Dropdown - aria-dropdown](https://github.com/DavideTriso/aria-dropdown)
+* [Dialog window - aria-dialog](https://github.com/DavideTriso/aria-dialog)
+* [Tooltip widget - aria-tooltip](https://github.com/DavideTriso/aria-tooltip)
+* [Notification widget - aria-notifications](https://github.com/DavideTriso/aria-notifications)
+* [Badge widget - aria-badge](https://github.com/DavideTriso/aria-badge)
+* [Progress bar - aria-progressbar](https://github.com/DavideTriso/aria-progressbar)
+* [Form fields - form-controls (under development)](https://github.com/DavideTriso/form-controls)
 
 
 ## DEPENDENCIES

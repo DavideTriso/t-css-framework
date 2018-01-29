@@ -1,6 +1,6 @@
 @mixin font($fontMap) {
   @if map-has-key($fontMap, fontFamily) {
-    font-family: map-get($fontMap, fontFamily);
+    font-family: unquote(map-get($fontMap, fontFamily));
   }
 
   @if map-has-key($fontMap, fontSize) {
