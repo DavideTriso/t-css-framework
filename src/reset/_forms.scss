@@ -25,7 +25,13 @@ input[type=search] {
 input[type=date],
 input[type=datetime-local],
 input[type=month],
-input[type=time] {
+input[type=time],
+input[type=week] {
+  -webkit-appearance: none;
+  -moz-appearance   : none;
+  appearance        : none;
+  @include sizes((minHeight: map-get($fontSizesMap, md)));
+
   &::-webkit-clear-button {
     display: none;
   }
