@@ -4,8 +4,8 @@ select,
 textarea {
   @include border((borderWidth: 0, borderRadius: 0));
   @include background((backgroundColor: transparent));
-  @include font((fontFamily: inherit, fontSize: map-get($fontSizesMap, 'md')));
-  @include typography((lineheight: 1, verticalAlign: middle));
+  @include font((fontFamily: inherit, fontSize: map-get($fontSizesMap, md)));
+  @include typography((lineHeight: 1, verticalAlign: middle));
   @include margin((all: 0));
   @include padding((all: 0));
 
@@ -20,6 +20,31 @@ input[type=search] {
 
 ::-webkit-search-decoration {
   display: none;
+}
+
+input[type=date],
+input[type=datetime-local],
+input[type=month],
+input[type=time] {
+  &::-webkit-clear-button {
+    display: none;
+  }
+
+  &::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    //display: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      //
+    }
+  }
 }
 
 fieldset {
@@ -68,4 +93,9 @@ select {
   -moz-appearance   : none;
   appearance        : none;
   -moz-box-sizing   : border-box;
+  @include typography((lineHeight: 1.15));
+}
+
+textarea {
+  overflow: auto;
 }
