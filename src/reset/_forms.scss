@@ -5,7 +5,7 @@ textarea {
   @include border((borderWidth: 0, borderRadius: 0));
   @include background((backgroundColor: transparent));
   @include font((fontFamily: inherit, fontSize: map-get($fontSizesMap, md)));
-  @include typography((lineHeight: 1, verticalAlign: middle));
+  @include typography((lineHeight: 1.15, verticalAlign: middle));
   @include margin((all: 0));
   @include padding((all: 0));
 
