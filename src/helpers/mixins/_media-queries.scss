@@ -72,6 +72,6 @@
     @media screen and (min-width: $breakpointMinName) and (max-width: $breakpointMaxName) {
       @content;
     }
-    @warn "There is no breakpoint `#{$breakpointName}` in the breakpoints map, so I assume you are passing a custom lenght instead.";
+    @warn "There is no breakpoint `#{$breakpointMinName}` or `#{$breakpointMaxName}` in the breakpoints map, so I assume you are passing a custom lenght instead.";
   }
 }
