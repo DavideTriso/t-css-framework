@@ -65,6 +65,22 @@ clampNumber($value, $min, $max)
 
 **Output:** clamped length
 
+### color
+
+Manage colors across the application.
+
+```
+color('colorMapKey')
+```
+
+**Parameters:**
+
+* `$colorMapKey`: a key of the map `$colors`
+
+**Output:** the value associated with the key.
+
+Read about `$colors` map in the "SETTINGS" section of this README.
+
 ### linearInterpolation
 
 
@@ -153,7 +169,7 @@ zIndex('zIndexMapKey')
 
 **Output:** the value associated with the key.
 
-Read about `$zIndexMapKey` in the "SETTINGS" section of this README.
+Read about `$zIndexMap` in the "SETTINGS" section of this README.
 
 ## HELPERS
 
@@ -393,7 +409,7 @@ Set margins.
 
 ### media queries
 
-Simply manage your media queries.
+Manage your media queries.
 
 ```
 @include mqMin($breakpointName)
@@ -409,7 +425,7 @@ Simply manage your media queries.
 
 **Parameters:**
 
-* `$breakpointName`: key name of the breakpoint (from breakpoints map)
+* `$breakpointName`: key name of the breakpoint from breakpoints map - or a px length
 
 #### mqRange
 
@@ -417,8 +433,8 @@ Simply manage your media queries.
 
 **Parameters:**
 
-* `$breakpointMinName`: key name of the min breakpoint (from breakpoints map)
-* `$breakpointMaxName`: key name of the max breakpoint (from breakpoints map)
+* `$breakpointMinName`: key name of the min breakpoint from breakpoints map - or a px length
+* `$breakpointMaxName`: key name of the max breakpoint from breakpoints map - or a px length
 
 
 ### outline
@@ -664,6 +680,7 @@ All flex-grid classes are generate by highly customisable mixins, which can be u
 * `$zIndexMap`: a map of `z-index` values, which can be used in combination with the `zIndex` function to manage `z-index` across the whole web application.
 * `$fontSizesMap`: a map where the most used `font-sizes` across the application can be stored.
 * `$sizesMap`: a map where the most used lengths across the application can be stored
+* `$colors`: a map where the most used colors can be stored (by default only black and white are available in the map)
 * `$breakpointsRem`: an automatically generated map of the breakpoints converted in rem.
 * `$breakpointsMax`: an automatically generated map of breakpoints to use in `(max-width:[...])` media queries. Each breakpoint from  `$breakpoints` is added one px.
 * `$breakpointsMaxRem`: same as `$breakpointsRem`, but for the `$breakpointsMax` map.

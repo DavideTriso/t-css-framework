@@ -1,33 +1,58 @@
 @mixin animation($animationMap) {
   @if map-has-key($animationMap, animationDelay) {
     animation-delay: map-get($animationMap, animationDelay);
+  } @else 
+  if map-has-key($animationMap, animation-delay) {
+    animation-delay: map-get($animationMap, animation-delay);
   }
 
   @if map-has-key($animationMap, animationDirection) {
     animation-direction: map-get($animationMap, animationDirection);
+  } @else 
+  if map-has-key($animationMap, animation-direction) {
+    animation-direction: map-get($animationMap, animation-direction);
   }
 
   @if map-has-key($animationMap, animationDuration) {
     animation-duration: map-get($animationMap, animationDuration);
+  } @else 
+  if map-has-key($animationMap, animation-duration) {
+    animation-duration: map-get($animationMap, animation-duration);
   }
 
   @if map-has-key($animationMap, animationFillMode) {
     animation-fill-mode: map-get($animationMap, animationFillMode);
+  } @else 
+  if map-has-key($animationMap, animation-fill-mode) {
+    animation-fill-mode: map-get($animationMap, animation-fill-mode);
   }
 
   @if map-has-key($animationMap, animationIterationCount) {
     animation-iteration-count: map-get($animationMap, animationIterationCount);
+  } @else 
+  if map-has-key($animationMap, animation-iteration-count) {
+    animation-iteration-count: map-get($animationMap, animation-iteration-count);
   }
 
   @if map-has-key($animationMap, animationName) {
     animation-name: map-get($animationMap, animationName);
+  } @else 
+  if map-has-key($animationMap, animation-name) {
+    animation-name: map-get($animationMap, animation-name);
   }
 
   @if map-has-key($animationMap, animationPlayState) {
     animation-play-state: map-get($animationMap, animationPlayState);
+  } @else 
+  if map-has-key($animationMap, animation-play-state) {
+    animation-play-state: map-get($animationMap, animation-play-state);
   }
 
   @if map-has-key($animationMap, animationTimingFunction) {
     animation-timing-function: map-get($animationMap, animationTimingFunction);
+  } @else 
+  if map-has-key($animationMap, animation-timing-function) {
+    animation-timing-function: map-get($animationMap, animation-timing-function);
   }
+
 }
