@@ -79,10 +79,44 @@ color('colorMapKey')
 
 **Output:** the value associated with the key.
 
-Read about `$colors` map in the "SETTINGS" section of this README.
+Read about `$colorsMap` map in the "SETTINGS" section of this README.
+
+
+### easing
+
+Use predefined easing functions consistently across the application
+
+```
+easing('easingMapKey')
+```
+
+**Parameters:**
+
+* `$easingMapKey`: a key of the map `$easingMap`
+
+**Output:** the value associated with the key.
+
+Read about `$easingMap` map in the "SETTINGS" section of this README.
+
+
+### fontSize
+
+Use predefined font-sizes consistently across the application
+
+```
+fontSize('fontSizeMapKey')
+```
+
+**Parameters:**
+
+* `$fontSizeMapKey`: a key of the map `$fontSizeMap`
+
+**Output:** the value associated with the key.
+
+Read about `$fontSizeMap` map in the "SETTINGS" section of this README.
+
 
 ### linearInterpolation
-
 
 ```
 linearInterpolation($map)
@@ -141,6 +175,22 @@ replaceStr($string, $search, $replace)
 * `$replace`: the string which replaces the query string
 
 **Output:** the new string.
+
+### fontSize
+
+Use predefined sizes consistently across the application
+
+```
+size('sizeMapKey')
+```
+
+**Parameters:**
+
+* `$sizeMapKey`: a key of the map `$sizeMap`
+
+**Output:** the value associated with the key.
+
+Read about `$sizeMap` map in the "SETTINGS" section of this README.
 
 ### stripUnit
 
@@ -675,17 +725,16 @@ All flex-grid classes are generate by highly customisable mixins, which can be u
 
 
 ### App settings
-
 * `$breakpoints`: a sass map representing the available breakpoints across the whole framework.
-* `$zIndexMap`: a map of `z-index` values, which can be used in combination with the `zIndex` function to manage `z-index` across the whole web application.
-* `$fontSizesMap`: a map where the most used `font-sizes` across the application can be stored.
-* `$sizesMap`: a map where the most used lengths across the application can be stored
-* `$colors`: a map where the most used colors can be stored (by default only black and white are available in the map)
 * `$breakpointsRem`: an automatically generated map of the breakpoints converted in rem.
 * `$breakpointsMax`: an automatically generated map of breakpoints to use in `(max-width:[...])` media queries. Each breakpoint from  `$breakpoints` is added one px.
 * `$breakpointsMaxRem`: same as `$breakpointsRem`, but for the `$breakpointsMax` map.
+* `$colorsMap`: a map where the most used colors can be stored. Use the function `color` to get a value from the map.
+* `$fontSizesMap`: a map where the most used `font-sizes` across the application can be stored. Use the function `fontSize` to get a value from the map.
+* `$sizesMap`: a map where the most used lengths across the application can be stored. Use the function `size` to get a value from the map.
+* `$zIndexMap`: a sass map of `z-index` values, which can be used in combination with the `zIndex` function to manage `z-index` across the whole web application.
 
-
+ 
 ## BEM setting
 
 * `$elementSeparator`: the BEM element separator symbol used to generate BEM classes (default is `__`).

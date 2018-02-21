@@ -1,33 +1,57 @@
 @mixin columns($columnsMap) {
   @if map-has-key($columnsMap, columnCount) {
     column-count: map-get($columnsMap, columnCount);
+  } @else 
+  if map-has-key($columnsMap, column-count) {
+    column-count: map-get($columnsMap, column-count);
   }
 
   @if map-has-key($columnsMap, columnFill) {
     column-fill: map-get($columnsMap, columnFill);
+  } @else 
+  if map-has-key($columnsMap, column-fill) {
+    column-fill: map-get($columnsMap, column-fill);
   }
 
   @if map-has-key($columnsMap, columnGap) {
     column-gap: map-get($columnsMap, columnGap);
+  } @else 
+  if map-has-key($columnsMap, column-gap) {
+    column-gap: map-get($columnsMap, column-gap);
   }
 
   @if map-has-key($columnsMap, columnRule) {
     column-rule: map-get($columnsMap, columnRule);
+  } @else 
+  if map-has-key($columnsMap, column-rule) {
+    column-rule: map-get($columnsMap, column-rule);
   }
 
   @if map-has-key($columnsMap, columnRuleColor) {
     column-rule-color: map-get($columnsMap, columnRuleColor);
+  } @else 
+  if map-has-key($columnsMap, column-rule-color) {
+    column-rule-color: map-get($columnsMap, column-rule-color);
   }
 
   @if map-has-key($columnsMap, columnRuleStyle) {
     column-rule-style: map-get($columnsMap, columnRuleStyle);
+  } @else 
+  if map-has-key($columnsMap, column-rule-style) {
+    column-rule-style: map-get($columnsMap, column-rule-style);
   }
 
   @if map-has-key($columnsMap, columnRuleWidth) {
     column-rule-width: map-get($columnsMap, columnRuleWidth);
+  } @else 
+  if map-has-key($columnsMap, column-rule-width) {
+    column-rule-width: map-get($columnsMap, column-rule-width);
   }
 
   @if map-has-key($columnsMap, columnWidth) {
     column-width: map-get($columnsMap, columnWidth);
+  } @else 
+  if map-has-key($columnsMap, column-width) {
+    column-width: map-get($columnsMap, column-width);
   }
 }

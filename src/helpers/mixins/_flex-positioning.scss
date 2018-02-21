@@ -1,21 +1,36 @@
 @mixin flexPositioning($flexPositioningMap) {
   @if map-has-key($flexPositioningMap, alignItems) {
     align-items: map-get($flexPositioningMap, alignItems);
+  } @else 
+  if map-has-key($flexPositioningMap, align-items) {
+    align-items: map-get($flexPositioningMap, align-items);
   }
 
   @if map-has-key($flexPositioningMap, alignContent) {
     align-content: map-get($flexPositioningMap, alignContent);
+  } @else 
+  if map-has-key($flexPositioningMap, align-content) {
+    align-content: map-get($flexPositioningMap, align-content);
   }
 
   @if map-has-key($flexPositioningMap, flexDirection) {
     flex-direction: map-get($flexPositioningMap, flexDirection);
+  } @else 
+  if map-has-key($flexPositioningMap, flex-direction) {
+    flex-direction: map-get($flexPositioningMap, flex-direction);
   }
 
   @if map-has-key($flexPositioningMap, flexWrap) {
     flex-wrap: map-get($flexPositioningMap, flexWrap);
+  } @else 
+  if map-has-key($flexPositioningMap, flex-wrap) {
+    flex-wrap: map-get($flexPositioningMap, flex-wrap);
   }
 
   @if map-has-key($flexPositioningMap, justifyContent) {
     justify-content: map-get($flexPositioningMap, justifyContent);
+  } @else 
+  if map-has-key($flexPositioningMap, justify-content) {
+    justify-content: map-get($flexPositioningMap, justify-content);
   }
 }

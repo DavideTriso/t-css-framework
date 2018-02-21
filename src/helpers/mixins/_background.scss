@@ -1,29 +1,54 @@
 @mixin background($backgroundMap) {
   @if map-has-key($backgroundMap, backgroundAttachment) {
     background-attachment: map-get($backgroundMap, backgroundAttachment);
+  } @else 
+  if map-has-key($backgroundMap, background-attachment) {
+    background-attachment: map-get($backgroundMap, background-attachment);
   }
 
   @if map-has-key($backgroundMap, backgroundClip) {
     background-clip: map-get($backgroundMap, backgroundClip);
+  } @else 
+  if map-has-key($backgroundMap, background-clip) {
+    background-clip: map-get($backgroundMap, background-clip);
   }
 
   @if map-has-key($backgroundMap, backgroundColor) {
     background-color: map-get($backgroundMap, backgroundColor);
+  } @else 
+  if map-has-key($backgroundMap, background-color) {
+    background-color: map-get($backgroundMap, background-color);
   }
 
   @if map-has-key($backgroundMap, backgroundGradient) {
     background: map-get($backgroundMap, backgroundGradient);
+  } @else 
+  if map-has-key($backgroundMap, background-gradient) {
+    background: map-get($backgroundMap, background-gradient);
   }
 
   //background images logic
   @if map-has-key($backgroundMap, normalImage) {
-    $normal: map-get($backgroundMap, normalImage);
+    $normal         : map-get($backgroundMap, normalImage);
 
     background-image: url($normal);
 
     @if map-has-key($backgroundMap, retinaImage) {
       @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        $retina: map-get($backgroundMap, retinaImage);
+        $retina         : map-get($backgroundMap, retinaImage);
+
+        background-image: url($retina);
+      }
+    }
+  } @else 
+  if map-has-key($backgroundMap, normal-image) {
+    $normal         : map-get($backgroundMap, normal-mage);
+
+    background-image: url($normal);
+
+    @if map-has-key($backgroundMap, retina-image) {
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        $retina         : map-get($backgroundMap, retina-image);
 
         background-image: url($retina);
       }
@@ -32,17 +57,29 @@
 
   @if map-has-key($backgroundMap, backgroundOrigin) {
     background-origin: map-get($backgroundMap, backgroundOrigin);
+  } @else 
+  if map-has-key($backgroundMap, background-origin) {
+    background-origin: map-get($backgroundMap, background-origin);
   }
 
   @if map-has-key($backgroundMap, backgroundPosition) {
     background-position: map-get($backgroundMap, backgroundPosition);
+  } @else 
+  if map-has-key($backgroundMap, background-position) {
+    background-position: map-get($backgroundMap, background-position);
   }
 
   @if map-has-key($backgroundMap, backgroundRepeat) {
     background-repeat: map-get($backgroundMap, backgroundRepeat);
+  } @else 
+  if map-has-key($backgroundMap, background-repeat) {
+    background-repeat: map-get($backgroundMap, background-repeat);
   }
 
   @if map-has-key($backgroundMap, backgroundSize) {
     background-size: map-get($backgroundMap, backgroundSize);
+  } @else 
+  if map-has-key($backgroundMap, background-size) {
+    background-size: map-get($backgroundMap, background-size);
   }
 }

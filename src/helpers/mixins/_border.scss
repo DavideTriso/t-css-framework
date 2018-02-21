@@ -5,87 +5,105 @@
   if map-has-key($borderMap, border-color) {
     border-color: map-get($borderMap, border-color);
   }
+
   @if map-has-key($borderMap, borderRadius) {
     border-radius: map-get($borderMap, borderRadius);
   } @else 
   if map-has-key($borderMap, border-radius) {
     border-radius: map-get($borderMap, border-radius);
   }
+
   @if map-has-key($borderMap, borderStyle) {
     border-style: map-get($borderMap, borderStyle);
   } @else 
   if map-has-key($borderMap, border-style) {
     border-style: map-get($borderMap, border-style);
   }
+
   @if map-has-key($borderMap, borderWidth) {
     border-width: map-get($borderMap, borderWidth);
   } @else 
   if map-has-key($borderMap, border-width) {
     border-width: map-get($borderMap, border-width);
   }
+
   @if map-has-key($borderMap, borderBottomColor) {
     border-bottom-color: map-get($borderMap, borderBottomColor);
   } @else 
   if map-has-key($borderMap, border-bottom-color) {
     border-bottom-color: map-get($borderMap, border-bottom-color);
   }
+
   @if map-has-key($borderMap, borderLeftColor) {
     border-left-color: map-get($borderMap, borderLeftColor);
   } @else 
   if map-has-key($borderMap, border-left-color) {
     border-left-color: map-get($borderMap, border-left-color);
   }
+
   @if map-has-key($borderMap, borderRightColor) {
     border-right-color: map-get($borderMap, borderRightColor);
   } @else 
   if map-has-key($borderMap, border-right-color) {
     border-right-color: map-get($borderMap, border-right-color);
   }
+
   @if map-has-key($borderMap, borderTopColor) {
     border-top-color: map-get($borderMap, borderTopColor);
   } @else 
   if map-has-key($borderMap, border-top-color) {
     border-top-color: map-get($borderMap, border-top-color);
   }
+
   @if map-has-key($borderMap, borderBottomWidth) {
     border-bottom-width: map-get($borderMap, borderBottomWidth);
   } @else 
   if map-has-key($borderMap, border-bottom-width) {
     border-bottom-width: map-get($borderMap, border-bottom-width);
   }
+
   @if map-has-key($borderMap, borderLeftWidth) {
     border-left-width: map-get($borderMap, borderLeftWidth);
   } @else 
   if map-has-key($borderMap, border-left-width) {
     border-left-width: map-get($borderMap, border-left-width);
   }
+
   @if map-has-key($borderMap, borderRightWidth) {
     border-right-width: map-get($borderMap, borderRightWidth);
   } @else 
   if map-has-key($borderMap, border-right-width) {
     border-right-width: map-get($borderMap, border-right-width);
   }
+
   @if map-has-key($borderMap, borderTopWidth) {
     border-top-width: map-get($borderMap, borderTopWidth);
   } @else 
   if map-has-key($borderMap, border-top-width) {
     border-top-width: map-get($borderMap, border-top-width);
   }
+
   @if map-has-key($borderMap, borderBottomLeftRadius) {
     border-bottom-left-radius: map-get($borderMap, borderBottomLeftRadius);
   } @else 
   if map-has-key($borderMap, border-bottom-left-radius) {
     border-bottom-left-radius: map-get($borderMap, border-bottom-left-radius);
   }
+
   @if map-has-key($borderMap, borderBottomRightRadius) {
     border-bottom-right-radius: map-get($borderMap, borderBottomRightRadius);
   } @else 
   if map-has-key($borderMap, border-bottom-right-radius) {
     border-bottom-right-radius: map-get($borderMap, border-bottom-right-radius);
+  }
+
+  @if map-has-key($borderMap, borderTopLeftRadius) {
+    border-top-left-radius: map-get($borderMap, borderTopLeftRadius);
   } @else 
-  if map-has-key($borderMap, borderTopLeftRadius) {
+  if map-has-key($borderMap, border-top-left-radius) {
     border-top-left-radius: map-get($borderMap, border-top-left-radius);
   }
+
   @if map-has-key($borderMap, borderTopRightRadius) {
     border-top-right-radius: map-get($borderMap, borderTopRightRadius);
   } @else 

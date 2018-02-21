@@ -14,69 +14,6 @@ $breakpoints: (
 )
 !default;
 
-$zIndexMap: (
-  hide           : -1,
-  default        : 0,
-  level1         : 10,
-  level2         : 20,
-  level3         : 30,
-  level4         : 40,
-  level5         : 50,
-  dropdown       : 60,
-  alert          : 70,
-  fixedNavbar    : 100,
-  fixedNewsFeed  : 200,
-  fixedNotice    : 300,
-  dialogNonModal : 400,
-  dialogModal    : 500,
-  dialogAlert    : 1000,
-  fatalErrorAlert: 2000
-)
-!default;
-
-$fontSizesMap: (
-  xxxs  : 0.2rem,
-  xxs   : 0.4rem,
-  xs    : 0.6rem,
-  sm    : 0.8rem,
-  md    : 1rem,
-  lg    : 1.2rem,
-  xl    : 1.4rem,
-  xxl   : 1.6rem,
-  xxxl  : 1.8rem,
-  heroXs: 2rem,
-  heroSm: 3.5rem,
-  heroMd: 5rem,
-  heroLg: 6.5rem,
-  heroXl: 8rem
-)
-!default;
-
-$sizesMap: (
-  xxxxs: 0.25rem,
-  xxxs : 0.5rem,
-  xxs  : 0.75rem,
-  xs   : 1rem,
-  sm   : 1.5rem,
-  md   : 2rem,
-  lg   : 3rem,
-  xl   : 4rem,
-  xxl  : 5rem,
-  xxxl : 6rem,
-  xxxxl: 7rem,
-  bigSm: 10rem,
-  bigMd: 14rem,
-  bigLg: 18rem,
-  bigXl: 22rem
-)
-!default;
-
-$colors: (
-  black: #000,
-  white: #fff
-)
-!default;
-
 //--------------------------
 //STOP EDITING
 //--------------------------
