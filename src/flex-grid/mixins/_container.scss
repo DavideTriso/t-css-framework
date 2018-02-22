@@ -3,10 +3,10 @@
 //-------------------------
 @mixin generateContainer($containerClassName) {
   #{$containerClassName} {
-    display: block;
-    margin-left: auto;
+    display     : block;
+    margin-left : auto;
     margin-right: auto;
-    width: 100;
+    width       : 100%;
   }
 }
 
@@ -20,9 +20,9 @@
 
 @mixin generateBoxedContainer($breakpointsMap, $subtractList, $containerClassName, $boxedContainerModifierName) {
   #{$containerClassName}#{$modifierSeparator}#{$boxedContainerModifierName} {
-    margin-left: auto;
+    margin-left : auto;
     margin-right: auto;
-    width: 100;
+    width       : 100%;
   }
 
   @if $subtractList != skip {
