@@ -5,33 +5,57 @@
 
   @if map-has-key($textMap, textAlign) {
     text-align: map-get($textMap, textAlign);
+  } @else 
+  if map-has-key($textMap, text-align) {
+    text-align: map-get($textMap, text-align);
   }
 
   @if map-has-key($textMap, textDecoration) {
     text-decoration: map-get($textMap, textDecoration);
+  } @else 
+  if map-has-key($textMap, text-decoration) {
+    text-decoration: map-get($textMap, text-decoration);
   }
 
   @if map-has-key($textMap, textDecorationColor) {
     text-decoration-color: map-get($textMap, textDecorationColor);
+  } @else 
+  if map-has-key($textMap, text-decoration-color) {
+    text-decoration-color: map-get($textMap, text-decoration-color);
   }
 
   @if map-has-key($textMap, textDecorationLine) {
     text-decoration-line: map-get($textMap, textDecorationLine);
+  } @else 
+  if map-has-key($textMap, text-decoration-line) {
+    text-decoration-line: map-get($textMap, text-decoration-line);
   }
 
   @if map-has-key($textMap, textDecorationStyle) {
     text-decoration-style: map-get($textMap, textDecorationStyle);
+  } @else 
+  if map-has-key($textMap, text-decoration-style) {
+    text-decoration-style: map-get($textMap, text-decoration-style);
   }
 
   @if map-has-key($textMap, textIndent) {
     text-indent: map-get($textMap, textIndent);
+  } @else 
+  if map-has-key($textMap, text-indent) {
+    text-indent: map-get($textMap, text-indent);
   }
 
   @if map-has-key($textMap, textTransform) {
     text-transform: map-get($textMap, textTransform);
+  } @else 
+  if map-has-key($textMap, text-transform) {
+    text-transform: map-get($textMap, text-transform);
   }
 
   @if map-has-key($textMap, textShadow) {
     text-shadow: map-get($textMap, textShadow);
+  } @else 
+  if map-has-key($textMap, text-shadow) {
+    text-shadow: map-get($textMap, text-shadow);
   }
 }

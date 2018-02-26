@@ -3,7 +3,6 @@ img,
 map,
 picture {
   display: block;
-
   @include margin((all: 0));
   @include padding((all: 0));
   @include sizes((height: auto, width: 100%));

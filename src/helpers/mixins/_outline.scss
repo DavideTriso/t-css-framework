@@ -5,5 +5,8 @@
 
   @if map-has-key($outlineMap, outlineOffset) {
     outline-offset: map-get($outlineMap, outlineOffset);
+  } @else 
+  if map-has-key($outlineMap, outline-offset) {
+    outline-offset: map-get($outlineMap, outline-offset);
   }
 }

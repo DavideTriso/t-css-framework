@@ -725,16 +725,16 @@ All flex-grid classes are generate by highly customisable mixins, which can be u
 
 
 ### App settings
-* `$breakpoints`: a sass map representing the available breakpoints across the whole framework.
-* `$breakpointsRem`: an automatically generated map of the breakpoints converted in rem.
-* `$breakpointsMax`: an automatically generated map of breakpoints to use in `(max-width:[...])` media queries. Each breakpoint from  `$breakpoints` is added one px.
-* `$breakpointsMaxRem`: same as `$breakpointsRem`, but for the `$breakpointsMax` map.
-* `$colorsMap`: a map where the most used colors can be stored. Use the function `color` to get a value from the map.
-* `$fontSizesMap`: a map where the most used `font-sizes` across the application can be stored. Use the function `fontSize` to get a value from the map.
-* `$sizesMap`: a map where the most used lengths across the application can be stored. Use the function `size` to get a value from the map.
-* `$zIndexMap`: a sass map of `z-index` values, which can be used in combination with the `zIndex` function to manage `z-index` across the whole web application.
+* `$breakpoints`: a sass map representing the available breakpoints across the whole framework. (file: settings/breakpoints.scss)
+* `$breakpointsRem`: an automatically generated map of the breakpoints converted in rem. (file: settings/breakpoints.scss)
+* `$breakpointsMax`: an automatically generated map of breakpoints to use in `(max-width:[...])` media queries. Each breakpoint from  `$breakpoints` is added one px. (file: settings/breakpoints.scss)
+* `$breakpointsMaxRem`: same as `$breakpointsRem`, but for the `$breakpointsMax` map. (file: settings/breakpoints.scss)
+* `$colorsMap`: a map where the most used colors can be stored. Use the function `color` to get a value from the map. (file: settings/colors.scss)
+* `$fontSizesMap`: a map where the most used `font-sizes` across the application can be stored. Use the function `fontSize` to get a value from the map. (file: settings/font-sizes.scss)
+* `$sizesMap`: a map where the most used lengths across the application can be stored. Use the function `size` to get a value from the map. (file: settings/sizes.scss)
+* `$zIndexMap`: a sass map of `z-index` values, which can be used in combination with the `zIndex` function to manage `z-index` across the whole web application. (file: settings/z-index.scss)
 
- 
+
 ## BEM setting
 
 * `$elementSeparator`: the BEM element separator symbol used to generate BEM classes (default is `__`).

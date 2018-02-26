@@ -116,6 +116,11 @@ select {
   @include typography((lineHeight: 1.15));
 }
 
+//remove select arrow in IE 11, 10
+select::-ms-expand {
+    display: none;
+}
+
 textarea {
   overflow: auto;
 }

@@ -5,18 +5,30 @@
 
   @if map-has-key($sizesMap, maxHeight) {
     max-height: map-get($sizesMap, maxHeight);
+  } @else 
+  if map-has-key($sizesMap, max-height) {
+    max-height: map-get($sizesMap, max-height);
   }
 
   @if map-has-key($sizesMap, maxWidth) {
     max-width: map-get($sizesMap, maxWidth);
+  } @else 
+  if map-has-key($sizesMap, max-width) {
+    max-width: map-get($sizesMap, max-width);
   }
 
   @if map-has-key($sizesMap, minHeight) {
     min-height: map-get($sizesMap, minHeight);
+  } @else 
+  if map-has-key($sizesMap, min-height) {
+    min-height: map-get($sizesMap, min-height);
   }
 
   @if map-has-key($sizesMap, minWidth) {
     min-width: map-get($sizesMap, minWidth);
+  } @else 
+  if map-has-key($sizesMap, min-width) {
+    min-width: map-get($sizesMap, min-width);
   }
 
   @if map-has-key($sizesMap, width) {

@@ -1,21 +1,36 @@
 @mixin font($fontMap) {
   @if map-has-key($fontMap, fontFamily) {
     font-family: unquote(map-get($fontMap, fontFamily));
+  } @else 
+  if map-has-key($fontMap, font-family) {
+    font-family: unquote(map-get($fontMap, font-family));
   }
 
   @if map-has-key($fontMap, fontSize) {
     font-size: map-get($fontMap, fontSize);
+  } @else 
+  if map-has-key($fontMap, font-size) {
+    font-size: map-get($fontMap, font-size);
   }
 
   @if map-has-key($fontMap, fontStyle) {
     font-style: map-get($fontMap, fontStyle);
+  } @else 
+  if map-has-key($fontMap, font-style) {
+    font-style: map-get($fontMap, font-style);
   }
 
   @if map-has-key($fontMap, fontVariant) {
     font-variant: map-get($fontMap, fontVariant);
+  } @else 
+  if map-has-key($fontMap, font-variant) {
+    font-variant: map-get($fontMap, font-variant);
   }
 
   @if map-has-key($fontMap, fontWeight) {
     font-weight: map-get($fontMap, fontWeight);
+  } @else 
+  if map-has-key($fontMap, font-weight) {
+    font-weight: map-get($fontMap, font-weight);
   }
 }
