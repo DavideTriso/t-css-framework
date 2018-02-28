@@ -1,22 +1,22 @@
 @mixin list($listMap) {
   @if map-has-key($listMap, listStyleImage) {
     list-style-image: map-get($listMap, listStyleImage);
-  } @else 
+  } @else
   if map-has-key($listMap, list-style-image) {
     list-style-image: map-get($listMap, listStyleImage);
   }
 
   @if map-has-key($listMap, listStylePosition) {
     list-style-position: map-get($listMap, listStylePosition);
-  } @else 
+  } @else
   if map-has-key($listMap, list-style-position) {
-    list-style-position: map-get($listMap, listStylePosition);
+    list-style-position: map-get($listMap, list-style-position);
   }
 
   @if map-has-key($listMap, listStyleType) {
     list-style-type: map-get($listMap, listStyleType);
-  } @else 
-  if map-has-key($listMap, list-style-type: styleType) {
+  } @else
+  if map-has-key($listMap, list-style-type) {
     list-style-type: map-get($listMap, list-style-type);
   }
 }
