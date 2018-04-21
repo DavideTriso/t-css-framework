@@ -13,7 +13,7 @@ Mobile-first, customisable CSS framework that scales.
 * Responsive flexbox grid
 * Functions and mixins to speed up development and keep code DRY
 * Reset stylesheet
-* **Lot of ready-to-use compatible BEM components (check list at the end of this document)**
+* **Many ready-to-use compatible BEM components**
 
 
 ## TABLE OF CONTENT
@@ -38,7 +38,7 @@ Mobile-first, customisable CSS framework that scales.
 * [Notification widget - aria-notifications](https://github.com/DavideTriso/aria-notifications)
 * [Badge widget - aria-badge](https://github.com/DavideTriso/aria-badge)
 * [Progress bar - aria-progressbar](https://github.com/DavideTriso/aria-progressbar)
-* [Form fields - form-controls (under development)](https://github.com/DavideTriso/form-controls)
+* [Form fields and controls - form-controls (beta)](https://github.com/DavideTriso/form-controls)
 
 
 ## DEPENDENCIES
@@ -47,7 +47,7 @@ Mobile-first, customisable CSS framework that scales.
 
 ## FUNCTIONS
 
-**Following functions are included:**
+**Following functions are available:**
 
 ### clampNumber
 
@@ -393,22 +393,6 @@ Set font properties
     * `fontVariant`
     * `fontWeight`
 
-
-### fontFace
-
-Include custom font using the `@font-face` rule
-
-```
-@include fontFace($name, $path, $weigh, $style, $exts)
-```
-
-**Parameters:**
-
-* `$name`: the font name
-* `$path`: the path to the font files
-* `$weight`: the font weight
-* `$style`: the font style
-* `$exts`: list of file formats / extension
 
 ### hardwareAcceleration
 
