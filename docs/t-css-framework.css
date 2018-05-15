@@ -243,6 +243,7 @@ h5,
 h6,
 p {
   font-size: 1rem;
+  font-weight: normal;
   text-align: left;
   margin: 0;
   padding: 0;
