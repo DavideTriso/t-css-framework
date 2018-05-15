@@ -1,7 +1,7 @@
 {
   "name": "t-css-framework",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Flexible and lightweight CSS framework for scalable BEM projects",
   "repository": {
     "type": "git",

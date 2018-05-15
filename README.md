@@ -125,6 +125,7 @@ linearInterpolation($map)
 **Parameters:**
 
 * `$map`: a map where length == 2 of viewport widths and size value pairs
+* `$unit`: the unit type (px, em, rem).
 
 **Output:** a linear equation (CSS `calc()`function)
 

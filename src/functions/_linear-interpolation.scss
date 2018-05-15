@@ -4,12 +4,36 @@
 // calculate the definition of a line between the two points
 // and return a linear equation as a CSS calc() function
 //----------------------------
-@function linearInterpolation($map) {
-  $keys: map-keys($map);
-  @if (length($keys) !=2) {
-     @error "The length of $map must be 2.";
+@function linear-interpolation($map, $unit) {
+  $keys         : map-keys($map);
+  @if length($keys) != 2 {
+    @error "The length passed to linearInterpolation() must have exactly 2 values";
   }
-  $m: (map-get($map, nth($keys, 2)) - map-get($map, nth($keys, 1)))/(nth($keys, 2) - nth($keys, 1));
-  $b: map-get($map, nth($keys, 1)) - $m * nth($keys, 1);
-  @return calc(#{$m*100}vw + #{$b});
+  $minScreenSize: stripUnit(nth($keys, 1));
+  $minFontSize  : stripUnit(map-get($map, nth($keys, 1)));
+  $maxScreenSize: stripUnit(nth($keys, 2));
+  $maxFontSize  : stripUnit(map-get($map, nth($keys, 2)));
+
+  //get width from breakpoints map if a string is passed
+  @if type-of($minScreenSize) == string {
+    $minScreenSize: stripUnit(map-get($breakpoints, $minScreenSize));
+  }
+
+  @if type-of($maxScreenSize) == string {
+    $maxScreenSize: stripUnit(map-get($breakpoints, $maxScreenSize));
+  }
+
+  @if type-of($minScreenSize) != number or type-of($maxScreenSize) != number {
+    @error "The $breakpoints map does not contain one or both the keys passed.";
+  }
+
+  $m            : ($maxFontSize - $minFontSize)/($maxScreenSize - $minScreenSize);
+  $b            : $minFontSize - $m * $minScreenSize;
+
+  $sign         : "+";
+  @if $b < 0 {
+    $b   : abs($b);
+    $sign: "-";
+  }
+  @return calc(#{$m*100}vw #{$sign} #{$b}#{$unit});
 }
