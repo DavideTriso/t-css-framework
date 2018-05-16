@@ -4,7 +4,7 @@
 // calculate the definition of a line between the two points
 // and return a linear equation as a CSS calc() function
 //----------------------------
-@function linear-interpolation($map, $unit) {
+@function linearInterpolation($map, $unit) {
   $keys         : map-keys($map);
 
   @if length($keys) != 2 {
