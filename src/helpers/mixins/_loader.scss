@@ -1,0 +1,24 @@
+
+@mixin loader ($loaderMap) {
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(365deg);
+    }
+  }
+
+  @if (map-has-key($loaderMap, size) and map-has-key($loaderMap, thickness) and map-has-key($loaderMap, primaryColor) and map-has-key($loaderMap, secondaryColor) and map-has-key($loaderMap, speed)) {
+    display                  : block;
+    height                   : map-get($loaderMap, size);
+    width                    : map-get($loaderMap, size);
+    border                   : map-get($loaderMap, thickness) solid map-get($loaderMap, primaryColor);
+    border-radius            : map-get($loaderMap, size) / 2;
+    border-bottom-color      : map-get($loaderMap, secondaryColor);
+    animation-name           : rotate;
+    animation-duration       : map-get($loaderMap, speed);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  } @else {
+    @error "One or more required values are missing in the map.";
+  }
+}

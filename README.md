@@ -125,7 +125,10 @@ linearInterpolation($map)
 **Parameters:**
 
 * `$map`: a map where length == 2 of viewport widths and size value pairs
-* `$unit`: the unit type (px, em, rem).
+* `$unit`: the unit type (px or rem).
+
+The function automatically converts rem to px and px to rem based on the value passed to the `$unit` parameter.
+The function also support passing the keys from the `$breakpoints` or `breakpointsRem`  maps as length instead of a px length.
 
 **Output:** a linear equation (CSS `calc()`function)
 
@@ -421,6 +424,23 @@ Set list properties.
     * `listStyleImage`
     * `listStyleType`
     * `listStylePosition`
+
+### loader
+
+Generates a CSS-only loader.
+
+```
+@include loader($loaderMap)
+```
+
+**Parameters**
+
+* `$loaderMap`
+    * `size`: the width and height of the loader.
+    * `thickness`: the thickness of the loader - the border width.
+    * `primaryColor`: color used to style the top, left and right borders.
+    * `secondaryColor`: color used to style the bottom border.
+    * `speed`: the animation duration interval.
 
 ### margin
 
