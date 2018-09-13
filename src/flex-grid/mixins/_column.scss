@@ -9,16 +9,15 @@
       @for $i from 1 through $columnsNumber {
         #{$columnClassName}#{$modifierSeparator}#{$i} {
           width: 100% / $columnsNumber * $i;
-          flex: 0 1 (100% / $columnsNumber * $i);
+          flex : 0 1 (100% / $columnsNumber * $i);
         }
       }
-    }
-    @else {
+    } @else {
       @media screen and (min-width: $value) {
         @for $i from 1 through $columnsNumber {
           #{$columnClassName}#{$modifierSeparator}#{$key}-#{$i} {
             width: 100% / $columnsNumber * $i;
-            flex: 0 1 (100% / $columnsNumber * $i);
+            flex : 0 1 (100% / $columnsNumber * $i);
           }
         }
       }
