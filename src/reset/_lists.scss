@@ -2,16 +2,16 @@ dl,
 menu,
 ol,
 ul {
-  @include list((listStyleType: none, listStylePosition: inside));
-  @include margin((all: 0));
-  @include padding((all: 0));
+    @include list((listStyleType: none, listStylePosition: inside));
+    @include margin((all: 0));
+    @include padding((all: 0));
 }
 
 dd,
 dt,
 li,
 menuitem {
-  @include font((fontStyle: normal));
-  @include margin((all: 0));
-  @include padding((all: 0));
+    @include font((fontStyle: normal));
+    @include margin((all: 0));
+    @include padding((all: 0));
 }

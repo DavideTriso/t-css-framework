@@ -1,17 +1,12 @@
 figure,
 img,
-map,
 picture {
-  display: block;
-  @include margin((all: 0));
-  @include padding((all: 0));
-  @include sizes((height: auto, width: 100%, maxWidth: 100%));
-}
-
-canvas {
-  @include sizes((height: auto, width: 100%));
+    display: block;
+    @include margin((all: 0));
+    @include padding((all: 0));
+    @include sizes((height: auto, width: auto));
 }
 
 figcaption {
-  @include font((fontSize: map-get($fontSizesMap, 'md'), fontStyle: normal));
+    @include font((fontSize: map-get($fontSizesMap, 'md'), fontStyle: normal));
 }

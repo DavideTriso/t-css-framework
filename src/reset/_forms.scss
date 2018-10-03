@@ -2,16 +2,15 @@ button,
 input,
 select,
 textarea {
-  @include border((borderWidth: 0, borderRadius: 0));
-  @include background((backgroundColor: transparent));
-  @include font((fontFamily: inherit, fontSize: map-get($fontSizesMap, md)));
-  @include typography((lineHeight: 1.15, verticalAlign: middle));
-  @include margin((all: 0));
-  @include padding((all: 0));
-
-  &:focus {
-    @include outline((outline: none));
-  }
+    @include border((borderWidth: 0, borderRadius: 0));
+    @include background((backgroundColor: transparent));
+    @include font((fontFamily: inherit, fontSize: map-get($fontSizesMap, md)));
+    @include typography((lineHeight: 1.15, verticalAlign: middle));
+    @include margin((all: 0));
+    @include padding((all: 0));
+    &:focus {
+        @include outline((outline: none));
+    }
 }
 
 input[type=date],
@@ -26,17 +25,17 @@ input[type=text],
 input[type=time],
 input[type=url],
 input[type=week] {
-  -webkit-appearance: none;
-  -moz-appearance   : none;
-  appearance        : none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 input[type=search] {
-  -webkit-appearance: textfield;
+    -webkit-appearance: textfield;
 }
 
 ::-webkit-search-decoration {
-  display: none;
+    display: none;
 }
 
 input[type=date],
@@ -44,76 +43,69 @@ input[type=datetime-local],
 input[type=month],
 input[type=time],
 input[type=week] {
-  @include sizes((minHeight: map-get($fontSizesMap, md)));
-
-  &::-webkit-clear-button {
-    display: none;
-  }
-
-  &::-webkit-inner-spin-button {
-    display: none;
-  }
-
-  &::-webkit-calendar-picker-indicator {
-    //display: none;
-
-    &:hover {
-      cursor: pointer;
+    @include sizes((minHeight: map-get($fontSizesMap, md)));
+    &::-webkit-clear-button {
+        display: none;
     }
-
-    &:active {
-      //
+    &::-webkit-inner-spin-button {
+        display: none;
     }
-  }
+    &::-webkit-calendar-picker-indicator {
+        //display: none;
+        &:hover {
+            cursor: pointer;
+        }
+        &:active {
+            //
+        }
+    }
 }
 
 fieldset {
-  @include border((borderWidth: 0, borderRadius: 0));
-  @include margin((all: 0));
-  @include padding((top: 0.01rem, bottom: 0, left: 0, right: 0));
-  @include sizes((minWidth: 0));
+    @include border((borderWidth: 0, borderRadius: 0));
+    @include margin((all: 0));
+    @include padding((top: 0.01rem, bottom: 0, left: 0, right: 0));
+    @include sizes((minWidth: 0));
 }
 
 body:not(:-moz-handler-blocked) fieldset {
-  display: table-cell;
+    display: table-cell;
 }
 
 label,
 legend {
-  @include font((fontSize: map-get($fontSizesMap, 'md')));
-  @include margin((all: 0));
-  @include padding((all: 0));
+    @include font((fontSize: map-get($fontSizesMap, 'md')));
+    @include margin((all: 0));
+    @include padding((all: 0));
 }
 
 legend {
-  display: table;
-  float  : left;
-
-  @include sizes((width: 0));
-
-  + * {
-    clear: both;
-  }
+    display: table;
+    float: left;
+    @include sizes((width: 0));
+    +* {
+        clear: both;
+    }
 }
 
 output {
-  @include font((fontSize: map-get($fontSizesMap, 'md')));
+    @include font((fontSize: map-get($fontSizesMap, 'md')));
 }
 
 datalist {
-  //
+    //
 }
 
 keygen {
-  //
+    //
 }
 
 select {
-  -webkit-appearance: none;
-  -moz-appearance   : none;
-  appearance        : none;
-  -moz-box-sizing   : border-box;
-  @include typography((lineHeight: 1.15));
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -moz-box-sizing: border-box;
+    @include typography((lineHeight: 1.15));
 }
 
 //remove select arrow in IE 11, 10
@@ -122,5 +114,5 @@ select::-ms-expand {
 }
 
 textarea {
-  overflow: auto;
+    overflow: auto;
 }

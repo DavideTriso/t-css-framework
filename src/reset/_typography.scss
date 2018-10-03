@@ -5,110 +5,89 @@ h4,
 h5,
 h6,
 p {
-  @include font((fontSize: map-get($fontSizesMap, 'md'), fontWeight: normal));
-  @include text((textAlign: left));
-  @include margin((all: 0));
-  @include padding((all: 0));
+    @include font((fontSize: map-get($fontSizesMap, 'md'), fontWeight: normal));
+    @include margin((all: 0));
+    @include padding((all: 0));
 }
 
 abbr {
-  @include text((textDecoration: none));
+    @include text((textDecoration: none));
 }
 
 address {
-  @include font((fontStyle: normal));
+    @include font((fontStyle: normal));
 }
 
 blockquote {
-  @include margin((all: 0));
-  @include padding((all: 0));
+    @include margin((all: 0));
+    @include padding((all: 0));
 }
 
 cite {
-  @include font((fontStyle: normal));
+    @include font((fontStyle: normal));
 }
 
 code {
-  @include font((fontFamily: inherit));
+    @include font((fontFamily: inherit));
 }
 
 del {
-  @include text((textDecoration: none));
+    @include text((textDecoration: none));
 }
 
 dfn {
-  @include font((fontStyle: normal));
+    @include font((fontStyle: normal));
 }
 
 em {
-  @include font((fontStyle: normal));
+    @include font((fontStyle: normal));
 }
 
 i {
-  @include font((fontStyle: normal));
+    @include font((fontStyle: normal));
 }
 
 ins {
-  @include text((textDecoration: none));
+    @include text((textDecoration: none));
 }
 
 kbd {
-  font-family: inherit;
+    font-family: inherit;
 }
 
 mark {
-  @include background((backgroundColor: transparent));
-  @include text((color: inherit));
+    @include background((backgroundColor: transparent));
+    @include text((color: inherit));
 }
 
 pre {
-  @include font((fontFamily: inherit));
-  @include margin((all: 0));
+    @include font((fontFamily: inherit));
+    @include margin((all: 0));
 }
 
 q {
-  &:after,
-  &:before {
-    content: none;
-  }
+    &:after,
+    &:before {
+        content: none;
+    }
 }
 
 s {
-  @include text((textDecoration: none));
+    @include text((textDecoration: none));
 }
 
 samp {
-  @include font((fontFamily: inherit));
-}
-
-small {
-  //
+    @include font((fontFamily: inherit));
 }
 
 strong {
-  @include font((fontWeight: 400));
-}
-
-sub {
-  //
-}
-
-sup {
-  //
-}
-
-time {
-  //
+    @include font((fontWeight: 400));
 }
 
 u {
-  @include text((textDecoration: none));
+    @include text((textDecoration: none));
 }
 
 var {
-  @include font((fontStyle: normal));
-}
-
-wbr {
-  //
+    @include font((fontStyle: normal));
 }
