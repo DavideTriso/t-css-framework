@@ -233,8 +233,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   font-size: 1rem;
   font-weight: normal;
   margin: 0;
@@ -404,6 +403,7 @@ All other variables: css properties of the row
 
 .col_1 {
   width: 4.1666666667%;
+  max-width: 4.1666666667%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 4.1666666667%;
           flex: 0 1 4.1666666667%;
@@ -411,6 +411,7 @@ All other variables: css properties of the row
 
 .col_2 {
   width: 8.3333333333%;
+  max-width: 8.3333333333%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 8.3333333333%;
           flex: 0 1 8.3333333333%;
@@ -418,6 +419,7 @@ All other variables: css properties of the row
 
 .col_3 {
   width: 12.5%;
+  max-width: 12.5%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 12.5%;
           flex: 0 1 12.5%;
@@ -425,6 +427,7 @@ All other variables: css properties of the row
 
 .col_4 {
   width: 16.6666666667%;
+  max-width: 16.6666666667%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 16.6666666667%;
           flex: 0 1 16.6666666667%;
@@ -432,6 +435,7 @@ All other variables: css properties of the row
 
 .col_5 {
   width: 20.8333333333%;
+  max-width: 20.8333333333%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 20.8333333333%;
           flex: 0 1 20.8333333333%;
@@ -439,6 +443,7 @@ All other variables: css properties of the row
 
 .col_6 {
   width: 25%;
+  max-width: 25%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
@@ -446,6 +451,7 @@ All other variables: css properties of the row
 
 .col_7 {
   width: 29.1666666667%;
+  max-width: 29.1666666667%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 29.1666666667%;
           flex: 0 1 29.1666666667%;
@@ -453,6 +459,7 @@ All other variables: css properties of the row
 
 .col_8 {
   width: 33.3333333333%;
+  max-width: 33.3333333333%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 33.3333333333%;
           flex: 0 1 33.3333333333%;
@@ -460,6 +467,7 @@ All other variables: css properties of the row
 
 .col_9 {
   width: 37.5%;
+  max-width: 37.5%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 37.5%;
           flex: 0 1 37.5%;
@@ -467,6 +475,7 @@ All other variables: css properties of the row
 
 .col_10 {
   width: 41.6666666667%;
+  max-width: 41.6666666667%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 41.6666666667%;
           flex: 0 1 41.6666666667%;
@@ -474,6 +483,7 @@ All other variables: css properties of the row
 
 .col_11 {
   width: 45.8333333333%;
+  max-width: 45.8333333333%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 45.8333333333%;
           flex: 0 1 45.8333333333%;
@@ -481,6 +491,7 @@ All other variables: css properties of the row
 
 .col_12 {
   width: 50%;
+  max-width: 50%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
@@ -488,6 +499,7 @@ All other variables: css properties of the row
 
 .col_13 {
   width: 54.1666666667%;
+  max-width: 54.1666666667%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 54.1666666667%;
           flex: 0 1 54.1666666667%;
@@ -495,6 +507,7 @@ All other variables: css properties of the row
 
 .col_14 {
   width: 58.3333333333%;
+  max-width: 58.3333333333%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 58.3333333333%;
           flex: 0 1 58.3333333333%;
@@ -502,6 +515,7 @@ All other variables: css properties of the row
 
 .col_15 {
   width: 62.5%;
+  max-width: 62.5%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 62.5%;
           flex: 0 1 62.5%;
@@ -509,6 +523,7 @@ All other variables: css properties of the row
 
 .col_16 {
   width: 66.6666666667%;
+  max-width: 66.6666666667%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 66.6666666667%;
           flex: 0 1 66.6666666667%;
@@ -516,6 +531,7 @@ All other variables: css properties of the row
 
 .col_17 {
   width: 70.8333333333%;
+  max-width: 70.8333333333%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 70.8333333333%;
           flex: 0 1 70.8333333333%;
@@ -523,6 +539,7 @@ All other variables: css properties of the row
 
 .col_18 {
   width: 75%;
+  max-width: 75%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 75%;
           flex: 0 1 75%;
@@ -530,6 +547,7 @@ All other variables: css properties of the row
 
 .col_19 {
   width: 79.1666666667%;
+  max-width: 79.1666666667%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 79.1666666667%;
           flex: 0 1 79.1666666667%;
@@ -537,6 +555,7 @@ All other variables: css properties of the row
 
 .col_20 {
   width: 83.3333333333%;
+  max-width: 83.3333333333%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 83.3333333333%;
           flex: 0 1 83.3333333333%;
@@ -544,6 +563,7 @@ All other variables: css properties of the row
 
 .col_21 {
   width: 87.5%;
+  max-width: 87.5%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 87.5%;
           flex: 0 1 87.5%;
@@ -551,6 +571,7 @@ All other variables: css properties of the row
 
 .col_22 {
   width: 91.6666666667%;
+  max-width: 91.6666666667%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 91.6666666667%;
           flex: 0 1 91.6666666667%;
@@ -558,6 +579,7 @@ All other variables: css properties of the row
 
 .col_23 {
   width: 95.8333333333%;
+  max-width: 95.8333333333%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 95.8333333333%;
           flex: 0 1 95.8333333333%;
@@ -565,6 +587,7 @@ All other variables: css properties of the row
 
 .col_24 {
   width: 100%;
+  max-width: 100%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
@@ -573,6 +596,7 @@ All other variables: css properties of the row
 @media screen and (min-width: 480px) {
   .col_w1-1 {
     width: 4.1666666667%;
+    max-width: 4.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 4.1666666667%;
             flex: 0 1 4.1666666667%;
@@ -580,6 +604,7 @@ All other variables: css properties of the row
 
   .col_w1-2 {
     width: 8.3333333333%;
+    max-width: 8.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 8.3333333333%;
             flex: 0 1 8.3333333333%;
@@ -587,6 +612,7 @@ All other variables: css properties of the row
 
   .col_w1-3 {
     width: 12.5%;
+    max-width: 12.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 12.5%;
             flex: 0 1 12.5%;
@@ -594,6 +620,7 @@ All other variables: css properties of the row
 
   .col_w1-4 {
     width: 16.6666666667%;
+    max-width: 16.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 16.6666666667%;
             flex: 0 1 16.6666666667%;
@@ -601,6 +628,7 @@ All other variables: css properties of the row
 
   .col_w1-5 {
     width: 20.8333333333%;
+    max-width: 20.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 20.8333333333%;
             flex: 0 1 20.8333333333%;
@@ -608,6 +636,7 @@ All other variables: css properties of the row
 
   .col_w1-6 {
     width: 25%;
+    max-width: 25%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 25%;
             flex: 0 1 25%;
@@ -615,6 +644,7 @@ All other variables: css properties of the row
 
   .col_w1-7 {
     width: 29.1666666667%;
+    max-width: 29.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 29.1666666667%;
             flex: 0 1 29.1666666667%;
@@ -622,6 +652,7 @@ All other variables: css properties of the row
 
   .col_w1-8 {
     width: 33.3333333333%;
+    max-width: 33.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.3333333333%;
             flex: 0 1 33.3333333333%;
@@ -629,6 +660,7 @@ All other variables: css properties of the row
 
   .col_w1-9 {
     width: 37.5%;
+    max-width: 37.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 37.5%;
             flex: 0 1 37.5%;
@@ -636,6 +668,7 @@ All other variables: css properties of the row
 
   .col_w1-10 {
     width: 41.6666666667%;
+    max-width: 41.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 41.6666666667%;
             flex: 0 1 41.6666666667%;
@@ -643,6 +676,7 @@ All other variables: css properties of the row
 
   .col_w1-11 {
     width: 45.8333333333%;
+    max-width: 45.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 45.8333333333%;
             flex: 0 1 45.8333333333%;
@@ -650,6 +684,7 @@ All other variables: css properties of the row
 
   .col_w1-12 {
     width: 50%;
+    max-width: 50%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
@@ -657,6 +692,7 @@ All other variables: css properties of the row
 
   .col_w1-13 {
     width: 54.1666666667%;
+    max-width: 54.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 54.1666666667%;
             flex: 0 1 54.1666666667%;
@@ -664,6 +700,7 @@ All other variables: css properties of the row
 
   .col_w1-14 {
     width: 58.3333333333%;
+    max-width: 58.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 58.3333333333%;
             flex: 0 1 58.3333333333%;
@@ -671,6 +708,7 @@ All other variables: css properties of the row
 
   .col_w1-15 {
     width: 62.5%;
+    max-width: 62.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 62.5%;
             flex: 0 1 62.5%;
@@ -678,6 +716,7 @@ All other variables: css properties of the row
 
   .col_w1-16 {
     width: 66.6666666667%;
+    max-width: 66.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 66.6666666667%;
             flex: 0 1 66.6666666667%;
@@ -685,6 +724,7 @@ All other variables: css properties of the row
 
   .col_w1-17 {
     width: 70.8333333333%;
+    max-width: 70.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 70.8333333333%;
             flex: 0 1 70.8333333333%;
@@ -692,6 +732,7 @@ All other variables: css properties of the row
 
   .col_w1-18 {
     width: 75%;
+    max-width: 75%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 75%;
             flex: 0 1 75%;
@@ -699,6 +740,7 @@ All other variables: css properties of the row
 
   .col_w1-19 {
     width: 79.1666666667%;
+    max-width: 79.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 79.1666666667%;
             flex: 0 1 79.1666666667%;
@@ -706,6 +748,7 @@ All other variables: css properties of the row
 
   .col_w1-20 {
     width: 83.3333333333%;
+    max-width: 83.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 83.3333333333%;
             flex: 0 1 83.3333333333%;
@@ -713,6 +756,7 @@ All other variables: css properties of the row
 
   .col_w1-21 {
     width: 87.5%;
+    max-width: 87.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 87.5%;
             flex: 0 1 87.5%;
@@ -720,6 +764,7 @@ All other variables: css properties of the row
 
   .col_w1-22 {
     width: 91.6666666667%;
+    max-width: 91.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 91.6666666667%;
             flex: 0 1 91.6666666667%;
@@ -727,6 +772,7 @@ All other variables: css properties of the row
 
   .col_w1-23 {
     width: 95.8333333333%;
+    max-width: 95.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 95.8333333333%;
             flex: 0 1 95.8333333333%;
@@ -734,6 +780,7 @@ All other variables: css properties of the row
 
   .col_w1-24 {
     width: 100%;
+    max-width: 100%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
@@ -742,6 +789,7 @@ All other variables: css properties of the row
 @media screen and (min-width: 768px) {
   .col_w2-1 {
     width: 4.1666666667%;
+    max-width: 4.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 4.1666666667%;
             flex: 0 1 4.1666666667%;
@@ -749,6 +797,7 @@ All other variables: css properties of the row
 
   .col_w2-2 {
     width: 8.3333333333%;
+    max-width: 8.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 8.3333333333%;
             flex: 0 1 8.3333333333%;
@@ -756,6 +805,7 @@ All other variables: css properties of the row
 
   .col_w2-3 {
     width: 12.5%;
+    max-width: 12.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 12.5%;
             flex: 0 1 12.5%;
@@ -763,6 +813,7 @@ All other variables: css properties of the row
 
   .col_w2-4 {
     width: 16.6666666667%;
+    max-width: 16.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 16.6666666667%;
             flex: 0 1 16.6666666667%;
@@ -770,6 +821,7 @@ All other variables: css properties of the row
 
   .col_w2-5 {
     width: 20.8333333333%;
+    max-width: 20.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 20.8333333333%;
             flex: 0 1 20.8333333333%;
@@ -777,6 +829,7 @@ All other variables: css properties of the row
 
   .col_w2-6 {
     width: 25%;
+    max-width: 25%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 25%;
             flex: 0 1 25%;
@@ -784,6 +837,7 @@ All other variables: css properties of the row
 
   .col_w2-7 {
     width: 29.1666666667%;
+    max-width: 29.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 29.1666666667%;
             flex: 0 1 29.1666666667%;
@@ -791,6 +845,7 @@ All other variables: css properties of the row
 
   .col_w2-8 {
     width: 33.3333333333%;
+    max-width: 33.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.3333333333%;
             flex: 0 1 33.3333333333%;
@@ -798,6 +853,7 @@ All other variables: css properties of the row
 
   .col_w2-9 {
     width: 37.5%;
+    max-width: 37.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 37.5%;
             flex: 0 1 37.5%;
@@ -805,6 +861,7 @@ All other variables: css properties of the row
 
   .col_w2-10 {
     width: 41.6666666667%;
+    max-width: 41.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 41.6666666667%;
             flex: 0 1 41.6666666667%;
@@ -812,6 +869,7 @@ All other variables: css properties of the row
 
   .col_w2-11 {
     width: 45.8333333333%;
+    max-width: 45.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 45.8333333333%;
             flex: 0 1 45.8333333333%;
@@ -819,6 +877,7 @@ All other variables: css properties of the row
 
   .col_w2-12 {
     width: 50%;
+    max-width: 50%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
@@ -826,6 +885,7 @@ All other variables: css properties of the row
 
   .col_w2-13 {
     width: 54.1666666667%;
+    max-width: 54.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 54.1666666667%;
             flex: 0 1 54.1666666667%;
@@ -833,6 +893,7 @@ All other variables: css properties of the row
 
   .col_w2-14 {
     width: 58.3333333333%;
+    max-width: 58.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 58.3333333333%;
             flex: 0 1 58.3333333333%;
@@ -840,6 +901,7 @@ All other variables: css properties of the row
 
   .col_w2-15 {
     width: 62.5%;
+    max-width: 62.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 62.5%;
             flex: 0 1 62.5%;
@@ -847,6 +909,7 @@ All other variables: css properties of the row
 
   .col_w2-16 {
     width: 66.6666666667%;
+    max-width: 66.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 66.6666666667%;
             flex: 0 1 66.6666666667%;
@@ -854,6 +917,7 @@ All other variables: css properties of the row
 
   .col_w2-17 {
     width: 70.8333333333%;
+    max-width: 70.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 70.8333333333%;
             flex: 0 1 70.8333333333%;
@@ -861,6 +925,7 @@ All other variables: css properties of the row
 
   .col_w2-18 {
     width: 75%;
+    max-width: 75%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 75%;
             flex: 0 1 75%;
@@ -868,6 +933,7 @@ All other variables: css properties of the row
 
   .col_w2-19 {
     width: 79.1666666667%;
+    max-width: 79.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 79.1666666667%;
             flex: 0 1 79.1666666667%;
@@ -875,6 +941,7 @@ All other variables: css properties of the row
 
   .col_w2-20 {
     width: 83.3333333333%;
+    max-width: 83.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 83.3333333333%;
             flex: 0 1 83.3333333333%;
@@ -882,6 +949,7 @@ All other variables: css properties of the row
 
   .col_w2-21 {
     width: 87.5%;
+    max-width: 87.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 87.5%;
             flex: 0 1 87.5%;
@@ -889,6 +957,7 @@ All other variables: css properties of the row
 
   .col_w2-22 {
     width: 91.6666666667%;
+    max-width: 91.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 91.6666666667%;
             flex: 0 1 91.6666666667%;
@@ -896,6 +965,7 @@ All other variables: css properties of the row
 
   .col_w2-23 {
     width: 95.8333333333%;
+    max-width: 95.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 95.8333333333%;
             flex: 0 1 95.8333333333%;
@@ -903,6 +973,7 @@ All other variables: css properties of the row
 
   .col_w2-24 {
     width: 100%;
+    max-width: 100%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
@@ -911,6 +982,7 @@ All other variables: css properties of the row
 @media screen and (min-width: 992px) {
   .col_w3-1 {
     width: 4.1666666667%;
+    max-width: 4.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 4.1666666667%;
             flex: 0 1 4.1666666667%;
@@ -918,6 +990,7 @@ All other variables: css properties of the row
 
   .col_w3-2 {
     width: 8.3333333333%;
+    max-width: 8.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 8.3333333333%;
             flex: 0 1 8.3333333333%;
@@ -925,6 +998,7 @@ All other variables: css properties of the row
 
   .col_w3-3 {
     width: 12.5%;
+    max-width: 12.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 12.5%;
             flex: 0 1 12.5%;
@@ -932,6 +1006,7 @@ All other variables: css properties of the row
 
   .col_w3-4 {
     width: 16.6666666667%;
+    max-width: 16.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 16.6666666667%;
             flex: 0 1 16.6666666667%;
@@ -939,6 +1014,7 @@ All other variables: css properties of the row
 
   .col_w3-5 {
     width: 20.8333333333%;
+    max-width: 20.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 20.8333333333%;
             flex: 0 1 20.8333333333%;
@@ -946,6 +1022,7 @@ All other variables: css properties of the row
 
   .col_w3-6 {
     width: 25%;
+    max-width: 25%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 25%;
             flex: 0 1 25%;
@@ -953,6 +1030,7 @@ All other variables: css properties of the row
 
   .col_w3-7 {
     width: 29.1666666667%;
+    max-width: 29.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 29.1666666667%;
             flex: 0 1 29.1666666667%;
@@ -960,6 +1038,7 @@ All other variables: css properties of the row
 
   .col_w3-8 {
     width: 33.3333333333%;
+    max-width: 33.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.3333333333%;
             flex: 0 1 33.3333333333%;
@@ -967,6 +1046,7 @@ All other variables: css properties of the row
 
   .col_w3-9 {
     width: 37.5%;
+    max-width: 37.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 37.5%;
             flex: 0 1 37.5%;
@@ -974,6 +1054,7 @@ All other variables: css properties of the row
 
   .col_w3-10 {
     width: 41.6666666667%;
+    max-width: 41.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 41.6666666667%;
             flex: 0 1 41.6666666667%;
@@ -981,6 +1062,7 @@ All other variables: css properties of the row
 
   .col_w3-11 {
     width: 45.8333333333%;
+    max-width: 45.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 45.8333333333%;
             flex: 0 1 45.8333333333%;
@@ -988,6 +1070,7 @@ All other variables: css properties of the row
 
   .col_w3-12 {
     width: 50%;
+    max-width: 50%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
@@ -995,6 +1078,7 @@ All other variables: css properties of the row
 
   .col_w3-13 {
     width: 54.1666666667%;
+    max-width: 54.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 54.1666666667%;
             flex: 0 1 54.1666666667%;
@@ -1002,6 +1086,7 @@ All other variables: css properties of the row
 
   .col_w3-14 {
     width: 58.3333333333%;
+    max-width: 58.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 58.3333333333%;
             flex: 0 1 58.3333333333%;
@@ -1009,6 +1094,7 @@ All other variables: css properties of the row
 
   .col_w3-15 {
     width: 62.5%;
+    max-width: 62.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 62.5%;
             flex: 0 1 62.5%;
@@ -1016,6 +1102,7 @@ All other variables: css properties of the row
 
   .col_w3-16 {
     width: 66.6666666667%;
+    max-width: 66.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 66.6666666667%;
             flex: 0 1 66.6666666667%;
@@ -1023,6 +1110,7 @@ All other variables: css properties of the row
 
   .col_w3-17 {
     width: 70.8333333333%;
+    max-width: 70.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 70.8333333333%;
             flex: 0 1 70.8333333333%;
@@ -1030,6 +1118,7 @@ All other variables: css properties of the row
 
   .col_w3-18 {
     width: 75%;
+    max-width: 75%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 75%;
             flex: 0 1 75%;
@@ -1037,6 +1126,7 @@ All other variables: css properties of the row
 
   .col_w3-19 {
     width: 79.1666666667%;
+    max-width: 79.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 79.1666666667%;
             flex: 0 1 79.1666666667%;
@@ -1044,6 +1134,7 @@ All other variables: css properties of the row
 
   .col_w3-20 {
     width: 83.3333333333%;
+    max-width: 83.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 83.3333333333%;
             flex: 0 1 83.3333333333%;
@@ -1051,6 +1142,7 @@ All other variables: css properties of the row
 
   .col_w3-21 {
     width: 87.5%;
+    max-width: 87.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 87.5%;
             flex: 0 1 87.5%;
@@ -1058,6 +1150,7 @@ All other variables: css properties of the row
 
   .col_w3-22 {
     width: 91.6666666667%;
+    max-width: 91.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 91.6666666667%;
             flex: 0 1 91.6666666667%;
@@ -1065,6 +1158,7 @@ All other variables: css properties of the row
 
   .col_w3-23 {
     width: 95.8333333333%;
+    max-width: 95.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 95.8333333333%;
             flex: 0 1 95.8333333333%;
@@ -1072,6 +1166,7 @@ All other variables: css properties of the row
 
   .col_w3-24 {
     width: 100%;
+    max-width: 100%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
@@ -1080,6 +1175,7 @@ All other variables: css properties of the row
 @media screen and (min-width: 1200px) {
   .col_w4-1 {
     width: 4.1666666667%;
+    max-width: 4.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 4.1666666667%;
             flex: 0 1 4.1666666667%;
@@ -1087,6 +1183,7 @@ All other variables: css properties of the row
 
   .col_w4-2 {
     width: 8.3333333333%;
+    max-width: 8.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 8.3333333333%;
             flex: 0 1 8.3333333333%;
@@ -1094,6 +1191,7 @@ All other variables: css properties of the row
 
   .col_w4-3 {
     width: 12.5%;
+    max-width: 12.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 12.5%;
             flex: 0 1 12.5%;
@@ -1101,6 +1199,7 @@ All other variables: css properties of the row
 
   .col_w4-4 {
     width: 16.6666666667%;
+    max-width: 16.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 16.6666666667%;
             flex: 0 1 16.6666666667%;
@@ -1108,6 +1207,7 @@ All other variables: css properties of the row
 
   .col_w4-5 {
     width: 20.8333333333%;
+    max-width: 20.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 20.8333333333%;
             flex: 0 1 20.8333333333%;
@@ -1115,6 +1215,7 @@ All other variables: css properties of the row
 
   .col_w4-6 {
     width: 25%;
+    max-width: 25%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 25%;
             flex: 0 1 25%;
@@ -1122,6 +1223,7 @@ All other variables: css properties of the row
 
   .col_w4-7 {
     width: 29.1666666667%;
+    max-width: 29.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 29.1666666667%;
             flex: 0 1 29.1666666667%;
@@ -1129,6 +1231,7 @@ All other variables: css properties of the row
 
   .col_w4-8 {
     width: 33.3333333333%;
+    max-width: 33.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.3333333333%;
             flex: 0 1 33.3333333333%;
@@ -1136,6 +1239,7 @@ All other variables: css properties of the row
 
   .col_w4-9 {
     width: 37.5%;
+    max-width: 37.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 37.5%;
             flex: 0 1 37.5%;
@@ -1143,6 +1247,7 @@ All other variables: css properties of the row
 
   .col_w4-10 {
     width: 41.6666666667%;
+    max-width: 41.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 41.6666666667%;
             flex: 0 1 41.6666666667%;
@@ -1150,6 +1255,7 @@ All other variables: css properties of the row
 
   .col_w4-11 {
     width: 45.8333333333%;
+    max-width: 45.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 45.8333333333%;
             flex: 0 1 45.8333333333%;
@@ -1157,6 +1263,7 @@ All other variables: css properties of the row
 
   .col_w4-12 {
     width: 50%;
+    max-width: 50%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
@@ -1164,6 +1271,7 @@ All other variables: css properties of the row
 
   .col_w4-13 {
     width: 54.1666666667%;
+    max-width: 54.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 54.1666666667%;
             flex: 0 1 54.1666666667%;
@@ -1171,6 +1279,7 @@ All other variables: css properties of the row
 
   .col_w4-14 {
     width: 58.3333333333%;
+    max-width: 58.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 58.3333333333%;
             flex: 0 1 58.3333333333%;
@@ -1178,6 +1287,7 @@ All other variables: css properties of the row
 
   .col_w4-15 {
     width: 62.5%;
+    max-width: 62.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 62.5%;
             flex: 0 1 62.5%;
@@ -1185,6 +1295,7 @@ All other variables: css properties of the row
 
   .col_w4-16 {
     width: 66.6666666667%;
+    max-width: 66.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 66.6666666667%;
             flex: 0 1 66.6666666667%;
@@ -1192,6 +1303,7 @@ All other variables: css properties of the row
 
   .col_w4-17 {
     width: 70.8333333333%;
+    max-width: 70.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 70.8333333333%;
             flex: 0 1 70.8333333333%;
@@ -1199,6 +1311,7 @@ All other variables: css properties of the row
 
   .col_w4-18 {
     width: 75%;
+    max-width: 75%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 75%;
             flex: 0 1 75%;
@@ -1206,6 +1319,7 @@ All other variables: css properties of the row
 
   .col_w4-19 {
     width: 79.1666666667%;
+    max-width: 79.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 79.1666666667%;
             flex: 0 1 79.1666666667%;
@@ -1213,6 +1327,7 @@ All other variables: css properties of the row
 
   .col_w4-20 {
     width: 83.3333333333%;
+    max-width: 83.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 83.3333333333%;
             flex: 0 1 83.3333333333%;
@@ -1220,6 +1335,7 @@ All other variables: css properties of the row
 
   .col_w4-21 {
     width: 87.5%;
+    max-width: 87.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 87.5%;
             flex: 0 1 87.5%;
@@ -1227,6 +1343,7 @@ All other variables: css properties of the row
 
   .col_w4-22 {
     width: 91.6666666667%;
+    max-width: 91.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 91.6666666667%;
             flex: 0 1 91.6666666667%;
@@ -1234,6 +1351,7 @@ All other variables: css properties of the row
 
   .col_w4-23 {
     width: 95.8333333333%;
+    max-width: 95.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 95.8333333333%;
             flex: 0 1 95.8333333333%;
@@ -1241,6 +1359,7 @@ All other variables: css properties of the row
 
   .col_w4-24 {
     width: 100%;
+    max-width: 100%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
@@ -1249,6 +1368,7 @@ All other variables: css properties of the row
 @media screen and (min-width: 1440px) {
   .col_w5-1 {
     width: 4.1666666667%;
+    max-width: 4.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 4.1666666667%;
             flex: 0 1 4.1666666667%;
@@ -1256,6 +1376,7 @@ All other variables: css properties of the row
 
   .col_w5-2 {
     width: 8.3333333333%;
+    max-width: 8.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 8.3333333333%;
             flex: 0 1 8.3333333333%;
@@ -1263,6 +1384,7 @@ All other variables: css properties of the row
 
   .col_w5-3 {
     width: 12.5%;
+    max-width: 12.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 12.5%;
             flex: 0 1 12.5%;
@@ -1270,6 +1392,7 @@ All other variables: css properties of the row
 
   .col_w5-4 {
     width: 16.6666666667%;
+    max-width: 16.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 16.6666666667%;
             flex: 0 1 16.6666666667%;
@@ -1277,6 +1400,7 @@ All other variables: css properties of the row
 
   .col_w5-5 {
     width: 20.8333333333%;
+    max-width: 20.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 20.8333333333%;
             flex: 0 1 20.8333333333%;
@@ -1284,6 +1408,7 @@ All other variables: css properties of the row
 
   .col_w5-6 {
     width: 25%;
+    max-width: 25%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 25%;
             flex: 0 1 25%;
@@ -1291,6 +1416,7 @@ All other variables: css properties of the row
 
   .col_w5-7 {
     width: 29.1666666667%;
+    max-width: 29.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 29.1666666667%;
             flex: 0 1 29.1666666667%;
@@ -1298,6 +1424,7 @@ All other variables: css properties of the row
 
   .col_w5-8 {
     width: 33.3333333333%;
+    max-width: 33.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.3333333333%;
             flex: 0 1 33.3333333333%;
@@ -1305,6 +1432,7 @@ All other variables: css properties of the row
 
   .col_w5-9 {
     width: 37.5%;
+    max-width: 37.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 37.5%;
             flex: 0 1 37.5%;
@@ -1312,6 +1440,7 @@ All other variables: css properties of the row
 
   .col_w5-10 {
     width: 41.6666666667%;
+    max-width: 41.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 41.6666666667%;
             flex: 0 1 41.6666666667%;
@@ -1319,6 +1448,7 @@ All other variables: css properties of the row
 
   .col_w5-11 {
     width: 45.8333333333%;
+    max-width: 45.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 45.8333333333%;
             flex: 0 1 45.8333333333%;
@@ -1326,6 +1456,7 @@ All other variables: css properties of the row
 
   .col_w5-12 {
     width: 50%;
+    max-width: 50%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
@@ -1333,6 +1464,7 @@ All other variables: css properties of the row
 
   .col_w5-13 {
     width: 54.1666666667%;
+    max-width: 54.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 54.1666666667%;
             flex: 0 1 54.1666666667%;
@@ -1340,6 +1472,7 @@ All other variables: css properties of the row
 
   .col_w5-14 {
     width: 58.3333333333%;
+    max-width: 58.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 58.3333333333%;
             flex: 0 1 58.3333333333%;
@@ -1347,6 +1480,7 @@ All other variables: css properties of the row
 
   .col_w5-15 {
     width: 62.5%;
+    max-width: 62.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 62.5%;
             flex: 0 1 62.5%;
@@ -1354,6 +1488,7 @@ All other variables: css properties of the row
 
   .col_w5-16 {
     width: 66.6666666667%;
+    max-width: 66.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 66.6666666667%;
             flex: 0 1 66.6666666667%;
@@ -1361,6 +1496,7 @@ All other variables: css properties of the row
 
   .col_w5-17 {
     width: 70.8333333333%;
+    max-width: 70.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 70.8333333333%;
             flex: 0 1 70.8333333333%;
@@ -1368,6 +1504,7 @@ All other variables: css properties of the row
 
   .col_w5-18 {
     width: 75%;
+    max-width: 75%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 75%;
             flex: 0 1 75%;
@@ -1375,6 +1512,7 @@ All other variables: css properties of the row
 
   .col_w5-19 {
     width: 79.1666666667%;
+    max-width: 79.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 79.1666666667%;
             flex: 0 1 79.1666666667%;
@@ -1382,6 +1520,7 @@ All other variables: css properties of the row
 
   .col_w5-20 {
     width: 83.3333333333%;
+    max-width: 83.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 83.3333333333%;
             flex: 0 1 83.3333333333%;
@@ -1389,6 +1528,7 @@ All other variables: css properties of the row
 
   .col_w5-21 {
     width: 87.5%;
+    max-width: 87.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 87.5%;
             flex: 0 1 87.5%;
@@ -1396,6 +1536,7 @@ All other variables: css properties of the row
 
   .col_w5-22 {
     width: 91.6666666667%;
+    max-width: 91.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 91.6666666667%;
             flex: 0 1 91.6666666667%;
@@ -1403,6 +1544,7 @@ All other variables: css properties of the row
 
   .col_w5-23 {
     width: 95.8333333333%;
+    max-width: 95.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 95.8333333333%;
             flex: 0 1 95.8333333333%;
@@ -1410,6 +1552,7 @@ All other variables: css properties of the row
 
   .col_w5-24 {
     width: 100%;
+    max-width: 100%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
@@ -1418,6 +1561,7 @@ All other variables: css properties of the row
 @media screen and (min-width: 1680px) {
   .col_w6-1 {
     width: 4.1666666667%;
+    max-width: 4.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 4.1666666667%;
             flex: 0 1 4.1666666667%;
@@ -1425,6 +1569,7 @@ All other variables: css properties of the row
 
   .col_w6-2 {
     width: 8.3333333333%;
+    max-width: 8.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 8.3333333333%;
             flex: 0 1 8.3333333333%;
@@ -1432,6 +1577,7 @@ All other variables: css properties of the row
 
   .col_w6-3 {
     width: 12.5%;
+    max-width: 12.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 12.5%;
             flex: 0 1 12.5%;
@@ -1439,6 +1585,7 @@ All other variables: css properties of the row
 
   .col_w6-4 {
     width: 16.6666666667%;
+    max-width: 16.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 16.6666666667%;
             flex: 0 1 16.6666666667%;
@@ -1446,6 +1593,7 @@ All other variables: css properties of the row
 
   .col_w6-5 {
     width: 20.8333333333%;
+    max-width: 20.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 20.8333333333%;
             flex: 0 1 20.8333333333%;
@@ -1453,6 +1601,7 @@ All other variables: css properties of the row
 
   .col_w6-6 {
     width: 25%;
+    max-width: 25%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 25%;
             flex: 0 1 25%;
@@ -1460,6 +1609,7 @@ All other variables: css properties of the row
 
   .col_w6-7 {
     width: 29.1666666667%;
+    max-width: 29.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 29.1666666667%;
             flex: 0 1 29.1666666667%;
@@ -1467,6 +1617,7 @@ All other variables: css properties of the row
 
   .col_w6-8 {
     width: 33.3333333333%;
+    max-width: 33.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.3333333333%;
             flex: 0 1 33.3333333333%;
@@ -1474,6 +1625,7 @@ All other variables: css properties of the row
 
   .col_w6-9 {
     width: 37.5%;
+    max-width: 37.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 37.5%;
             flex: 0 1 37.5%;
@@ -1481,6 +1633,7 @@ All other variables: css properties of the row
 
   .col_w6-10 {
     width: 41.6666666667%;
+    max-width: 41.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 41.6666666667%;
             flex: 0 1 41.6666666667%;
@@ -1488,6 +1641,7 @@ All other variables: css properties of the row
 
   .col_w6-11 {
     width: 45.8333333333%;
+    max-width: 45.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 45.8333333333%;
             flex: 0 1 45.8333333333%;
@@ -1495,6 +1649,7 @@ All other variables: css properties of the row
 
   .col_w6-12 {
     width: 50%;
+    max-width: 50%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
@@ -1502,6 +1657,7 @@ All other variables: css properties of the row
 
   .col_w6-13 {
     width: 54.1666666667%;
+    max-width: 54.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 54.1666666667%;
             flex: 0 1 54.1666666667%;
@@ -1509,6 +1665,7 @@ All other variables: css properties of the row
 
   .col_w6-14 {
     width: 58.3333333333%;
+    max-width: 58.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 58.3333333333%;
             flex: 0 1 58.3333333333%;
@@ -1516,6 +1673,7 @@ All other variables: css properties of the row
 
   .col_w6-15 {
     width: 62.5%;
+    max-width: 62.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 62.5%;
             flex: 0 1 62.5%;
@@ -1523,6 +1681,7 @@ All other variables: css properties of the row
 
   .col_w6-16 {
     width: 66.6666666667%;
+    max-width: 66.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 66.6666666667%;
             flex: 0 1 66.6666666667%;
@@ -1530,6 +1689,7 @@ All other variables: css properties of the row
 
   .col_w6-17 {
     width: 70.8333333333%;
+    max-width: 70.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 70.8333333333%;
             flex: 0 1 70.8333333333%;
@@ -1537,6 +1697,7 @@ All other variables: css properties of the row
 
   .col_w6-18 {
     width: 75%;
+    max-width: 75%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 75%;
             flex: 0 1 75%;
@@ -1544,6 +1705,7 @@ All other variables: css properties of the row
 
   .col_w6-19 {
     width: 79.1666666667%;
+    max-width: 79.1666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 79.1666666667%;
             flex: 0 1 79.1666666667%;
@@ -1551,6 +1713,7 @@ All other variables: css properties of the row
 
   .col_w6-20 {
     width: 83.3333333333%;
+    max-width: 83.3333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 83.3333333333%;
             flex: 0 1 83.3333333333%;
@@ -1558,6 +1721,7 @@ All other variables: css properties of the row
 
   .col_w6-21 {
     width: 87.5%;
+    max-width: 87.5%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 87.5%;
             flex: 0 1 87.5%;
@@ -1565,6 +1729,7 @@ All other variables: css properties of the row
 
   .col_w6-22 {
     width: 91.6666666667%;
+    max-width: 91.6666666667%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 91.6666666667%;
             flex: 0 1 91.6666666667%;
@@ -1572,6 +1737,7 @@ All other variables: css properties of the row
 
   .col_w6-23 {
     width: 95.8333333333%;
+    max-width: 95.8333333333%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 95.8333333333%;
             flex: 0 1 95.8333333333%;
@@ -1579,6 +1745,7 @@ All other variables: css properties of the row
 
   .col_w6-24 {
     width: 100%;
+    max-width: 100%;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;

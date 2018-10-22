@@ -3,8 +3,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
     @include font((fontSize: map-get($fontSizesMap, 'md'), fontWeight: normal));
     @include margin((all: 0));
     @include padding((all: 0));
