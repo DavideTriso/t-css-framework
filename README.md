@@ -609,6 +609,23 @@ Set typographic properties like `line-height` and `letter-spacing`.
     * `wordWrap`
 
 
+### verticalGutter
+
+Generate a set of classes which add responsive padding (which scales based on the viewport's width) to elements.
+
+```
+@include verticalGutter($breakpointsMap, $guttersList, $className, $side, $marginOrPadding)
+```
+
+**Parameters:**
+
+* `$breakpointsMap`: a sass map of the breakpoints (key, value pairs)
+* `$guttersList`: a sass list of the gutter's length at each breakpoint
+* `$className`: the class name
+* `$side`: (tokens) set to `top` to generate top gutters only, `bottom` to generate bottom gutters className and `topBottom` to generate both.
+* `$marginOrPadding`: (tokens) set to `margin` if you want to output margins, `padding` if you want to output paddings.
+
+
 ## RESET
 
 The framework includes an extensive and easy to customize CSS reset stylesheet.

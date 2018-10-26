@@ -1,21 +1,24 @@
 {
   "name": "t-css-framework",
   "license": "MIT",
-  "version": "1.3.4",
+  "version": "1.4.0",
   "description": "Flexible and lightweight CSS framework for scalable BEM projects",
+  "author": "Davide Trisolini",
   "repository": {
     "type": "git",
     "url": "git://github.com/davidetriso/t-css-framework.git"
   },
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "6.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-ruby-sass": "^3.0.0",
+    "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.1",
+    "node-sass": "^4.9.4",
     "require-dir": "1.1.0"
   },
   "dependencies": {}

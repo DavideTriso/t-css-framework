@@ -1,0 +1,63 @@
+//-------------------------
+//GENERATE VERTICAL GUTTER CLASSES
+//Generate classses which add top/bottom padding or margin on elements, which scales based on viewport width
+//-------------------------
+@mixin verticalGutter($breakpointsMap, $guttersList, $className, $side, $marginOrPadding) {
+    $i: 1;
+    @if $side=='top' {
+        @each $key,
+        $value in $breakpointsMap {
+            @if $i==1 {
+                #{$className} {
+                    #{marginOrPadding}-top: nth($guttersList, $i);
+                }
+            }
+            @else {
+                @media screen and (min-width: $value) {
+                    #{$className} {
+                        #{marginOrPadding}-top: nth($guttersList, $i);
+                    }
+                }
+            }
+            $i: $i+1;
+        }
+    }
+    @else if $side=='bottom' {
+        @each $key,
+        $value in $breakpointsMap {
+            @if $i==1 {
+                #{$className} {
+                    #{marginOrPadding}-bottom: nth($guttersList, $i);
+                }
+            }
+            @else {
+                @media screen and (min-width: $value) {
+                    #{$className} {
+                        #{marginOrPadding}-bottom: nth($guttersList, $i);
+                    }
+                }
+            }
+            $i: $i+1;
+        }
+    }
+    @else {
+        @each $key,
+        $value in $breakpointsMap {
+            @if $i==1 {
+                #{$className} {
+                    #{marginOrPadding}-top: nth($guttersList, $i);
+                    #{marginOrPadding}-bottom: nth($guttersList, $i);
+                }
+            }
+            @else {
+                @media screen and (min-width: $value) {
+                    #{$className} {
+                        #{marginOrPadding}-top: nth($guttersList, $i);
+                        #{marginOrPadding}-bottom: nth($guttersList, $i);
+                    }
+                }
+            }
+            $i: $i+1;
+        }
+    }
+}
