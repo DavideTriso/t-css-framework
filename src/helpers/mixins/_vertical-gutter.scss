@@ -9,13 +9,13 @@
         $value in $breakpointsMap {
             @if $i==1 {
                 #{$className} {
-                    #{marginOrPadding}-top: nth($guttersList, $i);
+                    #{$marginOrPadding}-top: nth($guttersList, $i);
                 }
             }
             @else {
                 @media screen and (min-width: $value) {
                     #{$className} {
-                        #{marginOrPadding}-top: nth($guttersList, $i);
+                        #{$marginOrPadding}-top: nth($guttersList, $i);
                     }
                 }
             }
@@ -27,13 +27,13 @@
         $value in $breakpointsMap {
             @if $i==1 {
                 #{$className} {
-                    #{marginOrPadding}-bottom: nth($guttersList, $i);
+                    #{$marginOrPadding}-bottom: nth($guttersList, $i);
                 }
             }
             @else {
                 @media screen and (min-width: $value) {
                     #{$className} {
-                        #{marginOrPadding}-bottom: nth($guttersList, $i);
+                        #{$marginOrPadding}-bottom: nth($guttersList, $i);
                     }
                 }
             }
@@ -45,15 +45,15 @@
         $value in $breakpointsMap {
             @if $i==1 {
                 #{$className} {
-                    #{marginOrPadding}-top: nth($guttersList, $i);
-                    #{marginOrPadding}-bottom: nth($guttersList, $i);
+                    #{$marginOrPadding}-top: nth($guttersList, $i);
+                    #{$marginOrPadding}-bottom: nth($guttersList, $i);
                 }
             }
             @else {
                 @media screen and (min-width: $value) {
                     #{$className} {
-                        #{marginOrPadding}-top: nth($guttersList, $i);
-                        #{marginOrPadding}-bottom: nth($guttersList, $i);
+                        #{$marginOrPadding}-top: nth($guttersList, $i);
+                        #{$marginOrPadding}-bottom: nth($guttersList, $i);
                     }
                 }
             }
