@@ -13,6 +13,10 @@ textarea {
     }
 }
 
+select {
+    overflow: hidden;
+}
+
 input[type=date],
 input[type=datetime-local],
 input[type=email],
